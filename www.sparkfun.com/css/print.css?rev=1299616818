@@ -1,0 +1,134 @@
+a {
+  color:#F03528;
+  text-decoration:none;
+}
+
+a img  {
+  border:none;
+}
+
+#header .skip,
+#header #banner-nav,
+#header #banner-link,
+#header #header-menu {
+  display:none;
+}
+
+/* the logo */
+#header a {
+  float:left;
+}
+
+
+#left,
+#product_header,
+#right,
+form {
+  display: none;
+}
+
+#center,
+#airlock {
+  width: 100%;
+  padding:0;
+  margin:0;
+  color:#000;
+  border-width:0;
+}
+
+#footer {
+  display:none;
+}
+
+#footer a {
+  color:#77776E;
+}
+
+h1 { font-size:1.5em; }
+h2 { font-size:1.4em; }
+h3 { font-size:1.3em; }
+h4 { font-size:1.2em; }
+h5 { font-size:1.1em; }
+h6 { font-size:1.0em; }
+
+h1,h2,h3,h4,h5,h6 { font-weight:bold; }
+
+h1.red-header {
+  background:transparent;
+  color:#000;
+  float:right;
+  margin-top:2em;
+}
+
+h1.red-header span.link {
+  display:none;
+}
+
+.cols {
+  width:100%;
+  overflow:hidden;
+}
+.col {
+  width:25%;
+  float:left;
+  margin-right:15px;
+  border:1px solid red;
+}
+
+/* I'm (99.99)% sure this is an insult to CSS */
+  #order-details table {
+    border-collapse:collapse;
+  }
+
+  #line-items {
+    width:100%;
+  }
+
+  #order-details th,
+  #order-details #line-items td {
+    color:#000;
+    border-bottom:1px solid #ddd;
+    background-color:transparent;
+  }
+
+  #order-details #line-items { text-align:center; }
+  #order-details #line-items .amount { text-align:right; }
+  #order-details #line-items .desc { text-align:left; }
+
+  #order-details #line-items .pic {
+    display:none;
+  }
+
+  #order-details h3 {
+    color:#000;
+    border-bottom:1px solid #000;
+  }
+
+  #order-details #totals,
+  #order-details #transactions {
+    width:100%;
+    margin-top:2em;
+  }
+
+  #order-details #totals th,
+  #order-details #transactions th {
+    text-align:left;
+  }
+
+  #order-details #totals td.amount,
+  #order-details #transactions td.amount {
+    text-align:right;
+  }
+
+  #order-details #status {
+    font-size:1.4em;
+    font-weight:bold;
+    float:right;
+  }
+  #order-details #shipping,
+  #order-details #payment {
+    padding-left:15px;
+    float:left;
+  }
+
+

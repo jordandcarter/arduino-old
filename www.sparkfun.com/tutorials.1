@@ -1,0 +1,2682 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="google-site-verification" content="XUb2UlchrvwCWWyhXksBlqQy1STYtTEN_M0-tgQRHRs" />
+    <meta name="google-site-verification" content="gRUAvzBJ_533b-AGTmldOJfByU6TkojfUbWovB2wKJo" />
+    <title>Tutorials - SparkFun Electronics</title>
+    <link rel="stylesheet" href="/css/screen.css?rev=1299616818" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css?rev=1299616818" type="text/css" media="print" />
+    <link rel="stylesheet" href="/css/lightbox.css?rev=1299616818" type="text/css" media="screen" />
+    <!-- IE is the bane of my existence. -->
+    <!--[if IE]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+    <link rel="feed" type="application/rss+xml" title="News" href="http://www.sparkfun.com/feeds/news/" />
+    <link rel="alternate" type="application/rss+xml" title="Products" href="http://www.sparkfun.com/feeds/products/" />
+    <link rel="alternate" type="application/rss+xml" title="Product Changes" href="http://www.sparkfun.com/feeds/changes/" />
+    <link rel="alternate" type="application/rss+xml" title="Comments" href="http://www.sparkfun.com/feeds/comments/" />
+    <link rel="alternate" type="application/rss+xml" title="Videos" href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&v=2&orderby=published" />
+    <link rel="apple-touch-icon" href="/fanboy.png" />
+     
+    <script type="text/javascript">
+      var HTTP_SERVER = 'http://www.sparkfun.com',
+          HTTPS_SERVER = 'https://www.sparkfun.com',
+          HTTP_STATIC = 'http://dlnmh9ip6v2uc.cloudfront.net',
+          FULL_LAYOUT = true,
+          AUTHENTICATED = false;
+    </script>
+    <script type="text/javascript" src="/js/prototype.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <!-- turns out  that IE7 chokes if you don't load these separately. -->
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="/js/effects.js"></script>
+    <script type="text/javascript" src="/js/builder.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/lightbox.js?rev=1299616818"></script>
+  </head>
+  <body>
+    <div id="airlock" class="clearfix">
+
+      
+  <script>BANNER_ID = 53</script>
+
+<div id="header">
+  <a href="http://www.sparkfun.com/"><img width=188 height=105 class="logo" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/logo.gif" title="SparkFun Electronics" alt="SparkFun Electronics" /></a>
+  <a href="#products_menu" class="skip">Skip to menu</a>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <div id="banner-nav" style="display: none;">
+<img id="banner-goprev" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_left.png" height=23 width=23 />
+<img id="banner-all" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_all.png" height=23 width=23 />
+<img id="banner-gonext" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_right.png" height=23 width=23 />
+</div>
+<a id="banner-link" href="http://www.sparkfun.com/products/10308"><img width=978 height=105 id="banner" src="http://dlnmh9ip6v2uc.cloudfront.net/images/banners/SFE03.0007.ED-HowToSolder-01.jpg" alt="" /></a>
+  <div id="header-menu">
+    <ul>
+      <li id="header_menu_index"><a href="http://www.sparkfun.com/index">Home</a></li>
+      <li id="header_menu_cservice"><a href="http://www.sparkfun.com/static/customer_service">Customer Service</a></li>
+      <li id="header_menu_tutorials" class="active"><a href="http://www.sparkfun.com/tutorials">Tutorials</a></li>
+      <li id="header_menu_forum"><a href="http://forum.sparkfun.com">Forum</a></li>
+      <li id="header_menu_distributors"><a href="http://www.sparkfun.com/distributors">Distributors</a></li>
+      <li id="header_menu_about"><a href="http://www.sparkfun.com/static/about">About Us</a></li>
+      <li id="header_menu_contact" class="last"><a href="http://www.sparkfun.com/static/contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="left">
+        <h2 class="collapsible" id="search_menu"><span class="arrow"></span>Search</h2>
+        <form class="collapsible search" style="display: block" action="http://www.sparkfun.com/search/results" id="search_form" method="get">
+  <input id="search_field" name="term" type="text" value="" />
+  <input type="submit" value="Go" class="button" />
+  <br />
+  <input id="products_search" type="radio" name="what" value="products" checked />
+  <label for="products_search">Products</label>
+  <br />
+  <input id="news_search" type="radio" name="what" value="news" />
+  <label for="news_search">News</label>
+  <br />
+  <input id="tutorials_search" type="radio" name="what" value="tutorials" />
+  <label for="tutorials_search">Tutorials</label>
+  <br />
+  <input id="comments_search" type="radio" name="what" value="comments" />
+  <label for="comments_search">Comments</label>
+</form>
+        <br />
+
+        <h2 id="products_menu" class="collapsible"><span class="arrow"></span>Products</h2>
+        
+<ul id="category_menu_list" class="collapsible" style="display: block">
+  <li id="menu_category_new_products"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/new_products">New Products</a></li>
+  <li id="menu_category_top"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/top">Top Sellers</a></li>
+  <li id="menu_category_featured"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/featured">Staff Picks</a></li>
+  <li id="menu_category_gift_certificates"><span class="arrow"></span><a href="https://www.sparkfun.com/gift_certificates">Gift Certificates</a></li>
+  <li><hr /></li>
+  <li id="menu_category_176"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/176">Books</a></li><li id="menu_category_20"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/20">Breakout Boards</a></li><li id="menu_category_70"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/70">Cables</a><ul style="display:none;"><li id="menu_category_140"><a href="http://www.sparkfun.com/categories/140">Audio</a></li><li id="menu_category_150"><a href="http://www.sparkfun.com/categories/150">Ethernet</a></li><li id="menu_category_72"><a href="http://www.sparkfun.com/categories/72">Hook Up</a></li><li id="menu_category_75"><a href="http://www.sparkfun.com/categories/75">Parallel</a></li><li id="menu_category_74"><a href="http://www.sparkfun.com/categories/74">Serial</a></li><li id="menu_category_71"><a href="http://www.sparkfun.com/categories/71">USB</a></li></ul></li><li id="menu_category_66"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/66">Cellular</a><ul style="display:none;"><li id="menu_category_67"><a href="http://www.sparkfun.com/categories/67">Antennas</a></li><li id="menu_category_69"><a href="http://www.sparkfun.com/categories/69">Eval Boards</a></li><li id="menu_category_68"><a href="http://www.sparkfun.com/categories/68">Modules</a></li></ul></li><li id="menu_category_154"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/154">Classes</a></li><li id="menu_category_51"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/51">Components</a><ul style="display:none;"><li id="menu_category_87"><a href="http://www.sparkfun.com/categories/87">ARM Microcontrollers</a></li><li id="menu_category_21"><a href="http://www.sparkfun.com/categories/21">AVR Microcontrollers</a></li><li id="menu_category_145"><a href="http://www.sparkfun.com/categories/145">Buttons/Switches</a></li><li id="menu_category_60"><a href="http://www.sparkfun.com/categories/60">General</a></li><li id="menu_category_90"><a href="http://www.sparkfun.com/categories/90">General ICs</a></li><li id="menu_category_89"><a href="http://www.sparkfun.com/categories/89">LEDs</a><ul><li id="menu_category_173"><a href="http://www.sparkfun.com/categories/173">10mm</a></li><li id="menu_category_171"><a href="http://www.sparkfun.com/categories/171">3mm</a></li><li id="menu_category_172"><a href="http://www.sparkfun.com/categories/172">5mm</a></li><li id="menu_category_170"><a href="http://www.sparkfun.com/categories/170">7-Segment</a></li><li id="menu_category_175"><a href="http://www.sparkfun.com/categories/175">Other</a></li><li id="menu_category_174"><a href="http://www.sparkfun.com/categories/174">SMD</a></li></ul></li><li id="menu_category_88"><a href="http://www.sparkfun.com/categories/88">Oscillators</a></li><li id="menu_category_22"><a href="http://www.sparkfun.com/categories/22">PIC Microcontrollers</a></li><li id="menu_category_124"><a href="http://www.sparkfun.com/categories/124">PICAXE Microcontrollers</a></li><li id="menu_category_132"><a href="http://www.sparkfun.com/categories/132">PSoC Microcontrollers</a></li><li id="menu_category_29"><a href="http://www.sparkfun.com/categories/29">SMD ICs</a></li></ul></li><li id="menu_category_2"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/2">Development Tools</a><ul style="display:none;"><li id="menu_category_184"><a href="http://www.sparkfun.com/categories/184">.NET</a></li><li id="menu_category_93"><a href="http://www.sparkfun.com/categories/93">ADuC</a></li><li id="menu_category_103"><a href="http://www.sparkfun.com/categories/103">Arduino</a></li><li id="menu_category_10"><a href="http://www.sparkfun.com/categories/10">AVR</a></li><li id="menu_category_164"><a href="http://www.sparkfun.com/categories/164">Beagle</a></li><li id="menu_category_187"><a href="http://www.sparkfun.com/categories/187">Chumby</a></li><li id="menu_category_109"><a href="http://www.sparkfun.com/categories/109">Coridium</a></li><li id="menu_category_136"><a href="http://www.sparkfun.com/categories/136">FPGA</a></li><li id="menu_category_101"><a href="http://www.sparkfun.com/categories/101">iPod</a></li><li id="menu_category_25"><a href="http://www.sparkfun.com/categories/25">LPC</a></li><li id="menu_category_11"><a href="http://www.sparkfun.com/categories/11">MSP</a></li><li id="menu_category_9"><a href="http://www.sparkfun.com/categories/9">PIC</a></li><li id="menu_category_125"><a href="http://www.sparkfun.com/categories/125">PICAXE</a></li><li id="menu_category_137"><a href="http://www.sparkfun.com/categories/137">PSoC</a></li><li id="menu_category_104"><a href="http://www.sparkfun.com/categories/104">Roomba</a></li><li id="menu_category_94"><a href="http://www.sparkfun.com/categories/94">SAM</a></li><li id="menu_category_95"><a href="http://www.sparkfun.com/categories/95">ST</a></li><li id="menu_category_167"><a href="http://www.sparkfun.com/categories/167">STAMP</a></li><li id="menu_category_107"><a href="http://www.sparkfun.com/categories/107">Wiring</a></li><li id="menu_category_169"><a href="http://www.sparkfun.com/categories/169">WIZnet</a></li><li id="menu_category_166"><a href="http://www.sparkfun.com/categories/166">XMOS</a></li><li id="menu_category_142"><a href="http://www.sparkfun.com/categories/142">Zune</a></li></ul></li><li id="menu_category_100"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/100">Dings and Dents</a></li><li id="menu_category_204"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/204">E-Textiles</a><ul style="display:none;"><li id="menu_category_205"><a href="http://www.sparkfun.com/categories/205">Aniomagic</a></li><li id="menu_category_210"><a href="http://www.sparkfun.com/categories/210">fabrickit</a></li><li id="menu_category_135"><a href="http://www.sparkfun.com/categories/135">LilyPad</a></li><li id="menu_category_206"><a href="http://www.sparkfun.com/categories/206">Materials</a></li></ul></li><li id="menu_category_4"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/4">GPS</a><ul style="display:none;"><li id="menu_category_18"><a href="http://www.sparkfun.com/categories/18">Antennas</a></li><li id="menu_category_86"><a href="http://www.sparkfun.com/categories/86">Eval Boards</a></li><li id="menu_category_17"><a href="http://www.sparkfun.com/categories/17">Modules</a></li></ul></li><li id="menu_category_157"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/157">Kits</a></li><li id="menu_category_76"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/76">LCDs</a><ul style="display:none;"><li id="menu_category_147"><a href="http://www.sparkfun.com/categories/147">Color</a></li><li id="menu_category_148"><a href="http://www.sparkfun.com/categories/148">Monochrome</a></li></ul></li><li id="menu_category_96"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/96">Port-O-Rotary</a></li><li id="menu_category_1"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/1">Programmers</a><ul style="display:none;"><li id="menu_category_26"><a href="http://www.sparkfun.com/categories/26">ARM</a></li><li id="menu_category_7"><a href="http://www.sparkfun.com/categories/7">AVR</a></li><li id="menu_category_156"><a href="http://www.sparkfun.com/categories/156">DSP</a></li><li id="menu_category_37"><a href="http://www.sparkfun.com/categories/37">MAXQ</a></li><li id="menu_category_8"><a href="http://www.sparkfun.com/categories/8">MSP</a></li><li id="menu_category_6"><a href="http://www.sparkfun.com/categories/6">PIC</a></li><li id="menu_category_126"><a href="http://www.sparkfun.com/categories/126">PICAXE</a></li><li id="menu_category_168"><a href="http://www.sparkfun.com/categories/168">XMOS</a></li></ul></li><li id="menu_category_53"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/53">Prototyping</a><ul style="display:none;"><li id="menu_category_54"><a href="http://www.sparkfun.com/categories/54">Batteries</a></li><li id="menu_category_149"><a href="http://www.sparkfun.com/categories/149">Boards</a></li><li id="menu_category_91"><a href="http://www.sparkfun.com/categories/91">Connectors</a></li><li id="menu_category_182"><a href="http://www.sparkfun.com/categories/182">Enclosures</a></li><li id="menu_category_55"><a href="http://www.sparkfun.com/categories/55">General</a></li><li id="menu_category_155"><a href="http://www.sparkfun.com/categories/155">Hardware</a></li><li id="menu_category_92"><a href="http://www.sparkfun.com/categories/92">Sockets</a></li><li id="menu_category_116"><a href="http://www.sparkfun.com/categories/116">Solar</a></li><li id="menu_category_141"><a href="http://www.sparkfun.com/categories/141">Wire</a></li></ul></li><li id="menu_category_207"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/207">Retail</a><ul style="display:none;"><li id="menu_category_212"><a href="http://www.sparkfun.com/categories/212">Arduino</a></li><li id="menu_category_216"><a href="http://www.sparkfun.com/categories/216">Components</a></li><li id="menu_category_213"><a href="http://www.sparkfun.com/categories/213">Kits</a></li><li id="menu_category_211"><a href="http://www.sparkfun.com/categories/211">Materials</a></li><li id="menu_category_215"><a href="http://www.sparkfun.com/categories/215">Prototyping</a></li><li id="menu_category_214"><a href="http://www.sparkfun.com/categories/214">Sensors</a></li><li id="menu_category_217"><a href="http://www.sparkfun.com/categories/217">Tools</a></li></ul></li><li id="menu_category_134"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/134">Retired</a><ul style="display:none;"><li id="menu_category_194"><a href="http://www.sparkfun.com/categories/194">Breakout Boards</a></li><li id="menu_category_203"><a href="http://www.sparkfun.com/categories/203">Cables</a></li><li id="menu_category_200"><a href="http://www.sparkfun.com/categories/200">Classes</a></li><li id="menu_category_192"><a href="http://www.sparkfun.com/categories/192">Components</a></li><li id="menu_category_191"><a href="http://www.sparkfun.com/categories/191">Development Tools</a></li><li id="menu_category_188"><a href="http://www.sparkfun.com/categories/188">GPS</a></li><li id="menu_category_190"><a href="http://www.sparkfun.com/categories/190">Kits</a></li><li id="menu_category_196"><a href="http://www.sparkfun.com/categories/196">LCD</a></li><li id="menu_category_201"><a href="http://www.sparkfun.com/categories/201">Programmers</a></li><li id="menu_category_195"><a href="http://www.sparkfun.com/categories/195">Prototyping</a></li><li id="menu_category_197"><a href="http://www.sparkfun.com/categories/197">Robotics</a></li><li id="menu_category_189"><a href="http://www.sparkfun.com/categories/189">Sensors</a></li><li id="menu_category_208"><a href="http://www.sparkfun.com/categories/208">SFE Widgets</a></li><li id="menu_category_198"><a href="http://www.sparkfun.com/categories/198">Swag</a></li><li id="menu_category_193"><a href="http://www.sparkfun.com/categories/193">Tools</a></li><li id="menu_category_199"><a href="http://www.sparkfun.com/categories/199">Wireless</a></li></ul></li><li id="menu_category_31"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/31">Robotics</a><ul style="display:none;"><li id="menu_category_179"><a href="http://www.sparkfun.com/categories/179">Drivers</a></li><li id="menu_category_181"><a href="http://www.sparkfun.com/categories/181">Kits</a></li><li id="menu_category_178"><a href="http://www.sparkfun.com/categories/178">Motors</a></li><li id="menu_category_202"><a href="http://www.sparkfun.com/categories/202">Other</a></li><li id="menu_category_180"><a href="http://www.sparkfun.com/categories/180">Wheels</a></li></ul></li><li id="menu_category_185"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/185">Sale</a></li><li id="menu_category_23"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/23">Sensors</a><ul style="display:none;"><li id="menu_category_80"><a href="http://www.sparkfun.com/categories/80">Accelerometers</a><ul><li id="menu_category_161"><a href="http://www.sparkfun.com/categories/161">1-axis</a></li><li id="menu_category_162"><a href="http://www.sparkfun.com/categories/162">2-axis</a></li><li id="menu_category_163"><a href="http://www.sparkfun.com/categories/163">3-axis</a></li></ul></li><li id="menu_category_146"><a href="http://www.sparkfun.com/categories/146">Biometrics</a></li><li id="menu_category_117"><a href="http://www.sparkfun.com/categories/117">Capacitive</a></li><li id="menu_category_151"><a href="http://www.sparkfun.com/categories/151">Current</a></li><li id="menu_category_143"><a href="http://www.sparkfun.com/categories/143">Flex / Force</a></li><li id="menu_category_85"><a href="http://www.sparkfun.com/categories/85">Gyros</a><ul><li id="menu_category_158"><a href="http://www.sparkfun.com/categories/158">1-axis</a></li><li id="menu_category_159"><a href="http://www.sparkfun.com/categories/159">2-axis</a></li><li id="menu_category_183"><a href="http://www.sparkfun.com/categories/183">3-axis</a></li></ul></li><li id="menu_category_144"><a href="http://www.sparkfun.com/categories/144">ID</a></li><li id="menu_category_160"><a href="http://www.sparkfun.com/categories/160">IMU</a></li><li id="menu_category_139"><a href="http://www.sparkfun.com/categories/139">Infrared</a></li><li id="menu_category_102"><a href="http://www.sparkfun.com/categories/102">Light / Imaging</a></li><li id="menu_category_83"><a href="http://www.sparkfun.com/categories/83">Magneto</a></li><li id="menu_category_84"><a href="http://www.sparkfun.com/categories/84">Proximity</a></li><li id="menu_category_165"><a href="http://www.sparkfun.com/categories/165">Radiation</a></li><li id="menu_category_186"><a href="http://www.sparkfun.com/categories/186">Sound</a></li><li id="menu_category_82"><a href="http://www.sparkfun.com/categories/82">Temperature</a></li><li id="menu_category_152"><a href="http://www.sparkfun.com/categories/152">Weather</a></li></ul></li><li id="menu_category_97"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/97">SFE Widgets</a></li><li id="menu_category_130"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/130">Swag</a></li><li id="menu_category_46"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/46">Tools</a><ul style="display:none;"><li id="menu_category_47"><a href="http://www.sparkfun.com/categories/47">Hand Tools</a></li><li id="menu_category_48"><a href="http://www.sparkfun.com/categories/48">Hot-Air Rework</a></li><li id="menu_category_177"><a href="http://www.sparkfun.com/categories/177">Instruments</a></li><li id="menu_category_28"><a href="http://www.sparkfun.com/categories/28">Power Supplies</a></li><li id="menu_category_49"><a href="http://www.sparkfun.com/categories/49">Soldering</a></li></ul></li><li id="menu_category_138"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/138">Tracking</a></li><li id="menu_category_16"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/16">Wireless</a><ul style="display:none;"><li id="menu_category_78"><a href="http://www.sparkfun.com/categories/78">Antennas</a></li><li id="menu_category_115"><a href="http://www.sparkfun.com/categories/115">Bluetooth</a></li><li id="menu_category_79"><a href="http://www.sparkfun.com/categories/79">General</a></li><li id="menu_category_113"><a href="http://www.sparkfun.com/categories/113">Modem</a></li><li id="menu_category_114"><a href="http://www.sparkfun.com/categories/114">Nordic</a></li><li id="menu_category_112"><a href="http://www.sparkfun.com/categories/112">WiFi</a></li><li id="menu_category_111"><a href="http://www.sparkfun.com/categories/111">Zigbee/802.15.4</a></li></ul></li>  <li><hr /></li>
+  <li>
+    <img style='float: left' src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/pdf.gif" />
+    <a href="http://sparkfun.com/download/PDFs/catalog.pdf">Full catalog</a>
+  </li>
+</ul>
+        <br />
+      </div>
+
+      <div id="right">
+        <div class="collapsible user">
+  <p class="cart-link"><img height="19" width="19" alt="" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_shoppingcart.gif"> 
+     <a href="http://www.sparkfun.com/cart"><span id="items_in_cart">0</span> items in your cart</a></p>
+  <form action="https://www.sparkfun.com/account/login" id="login" method="post">
+    <label for="user_login">Email</label>
+    <input id="user_login" type="text" tabindex="1" maxlength="320" name="user">
+    <label for="user_password">Password</label>
+    <input id="user_password" type="password" tabindex="2" maxlength="20" name="passwd">
+    <p class="right"><input type="submit" value="log in" class="button"></p>
+    <p><a href="https://www.sparkfun.com/account/forgot_password">Forgot your password?</a><br/>
+       No account? <a href="https://www.sparkfun.com/account/make">Register here</a>.</p>
+  </form>
+</div>
+<br>
+
+        <h2 id="feed_menu" class="collapsible"><span class="arrow"></span>Feeds</h2>
+        <ul class="collapsible feeds" style="display: block">
+  <li><a href="http://www.sparkfun.com/feeds/news">News</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/products">Products</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/changes">Product Changes</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/comments">Comments</a></li>
+  <li><a href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&amp;v=2&amp;orderby=published">Videos</a></li>
+</ul>
+        <br />
+
+        <h2 id="resources_menu" class="collapsible"><span class="arrow"></span>Resources</h2>
+        <ul class="collapsible resources" style="display: block">
+  <li><a href="http://www.sparkfun.com/news/263">Official SparkFun IRC Channel</a></li>
+  <li><a href="http://www.batchpcb.com/" target="_blank">Custom PCBs</a></li>
+  <li><a href="http://www.opencircuits.com/" target="_blank">Open Circuits</a></li>
+  <li><a href="http://www.ponoko.com/make-and-sell/electronics" target="_blank">Ponoko - Your Personal Factory</a></li>
+  <li><a href="http://www.sparkfun.com/static/jobs">Jobs @ SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/tutorials/92">Sell Your Widget on SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/quiz">Take the SparkFun Quiz</a></li>
+</ul>
+        <br />
+
+        <h2 id="currency_menu_head" class="collapsible"><span class="arrow"></span>Currency</h2>
+        
+<div class="collapsible" id="currency_menu">
+  Display prices in
+  <input type="hidden" id="preferred_currency" value="USD" />
+  <ul id="currency_menu_list" class="currency">
+          <li>
+        <a id="currency_USD" onclick="SFE.change_currency('USD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_checked.gif" />
+                US Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_CAD" onclick="SFE.change_currency('CAD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Canadian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_AUD" onclick="SFE.change_currency('AUD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Australian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_GBP" onclick="SFE.change_currency('GBP'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                British Pound        </a>
+    </li>
+          <li>
+        <a id="currency_EUR" onclick="SFE.change_currency('EUR'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Euro        </a>
+    </li>
+      </ul>
+  </div>
+
+<script language="javascript">
+var CURRENCIES = {"USD":{"code":"USD","title":"US Dollar","symbol_left":"$","symbol_right":"","decimal_point":".","thousands_point":",","decimal_places":"2","value":"1.0000"},"CAD":{"code":"CAD","title":"Canadian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9706"},"AUD":{"code":"AUD","title":"Australian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9957"},"GBP":{"code":"GBP","title":"British Pound","symbol_left":"&pound;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.6187"},"EUR":{"code":"EUR","title":"Euro","symbol_left":"&euro;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.7214"}}</script>
+        <br />
+
+        <h2 id="feedback_menu" class="collapsible"><span class="arrow"></span>Feedback</h2>
+        <form id="feedback" class="collapsible" style="display: block">
+  <label for="feedback_textarea" style="font-weight: bold">What's on your mind?</label>
+  <br />
+  <textarea id="feedback_textarea" name="feedback_text"></textarea>
+  <br /><br />
+  <label for="feedback_email">Please include your email address if you'd like us to respond to a specific question.</label>
+  <br />
+  <br />
+  <input type="text" id="feedback_email" name="email" /> 
+  <br />
+  <input onclick="SFE.mind_feedback(); return(false);" type="button" class="button" value="Submit" /> 
+</form>
+      </div>
+
+      <div id="center">
+        <a name="content" id="content"></a>
+        
+<h1 class="red-header">
+  <span class="link"><a href="http://www.sparkfun.com">Home</a>|</span>
+  Tutorials
+  <small class="wide"><b>(184 total)</b></small>
+</h1>
+
+<div style="background-color: #fff">
+    <h2 class="collapsible closed grey" style="padding-bottom: 12px;">Bite Sized Primers</h2>
+  <ul class="collapsible tutorials">
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_GPS_Satellite.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-12-09        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/229">GPS Accuracy</a>          <br />
+          <div class="summary">How Accurate is GPS and what are the contributing factors in GPS error.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Package.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-12-09        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/230">Picking the Correct IC Package</a>          <br />
+          <div class="summary">ICs come in all shapes and sizes.  It's important to select the correct package for the task.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_breadboard1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-12-03        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/209">Using a Breadboard</a>          <br />
+          <div class="summary">Not just for cutting bread and cheese any more</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_solder3.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-12-03        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/213">Soldering 101</a>          <br />
+          <div class="summary">First hint: don't poke yourself in the eye!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SparkfunBinary.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-12-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/208">Number Systems</a>          <br />
+          <div class="summary">Binary ? There are 10 types of people in this world, those who understand binary and those who don't.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-12-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/218">Pull-Up Resistors</a>          <br />
+          <div class="summary">Learn why you need to use pull-up resistors and how to calculate the correct resistor value.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_2.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-12-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/219">LED Current Limiting Resistors</a>          <br />
+          <div class="summary">Current must be limited when using LEDs. Learn how to choose the correct current limiting resistor for your LEDs.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_LED_Green.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-12-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/222">Anode vs. Cathode</a>          <br />
+          <div class="summary">The difference between anode and cathode and how to connect an LED.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_arrows.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-12-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/224">TX and RX Signals</a>          <br />
+          <div class="summary">How to properly connect devices using RS232 signals.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_burnedtrace.jpeg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-11-29        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/226">Beginner Troubleshooting</a>          <br />
+          <div class="summary">Some basic troubleshooting strategies for electronics beginners.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_voltage-divider-schematic.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-11-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/207">Voltage Divider</a>          <br />
+          <div class="summary">A simple circuit using just two resistors can be used to change a higher voltage into a lower one.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_battery-thumbnail.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-11-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/211">Battery Basics</a>          <br />
+          <div class="summary">A bite-size list of things to consider when choosing a battery to power your project.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_RS-232-thumbnail.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-11-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/215">RS-232 vs. TTL Serial Communication</a>          <br />
+          <div class="summary">A comparison of common serial communication protocols. What's the difference between RS-232 and TTL, and how can we interface between the two protocols.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_hexconversion.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-11-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/216">Number System Conversions</a>          <br />
+          <div class="summary">Learn how to convert between decimal, binary and hexadecimal systems.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_2010-11-22_13.44.16.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-11-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/217">Power and Thermal Dissipation</a>          <br />
+          <div class="summary">Depending on the power needs of your circuit, the voltage regulator can get warm. Learn why this happens and how to calculate the power used in your circuit.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_adc.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-11-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/220">ADC Conversions</a>          <br />
+          <div class="summary">Learn how to convert the result of an ADC conversion to real world units (volts).</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_bitwise.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-11-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/221">Bitwise Operators</a>          <br />
+          <div class="summary">Learn how to manipulate binary numbers using bitwise operations</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_thumbnail.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-11-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/225">Logic Thresholds</a>          <br />
+          <div class="summary">We know that a logic H is around VCC, and a logic L is around 0V. But what if a real-world value is somewhere in-between? Let's find out.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Diode2.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-11-18        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/212">Diodes: Normal, LED, Schottky, and Zener</a>          <br />
+          <div class="summary">The low-down on some of our favorite diodes: normal, light-emitting, Schottky, and Zener</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_thumbnail.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-11-17        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/223">How to Read a Datasheet</a>          <br />
+          <div class="summary">Datasheets can be overwhelming to a beginner, but buried in there somewhere is everything you need to know. Here's what to look for.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+      </ul>
+  <br />
+    <h2 class="collapsible closed grey" style="padding-bottom: 12px;">Beginning Embedded Electronics</h2>
+  <ul class="collapsible tutorials">
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BEE1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/57">Beginning Embedded Electronics - 1</a>          <br />
+          <div class="summary">Don't know anything about Embedded Electronics? Start here!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BEE2.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/93">Beginning Embedded Electronics - 2</a>          <br />
+          <div class="summary">Getting AVR HEX code loaded onto the ATmega328.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BEE3.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/95">Beginning Embedded Electronics - 3</a>          <br />
+          <div class="summary">A breakdown of crystals and setting the fuse bits to run the ATmega168 at 16MHz!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BEE4.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/104">Beginning Embedded Electronics - 4</a>          <br />
+          <div class="summary">Setting up the serial port and printf-ing 'Hello World'.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BEE5.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/105">Beginning Embedded Electronics - 5</a>          <br />
+          <div class="summary">Basic printf input and output.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BEE6.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/106">Beginning Embedded Electronics - 6</a>          <br />
+          <div class="summary">The basics of through hole soldering.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BEE7.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/107">Beginning Embedded Electronics - 7</a>          <br />
+          <div class="summary">Basic SMD soldering to assemble the Simon game.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BEE8.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/108">Beginning Embedded Electronics - 8</a>          <br />
+          <div class="summary">Getting started with Eagle PCB and capturing a schematic.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BEE9.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/109">Beginning Embedded Electronics - 9</a>          <br />
+          <div class="summary">The basics of laying out a PCB with Eagle.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BEE10.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/110">Beginning Embedded Electronics - 10</a>          <br />
+          <div class="summary">How to create a custom footprint and part in Eagle PCB.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BEE11.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/111">Beginning Embedded Electronics - 11</a>          <br />
+          <div class="summary">Learn from our mistakes! And other helpful tips.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+      </ul>
+  <br />
+    <h2 class="collapsible closed grey" style="padding-bottom: 12px;">Assembly and Quickstart Guides</h2>
+  <ul class="collapsible tutorials">
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_th_09761-01.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-02-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/251">LCD 16x2 Add-On</a>          <br />
+          <div class="summary">"Hello, World!" Give your Inventor's Kit the ability to display all kinds of text and numbers.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_09694-01_i_ma.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-21        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/253">BMP085 Barometric Pressure Sensor Quickstart</a>          <br />
+          <div class="summary">Get you BMP085 Breakout singing pressure and temperature; and turn that data into altitude and a weather forecast.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Simon.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-20        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/249">Simon Says Retail Tutorial</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_circ_lcd_header_first_pin.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-18        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/168">LCD Add-On Assembly Guide</a>          <br />
+          <div class="summary">The CIRC-LCD add-on to the Arduino Inventor's Kit is supplied with a strip of header pins ready to be soldered to the LCD module in the kit. This assembly guide will show you how to complete the task so you can get on with hooking the LCD up to your Arduino.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_ls20031.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-18        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/248">66 Channel LS20031 GPS 5Hz Receiver Quick Start Guide</a>          <br />
+          <div class="summary">This guide will help you get started on how to use the LS20031 GPS.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_basic.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-17        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/245">FTDI Basic Quick Start Guide</a>          <br />
+          <div class="summary">Get started with this versatile USB-to-serial device.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_th_serLCD.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-17        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/246">Serial LCD quickstart</a>          <br />
+          <div class="summary">"Hello world!" Here's an easy way to display text and data from anything that has a serial port</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_wallwart.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-12        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/242">Wall Adapter Power Supply 9V Quick Start Guide</a>          <br />
+          <div class="summary">This guide reveals the deep dark secrets about wall power supplies.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_rfid.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-12        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/243">RFID USB Starter Kit Quick Start Guide</a>          <br />
+          <div class="summary">How to get started with your RFID Starter Kit.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_thumbnail.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-12        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/244">Arduino Pro Mini 3.3V Quickstart Guide</a>          <br />
+          <div class="summary">This tutorial is your guide to all things Arduino Pro Mini. It explains what it is, what it's not, and how to get started using it.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Assembly_Guide-09quickstart.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-11        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/192">XBee Shield and Explorer USB Quickstart Guide</a>          <br />
+          <div class="summary">This Quickstart Guide will help you get started with your XBee Shield and XBee Explorer USB. What are the XBee Shield and Explorer? How do I assemble them and get them working? And finally, how do I make them do something cool? You will learn how to connect an Arduino wirelessly to your computer and send data between them. Quickstart guides give you complete example code you can use to get started...quickly.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Assembly_Guide-09.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-11        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/194">XBee Assembly Guide</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_adxl345.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-10        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/240">ADXL345 Quickstart Guide</a>          <br />
+          <div class="summary">Learn how to get up and running with the ADXL345 Triple Axis Breakout Board.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Arduomoto_Guide-16.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-06-30        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/183">Ardumoto Assembly Guide</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Arduomoto_Guide-16quickstart.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-06-29        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/195">Ardumoto Quickstart Guide</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_ProtoShield_QS_Thumbnail.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-06-24        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/191">ProtoShield Quickstart Guide</a>          <br />
+          <div class="summary">The Quickstart Guide for the Arduino ProtoShield will provide a rundown of what the shield does, what it's used for, and some examples applications. It will then lead you on to assembly of the shield and beyond.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Assembly_Guide-08.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-06-22        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/184">GPS Shield Assembly Guide</a>          <br />
+          <div class="summary">This guide will show you how to prepare your GPS shield for development with the Arduino Main Board.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_arduinoquickstart.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-06-16        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/182">Arduino Main Board Quickstart Guide</a>          <br />
+          <div class="summary">This Quickstart Guide will help you get started with your Arduino Main Board.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_07914-001-125x125.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-06-15        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/181">ProtoShield Assembly Guide</a>          <br />
+          <div class="summary">Instructions to help you assemble and begin playing with your new Arduino ProtoShield.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Assembly_Guide-08quickstart.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-06-09        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/173">GPS Shield Quickstart Guide</a>          <br />
+          <div class="summary">This is the quickstart guide for the Arduino GPS Shield.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_assembly_guide_thumb_ls20031.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-06-03        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/176">LS20031 GPS Assembly Guide</a>          <br />
+          <div class="summary">The Locosys LS20031 GPS module does not have a connector attached so in order to get data from the unit you will need to attach a connector. This tutorial will demonstrate how to solder a right angled 0.1" pitch connector suitable for breadboard use. You will also learn how to perform a quick connection test and then use the TinyGPS library to determine your position.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_th_Joystick-TH_QS.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-05-18        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/171">Joystick Shield Quickstart Guide</a>          <br />
+          <div class="summary">This Quickstart Guide will help you get started with your Joystick Shield. What is the joystick shield? How do I assemble it and get it working? And finally, how do I make it do something cool? You will learn how to read the position of the joystick and how to know when buttons are pressed. Quickstart guides give you complete example code you can use to get started...quickly.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Tutorial_Thumb2.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-05-18        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/172">microSD Shield Quickstart Guide</a>          <br />
+          <div class="summary">This Quickstart Guide will help you get started with your microSD Shield. What is the microSD shield? How do I assemble it and get it working? And finally, how do I make it do something cool? You will learn how to create, open, read and write to files. Quickstart guides give you complete example code you can use to get started...quickly.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_th_Joystick-TH_AG.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-04-15        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/161">Joystick Shield Assembly Guide</a>          <br />
+          <div class="summary">The SparkFun Joystick Shield lets you control a gadget or your computer by way of a two-axis analog joystick with center button and four pushbuttons in a diamond pattern. This assembly guide will show you how to solder your Joystick Shield kit together.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+      </ul>
+  <br />
+    <h2 class="collapsible closed grey" style="padding-bottom: 12px;">SparkFun Projects</h2>
+  <ul class="collapsible tutorials">
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BatteryCare-Th.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-10        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/241">LiPo Battery Care</a>          <br />
+          <div class="summary">Some tips and tricks on how to re-enforce, label, and charge the ever popular Lithium Polymer batteries.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_EarthQuake.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-12-07        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/235">Earthquake Data Logger</a>          <br />
+          <div class="summary">Catching aftershocks in Christchurch, New Zealand using a simple accelerometer and a datalogging microSD shield.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_StopLight-Th2.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2010-11-04        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/205">Mixed Signal Costume</a>          <br />
+          <div class="summary">She's always sending me mixed signals. Checkout this twist on a stoplight costume using MOSFETs, XBee, and plenty of blinking LEDs.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_main.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-10-29        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/204">NCWP (Non-Crappy Wedding Present) Tutorial</a>          <br />
+          <div class="summary">Detailed tutorial on the construction of the NCWP Scavenger Box and the story behind it.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_thumbsimon.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-10-21        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/203">Simon Tweaking</a>          <br />
+          <div class="summary">So you've built up a Simon kit? What next? How about turning your Simon Board into your own unique project? This tutorial will get you up and running with Arduino software, guide you through a few example sketches, and send you on your way to create your own. Careful, this stuff is highly addictive :)</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_ArduinoISP_Command_Prompt.jpeg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-09-16        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/200">Using an Arduino to Program an AVR</a>          <br />
+          <div class="summary">This tutorial will show you how to use an Arduino to reprogram a standalone AVR (like an ATmega168 or ATmega328) using the ArduinoISP sketch.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Multiboard_Setup_Edit_Scaled.jpeg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-09-16        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/201">Controlling RGB Matrices with Arduino</a>          <br />
+          <div class="summary">This Tutorial will show you how to use the RGB Matrix library to control up to 8 RGB Matrices with an Arduino</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Heater-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-07-20        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/188">HAB - Enclosure and Heater System</a>          <br />
+          <div class="summary">It's like a styrofoam cooler, with holes, and no ice, and a heater inside. Ok, it's not really like a cooler at all...</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Scale-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-07-20        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/189">HAB - Weights, Measures, and Costs</a>          <br />
+          <div class="summary">The name of the game is positive lift, so be sure your payload doesn't weigh too much. And how much does all this silly stuff cost?</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Results-TH.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-07-20        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/190">HAB - Lessons Learned</a>          <br />
+          <div class="summary">All the painful things we learned and what to do different for next time.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_FinalPad.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-07-15        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/196">Snake Stomp Pads Design and Assembly Tutorial</a>          <br />
+          <div class="summary">Learning to use Ponoko's laser cutting service for building your very own Snake Stomp Pads!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Camera-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-07-12        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/186">HAB - Still and Video Cameras</a>          <br />
+          <div class="summary">Let's take a picture at 100,000ft! We'll need a Canon camera with modified firmware and a fancy headcam to capture the action in HD.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Balloon-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-07-12        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/187">HAB - The Balloon, Enclosure, Helium, and Cut-Down</a>          <br />
+          <div class="summary">These are the basics about the balloon we used, the enclosure of the payload, and the cut-down and parachute mechanisms to try to get the payload back safely.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_HAB-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-07-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/180">High Altitude Balloon Launch</a>          <br />
+          <div class="summary">Taking pictures of the curvature of the earth from your own back yard. This tutorial describes how we built a payload to take a ride under a 5 foot helium balloon to 100,000 ft with a smattering of sensors and camera equipment.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Flight-Computer-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-07-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/185">HAB - Sensor System, Flight Computer, and Radio System</a>          <br />
+          <div class="summary">A break down of all the sensors chosen, the main PCB layout, and the high power radios and antennas used.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_PIC3_S.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-05-04        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/166">Using the TTS256 with the Voicebox Shield</a>          <br />
+          <div class="summary">Learn how to add the TTS256 Text to Speech chip to the Voicebox shield and write an Arduino Sketch that allows you to interface with your system.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_TortoiseGit-TH.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-04-18        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/165">Using GitHub with Windows</a>          <br />
+          <div class="summary">GitHub and code version control for the layman (lame Windows user).</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Step5_S.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2010-03-22        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/160">Playing WAV Files with a DAC</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_WiFly_Tut_Final_Product.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2010-03-04        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/158">WiFly Wireless SpeakJet Server</a>          <br />
+          <div class="summary">We use a WiFly Shield and Voice Box Shield to build a battery-powered, wireless, talking page server.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_final.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-03-03        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/147">LED Laden Bike Helmet</a>          <br />
+          <div class="summary">Curious about how to integrate LEDs into your project? Check this out - I was tired of forgetting my bike light at home, this tutorial dives into LED wiring basics while adding lighting to my bike helmet.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Eagle-Layers8-Th.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-02-22        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/157">Removing Layers in Eagle</a>          <br />
+          <div class="summary">How to remove extra layers in Eagle PCB to make routing easier and how to route using vias.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_ardu-LED_7.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-11-30        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/152">Controlling an Arduino with an iPhone</a>          <br />
+          <div class="summary">This tutorial shows how to use the TouchOSC app on the iPhone to send OSC signals to Processing and finally out to an Arduino.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_IMG_0211.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_advanced.gif" /> Advanced          <br />
+          2009-10-20        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/132">Random Number Generating Geiger Counter</a>          <br />
+          <div class="summary">A Geiger Counter that generates random numbers.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Serial-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-10-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/142">Notes on the STK500 Serial Bootloader</a>          <br />
+          <div class="summary">Ever wanted to program ATmega328s outside of the Arduino IDE? Wonder how to tweak the bootloader? We show you all sorts of tips and tricks for Programmer's Notepad!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_TutorialThumbnail1-Arduino09284.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-09-17        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/145">Arduino Starter Kit Tutorial #1: Blinking LEDs</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_keg-th.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2009-09-10        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/144">Tweeting Kegerator</a>          <br />
+          <div class="summary">Needing a way to keep track of the SparkFun Keg, an Arduino-based keg monitor serves up a web page and "tweets" when the handle is pulled.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_IMG_0739.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2009-07-14        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/139">USB Touchscreen Mouse</a>          <br />
+          <div class="summary">We turned an AVR into a HID device that uses a touchscreen as a mouse.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Jacket-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2009-06-04        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/130">Heartbeat Straight Jacket</a>          <br />
+          <div class="summary">We take a straight jacket, add some blinky, and wirelessly transmit heartbeats for a wicked costume.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_iFOB-0-Th.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2009-05-21        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/135">iFOBing A Mazda</a>          <br />
+          <div class="summary">Hacking a car with active RFID so that it knows when you are approaching.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BubbleCounter-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-04-24        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/131">Bubble Logger</a>          <br />
+          <div class="summary">Making some bad homemade wine and counting bubbles during the fermentation process.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_10_thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-04-16        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/129">Build an Ardubot</a>          <br />
+          <div class="summary">An Arduino powered bot made of a bunch of SparkFun bits.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_new_ballast_18-s.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2009-03-10        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/126">Energy Efficient Fluorescent Lighting</a>          <br />
+          <div class="summary">This tutorial will outline replacing typical (old) magnetic T12 ballasts in an office fluorescent lamp with a more energy efficient electronic T8 system.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_PIC7_SMALL.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-03-09        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/123">Building a Digital Speedometer</a>          <br />
+          <div class="summary">This tutorial will describe how to build a digital speedometer using a graphic LCD and a GPS enabled ARM platform.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_cut_pieces_in_place.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2009-02-04        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/121">LilyFlyer</a>          <br />
+          <div class="summary">LilyPad + Stunt Kite = Awesome</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_6_small.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-02-04        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/124">Op Amp Guitar Amplifier</a>          <br />
+          <div class="summary">Just how easy is it to make your own guitar practice amp? Decorating was probably the hardest part!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_make-commandline-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_advanced.gif" /> Advanced          <br />
+          2009-01-28        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/122">Wireless XBee/AVR Bootloading</a>          <br />
+          <div class="summary">Hit a button on the computer and wirelessly reprogram your ATmega328, on the first try, every time.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_VU_thumb.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2009-01-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/120">Graphic LCD VU Meters</a>          <br />
+          <div class="summary">Mixing analog and digital for a cool graphic LCD project</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Timer-Mini.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-12-15        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/117">Boxing Timer</a>          <br />
+          <div class="summary">A basic project with amplification, enclosure modification, timing, and Eagle layouts.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BeltBuckle_Apparel_1S.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2008-12-08        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/118">MP3 Player Belt Buckle</a>          <br />
+          <div class="summary">An intermediate project with an LPC2148, and accelerometer and an MP3 decoder, all fit nicely in one BIG belt buckle!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Outlet-T.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2008-12-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/119">Controllable Power Outlet</a>          <br />
+          <div class="summary">Learn how to turn on/off any device that plugs into an outlet using only 5V logic and a relay.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_close1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-11-07        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/114">Sneaky Footprints</a>          <br />
+          <div class="summary">Pete Lewis figured out a neat trick to hold headers in place during production. A breakdown of how to edit Eagle footprints to work for you.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Iolsate-Error-M.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2008-11-06        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/115">Better PCBs in Eagle</a>          <br />
+          <div class="summary">Designing PCBs for Manufacturability (DFM)</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_MakerFaire-Austin.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-10-21        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/113">Maker Faire Austin 2008</a>          <br />
+          <div class="summary">We raised over $800 for local non-profits with our soldering workshop! Pictures and thoughts from Maker Faire 2008 in Austin, Texas.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Table-07-L.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2008-09-11        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/91">LED Coffee Table</a>          <br />
+          <div class="summary">We try our hand at electronic furniture using our RGB LED matrices and a secondhand coffee table. Pong never looked so good.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Pic1_0.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-08-04        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/94">LPC2148 USB Bootloader Tutorial</a>          <br />
+          <div class="summary">Find out how the SparkFun bootloader works. Don't know what a bootloader is?  Read on to find out.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Amp.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2008-06-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/89">Audiophile Heaven</a>          <br />
+          <div class="summary">We show how to use the 6DOF control board to prevent electrocution inside a tube based stereo amplifier.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_CaseMod.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2008-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/38">Enclosure Modification</a>          <br />
+          <div class="summary">The basics of modifying an enclosure to house your next prototyping project. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_KeyCounter.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2008-03-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/37">Key-Counter</a>          <br />
+          <div class="summary">Playing with the PS2 keyboard protocol. How many times have you hit the 'n' key today? </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Sinister7Icon-K-S.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2008-01-17        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/39">Sinister7</a>          <br />
+          <div class="summary">A venture into the unknown with a simple device to detect mysterious waves, and to generate winning lottery numbers. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_PT-Nintendo-Mini.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2007-03-22        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/35">Giant Nintendo Controller</a>          <br />
+          <div class="summary">A sociological study on team work. Checkout how we built this 5' long, 83 lbs. Nintendo controller.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_TetrisGame-thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2007-03-10        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/40">Picture Frame Tetris</a>          <br />
+          <div class="summary">Another tutorial on why we like big blinky things. We've made the game of Tetris interactive with 720 LEDs, 16 microcontrollers, and 10lbs of wires, sweat, and code. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Nike_iPod-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2007-01-13        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/41">Nike+iPod Dissection</a>          <br />
+          <div class="summary">Another commercial product destroyed. A good example of how to use a PIC and the nRF2401 to make a gazillion dollars. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Prototyping-mini.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2007-01-07        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/42">History Museum</a>          <br />
+          <div class="summary">A trip down memory lane with a box full of prototypes collected over the years. Learn what not to do from what we screwed up.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Wii-Remote-10-Mini.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-12-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/43">Wii-mote guts</a>          <br />
+          <div class="summary">We crack the case on the infamous flying Nintendo controller, so you don't have to. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Main-Serial-RGB-Matrix-1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2006-07-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/44">Ethernet to Color LED Matrix</a>          <br />
+          <div class="summary">Controlling a color LED matrix from anywhere in the world using a simple java script interface. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Segway-Polo.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/45">Maker Faire 2006</a>          <br />
+          <div class="summary">Pictures from the wildly popular fair of hacks and toys. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_RooTilt.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2006-03-30        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/46">Roomba Remote Tilt Controller</a>          <br />
+          <div class="summary">How to hack a Roomba, a WiTilt, and the Federal Trade Commission. Ok, maybe not the Federal Trade Commission. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_GPSClock.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-03-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/47">12ft GPS Wall Clock</a>          <br />
+          <div class="summary">A fun project using LED light bars, a PIC for control, 7-segment driving, playing with 2Amps, and some assorted other fun tricks. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_How_fa1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2005-06-17        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/48">How Far Does It Go?</a>          <br />
+          <div class="summary">A range comparison of Spark Fun RF products.  Which is for you?  This will help you decide. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_blutoo2.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2005-03-28        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/49">Bluetooth? Primer</a>          <br />
+          <div class="summary">Implementing a Bluetooth? serial link is easier than you think, and we spell it out for you! </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_ringer1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2005-03-04        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/50">High Voltage Ringer</a>          <br />
+          <div class="summary">How do you make the classic bell ringer work off 3.8VDC?  The magic of a DC/DC converter! </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Portable-Rotary-Phone-Mini.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2005-01-17        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/51">Port-O-Rotary</a>          <br />
+          <div class="summary">We take an old rotary phone, dissect it, and cross-pollinate it with a cellular module. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Mazer-Complete-1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2004-10-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/52">Robot Building!</a>          <br />
+          <div class="summary">A simplistic approach to getting a two-wheel robot to move across the floor. Oh, and chasing my cat. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_serial-adxl202.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2004-09-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/53">Pseudo-Datasheet for the Serial ADXL</a>          <br />
+          <div class="summary">Not a real datasheet, but everything you need to know for implementing the Serial ADXL PCB into your project. Includes the PCB layout, firmware, and discussions on sensor sensitivity. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/no_image_92.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2004-08-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/54">Overclocking a PIC</a>          <br />
+          <div class="summary">How fast can you push it? We actually don't know. But 32MHz is where we stopped for the moment... </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_ADXL-Assembly-10.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2004-07-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/55">Crazy Soldering</a>          <br />
+          <div class="summary">Ever wonder how to solder that surface mount package? We can show you how - with lots of pictures! LCC soldering not recommended for the faint of heart. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_RF_Accel_-_4.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2004-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/56">Foamware</a>          <br />
+          <div class="summary">Besides liking that word, we really enjoy flying our gliders. We decided to use the new ADXL sensors we put together in connection with a wireless transmitter. Foamware is what came out.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+      </ul>
+  <br />
+    <h2 class="collapsible closed grey" style="padding-bottom: 12px;">Print Ads</h2>
+  <ul class="collapsible tutorials">
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_thumb-dwight.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-07-20        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/198">Dwight Eppinger, Interactive Marketing Director at Copper Mountain</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-06-28        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/193">Jen Lewin, Creator of &quot;The Pool&quot;</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_PrintAd07-thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-02-18        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/155">Steven Kennedy, SparkFun Enthusiast and High School Teacher</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SFE-0015-PrintAd08-CircuitCellar-NoPrintersMarks-Thumbnail.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-02-18        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/156">Jamie Robertson, Creator of the MP3 Trigger</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SFE03-0008-PrintAd06-Landon-thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-11-04        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/149">Landon Cox, creator of an electronics-based speed climbing timer.</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Vegas-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-06-30        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/141">Vanessa and Dzl, Vegas Shoot</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BASE-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-05-20        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/137">Michael Cooper, BASE Jumper Extraordinaire</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Momo-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-05-16        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/136">Kristin and Che-Wei, creators of Momo</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SFE-0015-PrintAd2-Pete-BIG-thumbnail.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-05-13        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/134">Pete Lewis, creator of the Rock Box</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SFE-0015-PrintAd1-Leah-Thumbnail.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-05-11        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/133">Leah Buechley, creator of the LilyPad</a>          <br />
+          <div class="summary"></div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+      </ul>
+  <br />
+    <h2 class="collapsible closed grey" style="padding-bottom: 12px;">Surface Mount Soldering Tutorials</h2>
+  <ul class="collapsible tutorials">
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SMD1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-09-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/36">SMD How To - 1</a>          <br />
+          <div class="summary">The basic tools and setup for surface mount soldering.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SMD2.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-09-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/96">SMD How To - 2</a>          <br />
+          <div class="summary">Soldering a SOIC part, multiple pins at a time and the use of solder wick.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SMD3.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-09-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/97">SMD How To - 3</a>          <br />
+          <div class="summary">Reworking a board with an iron can be difficult. Here are some ways to remove and repair PCBs with an iron.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SMD5.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-09-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/98">SMD How To - 4</a>          <br />
+          <div class="summary">Hot-air is a wonderful tool. Checkout how easy it is to remove an IC with this crucial tool.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SMD4.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-09-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/99">SMD How To - 5</a>          <br />
+          <div class="summary">How to fix a board with a lifted pad or incorrect trace route. Green wires make the world go round!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SMD6.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2006-09-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/100">SMD How To - 6</a>          <br />
+          <div class="summary">Sneaky tricks to solder anything! Even leadless ICs and BGAs.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SMD7.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2006-09-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/101">SMD How To - 7</a>          <br />
+          <div class="summary">Videos and more examples of how to solder and then wick away jumpers.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SMD8.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-09-02        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/102">SMD How To - 8</a>          <br />
+          <div class="summary">A breakdown of hot-air rework and lots of video examples.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SolderPaste1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2006-08-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/58">Solder Paste Stenciling</a>          <br />
+          <div class="summary">How to apply solder paste with a $35 stencil. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SolderPaste2.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-07-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/59">Reflow Skillet</a>          <br />
+          <div class="summary">Reflowing trickier PCBs with a $30 hot plate! </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SolderPaste3.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-06-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/60">Reflow Toaster</a>          <br />
+          <div class="summary">Attempting to reflow PCBs with a toaster oven. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+      </ul>
+  <br />
+    <h2 class="collapsible closed grey" style="padding-bottom: 12px;">Buying Guides</h2>
+  <ul class="collapsible tutorials">
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Sensors.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-07-12        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/167">Accelerometer and Gyro Buying Guide</a>          <br />
+          <div class="summary">What are gyros and accelerometers?  What can they do for me? How do I select which one best suits my project?</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_SerLCD-TH2.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-11-22        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/151">Gift Guide</a>          <br />
+          <div class="summary">Looking for a gift for a friend or family? Are you a little confused about what to get for them? Checkout the list of our favorite gifts!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_2009-09-30_14.49.03.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-09-30        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/148">Arduino Buying Guide</a>          <br />
+          <div class="summary">Eeny Meeny Miny Moe... Let's pick an Arduino.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_RF-3.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-05-12        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/128">Wireless Buying Guide</a>          <br />
+          <div class="summary">Wow there's a lot of different wireless options! Which RF link is what I need?</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_GPS.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-03-25        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/127">GPS Buying Guide</a>          <br />
+          <div class="summary">Which GPS module do I want? And why?</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+      </ul>
+  <br />
+    <h2 class="collapsible closed grey" style="padding-bottom: 12px;">General Explanation</h2>
+  <ul class="collapsible tutorials">
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_08664-03-L_i_th[1].jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-02-24        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/257">XBee Introduction</a>          <br />
+          <div class="summary">Looking for an XBee module, but don't know what is what?</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_10356-01b[1].jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2011-01-18        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/247">Reinstalling your Arduino bootloader</a>          <br />
+          <div class="summary">Whether you have a faulty device, programmed over your chip or just want to try a new bootloader.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_DMM.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-09-28        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/202">How To Use A Multimeter</a>          <br />
+          <div class="summary">You've never used a digital multimeter before? No problem. We'll cover the basics to get you up and metering.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_10.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-08-20        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/199">Rebel Triple Play with Driver Assembly Guide</a>          <br />
+          <div class="summary">Assemble a Rebel Triple Play LED board with a Triple Play Driver Board and heat sink</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_icon.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2010-05-04        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/169">GPS Tracking Comparisons</a>          <br />
+          <div class="summary">Summarize and compare the tracking capabilities for 6 SparkFun GPS modules.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_idg300_thm.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-07-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/138">PogoBeds: SparkFun Production and Testing</a>          <br />
+          <div class="summary">With the power of the pogo pin and some creativity, our testing methods have come a long way! Our ever growing arsenal of test-jigs is now up to 138. See how they work and how we make them.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_P1060049.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2009-06-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/140">SMA Antenna Connectors</a>          <br />
+          <div class="summary">Sheds light on the confusing naming convention of SMA antenna connectors.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Calculators.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-10-14        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/112">Handy Calculators</a>          <br />
+          <div class="summary">Calculators galore! Resistor, microstrip, power conversion, ASCII, EIA232 pinouts, even time conversion!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_PST1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-08-08        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/103">Unregulated Power Supply Tutorial</a>          <br />
+          <div class="summary">Investigates the nature of the output signal on an unregulated power supply.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_NPT-3.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2008-08-04        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/92">Selling Your Widget on SparkFun</a>          <br />
+          <div class="summary">What it takes to get your widget listed for sale on SparkFun.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_UART-DMA-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2008-06-23        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/90">AT91SAM7 Serial Communications</a>          <br />
+          <div class="summary">Jim Lynch breaks down serial communication and explains how to set up the USART hardware on the SAM7 using the free GCC/GNU tool chain. There is also an update to the YAGARTO software setup. The code for the tutorial is available <a href="http://www.sparkfun.com/datasheets/DevTools/SAM7/serial_tutorial_source.zip">here</a>.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Erase-Jumper.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_advanced.gif" /> Advanced          <br />
+          2008-06-18        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/63">Your Atmel Board May Not Be Dead</a>          <br />
+          <div class="summary">Another great tutorial by Jim Lynch shows how to recover a locked SAM7 board.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Nokia6100_Tutorial.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_advanced.gif" /> Advanced          <br />
+          2008-06-18        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/64">Nokia 6100</a>          <br />
+          <div class="summary">Jim Lynch writes another great tutorial demonstrating how to interface to this popular color LCD. Source code  here. Updated to include support for both Epson and Philips controllers. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_ST-5-Mini.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2007-06-04        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/65">Sensor Interfacing</a>          <br />
+          <div class="summary">Some basic techniques to get a 3.3V sensor hooked up to a 5V micro.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/no_image_92.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2007-06-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/66">ARM tutorial</a>          <br />
+          <div class="summary">Jim Lynch's tutorial for setting up the free GCC/GNU tool chain. The example software is available here.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_BlueSMiRF-RPSMA-Thumb.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2007-05-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/67">Bluetooth?</a>          <br />
+          <div class="summary">We have the BlueSMiRF, the Extended BlueSMiRF, and the DIP module. We also have the WiTilt and the 6DOF, each of which have a Bluetooth? module on them.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_Thumb-GPS-EM406-0.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2007-04-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/68">GPS Overview</a>          <br />
+          <div class="summary">General background information and descriptions of the modules we carry. </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+      </ul>
+  <br />
+    <h2 class="collapsible closed grey" style="padding-bottom: 12px;">PIC Boot Loader</h2>
+  <ul class="collapsible tutorials">
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_screamerv14.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/69">Bloader and Screamer</a>          <br />
+          <div class="summary">New version v1.6! Thanks Mike K! Support for 16F877A, 16F876A, 16F873A, 16F88.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_P40-BLD-0.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/70">Bloader and Screamer 877A</a>          <br />
+          <div class="summary">(Outdated but good info) An in-depth tutorial on our in-house boot loader and accompanying Windows program. Find out how to build your own!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_18Pin_16F88_Boot_Loader.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/71">Bloader for the 16F88</a>          <br />
+          <div class="summary">(Outdated but good info) A short and sweet tutorial to setup the P18 dev board using the PIC 16F88.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+      </ul>
+  <br />
+    <h2 class="collapsible closed grey" style="padding-bottom: 12px;">PIC Programmer Setup Tutorials</h2>
+  <ul class="collapsible tutorials">
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/no_image_92.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/72">Programmer and Board Test Program</a>          <br />
+          <div class="summary">Blink! As well as some other helpful test routines.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_PG2C-1.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/73">PG1B</a>          <br />
+          <div class="summary">The PG1 and PG2C are the same functional device, only the PG2C has a socket built in. Please refer to the PG2C documentation - it works just fine for the PG1. Also, see 'Basic PIC Tutorial' located below.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_PG2C-1.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/74">PG2C ICProg tutorial</a>          <br />
+          <div class="summary">Get the PG2C setup and burning with this very popular socketed programmer.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_PG2C_Tutorial-7.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/75">Breadboard programming with ICSP</a>          <br />
+          <div class="summary">A tutorial using the PIC-PG2C programmer, an ICSP cable, a polarized header, and a breadboard.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_cables.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/76">PG3B ICProg tutorial</a>          <br />
+          <div class="summary">Updated! Now using the ever popular ICProg. All you need to know to get our popular parallel programmer up and burning!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_cables.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/77">PG3B WinPicProg tutorial</a>          <br />
+          <div class="summary">The original tutorial using WinPicProg. Saved for educational purposes.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_project_wizard1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/78">Setting up the MCP under MPLAB</a>          <br />
+          <div class="summary">Not as bad as you think!</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_dev-mode.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/79">Setting up the In Circuit Debugger under MPLAB</a>          <br />
+          <div class="summary">Just as bad as you think! (Not really)</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+      </ul>
+  <br />
+    <h2 class="collapsible closed grey" style="padding-bottom: 12px;">General PIC Tutorials</h2>
+  <ul class="collapsible tutorials">
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_MCPUpg-1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/86">MCP Upgrade tutorial</a>          <br />
+          <div class="summary">Getting errors under MPLAB? You may need to upgrade the firmware on your MCP. Use this step-by-step tutorial to upgrade to the newest release from Olimex.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_ICSP-Upgrade-1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2006-06-19        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/87">Mini-ICSP Updates</a>          <br />
+          <div class="summary">Have you noticed the itty bitty white rectangles on some of the SparkFun designed boards? These are a miniature version of the ICSP connection. This tutorial will show you how to use a special adapter to re-program boards with this type header.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/no_image_92.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/80">The Biggie</a>          <br />
+          <div class="summary">A lengthy tutorial that covers:
+
+    *How to get the MAX232 IC working on many Olimex Development boards
+    *How to get the UART hardware module (TX/RX) working on a PIC 16F628
+    *How to use nice printf("Hello!", 0); routines for debugging
+    *How to talk to an I2C EEProm
+    *How to control a standard servo using the computer's keyboard through hyperterminal 
+
+    Courtesy of Joyner Network Solutions
+</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_db9.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/81">The Serial Biggie</a>          <br />
+          <div class="summary">'Nuther long tutorial running the gauntlet of good MPLAB and Serial Communications info. This is all about implementing RS232 timing in  software.
+
+    *Intro and the basic idea behind RS232 timing
+    *How to setup a project under MPLAB v6.4
+    *All about the Stopwatch and Debug functions
+    *Using the Stopwatch to tailor delays used in RS232 timing
+    *Straight through hardware connections (No MAX232!) and HyperTerminal setup </div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/no_image_92.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/82">What is this place?</a>          <br />
+          <div class="summary">A few common answer to a few common questions about uCs and this site.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_PIC-Tutorial_-_03.JPG" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/83">Basic breadboard tutorial</a>          <br />
+          <div class="summary">Using the PIC-PG1B programmer - An amazing low-cost programmer that impressed us the first time we used it! A great tutorial to get your first PIC project blinking.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_setting1.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" /> Beginner          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/84">Set up your space!</a>          <br />
+          <div class="summary">Have you got the LED blinking? Time to get coding! A tutorial on setting up a free code editor with a free C compiler. Very quick, very easy to use</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+          <li>
+        <div class="thumbnail">
+                      <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/no_image_92.jpg" />
+                  </div>
+        <div class="left">
+          <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" /> Intermediate          <br />
+          2001-01-01        </div>
+        <div class="right">
+          <a href="http://www.sparkfun.com/tutorials/85">Serial IO</a>          <br />
+          <div class="summary">Our own spin on serial communication. Serial out is a must have feature for debugging. What the heck is the value of that variable? Just pipe it out through 'serial_out' and find out in Windows' HyperTerminal. Outdated - See 'The Serial Biggie' above for newest information.</div>
+        </div>
+        <div style="clear: both"></div>
+      </li>
+      </ul>
+  <br />
+  </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      SparkFun Electronics <a href="http://www.sparkfun.com/news/300">&reg;</a>      <span class="wide">|</span>
+      <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6175+Longbow+Dr,+Boulder,+CO+80301&sll=40.006234,-105.224915&sspn=0.012113,0.020192&ie=UTF8&hq=&hnear=6175+Longbow+Dr,+Boulder,+Colorado+80301&t=h&z=16" target="_blank">Boulder, Colorado</a>
+      <span class="wide">|</span>
+      <a href="http://www.sparkfun.com/static/customer_service">Customer Service</a>
+    </div>
+        <script type="text/javascript" src="/js/cookiejar.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/sparkfun.js?sparkrev=1299616818"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript">function autoFireLightbox(){setTimeout(function(){SFE.stab_eyes()},250)}Event.observe(window,"load",autoFireLightbox,false);</script>
+    <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3404365-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

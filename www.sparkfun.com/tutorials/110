@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="google-site-verification" content="XUb2UlchrvwCWWyhXksBlqQy1STYtTEN_M0-tgQRHRs" />
+    <meta name="google-site-verification" content="gRUAvzBJ_533b-AGTmldOJfByU6TkojfUbWovB2wKJo" />
+    <title>Beginning Embedded Electronics - 10 - SparkFun Electronics</title>
+    <link rel="stylesheet" href="/css/screen.css?rev=1299616818" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css?rev=1299616818" type="text/css" media="print" />
+    <link rel="stylesheet" href="/css/lightbox.css?rev=1299616818" type="text/css" media="screen" />
+    <!-- IE is the bane of my existence. -->
+    <!--[if IE]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+    <link rel="feed" type="application/rss+xml" title="News" href="http://www.sparkfun.com/feeds/news/" />
+    <link rel="alternate" type="application/rss+xml" title="Products" href="http://www.sparkfun.com/feeds/products/" />
+    <link rel="alternate" type="application/rss+xml" title="Product Changes" href="http://www.sparkfun.com/feeds/changes/" />
+    <link rel="alternate" type="application/rss+xml" title="Comments" href="http://www.sparkfun.com/feeds/comments/" />
+    <link rel="alternate" type="application/rss+xml" title="Videos" href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&v=2&orderby=published" />
+    <link rel="apple-touch-icon" href="/fanboy.png" />
+    <link rev="canonical" type="text/html" href="http://sprkfn.com/t110" /> 
+    <script type="text/javascript">
+      var HTTP_SERVER = 'http://www.sparkfun.com',
+          HTTPS_SERVER = 'https://www.sparkfun.com',
+          HTTP_STATIC = 'http://dlnmh9ip6v2uc.cloudfront.net',
+          FULL_LAYOUT = true,
+          AUTHENTICATED = false;
+    </script>
+    <script type="text/javascript" src="/js/prototype.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <!-- turns out  that IE7 chokes if you don't load these separately. -->
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="/js/effects.js"></script>
+    <script type="text/javascript" src="/js/builder.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/lightbox.js?rev=1299616818"></script>
+  </head>
+  <body>
+    <div id="airlock" class="clearfix">
+
+      
+  <script>BANNER_ID = 67</script>
+
+<div id="header">
+  <a href="http://www.sparkfun.com/"><img width=188 height=105 class="logo" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/logo.gif" title="SparkFun Electronics" alt="SparkFun Electronics" /></a>
+  <a href="#products_menu" class="skip">Skip to menu</a>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <div id="banner-nav" style="display: none;">
+<img id="banner-goprev" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_left.png" height=23 width=23 />
+<img id="banner-all" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_all.png" height=23 width=23 />
+<img id="banner-gonext" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_right.png" height=23 width=23 />
+</div>
+<a id="banner-link" href="http://www.sparkfun.com/news/563"><img width=978 height=105 id="banner" src="http://dlnmh9ip6v2uc.cloudfront.net/images/banners/SFE03.0007-FreeDayReminder-01.jpg" alt="" /></a>
+  <div id="header-menu">
+    <ul>
+      <li id="header_menu_index"><a href="http://www.sparkfun.com/index">Home</a></li>
+      <li id="header_menu_cservice"><a href="http://www.sparkfun.com/static/customer_service">Customer Service</a></li>
+      <li id="header_menu_tutorials" class="active"><a href="http://www.sparkfun.com/tutorials">Tutorials</a></li>
+      <li id="header_menu_forum"><a href="http://forum.sparkfun.com">Forum</a></li>
+      <li id="header_menu_distributors"><a href="http://www.sparkfun.com/distributors">Distributors</a></li>
+      <li id="header_menu_about"><a href="http://www.sparkfun.com/static/about">About Us</a></li>
+      <li id="header_menu_contact" class="last"><a href="http://www.sparkfun.com/static/contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="left">
+        <h2 class="collapsible" id="search_menu"><span class="arrow"></span>Search</h2>
+        <form class="collapsible search" style="display: block" action="http://www.sparkfun.com/search/results" id="search_form" method="get">
+  <input id="search_field" name="term" type="text" value="" />
+  <input type="submit" value="Go" class="button" />
+  <br />
+  <input id="products_search" type="radio" name="what" value="products" checked />
+  <label for="products_search">Products</label>
+  <br />
+  <input id="news_search" type="radio" name="what" value="news" />
+  <label for="news_search">News</label>
+  <br />
+  <input id="tutorials_search" type="radio" name="what" value="tutorials" />
+  <label for="tutorials_search">Tutorials</label>
+  <br />
+  <input id="comments_search" type="radio" name="what" value="comments" />
+  <label for="comments_search">Comments</label>
+</form>
+        <br />
+
+        <h2 id="products_menu" class="collapsible"><span class="arrow"></span>Products</h2>
+        
+<ul id="category_menu_list" class="collapsible" style="display: block">
+  <li id="menu_category_new_products"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/new_products">New Products</a></li>
+  <li id="menu_category_top"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/top">Top Sellers</a></li>
+  <li id="menu_category_featured"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/featured">Staff Picks</a></li>
+  <li id="menu_category_gift_certificates"><span class="arrow"></span><a href="https://www.sparkfun.com/gift_certificates">Gift Certificates</a></li>
+  <li><hr /></li>
+  <li id="menu_category_176"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/176">Books</a></li><li id="menu_category_20"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/20">Breakout Boards</a></li><li id="menu_category_70"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/70">Cables</a><ul style="display:none;"><li id="menu_category_140"><a href="http://www.sparkfun.com/categories/140">Audio</a></li><li id="menu_category_150"><a href="http://www.sparkfun.com/categories/150">Ethernet</a></li><li id="menu_category_72"><a href="http://www.sparkfun.com/categories/72">Hook Up</a></li><li id="menu_category_75"><a href="http://www.sparkfun.com/categories/75">Parallel</a></li><li id="menu_category_74"><a href="http://www.sparkfun.com/categories/74">Serial</a></li><li id="menu_category_71"><a href="http://www.sparkfun.com/categories/71">USB</a></li></ul></li><li id="menu_category_66"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/66">Cellular</a><ul style="display:none;"><li id="menu_category_67"><a href="http://www.sparkfun.com/categories/67">Antennas</a></li><li id="menu_category_69"><a href="http://www.sparkfun.com/categories/69">Eval Boards</a></li><li id="menu_category_68"><a href="http://www.sparkfun.com/categories/68">Modules</a></li></ul></li><li id="menu_category_154"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/154">Classes</a></li><li id="menu_category_51"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/51">Components</a><ul style="display:none;"><li id="menu_category_87"><a href="http://www.sparkfun.com/categories/87">ARM Microcontrollers</a></li><li id="menu_category_21"><a href="http://www.sparkfun.com/categories/21">AVR Microcontrollers</a></li><li id="menu_category_145"><a href="http://www.sparkfun.com/categories/145">Buttons/Switches</a></li><li id="menu_category_60"><a href="http://www.sparkfun.com/categories/60">General</a></li><li id="menu_category_90"><a href="http://www.sparkfun.com/categories/90">General ICs</a></li><li id="menu_category_89"><a href="http://www.sparkfun.com/categories/89">LEDs</a><ul><li id="menu_category_173"><a href="http://www.sparkfun.com/categories/173">10mm</a></li><li id="menu_category_171"><a href="http://www.sparkfun.com/categories/171">3mm</a></li><li id="menu_category_172"><a href="http://www.sparkfun.com/categories/172">5mm</a></li><li id="menu_category_170"><a href="http://www.sparkfun.com/categories/170">7-Segment</a></li><li id="menu_category_175"><a href="http://www.sparkfun.com/categories/175">Other</a></li><li id="menu_category_174"><a href="http://www.sparkfun.com/categories/174">SMD</a></li></ul></li><li id="menu_category_88"><a href="http://www.sparkfun.com/categories/88">Oscillators</a></li><li id="menu_category_22"><a href="http://www.sparkfun.com/categories/22">PIC Microcontrollers</a></li><li id="menu_category_124"><a href="http://www.sparkfun.com/categories/124">PICAXE Microcontrollers</a></li><li id="menu_category_132"><a href="http://www.sparkfun.com/categories/132">PSoC Microcontrollers</a></li><li id="menu_category_29"><a href="http://www.sparkfun.com/categories/29">SMD ICs</a></li></ul></li><li id="menu_category_2"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/2">Development Tools</a><ul style="display:none;"><li id="menu_category_184"><a href="http://www.sparkfun.com/categories/184">.NET</a></li><li id="menu_category_93"><a href="http://www.sparkfun.com/categories/93">ADuC</a></li><li id="menu_category_103"><a href="http://www.sparkfun.com/categories/103">Arduino</a></li><li id="menu_category_10"><a href="http://www.sparkfun.com/categories/10">AVR</a></li><li id="menu_category_164"><a href="http://www.sparkfun.com/categories/164">Beagle</a></li><li id="menu_category_187"><a href="http://www.sparkfun.com/categories/187">Chumby</a></li><li id="menu_category_109"><a href="http://www.sparkfun.com/categories/109">Coridium</a></li><li id="menu_category_136"><a href="http://www.sparkfun.com/categories/136">FPGA</a></li><li id="menu_category_101"><a href="http://www.sparkfun.com/categories/101">iPod</a></li><li id="menu_category_25"><a href="http://www.sparkfun.com/categories/25">LPC</a></li><li id="menu_category_11"><a href="http://www.sparkfun.com/categories/11">MSP</a></li><li id="menu_category_9"><a href="http://www.sparkfun.com/categories/9">PIC</a></li><li id="menu_category_125"><a href="http://www.sparkfun.com/categories/125">PICAXE</a></li><li id="menu_category_137"><a href="http://www.sparkfun.com/categories/137">PSoC</a></li><li id="menu_category_104"><a href="http://www.sparkfun.com/categories/104">Roomba</a></li><li id="menu_category_94"><a href="http://www.sparkfun.com/categories/94">SAM</a></li><li id="menu_category_95"><a href="http://www.sparkfun.com/categories/95">ST</a></li><li id="menu_category_167"><a href="http://www.sparkfun.com/categories/167">STAMP</a></li><li id="menu_category_107"><a href="http://www.sparkfun.com/categories/107">Wiring</a></li><li id="menu_category_169"><a href="http://www.sparkfun.com/categories/169">WIZnet</a></li><li id="menu_category_166"><a href="http://www.sparkfun.com/categories/166">XMOS</a></li><li id="menu_category_142"><a href="http://www.sparkfun.com/categories/142">Zune</a></li></ul></li><li id="menu_category_100"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/100">Dings and Dents</a></li><li id="menu_category_204"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/204">E-Textiles</a><ul style="display:none;"><li id="menu_category_205"><a href="http://www.sparkfun.com/categories/205">Aniomagic</a></li><li id="menu_category_210"><a href="http://www.sparkfun.com/categories/210">fabrickit</a></li><li id="menu_category_135"><a href="http://www.sparkfun.com/categories/135">LilyPad</a></li><li id="menu_category_206"><a href="http://www.sparkfun.com/categories/206">Materials</a></li></ul></li><li id="menu_category_4"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/4">GPS</a><ul style="display:none;"><li id="menu_category_18"><a href="http://www.sparkfun.com/categories/18">Antennas</a></li><li id="menu_category_86"><a href="http://www.sparkfun.com/categories/86">Eval Boards</a></li><li id="menu_category_17"><a href="http://www.sparkfun.com/categories/17">Modules</a></li></ul></li><li id="menu_category_157"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/157">Kits</a></li><li id="menu_category_76"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/76">LCDs</a><ul style="display:none;"><li id="menu_category_147"><a href="http://www.sparkfun.com/categories/147">Color</a></li><li id="menu_category_148"><a href="http://www.sparkfun.com/categories/148">Monochrome</a></li></ul></li><li id="menu_category_96"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/96">Port-O-Rotary</a></li><li id="menu_category_1"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/1">Programmers</a><ul style="display:none;"><li id="menu_category_26"><a href="http://www.sparkfun.com/categories/26">ARM</a></li><li id="menu_category_7"><a href="http://www.sparkfun.com/categories/7">AVR</a></li><li id="menu_category_156"><a href="http://www.sparkfun.com/categories/156">DSP</a></li><li id="menu_category_37"><a href="http://www.sparkfun.com/categories/37">MAXQ</a></li><li id="menu_category_8"><a href="http://www.sparkfun.com/categories/8">MSP</a></li><li id="menu_category_6"><a href="http://www.sparkfun.com/categories/6">PIC</a></li><li id="menu_category_126"><a href="http://www.sparkfun.com/categories/126">PICAXE</a></li><li id="menu_category_168"><a href="http://www.sparkfun.com/categories/168">XMOS</a></li></ul></li><li id="menu_category_53"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/53">Prototyping</a><ul style="display:none;"><li id="menu_category_54"><a href="http://www.sparkfun.com/categories/54">Batteries</a></li><li id="menu_category_149"><a href="http://www.sparkfun.com/categories/149">Boards</a></li><li id="menu_category_91"><a href="http://www.sparkfun.com/categories/91">Connectors</a></li><li id="menu_category_182"><a href="http://www.sparkfun.com/categories/182">Enclosures</a></li><li id="menu_category_55"><a href="http://www.sparkfun.com/categories/55">General</a></li><li id="menu_category_155"><a href="http://www.sparkfun.com/categories/155">Hardware</a></li><li id="menu_category_92"><a href="http://www.sparkfun.com/categories/92">Sockets</a></li><li id="menu_category_116"><a href="http://www.sparkfun.com/categories/116">Solar</a></li><li id="menu_category_141"><a href="http://www.sparkfun.com/categories/141">Wire</a></li></ul></li><li id="menu_category_207"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/207">Retail</a><ul style="display:none;"><li id="menu_category_212"><a href="http://www.sparkfun.com/categories/212">Arduino</a></li><li id="menu_category_216"><a href="http://www.sparkfun.com/categories/216">Components</a></li><li id="menu_category_213"><a href="http://www.sparkfun.com/categories/213">Kits</a></li><li id="menu_category_211"><a href="http://www.sparkfun.com/categories/211">Materials</a></li><li id="menu_category_215"><a href="http://www.sparkfun.com/categories/215">Prototyping</a></li><li id="menu_category_214"><a href="http://www.sparkfun.com/categories/214">Sensors</a></li><li id="menu_category_217"><a href="http://www.sparkfun.com/categories/217">Tools</a></li></ul></li><li id="menu_category_134"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/134">Retired</a><ul style="display:none;"><li id="menu_category_194"><a href="http://www.sparkfun.com/categories/194">Breakout Boards</a></li><li id="menu_category_203"><a href="http://www.sparkfun.com/categories/203">Cables</a></li><li id="menu_category_200"><a href="http://www.sparkfun.com/categories/200">Classes</a></li><li id="menu_category_192"><a href="http://www.sparkfun.com/categories/192">Components</a></li><li id="menu_category_191"><a href="http://www.sparkfun.com/categories/191">Development Tools</a></li><li id="menu_category_188"><a href="http://www.sparkfun.com/categories/188">GPS</a></li><li id="menu_category_190"><a href="http://www.sparkfun.com/categories/190">Kits</a></li><li id="menu_category_196"><a href="http://www.sparkfun.com/categories/196">LCD</a></li><li id="menu_category_201"><a href="http://www.sparkfun.com/categories/201">Programmers</a></li><li id="menu_category_195"><a href="http://www.sparkfun.com/categories/195">Prototyping</a></li><li id="menu_category_197"><a href="http://www.sparkfun.com/categories/197">Robotics</a></li><li id="menu_category_189"><a href="http://www.sparkfun.com/categories/189">Sensors</a></li><li id="menu_category_208"><a href="http://www.sparkfun.com/categories/208">SFE Widgets</a></li><li id="menu_category_198"><a href="http://www.sparkfun.com/categories/198">Swag</a></li><li id="menu_category_193"><a href="http://www.sparkfun.com/categories/193">Tools</a></li><li id="menu_category_199"><a href="http://www.sparkfun.com/categories/199">Wireless</a></li></ul></li><li id="menu_category_31"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/31">Robotics</a><ul style="display:none;"><li id="menu_category_179"><a href="http://www.sparkfun.com/categories/179">Drivers</a></li><li id="menu_category_181"><a href="http://www.sparkfun.com/categories/181">Kits</a></li><li id="menu_category_178"><a href="http://www.sparkfun.com/categories/178">Motors</a></li><li id="menu_category_202"><a href="http://www.sparkfun.com/categories/202">Other</a></li><li id="menu_category_180"><a href="http://www.sparkfun.com/categories/180">Wheels</a></li></ul></li><li id="menu_category_185"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/185">Sale</a></li><li id="menu_category_23"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/23">Sensors</a><ul style="display:none;"><li id="menu_category_80"><a href="http://www.sparkfun.com/categories/80">Accelerometers</a><ul><li id="menu_category_161"><a href="http://www.sparkfun.com/categories/161">1-axis</a></li><li id="menu_category_162"><a href="http://www.sparkfun.com/categories/162">2-axis</a></li><li id="menu_category_163"><a href="http://www.sparkfun.com/categories/163">3-axis</a></li></ul></li><li id="menu_category_146"><a href="http://www.sparkfun.com/categories/146">Biometrics</a></li><li id="menu_category_117"><a href="http://www.sparkfun.com/categories/117">Capacitive</a></li><li id="menu_category_151"><a href="http://www.sparkfun.com/categories/151">Current</a></li><li id="menu_category_143"><a href="http://www.sparkfun.com/categories/143">Flex / Force</a></li><li id="menu_category_85"><a href="http://www.sparkfun.com/categories/85">Gyros</a><ul><li id="menu_category_158"><a href="http://www.sparkfun.com/categories/158">1-axis</a></li><li id="menu_category_159"><a href="http://www.sparkfun.com/categories/159">2-axis</a></li><li id="menu_category_183"><a href="http://www.sparkfun.com/categories/183">3-axis</a></li></ul></li><li id="menu_category_144"><a href="http://www.sparkfun.com/categories/144">ID</a></li><li id="menu_category_160"><a href="http://www.sparkfun.com/categories/160">IMU</a></li><li id="menu_category_139"><a href="http://www.sparkfun.com/categories/139">Infrared</a></li><li id="menu_category_102"><a href="http://www.sparkfun.com/categories/102">Light / Imaging</a></li><li id="menu_category_83"><a href="http://www.sparkfun.com/categories/83">Magneto</a></li><li id="menu_category_84"><a href="http://www.sparkfun.com/categories/84">Proximity</a></li><li id="menu_category_165"><a href="http://www.sparkfun.com/categories/165">Radiation</a></li><li id="menu_category_186"><a href="http://www.sparkfun.com/categories/186">Sound</a></li><li id="menu_category_82"><a href="http://www.sparkfun.com/categories/82">Temperature</a></li><li id="menu_category_152"><a href="http://www.sparkfun.com/categories/152">Weather</a></li></ul></li><li id="menu_category_97"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/97">SFE Widgets</a></li><li id="menu_category_130"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/130">Swag</a></li><li id="menu_category_46"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/46">Tools</a><ul style="display:none;"><li id="menu_category_47"><a href="http://www.sparkfun.com/categories/47">Hand Tools</a></li><li id="menu_category_48"><a href="http://www.sparkfun.com/categories/48">Hot-Air Rework</a></li><li id="menu_category_177"><a href="http://www.sparkfun.com/categories/177">Instruments</a></li><li id="menu_category_28"><a href="http://www.sparkfun.com/categories/28">Power Supplies</a></li><li id="menu_category_49"><a href="http://www.sparkfun.com/categories/49">Soldering</a></li></ul></li><li id="menu_category_138"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/138">Tracking</a></li><li id="menu_category_16"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/16">Wireless</a><ul style="display:none;"><li id="menu_category_78"><a href="http://www.sparkfun.com/categories/78">Antennas</a></li><li id="menu_category_115"><a href="http://www.sparkfun.com/categories/115">Bluetooth</a></li><li id="menu_category_79"><a href="http://www.sparkfun.com/categories/79">General</a></li><li id="menu_category_113"><a href="http://www.sparkfun.com/categories/113">Modem</a></li><li id="menu_category_114"><a href="http://www.sparkfun.com/categories/114">Nordic</a></li><li id="menu_category_112"><a href="http://www.sparkfun.com/categories/112">WiFi</a></li><li id="menu_category_111"><a href="http://www.sparkfun.com/categories/111">Zigbee/802.15.4</a></li></ul></li>  <li><hr /></li>
+  <li>
+    <img style='float: left' src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/pdf.gif" />
+    <a href="http://sparkfun.com/download/PDFs/catalog.pdf">Full catalog</a>
+  </li>
+</ul>
+        <br />
+      </div>
+
+      <div id="right">
+        <div class="collapsible user">
+  <p class="cart-link"><img height="19" width="19" alt="" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_shoppingcart.gif"> 
+     <a href="http://www.sparkfun.com/cart"><span id="items_in_cart">0</span> items in your cart</a></p>
+  <form action="https://www.sparkfun.com/account/login" id="login" method="post">
+    <label for="user_login">Email</label>
+    <input id="user_login" type="text" tabindex="1" maxlength="320" name="user">
+    <label for="user_password">Password</label>
+    <input id="user_password" type="password" tabindex="2" maxlength="20" name="passwd">
+    <p class="right"><input type="submit" value="log in" class="button"></p>
+    <p><a href="https://www.sparkfun.com/account/forgot_password">Forgot your password?</a><br/>
+       No account? <a href="https://www.sparkfun.com/account/make">Register here</a>.</p>
+  </form>
+</div>
+<br>
+
+        <h2 id="feed_menu" class="collapsible"><span class="arrow"></span>Feeds</h2>
+        <ul class="collapsible feeds" style="display: block">
+  <li><a href="http://www.sparkfun.com/feeds/news">News</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/products">Products</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/changes">Product Changes</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/comments">Comments</a></li>
+  <li><a href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&amp;v=2&amp;orderby=published">Videos</a></li>
+</ul>
+        <br />
+
+        <h2 id="resources_menu" class="collapsible"><span class="arrow"></span>Resources</h2>
+        <ul class="collapsible resources" style="display: block">
+  <li><a href="http://www.sparkfun.com/news/263">Official SparkFun IRC Channel</a></li>
+  <li><a href="http://www.batchpcb.com/" target="_blank">Custom PCBs</a></li>
+  <li><a href="http://www.opencircuits.com/" target="_blank">Open Circuits</a></li>
+  <li><a href="http://www.ponoko.com/make-and-sell/electronics" target="_blank">Ponoko - Your Personal Factory</a></li>
+  <li><a href="http://www.sparkfun.com/static/jobs">Jobs @ SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/tutorials/92">Sell Your Widget on SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/quiz">Take the SparkFun Quiz</a></li>
+</ul>
+        <br />
+
+        <h2 id="currency_menu_head" class="collapsible"><span class="arrow"></span>Currency</h2>
+        
+<div class="collapsible" id="currency_menu">
+  Display prices in
+  <input type="hidden" id="preferred_currency" value="USD" />
+  <ul id="currency_menu_list" class="currency">
+          <li>
+        <a id="currency_USD" onclick="SFE.change_currency('USD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_checked.gif" />
+                US Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_CAD" onclick="SFE.change_currency('CAD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Canadian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_AUD" onclick="SFE.change_currency('AUD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Australian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_GBP" onclick="SFE.change_currency('GBP'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                British Pound        </a>
+    </li>
+          <li>
+        <a id="currency_EUR" onclick="SFE.change_currency('EUR'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Euro        </a>
+    </li>
+      </ul>
+  </div>
+
+<script language="javascript">
+var CURRENCIES = {"USD":{"code":"USD","title":"US Dollar","symbol_left":"$","symbol_right":"","decimal_point":".","thousands_point":",","decimal_places":"2","value":"1.0000"},"CAD":{"code":"CAD","title":"Canadian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9706"},"AUD":{"code":"AUD","title":"Australian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9957"},"GBP":{"code":"GBP","title":"British Pound","symbol_left":"&pound;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.6187"},"EUR":{"code":"EUR","title":"Euro","symbol_left":"&euro;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.7214"}}</script>
+        <br />
+
+        <h2 id="feedback_menu" class="collapsible"><span class="arrow"></span>Feedback</h2>
+        <form id="feedback" class="collapsible" style="display: block">
+  <label for="feedback_textarea" style="font-weight: bold">What's on your mind?</label>
+  <br />
+  <textarea id="feedback_textarea" name="feedback_text"></textarea>
+  <br /><br />
+  <label for="feedback_email">Please include your email address if you'd like us to respond to a specific question.</label>
+  <br />
+  <br />
+  <input type="text" id="feedback_email" name="email" /> 
+  <br />
+  <input onclick="SFE.mind_feedback(); return(false);" type="button" class="button" value="Submit" /> 
+</form>
+      </div>
+
+      <div id="center">
+        <a name="content" id="content"></a>
+        
+<h1 class="red-header">
+    <span class="link"><a href="http://www.sparkfun.com">Home</a> |</span><span class="link"><a href="http://www.sparkfun.com/tutorials/">Tutorials</a>|</span>  Beginning Embedded Electronics - 10 
+</h1>
+
+<div class="news">
+  <p class="header">
+    <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/avatars/7185_sm.jpg" />
+    <a class="title" href="http://www.sparkfun.com/tutorials/110">Beginning Embedded Electronics - 10</a>
+    <br />
+    by <a href="http://www.sparkfun.com/users/7185">Nate</a> | June 19, 2008 | <i><a style="cursor: pointer" onclick="javascript: if(!$('comments').visible()) { SFE.toggle_collapsible($('comments_header')); } $('comments_header').scrollTo();">20 comments</a></i>
+    <span class="skill">
+      Skill Level: 
+              <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" />
+        Beginner
+          </span>
+  </p>
+  <hr />
+  <h2>
+	Lecture 10 - Eagle: Creating a new part</h2>
+<div class="tutorial_text">
+	<p>
+		You can dig around the Eagle libraries all you want. Very quickly you will discover that you need to create a new part. This can be very daunting at first. The following tutorial breaks down how we create a new part in Eagle. There are some recommendations here that are good to follow, but we are by no means experts at Eagle. This is going to be very long and painful, just try to get through it. These basics will hopefully form the foundation of all your future project layouts.</p>
+	<p>
+		You are welcome to use stock Eagle libraries but use them under extreme caution. I rarely use other people&#39;s libraries. Trusting someone else&#39; part or footprint can be a sure fire way to render a pile of PCBs worthless. I&#39;ve done this far too many times! It takes lots of failures to get good at creating decent schematic parts and solderable footprints. You will mess up, but you <i>have to</i> mess up before you can be good at it.</p>
+	<p>
+		To get 5V out of a 1.5V battery, we use something called a DC to DC step-up converter. This handy part is not in the stock Eagle library so let&#39;s create a new part for this controller IC - the NCP1400 (<a href="http://www.onsemi.com/pub/Collateral/NCP1400A-D.PDF" target="_blank">datasheet</a>).</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/NCP1400-Typical.jpg" /></p>
+	<p align="center">
+		The NCP1400 is a neat little step-up IC - we input a low voltage and get 5V out!</p>
+	<p align="left">
+		To start your first parts library:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-1.jpg" /></p>
+	<p align="left">
+		Once the Library Editor is open, hit the Save icon and save your library with your name on it:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-2.jpg" /></p>
+	<p align="left">
+		Click on create a new symbol. Name it &#39;NCP1400&#39;:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-3.jpg" /></p>
+	<p align="left">
+		Create a red box by clicking on the &#39;Wire&#39; button:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-4.jpg" /></p>
+	<p align="left">
+		Don&#39;t worry about centering the box at this time.</p>
+	<p align="left">
+		Key commands to try out:</p>
+	<ul>
+		<li>
+			<p align="left">
+				Scroll the scroll wheel on the mouse to zoom in/out</p>
+		</li>
+		<li>
+			<p align="left">
+				Click the scroll wheel (on the main work area) and hold shift to move the work area around</p>
+		</li>
+		<li>
+			<p align="left">
+				If the work area image looks corrupt, just zoom in/out to refresh the area</p>
+		</li>
+	</ul>
+	<p align="left">
+		Add 5 pins to the box:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-5.jpg" /></p>
+	<p align="left">
+		Press F4 and click on a pin. Name them according to the datasheet.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-6.jpg" /></p>
+	<p align="left">
+		Pins are named, but we need to clean up how this part is sized and where the center is at. To grab the group press Alt+F7, click and hold, and drag from one corner of the work area to the opposite corner - boxing in the pins and part:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-7.jpg" /></p>
+	<p align="left">
+		Once you have everything selected (everything should be highlighted red), press F7 and right click to move the group over the center cross. In my example part, I the right side was one block too far over so I sucked in the right side one square.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-8.jpg" /></p>
+	<p align="left">
+		The image above shows the part centered and symmetrical.</p>
+	<ul>
+		<li>
+			<p align="left">
+				NEVER change the grid size in the library editor or in the schematic layout editor. Leave it on 0.1inch steps and don&#39;t use the alternate 0.01 step. If you do, you won&#39;t be able to hook wires to the pin tie points.</p>
+		</li>
+	</ul>
+	<p>
+		Name and Value tags are always nice. Click on the text button and type &#39;&gt;NAME&#39; and &#39;&gt;VALUE&#39;. (Ok I lied. It&#39;s okay to use the alternate step size when moving around non-critical items like text. Hold the Alt key down while your placing the Name and Value tags to get them where you want them):</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-9.jpg" /></p>
+	<p align="left">
+		Once you have Name and Value placed, you&#39;ll notice that these are red when they are normally gray in color. Be sure to modify what layer these two strings are on. We need to change the &gt;NAME tag to the Name layer, and &gt;VALUE tag to the value layer. To do this:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-10.jpg" /></p>
+	<p align="left">
+		Click on the wrench, then Layer.. Choose the layer you&#39;d like to change the object <i>to</i></p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-11.jpg" /></p>
+	<p align="left">
+		Here is the final schematic part, centered and happy. If you want, you can change the pin definitions to indicate which pins are inputs, outputs, pwr, etc. I find these settings useful in a handful of situations. This is a simple enough part, we&#39;ll skip it.</p>
+	<p align="left">
+		Now for the footprint. Remember, when in doubt create your own footprint. Trusting anyone else&#39; footprint without scrutinizing it closely is a very bad idea. If you&#39;re lucky, your datasheet will include a recommended footprint for the part you are working with. If it does not, google for the words &#39;recommended land pattern SOT-23&#39; or whatever package you are looking for. The words &#39;land pattern&#39; is the key.</p>
+	<p align="left">
+		Lucky us! The NCP1400 datasheet has a recommend footprint:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-12.jpg" /></p>
+	<p align="left">
+		This takes some getting used to. There are two numbers from every dimension, and not all the dimensions are indicated?! Lower left corner shows mm/inches meaning the top number is the dimension in mm and the bottom number is that <i>same</i> dimension in inches. Sorry folks, it&#39;s a metric world. More and more devices are spec&#39;d in mm only (connectors, ICs, etc). From the Library editor, click on Package and let&#39;s start creating the footprint for this device. This is actually a pretty common package type called SOT23-5, so let&#39;s use that name:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-13.jpg" /></p>
+	<p align="left">
+		Throw down 5 pads:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-14.jpg" /></p>
+	<p align="left">
+		Hmm, some of the layers are not showing - let&#39;s turn them all on:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-15.jpg" /></p>
+	<p align="left">
+		Click &#39;All&#39; and then &#39;Ok&#39;. You should now be able to view the solder mask (in Eagle as the &#39;Top Stop&#39; layer) and solder paste layers (aka &#39;Top Cream&#39; layer).</p>
+	<p align="left">
+		Now back in your datasheet you will find the width of each pad to be 0.7mm and the height to be 1.0mm. Before we can go editing the pads, we need to put Eagle into metric mode. Press Alt+F10 and you should see the coordinates in the upper task bar switch to mm. To alter the size of the five pads to 0.7x1.0mm, click on the wrench, then Smd, then &#39;...&#39;:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-16.jpg" /></p>
+	<p align="left">
+		You will then be prompted to enter the X and Y dimensions in mm with an &#39;x&#39; in between:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-17.jpg" /></p>
+	<p align="center">
+		Remember the X dimension always comes first.</p>
+	<p align="left">
+		Now click on all 5 pads. All 5 pads should now be the correct size. I really prefer to center the footprint with the center of the work area. This means we need to work out the various dimensions:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-18.jpg" /></p>
+	<p align="left">
+		&nbsp;Let&#39;s start with the easy pad - pin #2 will be located at (0,1.2). Before we can start moving pads, we need to adjust the alternate grid so that we can get the the side pads to 0.95mm. Click on the points/grid box:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-20.jpg" /></p>
+	<p align="left">
+		Change the Alt: box from 0.1 to 0.05 and click on ok. Now lets move pin 2. In the work area, press F7, then hold control and click on a pad:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-19.jpg" /></p>
+	<p align="left">
+		F7 issues the move command. Holding control while clicking on a pad causes the pad to try to center to the cursor (this way you know that the coordinates displayed in the upper left task bar are displaying where the very center of the pad is at and not where your cursor may have been off when you first clicked on the pad). Because the pads are locked onto the 1mm grid, you&#39;ll notice the pad jump from 3mm to 4mm, etc. While holding control, hold alt as well. The pad should now jump on the alternate grid of 0.05mm instead of 1mm. Important buttons to know:</p>
+	<ul>
+		<li>
+			<p align="left">
+				Again, the scroll wheel will zoom in/out</p>
+		</li>
+		<li>
+			<p align="left">
+				Clicking the scroll wheel will drag the work area around</p>
+		</li>
+		<li>
+			<p align="left">
+				Holding the shift key will allow you drag the work area further</p>
+		</li>
+	</ul>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-21.jpg" /></p>
+	<p align="left">
+		To position this pad to (0,1.2) I literally had to:</p>
+	<ol>
+		<li>
+			<p align="left">
+				Hold Control and click on the pad</p>
+		</li>
+		<li>
+			<p align="left">
+				Hold Alt, Shift, and control with one hand</p>
+		</li>
+		<li>
+			<p align="left">
+				Scroll in with the scroll wheel</p>
+		</li>
+		<li>
+			<p align="left">
+				Click+drag the scroll wheel to get the work area centered</p>
+		</li>
+		<li>
+			<p align="left">
+				Release Shift</p>
+		</li>
+		<li>
+			<p align="left">
+				Move the cursor to position (0,1.2) (Remember to hold alt!)</p>
+		</li>
+	</ol>
+	<p align="left">
+		This sounds really scary but after creating two footprints, you&#39;ll have it down without thinking about it.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-22.jpg" /></p>
+	<p align="center">
+		Nifty</p>
+	<p align="left">
+		Press F4 and click on each pad renaming them to match the datasheet numbering:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-23.jpg" /></p>
+	<p align="left">
+		Did you number them wrong? Double check. Make sure you get it right! We need to add a dimensional layer to indicate the size of the device. This is different than a silkscreen indicator. I like to use layer 51 (named &#39;tDocu&#39; meaning top document layer?). This layer will only be displayed while we&#39;re playing on the layout window and won&#39;t show up on any production files. This allows us to display the physical size of awkward parts, hopefully avoiding collisions between bulky parts when we go to populate the PCB.</p>
+	<p align="left">
+		Why should we even care about these layers?</p>
+	<p align="left">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/FootprintIssues-0.jpg" /></p>
+	<p align="left">
+		Here is our NCP1400 (label U4) next to three capacitors. See how crazy board layout can get? Notice C1 is next to U4 but the distance between them looks ok? When we add in the tDocu layer:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/FootprintIssues-1.jpg" /></p>
+	<p align="left">
+		Whoa! That cap is way too close to the body of the NCP1400. You might be able to get those two components soldered onto the board, but it would be a mash up job. We need to know the rough physical outline of components during layout. To do that, we need to add a frame to our footprint.</p>
+	<p align="left">
+		Before we add lines to our footprint to indicate the physical size of our part, let&#39;s change the layer color - gray is a horrible color to try to see! Click on the &#39;Display&#39; button, scroll down to layer 51 and double click on the gray box next to &#39;tDocu&#39;:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-25.jpg" /></p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-26.jpg" /></p>
+	<p align="left">
+		Then click on the gray &#39;Color&#39; box and change it to something interesting like lemon yellow, then click ok. Anything you do on this layer will now be yellow.</p>
+	<p align="left">
+		Click on the &#39;Wire&#39; button. Select layer 51 (this layer will be yellow in the drop down box the next time you close/open the Library editor).</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-24.jpg" /></p>
+	<p align="left">
+		You should now be able to lay down yellow lines. Put four of them down in a box:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-27.jpg" /></p>
+	<p align="left">
+		Press escape to stop drawing. Now we need to move the edges of the box to the outside edge of our part. Checking the datasheet again:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-28.jpg" /></p>
+	<p align="left">
+		Ahh manufacturing tolerances. They can&#39;t really tell us how big the B and A dimensions will be, so I always pick a value in the middle of the min/max. A = 3mm, B = 1.5mm. Remember we have to center the frame so the upper right corner of the frame will be at (1.5, 0.75).</p>
+	<p align="left">
+		Now go back to the footprint, press F7 to issue the move command. Hold the control key and click on the upper right corner of the frame. When you do this, the 1 pad may light up - this is because Eagle does not know which part you are trying to move - the pad or the line? If you left click, Eagle will begin moving the 1 pad because it is highlighted. Right click and the frame should highlight. Now left click and you should be moving the upper right corner of the frame. I know, its really confusing at first. It&#39;s actually really handy once you&#39;re used to it!</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-29.jpg" /></p>
+	<p align="left">
+		Once you&#39;ve got the corner at (1.5,0.75), left click to anchor the corner at that location and adjust the other three corners.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-30.jpg" /></p>
+	<p align="left">
+		I can almost see it now! Notice how the part extends past the edges of the pads? If we would have put a component (like an 0603 resistor) next to pads 3 and 4 the two component may have been bumping into each other. Electrically, the layout would have been fine but when we would go to populate the PCB, this regulator might have been right up against the neighboring part.</p>
+	<p align="left">
+		Finally, I highly encourage you to add a bit of silkscreen to this part. What does a board look like without silkscreen?</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/FootprintIssues-2.jpg" /></p>
+	<p align="left">
+		Can you tell where the components go and how they are supposed to get oriented without a silk indicator? I can&#39;t.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/FootprintIssues-4.jpg" /></p>
+	<p align="left">
+		Add a little silkscreen and it&#39;s suddenly very apparent where the NCP1400 is supposed to go.</p>
+	<p align="left">
+		When you get a PCB with nothing but silver pads, the 4/5 pads on this part look a lot like the spot for an 0805 capacitor! Select layer 21 tPlace. You may notice this layer is gray as well! I hate gray. Re-color this layer to white. When you get your PCBs, the silkscreen is white, right? Might as well make them agree.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-31.jpg" /></p>
+	<p align="left">
+		I zoomed way in, held alt to get onto the alternate grid, and ran the line from (-0.25, -0.75) to (0.25, -0.75). You really do not want to put silkscreen across your pads. This will negatively affect how the pads react to solder. It would foul a board or anything, it&#39;s just best to keep the silkscreen layer away from pads. You could butt the white line right up against the pad, but the silkscreen layers has the worst tolerances and the greatest skew. The white lines in your beautiful layout could end up a couple mm to the left or right when you get your PCBs from the fab house. Besides, 0.25 is such a nice start/finish number!</p>
+	<p align="left">
+		Create silkscreen lines for the sides as well. Don&#39;t worry about itty-bitty silkscreen lines inbetween the upper pads or the little corners. Very small silkscreen lines will either be ignored by the fab house or else they will just flake off.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-32.jpg" /></p>
+	<p align="left">
+		When we laid out the tDocu layer, the wire thickness was 0.127mm or 0.005&quot;. 0.005&quot; is also pronounced as &#39;5 mil&#39;. Time and time again, you will hear that fab houses can handle 8 mil traces and 8 mil spacing for their basic service (aka their cheap service). This means that no trace can be less than 0.008&quot; in thickness and two traces cannot be closer than 0.008&quot; to each other. Well guess what thickness our silkscreen traces are? The 5mil tDocu lines don&#39;t matter because they will not be printed or fabbed, but the 5mil silkscreen traces may give some fab houses fits! The fab house may increase the line thickness to 8mil, they may try to print the 5mil line as is and have it come out very thin with no weight, or they may not print it at all! Let&#39;s alter the thickness of the silkscreen lines to 8mil so that we are kosher with any fab house.</p>
+	<p align="left">
+		We&#39;re switching back to Imperial units! Press F10. Next click on the wrench, width, and &#39;...&#39;:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-33.jpg" /></p>
+	<p align="left">
+		Why doesn&#39;t Eagle have 8mil listed? I have no idea. Enter 0.008 into the box prompt. Click on the three silkscreen lines:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-34.jpg" /></p>
+	<p align="left">
+		It looks a bit odd, but once you see it on a PCB, it will look great! The last things we need to do (I promise!) is to add a &gt;NAME and &gt;VALUE tag. Review the schematic component section to see how to do this in detail. Add two strings (&#39;&gt;NAME&#39; and &#39;&gt;VALUE&#39;) and then modify the layers for these two strings to tName and tValue respectively.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-35.jpg" /></p>
+	<p align="left">
+		And we&#39;re done with the footprint creation for this one part! Now you see why engineers and companies hoard their libraries. The first couple footprints you create will be totally botched and will probably kill your PCB layout. But once you get a part created, and you use it once or twice successfully, the part will be proven and you&#39;ll never have to worry about it again! With a collection of 20-30 known good parts, you&#39;ll be able to whip up very reliable PCBs in surprisingly little time.</p>
+	<p align="left">
+		To finish this part in our library, we need to relate the pin numbers on our footprint to the pin identifiers on our schematic part. Save your library and click on the Device button:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-36.jpg" /></p>
+	<p align="left">
+		Name the new device NCP1400 and then click on the Add button:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-37.jpg" /></p>
+	<p align="left">
+		Drop the schematic part in the center of the work area. Hit escape twice to get rid of the part window. Now click on the &#39;New&#39; button in the Package area:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-38.jpg" /></p>
+	<p align="left">
+		Double click on the SOT23-5 listing.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-39.jpg" /></p>
+	<p align="left">
+		Notice the yellow exclamation point in the Package area? This means that a footprint is associated with the schematic part but the pins have not yet been assigned. Double click on the &#39;SOT23-5&#39; text in the Package area:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-40.jpg" /></p>
+	<p align="left">
+		Review page 1 of the NCP1400 datasheet to know what pins connect to what pad numbers:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-41.jpg" /></p>
+	<p align="left">
+		Double clicking on a given name on one side will assign it to the highlighted choice on the opposite side. You&#39;ve done a great job up to this point! Double check that your pad assignments are correct!</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-42.jpg" /></p>
+	<p align="left">
+		Right click on the Package name and click on Rename. Various different footprints can be associated with any given schematic part. To differentiate between parts, you can give the pin assignments different names. I mis-use this function a bit. I often name variants &#39;SMD&#39;, &#39;A&#39;, &#39;B&#39;, &#39;8&#39;, &#39;10&#39;, or in this case &#39;NCP1400&#39;. Pick your poison.</p>
+	<p align="left">
+		It&#39;s ok if you do not give this device a variant name, but if you leave the default variant name as &quot; and then try to add a new pad assignment you will get the &quot;Package variant &quot; already defined!&quot; error:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-43.jpg" /></p>
+	<p align="left">
+		Just rename one of the variants to a different name so that Eagle can add this new variant with the default &quot; name.</p>
+	<p align="left">
+		Now let&#39;s add this newly created part to our schematic. Close the library editor and go back to the Eagle Control Panel. Click on File-&gt;New-&gt;Project. Name this new project - in this example we&#39;ll do &#39;Simon&#39;. Right click on the Simon project and create a new Schematic:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-44.jpg" /></p>
+	<p align="left">
+		The schematic editor should open. Now go back to the Eagle Control Panel and open your new Library:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-45.jpg" /></p>
+	<p align="left">
+		You should see the NCP1400 part and the SOT23-5 footprint. Highlight the NCP1400 part and in the right screen click on ADD. The schematic editor will pop up allowing you to place the NCP1400.</p>
+	<p align="left">
+		And that&#39;s it! You now know how to create a component from scratch. Be sure to do a 1 to 1 print of your layout before sending it to the PCB fab house to verify all the parts against their respective footprints.</p>
+	<p align="left">
+		<a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=57">Lecture 1 - Background and Power Supply</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=93"><br />
+		<br />
+		Lecture 2 - How to Get Code Onto a Microcontroller</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=95"><br />
+		<br />
+		Lecture 3 - What is an oscillator?</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=104"><br />
+		<br />
+		Lecture 4 - UART and Serial Communication</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=105"><br />
+		<br />
+		Lecture 5 - AVR GCC Compiling</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=106"><br />
+		<br />
+		Lecture 6 - Soldering Basics</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=107"><br />
+		<br />
+		Lecture 7 - SMD Soldering</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=108"><br />
+		<br />
+		Lecture 8 - Eagle: Schematics</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=109"><br />
+		<br />
+		Lecture 9 - Eagle: PCB Layout</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=110"><br />
+		<br />
+		Lecture 10 - Eagle: Creating a new part</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=111"><br />
+		<br />
+		Common Mistakes, Tips and Tricks</a></p>
+</div></div>
+
+<div id="comments_container">
+  <h2 id="comments_header" class="collapsible grey big"><span class="arrow"></span>Comments <span class="count">20 comments</span></h2>
+<div id="comments" class="collapsible white">
+  <div style="padding: 20px">  <div style="text-align: center">
+    <b><a href="#" onclick="javascript: $('right').scrollTo(); $('user_login').select()">Login</a> to post comments.</b>
+  </div>
+</div>
+  <div class="comment" id="comment_6387"><span class="header"><a href="http://www.sparkfun.com/users/25856" class="bold">Doogie</a> <span class="wide">|</span> <b>October 28, 2009 at  3:58 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_6387">4</span></strong></span><br /></span><div class="body"><p>Great tutorial, but I think that the procedure outlined here for accurately sizing and positioning SMD pads is way more complicated than it needs to be.  I've found that there's really no need to mess with multiple grid spacings or complicated shift key combinations.  Simply:</p>
+
+<p>1) Click the SMD button and enter the size of the pad you want (0.028 x 0.039 in this case) into the field at the top of the window</p>
+
+<p>2) Drop the five pads by clicking once for each</p>
+
+<p>3) Here's the fun part -- click the info button, then sequentially click on each pad and set the X and Y coordinates per the data sheet.  These coordinates are especially easy to calculate when the origin is set to the middle of the package, as was shown in this tutorial.  The coordinate pairs are simply:</p>
+
+<p>Pin 1 (-0.037,-0.047)
+Pin 2 (0,-0.047)
+Pin 3 (0.037,-0.047)
+Pin 4 (0.037,0.047)
+Pin 5 (-0.037,0.047)</p>
+
+<p>Note that I laid out my package with Pin 1 on the lower left, so the coordinates shown will reflect that.</p>
+
+<p>I hope this will help other would-be EAGLE part creators like me.  Thanks, SparkFun, for creating these great tutorials, and for recommending EAGLE!</p>
+
+<p>Cheers.</p>
+</div></div><div class="comment" id="comment_1187"><span class="header"><a href="http://www.sparkfun.com/users/49418" class="bold">Jassper</a> <span class="wide">|</span> <b>December  6, 2008 at  8:21 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1187">2</span></strong></span><br /></span><div class="body"><p>You really should update these to the latest version of Eagle, curently 5.2.0. The shortcut keys don't match up and the screen shots are all different.</p>
+
+<p>But nice job, thanks!!</p>
+</div></div><div class="comment" id="comment_3308"><span class="header"><a href="http://www.sparkfun.com/users/49635" class="bold">mykle</a> <span class="wide">|</span> <b>May  5, 2009 at 12:57 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3308">1</span></strong></span><br /></span><div class="body"><p>Thanks a million for this, it's the best tutorial on the subject that I've been able to find.</p>
+
+<p>I must say, tho, that time and time again everybody in the Eagle world warns against the sharing of libraries, and insists that hoarding your own is the only safe bet.  Then in the same breath, they explain that you're going to waste a huge amount of time and money screwing up your own libraries until you learn to get it right.</p>
+
+<p>This is dumb.  Sharing is good!  Why should everybody need to reinvent their wheels?  A reliable, trustworthy open-source repository of Eagle libraries, guaranteed to some specification of quality, would be of immense benefit to every single user of this software.  It really obviously needs to exist, and yet I can't find it.  Am I missing something obvious?  Why is nobody doing this?  It's madness.  Nobody in the software engineering world would tolerate such a vacuum around such a crucial toolset.</p>
+
+<p>SparkFun is in a good position to spearhead such a project.  You already distribute a good library.  How many people do you think are using it?</p>
+</div></div><div class="comment" id="comment_6354"><span class="header"><a href="http://www.sparkfun.com/users/40135" class="bold">Jabuyer</a> <span class="wide">|</span> <b>October 27, 2009 at  9:56 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_6354">1</span></strong></span><br /></span><div class="body"><p>Thank you, Thank you very much for sharing.
+I learned about PCB Layout in 3 days from your tutorial.</p>
+
+<p>Excellent Job, Thanks.</p>
+</div></div><div class="comment" id="comment_8315"><span class="header"><a href="http://www.sparkfun.com/users/100827" class="bold">samroesch</a> <span class="wide">|</span> <b>January  4, 2010 at  6:31 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_8315">1</span></strong></span><br /></span><div class="body"><p>When you talk about 8mil stuff for the silkscreen, and it being 0.008" Do you not in fact mean 8thou? I'm no EE, I'm in mech eng, but when I talk to the machinists about something that's 0.005" for example, I would say "5 thou"</p>
+
+<p>Great tutorial, thanks!</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_10399"><span class="header"><a href="http://www.sparkfun.com/users/87401" class="bold">Patratacus</a> <span class="wide">|</span> <b>February 11, 2010 at  3:38 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10399">1</span></strong></span><br /></span><div class="body"><p>Mil is a unit just like thou and 1 mil equals to 0.001 inch.  It's also referred to as "point".  So you are also correct in calling 0.008" as 8 thou.  I think both mil and thou comes from mixing the metric system with the English system.  Thou probably comes from "thousand" and Mil probably comes from "milli".  In CAD or PCB layout program, you often work with Mil rather than Thou.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_10400"><span class="header"><a href="http://www.sparkfun.com/users/87401" class="bold">Patratacus</a> <span class="wide">|</span> <b>February 11, 2010 at  3:41 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10400">1</span></strong></span><br /></span><div class="body"><p>In fact in Eagle 5.7, if you go to "Grid ..." option under "View", you can set the units and your choices are mic, mm, inch, and mil.</p>
+</div></div></div></div></div></div><div class="comment" id="comment_11214"><span class="header"><a href="http://www.sparkfun.com/users/57151" class="bold">eewestcoaster</a> <span class="wide">|</span> <b>March 10, 2010 at 12:13 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_11214">1</span></strong></span><br /></span><div class="body"><p>Excellent tutorial!  Thanks!</p>
+</div></div><div class="comment" id="comment_11532"><span class="header"><a href="http://www.sparkfun.com/users/125127" class="bold">Addidis</a> <span class="wide">|</span> <b>March 22, 2010 at  3:35 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_11532">1</span></strong></span><br /></span><div class="body"><p>Awesome, I helped a local engineer with his project and now he is going to patten it and asked me to lay out his boards. This is exactly what I was looking for to bridge the gap between beloved express pcb and industry standards. These tutorials are an incredible wealth of useful knowledge and I too recommend updating them. Time to make a few of my boards so any mistakes can be discovered privately.</p>
+</div></div><div class="comment" id="comment_12725"><span class="header"><a href="http://www.sparkfun.com/users/131582" class="bold">EagleParts</a> <span class="wide">|</span> <b>April 27, 2010 at 12:24 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_12725">1</span></strong></span><br /></span><div class="body"><p>Great tutorial - thanks for taking the time!  </p>
+
+<p><a href="http://www.jcwhitney.com/amc-eagle/d17210j1s5.jcwx">http://www.jcwhitney.com/amc-eagle/d17210j1s5.jcwx>Eagle Parts</a></p>
+</div></div><div class="comment" id="comment_14435"><span class="header"><a href="http://www.sparkfun.com/users/46712" class="bold">Axolotl</a> <span class="wide">|</span> <b>June 13, 2010 at 10:42 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_14435">1</span></strong></span><br /></span><div class="body"><p>Losing my mind... Cant figure out how to turn off or delete cream and top stop from a pad. I need the pad to be covered with silkscreen... so no paste over it either.</p>
+</div></div><div class="comment" id="comment_16007"><span class="header"><a href="http://www.sparkfun.com/users/143040" class="bold">EricNZ</a> <span class="wide">|</span> <b>July 19, 2010 at  2:33 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_16007">1</span></strong></span><br /></span><div class="body"><p>When creating a footprint and throwing down the pads in the Layout Editor the pin names are not visible (even when all the layers are turned on).</p>
+
+<p>How do I enable the display of pin named in the Layout Editor?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_16018"><img class="avatar" src="https://secure.gravatar.com/avatar/ea255fbef3fbe7bf3aec2aad6fcc3bec?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/79567" class="bold">N8B</a> <span class="wide">|</span> <b>July 19, 2010 at  4:32 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_16018">1</span></strong></span><br /></span><div class="body"><p>"set pad on" and "set pad off" in the command line</p>
+</div></div></div></div><div class="comment" id="comment_16861"><span class="header"><a href="http://www.sparkfun.com/users/40845" class="bold">Denis</a> <span class="wide">|</span> <b>August  8, 2010 at  8:43 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_16861">1</span></strong></span><br /></span><div class="body"><p>I have question about changing IC soldering pad dimension. When i print layouts trough laser printer, there is no space between pads and on error check i have clearance issue on these pads... I use pcb and schematic from sparkfun Aruino Mega and Ardupilot Mega. Eagle is configured as written in one of SparkFun tutorial(*.Cam, *.drm )  Also if i ripup original pcb and do autorouter.</p>
+
+<p>Thanks in advance,</p>
+
+<p>D.</p>
+</div></div><div class="comment" id="comment_19282"><span class="header"><a href="http://www.sparkfun.com/users/30996" class="bold">holla2040</a> <span class="wide">|</span> <b>October  8, 2010 at  5:13 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_19282">1</span></strong></span><br /></span><div class="body"><p>In part layout, I fooled with the ctrl alt shift move business, its to painful (bad wrists). Just use the command line.</p>
+
+<p>name the pin
+then type
+move pinname (x y)</p>
+
+<p>for example
+move A1 (1.23 2.44)</p>
+
+<p>no fuss and its exact</p>
+
+<p>Thanks for the tutorial!</p>
+</div></div><div class="comment" id="comment_19613"><span class="header"><a href="http://www.sparkfun.com/users/128671" class="bold">jbeale</a> <span class="wide">|</span> <b>October 17, 2010 at  9:19 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_19613">1</span></strong></span><br /></span><div class="body"><p>Thanks for this very helpful tutorial. My only suggestion is to please add the note: if your SMD pads have no visible names, you need to type magic incantation: "set pad_names on"</p>
+
+<p>I hadn't read the comments here, so I discovered this thanks to Oliver Betz in the user forum (a newsgroup- remember those?) <a href="news://news.cadsoft.de/eagle.userchat.eng">news://news.cadsoft.de/eagle.userchat.eng</a>
+Some forums also at <a href="http://www.eaglecentral.ca/forums/">http://www.eaglecentral.ca/forums/</a></p>
+</div></div><div class="comment" id="comment_22657"><span class="header"><a href="http://www.sparkfun.com/users/2348" class="bold">joesugar</a> <span class="wide">|</span> <b>December 10, 2010 at  6:45 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22657">1</span></strong></span><br /></span><div class="body"><p>Great tutorial but a quick question.  I have some parts I always use in the same way (caps at certain pins, etc.).  Is it possible to enter pads and connections for multiple parts to form subcircuits that can be placed all once?</p>
+</div></div><div class="comment" id="comment_24913"><span class="header"><a href="http://www.sparkfun.com/users/165416" class="bold">boztalay</a> <span class="wide">|</span> <b>January 11, 2011 at  3:50 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_24913">1</span></strong></span><br /></span><div class="body"><p>Helpful tutorial, I'd just like to request a section for making footprints for through-hole parts like DIP ICs.</p>
+
+<p>Also, you can verify your part's layout by making a board with just that part on it and printing it out, instead of having to guess and check on PCBs.</p>
+</div></div><div class="comment" id="comment_30820"><span class="header"><a href="http://www.sparkfun.com/users/189936" class="bold">Guardado</a> <span class="wide">|</span> <b>February 27, 2011 at 10:30 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_30820">1</span></strong></span><br /></span><div class="body"><p>Great tutorial. Just I want to add that when naming the I/O(Inputs/Outputs) in the Symbol section, you can add an exclamation mark "!" before introducing the name of the I/O if Pin is negated. Like Chip select -> (!CS). And a line over the name will appear magicaly. </p>
+
+<p>::@
+=D</p>
+</div></div><div class="comment" id="comment_30928"><span class="header"><a href="http://www.sparkfun.com/users/155930" class="bold">EngGirl</a> <span class="wide">|</span> <b>March  1, 2011 at  1:28 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_30928">1</span></strong></span><br /></span><div class="body"><p>Hi!!! This is a great tutorial but I'm trying to make a part for the Sparkfun XBee Breakout Board (since I want the XBee to be removable from the board).  It's clearly not a surface mount so I was wondering if anyone could give me some tips on how to go about manipulating this tutorial for my part (I'm really new to Eagle).</p>
+</div></div></div>
+<br />
+</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      SparkFun Electronics <a href="http://www.sparkfun.com/news/300">&reg;</a>      <span class="wide">|</span>
+      <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6175+Longbow+Dr,+Boulder,+CO+80301&sll=40.006234,-105.224915&sspn=0.012113,0.020192&ie=UTF8&hq=&hnear=6175+Longbow+Dr,+Boulder,+Colorado+80301&t=h&z=16" target="_blank">Boulder, Colorado</a>
+      <span class="wide">|</span>
+      <a href="http://www.sparkfun.com/static/customer_service">Customer Service</a>
+    </div>
+        <script type="text/javascript" src="/js/cookiejar.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/sparkfun.js?sparkrev=1299616818"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript">function autoFireLightbox(){setTimeout(function(){SFE.stab_eyes()},250)}Event.observe(window,"load",autoFireLightbox,false);</script>
+    <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3404365-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

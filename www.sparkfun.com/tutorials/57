@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="google-site-verification" content="XUb2UlchrvwCWWyhXksBlqQy1STYtTEN_M0-tgQRHRs" />
+    <meta name="google-site-verification" content="gRUAvzBJ_533b-AGTmldOJfByU6TkojfUbWovB2wKJo" />
+    <title>Beginning Embedded Electronics - 1 - SparkFun Electronics</title>
+    <link rel="stylesheet" href="/css/screen.css?rev=1299616818" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css?rev=1299616818" type="text/css" media="print" />
+    <link rel="stylesheet" href="/css/lightbox.css?rev=1299616818" type="text/css" media="screen" />
+    <!-- IE is the bane of my existence. -->
+    <!--[if IE]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+    <link rel="feed" type="application/rss+xml" title="News" href="http://www.sparkfun.com/feeds/news/" />
+    <link rel="alternate" type="application/rss+xml" title="Products" href="http://www.sparkfun.com/feeds/products/" />
+    <link rel="alternate" type="application/rss+xml" title="Product Changes" href="http://www.sparkfun.com/feeds/changes/" />
+    <link rel="alternate" type="application/rss+xml" title="Comments" href="http://www.sparkfun.com/feeds/comments/" />
+    <link rel="alternate" type="application/rss+xml" title="Videos" href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&v=2&orderby=published" />
+    <link rel="apple-touch-icon" href="/fanboy.png" />
+    <link rev="canonical" type="text/html" href="http://sprkfn.com/t57" /> 
+    <script type="text/javascript">
+      var HTTP_SERVER = 'http://www.sparkfun.com',
+          HTTPS_SERVER = 'https://www.sparkfun.com',
+          HTTP_STATIC = 'http://dlnmh9ip6v2uc.cloudfront.net',
+          FULL_LAYOUT = true,
+          AUTHENTICATED = false;
+    </script>
+    <script type="text/javascript" src="/js/prototype.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <!-- turns out  that IE7 chokes if you don't load these separately. -->
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="/js/effects.js"></script>
+    <script type="text/javascript" src="/js/builder.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/lightbox.js?rev=1299616818"></script>
+  </head>
+  <body>
+    <div id="airlock" class="clearfix">
+
+      
+  <script>BANNER_ID = 46</script>
+
+<div id="header">
+  <a href="http://www.sparkfun.com/"><img width=188 height=105 class="logo" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/logo.gif" title="SparkFun Electronics" alt="SparkFun Electronics" /></a>
+  <a href="#products_menu" class="skip">Skip to menu</a>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <div id="banner-nav" style="display: none;">
+<img id="banner-goprev" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_left.png" height=23 width=23 />
+<img id="banner-all" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_all.png" height=23 width=23 />
+<img id="banner-gonext" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_right.png" height=23 width=23 />
+</div>
+<a id="banner-link" href="http://www.sparkfun.com/news/429"><img width=978 height=105 id="banner" src="http://dlnmh9ip6v2uc.cloudfront.net/images/banners/SFE03.0005.Promos.Ponoko&amp;SFE-ShowUs-01.jpg" alt="" /></a>
+  <div id="header-menu">
+    <ul>
+      <li id="header_menu_index"><a href="http://www.sparkfun.com/index">Home</a></li>
+      <li id="header_menu_cservice"><a href="http://www.sparkfun.com/static/customer_service">Customer Service</a></li>
+      <li id="header_menu_tutorials" class="active"><a href="http://www.sparkfun.com/tutorials">Tutorials</a></li>
+      <li id="header_menu_forum"><a href="http://forum.sparkfun.com">Forum</a></li>
+      <li id="header_menu_distributors"><a href="http://www.sparkfun.com/distributors">Distributors</a></li>
+      <li id="header_menu_about"><a href="http://www.sparkfun.com/static/about">About Us</a></li>
+      <li id="header_menu_contact" class="last"><a href="http://www.sparkfun.com/static/contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="left">
+        <h2 class="collapsible" id="search_menu"><span class="arrow"></span>Search</h2>
+        <form class="collapsible search" style="display: block" action="http://www.sparkfun.com/search/results" id="search_form" method="get">
+  <input id="search_field" name="term" type="text" value="" />
+  <input type="submit" value="Go" class="button" />
+  <br />
+  <input id="products_search" type="radio" name="what" value="products" checked />
+  <label for="products_search">Products</label>
+  <br />
+  <input id="news_search" type="radio" name="what" value="news" />
+  <label for="news_search">News</label>
+  <br />
+  <input id="tutorials_search" type="radio" name="what" value="tutorials" />
+  <label for="tutorials_search">Tutorials</label>
+  <br />
+  <input id="comments_search" type="radio" name="what" value="comments" />
+  <label for="comments_search">Comments</label>
+</form>
+        <br />
+
+        <h2 id="products_menu" class="collapsible"><span class="arrow"></span>Products</h2>
+        
+<ul id="category_menu_list" class="collapsible" style="display: block">
+  <li id="menu_category_new_products"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/new_products">New Products</a></li>
+  <li id="menu_category_top"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/top">Top Sellers</a></li>
+  <li id="menu_category_featured"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/featured">Staff Picks</a></li>
+  <li id="menu_category_gift_certificates"><span class="arrow"></span><a href="https://www.sparkfun.com/gift_certificates">Gift Certificates</a></li>
+  <li><hr /></li>
+  <li id="menu_category_176"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/176">Books</a></li><li id="menu_category_20"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/20">Breakout Boards</a></li><li id="menu_category_70"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/70">Cables</a><ul style="display:none;"><li id="menu_category_140"><a href="http://www.sparkfun.com/categories/140">Audio</a></li><li id="menu_category_150"><a href="http://www.sparkfun.com/categories/150">Ethernet</a></li><li id="menu_category_72"><a href="http://www.sparkfun.com/categories/72">Hook Up</a></li><li id="menu_category_75"><a href="http://www.sparkfun.com/categories/75">Parallel</a></li><li id="menu_category_74"><a href="http://www.sparkfun.com/categories/74">Serial</a></li><li id="menu_category_71"><a href="http://www.sparkfun.com/categories/71">USB</a></li></ul></li><li id="menu_category_66"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/66">Cellular</a><ul style="display:none;"><li id="menu_category_67"><a href="http://www.sparkfun.com/categories/67">Antennas</a></li><li id="menu_category_69"><a href="http://www.sparkfun.com/categories/69">Eval Boards</a></li><li id="menu_category_68"><a href="http://www.sparkfun.com/categories/68">Modules</a></li></ul></li><li id="menu_category_154"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/154">Classes</a></li><li id="menu_category_51"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/51">Components</a><ul style="display:none;"><li id="menu_category_87"><a href="http://www.sparkfun.com/categories/87">ARM Microcontrollers</a></li><li id="menu_category_21"><a href="http://www.sparkfun.com/categories/21">AVR Microcontrollers</a></li><li id="menu_category_145"><a href="http://www.sparkfun.com/categories/145">Buttons/Switches</a></li><li id="menu_category_60"><a href="http://www.sparkfun.com/categories/60">General</a></li><li id="menu_category_90"><a href="http://www.sparkfun.com/categories/90">General ICs</a></li><li id="menu_category_89"><a href="http://www.sparkfun.com/categories/89">LEDs</a><ul><li id="menu_category_173"><a href="http://www.sparkfun.com/categories/173">10mm</a></li><li id="menu_category_171"><a href="http://www.sparkfun.com/categories/171">3mm</a></li><li id="menu_category_172"><a href="http://www.sparkfun.com/categories/172">5mm</a></li><li id="menu_category_170"><a href="http://www.sparkfun.com/categories/170">7-Segment</a></li><li id="menu_category_175"><a href="http://www.sparkfun.com/categories/175">Other</a></li><li id="menu_category_174"><a href="http://www.sparkfun.com/categories/174">SMD</a></li></ul></li><li id="menu_category_88"><a href="http://www.sparkfun.com/categories/88">Oscillators</a></li><li id="menu_category_22"><a href="http://www.sparkfun.com/categories/22">PIC Microcontrollers</a></li><li id="menu_category_124"><a href="http://www.sparkfun.com/categories/124">PICAXE Microcontrollers</a></li><li id="menu_category_132"><a href="http://www.sparkfun.com/categories/132">PSoC Microcontrollers</a></li><li id="menu_category_29"><a href="http://www.sparkfun.com/categories/29">SMD ICs</a></li></ul></li><li id="menu_category_2"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/2">Development Tools</a><ul style="display:none;"><li id="menu_category_184"><a href="http://www.sparkfun.com/categories/184">.NET</a></li><li id="menu_category_93"><a href="http://www.sparkfun.com/categories/93">ADuC</a></li><li id="menu_category_103"><a href="http://www.sparkfun.com/categories/103">Arduino</a></li><li id="menu_category_10"><a href="http://www.sparkfun.com/categories/10">AVR</a></li><li id="menu_category_164"><a href="http://www.sparkfun.com/categories/164">Beagle</a></li><li id="menu_category_187"><a href="http://www.sparkfun.com/categories/187">Chumby</a></li><li id="menu_category_109"><a href="http://www.sparkfun.com/categories/109">Coridium</a></li><li id="menu_category_136"><a href="http://www.sparkfun.com/categories/136">FPGA</a></li><li id="menu_category_101"><a href="http://www.sparkfun.com/categories/101">iPod</a></li><li id="menu_category_25"><a href="http://www.sparkfun.com/categories/25">LPC</a></li><li id="menu_category_11"><a href="http://www.sparkfun.com/categories/11">MSP</a></li><li id="menu_category_9"><a href="http://www.sparkfun.com/categories/9">PIC</a></li><li id="menu_category_125"><a href="http://www.sparkfun.com/categories/125">PICAXE</a></li><li id="menu_category_137"><a href="http://www.sparkfun.com/categories/137">PSoC</a></li><li id="menu_category_104"><a href="http://www.sparkfun.com/categories/104">Roomba</a></li><li id="menu_category_94"><a href="http://www.sparkfun.com/categories/94">SAM</a></li><li id="menu_category_95"><a href="http://www.sparkfun.com/categories/95">ST</a></li><li id="menu_category_167"><a href="http://www.sparkfun.com/categories/167">STAMP</a></li><li id="menu_category_107"><a href="http://www.sparkfun.com/categories/107">Wiring</a></li><li id="menu_category_169"><a href="http://www.sparkfun.com/categories/169">WIZnet</a></li><li id="menu_category_166"><a href="http://www.sparkfun.com/categories/166">XMOS</a></li><li id="menu_category_142"><a href="http://www.sparkfun.com/categories/142">Zune</a></li></ul></li><li id="menu_category_100"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/100">Dings and Dents</a></li><li id="menu_category_204"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/204">E-Textiles</a><ul style="display:none;"><li id="menu_category_205"><a href="http://www.sparkfun.com/categories/205">Aniomagic</a></li><li id="menu_category_210"><a href="http://www.sparkfun.com/categories/210">fabrickit</a></li><li id="menu_category_135"><a href="http://www.sparkfun.com/categories/135">LilyPad</a></li><li id="menu_category_206"><a href="http://www.sparkfun.com/categories/206">Materials</a></li></ul></li><li id="menu_category_4"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/4">GPS</a><ul style="display:none;"><li id="menu_category_18"><a href="http://www.sparkfun.com/categories/18">Antennas</a></li><li id="menu_category_86"><a href="http://www.sparkfun.com/categories/86">Eval Boards</a></li><li id="menu_category_17"><a href="http://www.sparkfun.com/categories/17">Modules</a></li></ul></li><li id="menu_category_157"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/157">Kits</a></li><li id="menu_category_76"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/76">LCDs</a><ul style="display:none;"><li id="menu_category_147"><a href="http://www.sparkfun.com/categories/147">Color</a></li><li id="menu_category_148"><a href="http://www.sparkfun.com/categories/148">Monochrome</a></li></ul></li><li id="menu_category_96"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/96">Port-O-Rotary</a></li><li id="menu_category_1"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/1">Programmers</a><ul style="display:none;"><li id="menu_category_26"><a href="http://www.sparkfun.com/categories/26">ARM</a></li><li id="menu_category_7"><a href="http://www.sparkfun.com/categories/7">AVR</a></li><li id="menu_category_156"><a href="http://www.sparkfun.com/categories/156">DSP</a></li><li id="menu_category_37"><a href="http://www.sparkfun.com/categories/37">MAXQ</a></li><li id="menu_category_8"><a href="http://www.sparkfun.com/categories/8">MSP</a></li><li id="menu_category_6"><a href="http://www.sparkfun.com/categories/6">PIC</a></li><li id="menu_category_126"><a href="http://www.sparkfun.com/categories/126">PICAXE</a></li><li id="menu_category_168"><a href="http://www.sparkfun.com/categories/168">XMOS</a></li></ul></li><li id="menu_category_53"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/53">Prototyping</a><ul style="display:none;"><li id="menu_category_54"><a href="http://www.sparkfun.com/categories/54">Batteries</a></li><li id="menu_category_149"><a href="http://www.sparkfun.com/categories/149">Boards</a></li><li id="menu_category_91"><a href="http://www.sparkfun.com/categories/91">Connectors</a></li><li id="menu_category_182"><a href="http://www.sparkfun.com/categories/182">Enclosures</a></li><li id="menu_category_55"><a href="http://www.sparkfun.com/categories/55">General</a></li><li id="menu_category_155"><a href="http://www.sparkfun.com/categories/155">Hardware</a></li><li id="menu_category_92"><a href="http://www.sparkfun.com/categories/92">Sockets</a></li><li id="menu_category_116"><a href="http://www.sparkfun.com/categories/116">Solar</a></li><li id="menu_category_141"><a href="http://www.sparkfun.com/categories/141">Wire</a></li></ul></li><li id="menu_category_207"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/207">Retail</a><ul style="display:none;"><li id="menu_category_212"><a href="http://www.sparkfun.com/categories/212">Arduino</a></li><li id="menu_category_216"><a href="http://www.sparkfun.com/categories/216">Components</a></li><li id="menu_category_213"><a href="http://www.sparkfun.com/categories/213">Kits</a></li><li id="menu_category_211"><a href="http://www.sparkfun.com/categories/211">Materials</a></li><li id="menu_category_215"><a href="http://www.sparkfun.com/categories/215">Prototyping</a></li><li id="menu_category_214"><a href="http://www.sparkfun.com/categories/214">Sensors</a></li><li id="menu_category_217"><a href="http://www.sparkfun.com/categories/217">Tools</a></li></ul></li><li id="menu_category_134"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/134">Retired</a><ul style="display:none;"><li id="menu_category_194"><a href="http://www.sparkfun.com/categories/194">Breakout Boards</a></li><li id="menu_category_203"><a href="http://www.sparkfun.com/categories/203">Cables</a></li><li id="menu_category_200"><a href="http://www.sparkfun.com/categories/200">Classes</a></li><li id="menu_category_192"><a href="http://www.sparkfun.com/categories/192">Components</a></li><li id="menu_category_191"><a href="http://www.sparkfun.com/categories/191">Development Tools</a></li><li id="menu_category_188"><a href="http://www.sparkfun.com/categories/188">GPS</a></li><li id="menu_category_190"><a href="http://www.sparkfun.com/categories/190">Kits</a></li><li id="menu_category_196"><a href="http://www.sparkfun.com/categories/196">LCD</a></li><li id="menu_category_201"><a href="http://www.sparkfun.com/categories/201">Programmers</a></li><li id="menu_category_195"><a href="http://www.sparkfun.com/categories/195">Prototyping</a></li><li id="menu_category_197"><a href="http://www.sparkfun.com/categories/197">Robotics</a></li><li id="menu_category_189"><a href="http://www.sparkfun.com/categories/189">Sensors</a></li><li id="menu_category_208"><a href="http://www.sparkfun.com/categories/208">SFE Widgets</a></li><li id="menu_category_198"><a href="http://www.sparkfun.com/categories/198">Swag</a></li><li id="menu_category_193"><a href="http://www.sparkfun.com/categories/193">Tools</a></li><li id="menu_category_199"><a href="http://www.sparkfun.com/categories/199">Wireless</a></li></ul></li><li id="menu_category_31"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/31">Robotics</a><ul style="display:none;"><li id="menu_category_179"><a href="http://www.sparkfun.com/categories/179">Drivers</a></li><li id="menu_category_181"><a href="http://www.sparkfun.com/categories/181">Kits</a></li><li id="menu_category_178"><a href="http://www.sparkfun.com/categories/178">Motors</a></li><li id="menu_category_202"><a href="http://www.sparkfun.com/categories/202">Other</a></li><li id="menu_category_180"><a href="http://www.sparkfun.com/categories/180">Wheels</a></li></ul></li><li id="menu_category_185"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/185">Sale</a></li><li id="menu_category_23"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/23">Sensors</a><ul style="display:none;"><li id="menu_category_80"><a href="http://www.sparkfun.com/categories/80">Accelerometers</a><ul><li id="menu_category_161"><a href="http://www.sparkfun.com/categories/161">1-axis</a></li><li id="menu_category_162"><a href="http://www.sparkfun.com/categories/162">2-axis</a></li><li id="menu_category_163"><a href="http://www.sparkfun.com/categories/163">3-axis</a></li></ul></li><li id="menu_category_146"><a href="http://www.sparkfun.com/categories/146">Biometrics</a></li><li id="menu_category_117"><a href="http://www.sparkfun.com/categories/117">Capacitive</a></li><li id="menu_category_151"><a href="http://www.sparkfun.com/categories/151">Current</a></li><li id="menu_category_143"><a href="http://www.sparkfun.com/categories/143">Flex / Force</a></li><li id="menu_category_85"><a href="http://www.sparkfun.com/categories/85">Gyros</a><ul><li id="menu_category_158"><a href="http://www.sparkfun.com/categories/158">1-axis</a></li><li id="menu_category_159"><a href="http://www.sparkfun.com/categories/159">2-axis</a></li><li id="menu_category_183"><a href="http://www.sparkfun.com/categories/183">3-axis</a></li></ul></li><li id="menu_category_144"><a href="http://www.sparkfun.com/categories/144">ID</a></li><li id="menu_category_160"><a href="http://www.sparkfun.com/categories/160">IMU</a></li><li id="menu_category_139"><a href="http://www.sparkfun.com/categories/139">Infrared</a></li><li id="menu_category_102"><a href="http://www.sparkfun.com/categories/102">Light / Imaging</a></li><li id="menu_category_83"><a href="http://www.sparkfun.com/categories/83">Magneto</a></li><li id="menu_category_84"><a href="http://www.sparkfun.com/categories/84">Proximity</a></li><li id="menu_category_165"><a href="http://www.sparkfun.com/categories/165">Radiation</a></li><li id="menu_category_186"><a href="http://www.sparkfun.com/categories/186">Sound</a></li><li id="menu_category_82"><a href="http://www.sparkfun.com/categories/82">Temperature</a></li><li id="menu_category_152"><a href="http://www.sparkfun.com/categories/152">Weather</a></li></ul></li><li id="menu_category_97"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/97">SFE Widgets</a></li><li id="menu_category_130"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/130">Swag</a></li><li id="menu_category_46"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/46">Tools</a><ul style="display:none;"><li id="menu_category_47"><a href="http://www.sparkfun.com/categories/47">Hand Tools</a></li><li id="menu_category_48"><a href="http://www.sparkfun.com/categories/48">Hot-Air Rework</a></li><li id="menu_category_177"><a href="http://www.sparkfun.com/categories/177">Instruments</a></li><li id="menu_category_28"><a href="http://www.sparkfun.com/categories/28">Power Supplies</a></li><li id="menu_category_49"><a href="http://www.sparkfun.com/categories/49">Soldering</a></li></ul></li><li id="menu_category_138"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/138">Tracking</a></li><li id="menu_category_16"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/16">Wireless</a><ul style="display:none;"><li id="menu_category_78"><a href="http://www.sparkfun.com/categories/78">Antennas</a></li><li id="menu_category_115"><a href="http://www.sparkfun.com/categories/115">Bluetooth</a></li><li id="menu_category_79"><a href="http://www.sparkfun.com/categories/79">General</a></li><li id="menu_category_113"><a href="http://www.sparkfun.com/categories/113">Modem</a></li><li id="menu_category_114"><a href="http://www.sparkfun.com/categories/114">Nordic</a></li><li id="menu_category_112"><a href="http://www.sparkfun.com/categories/112">WiFi</a></li><li id="menu_category_111"><a href="http://www.sparkfun.com/categories/111">Zigbee/802.15.4</a></li></ul></li>  <li><hr /></li>
+  <li>
+    <img style='float: left' src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/pdf.gif" />
+    <a href="http://sparkfun.com/download/PDFs/catalog.pdf">Full catalog</a>
+  </li>
+</ul>
+        <br />
+      </div>
+
+      <div id="right">
+        <div class="collapsible user">
+  <p class="cart-link"><img height="19" width="19" alt="" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_shoppingcart.gif"> 
+     <a href="http://www.sparkfun.com/cart"><span id="items_in_cart">0</span> items in your cart</a></p>
+  <form action="https://www.sparkfun.com/account/login" id="login" method="post">
+    <label for="user_login">Email</label>
+    <input id="user_login" type="text" tabindex="1" maxlength="320" name="user">
+    <label for="user_password">Password</label>
+    <input id="user_password" type="password" tabindex="2" maxlength="20" name="passwd">
+    <p class="right"><input type="submit" value="log in" class="button"></p>
+    <p><a href="https://www.sparkfun.com/account/forgot_password">Forgot your password?</a><br/>
+       No account? <a href="https://www.sparkfun.com/account/make">Register here</a>.</p>
+  </form>
+</div>
+<br>
+
+        <h2 id="feed_menu" class="collapsible"><span class="arrow"></span>Feeds</h2>
+        <ul class="collapsible feeds" style="display: block">
+  <li><a href="http://www.sparkfun.com/feeds/news">News</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/products">Products</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/changes">Product Changes</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/comments">Comments</a></li>
+  <li><a href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&amp;v=2&amp;orderby=published">Videos</a></li>
+</ul>
+        <br />
+
+        <h2 id="resources_menu" class="collapsible"><span class="arrow"></span>Resources</h2>
+        <ul class="collapsible resources" style="display: block">
+  <li><a href="http://www.sparkfun.com/news/263">Official SparkFun IRC Channel</a></li>
+  <li><a href="http://www.batchpcb.com/" target="_blank">Custom PCBs</a></li>
+  <li><a href="http://www.opencircuits.com/" target="_blank">Open Circuits</a></li>
+  <li><a href="http://www.ponoko.com/make-and-sell/electronics" target="_blank">Ponoko - Your Personal Factory</a></li>
+  <li><a href="http://www.sparkfun.com/static/jobs">Jobs @ SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/tutorials/92">Sell Your Widget on SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/quiz">Take the SparkFun Quiz</a></li>
+</ul>
+        <br />
+
+        <h2 id="currency_menu_head" class="collapsible"><span class="arrow"></span>Currency</h2>
+        
+<div class="collapsible" id="currency_menu">
+  Display prices in
+  <input type="hidden" id="preferred_currency" value="USD" />
+  <ul id="currency_menu_list" class="currency">
+          <li>
+        <a id="currency_USD" onclick="SFE.change_currency('USD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_checked.gif" />
+                US Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_CAD" onclick="SFE.change_currency('CAD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Canadian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_AUD" onclick="SFE.change_currency('AUD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Australian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_GBP" onclick="SFE.change_currency('GBP'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                British Pound        </a>
+    </li>
+          <li>
+        <a id="currency_EUR" onclick="SFE.change_currency('EUR'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Euro        </a>
+    </li>
+      </ul>
+  </div>
+
+<script language="javascript">
+var CURRENCIES = {"USD":{"code":"USD","title":"US Dollar","symbol_left":"$","symbol_right":"","decimal_point":".","thousands_point":",","decimal_places":"2","value":"1.0000"},"CAD":{"code":"CAD","title":"Canadian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9706"},"AUD":{"code":"AUD","title":"Australian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9957"},"GBP":{"code":"GBP","title":"British Pound","symbol_left":"&pound;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.6187"},"EUR":{"code":"EUR","title":"Euro","symbol_left":"&euro;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.7214"}}</script>
+        <br />
+
+        <h2 id="feedback_menu" class="collapsible"><span class="arrow"></span>Feedback</h2>
+        <form id="feedback" class="collapsible" style="display: block">
+  <label for="feedback_textarea" style="font-weight: bold">What's on your mind?</label>
+  <br />
+  <textarea id="feedback_textarea" name="feedback_text"></textarea>
+  <br /><br />
+  <label for="feedback_email">Please include your email address if you'd like us to respond to a specific question.</label>
+  <br />
+  <br />
+  <input type="text" id="feedback_email" name="email" /> 
+  <br />
+  <input onclick="SFE.mind_feedback(); return(false);" type="button" class="button" value="Submit" /> 
+</form>
+      </div>
+
+      <div id="center">
+        <a name="content" id="content"></a>
+        
+<h1 class="red-header">
+    <span class="link"><a href="http://www.sparkfun.com">Home</a> |</span><span class="link"><a href="http://www.sparkfun.com/tutorials/">Tutorials</a>|</span>  Beginning Embedded Electronics - 1 
+</h1>
+
+<div class="news">
+  <p class="header">
+    <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/avatars/7185_sm.jpg" />
+    <a class="title" href="http://www.sparkfun.com/tutorials/57">Beginning Embedded Electronics - 1</a>
+    <br />
+    by <a href="http://www.sparkfun.com/users/7185">Nate</a> | June 19, 2008 | <i><a style="cursor: pointer" onclick="javascript: if(!$('comments').visible()) { SFE.toggle_collapsible($('comments_header')); } $('comments_header').scrollTo();">57 comments</a></i>
+    <span class="skill">
+      Skill Level: 
+              <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" />
+        Beginner
+          </span>
+  </p>
+  <hr />
+  <h2>
+	Lecture 1 - Background and Power Supply</h2>
+<div class="tutorial_text">
+	<p>
+		This is a series of lectures written for those with mild electronics background (aka Sophomore in Electrical and Computer Engineering) to learn about the wild world of Embedded Electronics. I assume only that you know what electricity is and that you&#39;ve touched an electrical component. Everything else is spelled out as much as possible. There is quite a lot here so take your time! It is also my intention to get book-hardened EE&#39;s students to put down the calculator and to plug in an LED. Remember, if it smokes, at least you learned what not to do next time!</p>
+	<p>
+		You can get all the parts for this lecture <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=8373" target="_blank"> here</a>.</p>
+	<p>
+		Sorry for the confusion. When these tutorials were written and photographed, we used the ATmega8. We now carry the newer ATmega328. You will find all ATmega328 information in the following pages, but the pictures will show an ATmega8.</p>
+	<p>
+		<b>What&#39;s a Microcontroller?</b></p>
+	<p>
+		You may know what an OR gate is. An OR gate is a logic gate that takes two inputs and controls an output. You may have played with these types of gates, even possibly a DIP packaged OR gate with 4 OR gates built into it. This DIP package required a power pin and a ground pin. Electricity flowed through the IC and allowed it to operate. You may not be sure how the IC was built, but you understand that if you change the inputs, the output changes. You can do this by tying the inputs to either power (also known as VCC) or ground (GND).&nbsp; You probably played with one of the DIP ICs in a breadboard. If any of this is completely alien to you, don&#39;t fret! We&#39;ll try to ease you into it.</p>
+	<p>
+		A microcontroller is the same as an OR gate. You have some inputs, you have outputs. The crazy thing is that a micro runs code. Machine code to be specific. For instance, with a little bit of work, you can monitor the input of two pins A and B. And based on those inputs, you can control an output pin C. So to replicate an OR gate:</p>
+	<dl>
+		<dd>
+			<b><font size="2">if (A == 1 || B == 1) </font></b></dd>
+		<dd>
+			<b><font size="2">{</font></b></dd>
+		<dd>
+			<dl>
+				<dd>
+					<b><font size="2">C = 1; </font></b></dd>
+			</dl>
+		</dd>
+		<dd>
+			<b><font size="2">}</font></b></dd>
+		<dd>
+			<b><font size="2">else</font></b></dd>
+		<dd>
+			<b><font size="2">{</font></b><font size="2"> </font></dd>
+		<dd>
+			<dl>
+				<dd>
+					<b><font size="2">C = 0;</font></b></dd>
+			</dl>
+		</dd>
+		<dd>
+			<b><font size="2">{</font></b></dd>
+	</dl>
+	<p>
+		It&#39;s C code! You can code up all sorts of different applications, compile code, load it onto a micro, power the micro, and the code runs. Very simple! Microcontrollers are used in all the electronics you take for granted such as your microwave, TV remote, cell phone, mouse, printer, there&#39;s over 150 microcontrollers embedded into new cars! There&#39;s one waiting for you to depress the brakes (BRAKES == 1) and for the tires to lock up (LOCK_UP == 1). When this happens, the micro releases the brakes, and you have ABS (anti-lock brake system).</p>
+	<p>
+		In the old days, microcontrollers were OTP or one-time-programmable meaning you could only program the micro once, test the code, and if your code didn&#39;t work, you threw it out and tried again. Now micros are &#39;flash&#39; based meaning they have flash memory built inside that allows their code to be written and rewritten thousands of times. I&#39;ve been programming micros for years and always burn out the microcontroller far before I hit the limit of flash programming cycles.</p>
+	<p>
+		Flash micros are different than computers and RAM. Computers require tons of power and components to get up and running. Computers run HOT. Computers take forever and a day to boot. Micros are on and running code within milliseconds and if they&#39;re warm enough you can feel heat coming off of them, something is <i> very </i>wrong and you&#39;ve probably blown the micro. Oh - and micros cost about $2.</p>
+	<p>
+		Now back to that OR gate IC. It had a bunch of pins, all dedicated to being either inputs or outputs of the various built-in OR gates (4 gates in one package = 8 inputs, 4 outputs, 2 power/gnd pins). 14 pins of fun. Now with a micro, the most basic pin function is GPIO - general purpose input/output. These GPIO pins can be configured as an input <i>or</i> an output. Very cool. Each input pin can be monitored and acted upon. Example:</p>
+	<blockquote>
+		<p>
+			<b><font size="2">if (PORTC.2 == 1)</font></b></p>
+		<blockquote>
+			<p>
+				<b><font size="2">then do something...</font></b></p>
+		</blockquote>
+	</blockquote>
+	<p>
+		&nbsp;Each output pin can be pushed high or low.&nbsp; Example:</p>
+	<dl>
+		<dd>
+			<b><font size="2">while(1)</font></b></dd>
+		<dd>
+			<b><font size="2">{</font></b></dd>
+	</dl>
+	<blockquote>
+		<dl>
+			<dd>
+				<b><font size="2">RB3 = 1;</font></b></dd>
+			<dd>
+				<b><font size="2">delay_ms(1000);</font></b></dd>
+			<dd>
+				<b><font size="2">RB3 = 0;</font></b></dd>
+			<dd>
+				<b><font size="2">delay_ms(1000);</font></b></dd>
+		</dl>
+	</blockquote>
+	<p>
+		&nbsp;</p>
+	<dl>
+		<dd>
+			<b><font size="2">}</font></b></dd>
+	</dl>
+	<p>
+		Guess what that code does? It toggles a pin high/low every 2 seconds. Fancy right? This is the &#39;Hello World&#39; of the microcontroller world. It seems trivial, but by god when you&#39;ve been trying to get a micro up and running after 5 hours of tearing your hair out and you see that LED blinking for the first time, it&#39;s just glorious!</p>
+	<p>
+		<b>What types of microcontrollers are there and how do I get one blinking?</b></p>
+	<p>
+		Here&#39;s a very shallow breakdown of the micros in my world:</p>
+	<ul>
+		<li>
+			<a href="http://en.wikipedia.org/wiki/PIC_microcontroller" target="_blank">PIC</a> - This is the classic micro from Microchip. Very simple, very proven, but it lacks many of the features that other mfg&#39;s are building into their chips. This is a big deal for me. I was a die-hard PIC person for years and I&#39;ve started to see the limits of PICs and the benefits of other micros!</li>
+		<li>
+			<a href="http://en.wikipedia.org/wiki/Atmel_AVR" target="_blank">AVR</a> - This is basically a direct competitor of PICs. They do everything a PIC does, but in my new opinion, better, faster, cheaper, and simpler.</li>
+		<li>
+			<a href="http://en.wikipedia.org/wiki/TI_MSP430" target="_blank">MSP</a> - These are very good micros by Texas Instruments (TI), not as beefy as AVR or PICs. However they truly excel at low-power applications. More on this later, but imagine running a complete system on one AA battery for 5 years. This is in the realm of nano-amp current consumption. Crazy!</li>
+		<li>
+			<a href="http://en.wikipedia.org/wiki/ARM_architecture" target="_blank">ARM</a> - Why are all these three letters? I don&#39;t know actually... ARMs are the new kids on the block and they are huge. Very powerful, very low-cost, they are taking over the world but can be really intimidating if you&#39;ve never played with a micro before.</li>
+		<li>
+			<a href="http://en.wikipedia.org/wiki/8051" target="_blank">8051</a> - The &#39;8051 core&#39; was the de facto standard in 8-bit (and 4-bit!) microcontrollers. Developed by Intel in the 1980s, it still seems to be the instruction set they love to teach you in college. They are based on archaic, but field proven instruction sets. Very old tech in my humble opinion, but these ICs have been significantly improved over the years (now Flash based, ADC, SPI, etc.).</li>
+		<li>
+			<a href="http://en.wikipedia.org/wiki/Freescale_68HC11" target="_blank"> 68HC08/11</a> - Another very common instruction set developed by Motorola. Extremely popular, and a micro commonly taught at university, it&#39;s the microcontroller I love to hate. These original micros often lack on-board RAM and flash based memory.</li>
+	</ul>
+	<p>
+		Google any of these for more info. I have chosen the ATmega168 as the learning IC of choice. Why?</p>
+	<ul>
+		<li>
+			20 MIPs (million instructions per second!) is powerful enough to do some really cool projects</li>
+		<li>
+			It&#39;s cheap! $2.13 currently</li>
+		<li>
+			It&#39;s got all the goodies under the hood (UART, SPI, I2C, ADC, internal osc, PWM, kitchen sink, etc)</li>
+		<li>
+			16K of program memory is enough for almost any beginner project</li>
+		<li>
+			The tools are free! (C compilers for many of the other micros cost a lot of money)</li>
+		<li>
+			The programming and debugging tools are low cost ($20 will get you started)</li>
+	</ul>
+	<p>
+		With a little work and probably $40 worth of parts, you too can get an LED blinking. As with any new hobby (also known as a drug addiction), the extra cost of &#39;goodies&#39; can grow very quickly.</p>
+	<p>
+		<b>You want to play microcontrollers today?</b></p>
+	<p>
+		With any IC, you need to power the thing. There are two power connections on basic micros : VCC and GND. What the heck is VCC? This is the label for the positive voltage. Don&#39;t worry, after a few days of this, seeing &#39;VCC&#39; will become very normal. GND is short for ground. All electrical current needs a way to flow back to ground. This can be called &#39;common&#39; but is often just labeled GND.</p>
+	<p>
+		There are thousands of different micros out there, but 5V (five volts) is the typical VCC. 3.3V is also typical but you&#39;ll also see 2.8V and 1.8V VCCs on more exotic micros. For now, just worry about 5V and GND.</p>
+	<p>
+		<b>Where do I find this 5V?</b></p>
+	<p>
+		You can get all the parts for this lecture <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=8373" target="_blank"> here</a>.</p>
+	<p>
+		You need to hook up 5V and GND to your micro. Your house outlet runs at 110V AC (or 220V for many countries). AC = alternating current and is very bad for 5V DC (direct current) micros. So you&#39;ll need to convert the 110V AC from your outlet to a useable 5V DC.</p>
+	<p>
+		<b>Quick note:</b> If you reverse the connection on your micro - bad things happen. Always make sure your 5V power supply is connected to the VCC pins and GND to GND. If you reverse this and connect 5V to GND on the micro and GND to VCC on the micro, things won&#39;t explode, probably no smoke, things will probably heat up like crazy, and you&#39;ll probably damage your $2 micro. You probably will. I did. Many times. Try not to do it.</p>
+	<p>
+		Ok! You need 5V. Time to build a simple voltage regulator circuit!</p>
+	<p>
+		You can buy something called a &#39;wall wart&#39;. Don&#39;t ask me why they call it that, ask google. A wall wart takes a higher voltage and converts it to a lower voltage. DO NOT assume a wall wart labeled &#39;5V&#39; will output 5V. This is a <a href="http://www.glitchbuster.com/wallwart.htm" target="_blank">major misconception</a> - I know, I know, faulty advertising. Just hook up your multimeter to the barrel plug and see what voltage you read. Probably more like 8 or 9V. This will kill your micro so keep reading! For a more detailed explanation check out the <a classname="" href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=103" name="" target="_blank">Unregulated Power Supply Tutorial</a>.</p>
+	<p>
+		Let&#39;s assume you are using a wall wart with an output of something nice like 9V. Dandy. Unfortunately this 9V output is rather noisy - meaning there is a lot of ripple. Ok what does ripple mean? You want a DC voltage meaning you want a solid voltage (the opposite of alternating). A wall wart uses some cheap tricks to get 110V AC down to 9V DC. So the DC signal coming out of the wall wart tends to alternate 100-500mV. Instead of a solid 9VDC, you see a signal that rises and falls between 8.5 and 9.5 volts. This &#39;ripple&#39; can cause havoc with your system, <i>and</i> 9V is too high (we need 5V!) so we need to pass 110V through this wall wart, and send the 9V through a regulator to get down to a clean 5V DC signal. If this all sounds scary - don&#39;t worry. After you get your 5V power system built, you&#39;ll wonder why you were scared in the first place (it&#39;s simple, I swear).</p>
+	<p>
+		The most common regulator is called the LM7805. Why? I dunno. I&#39;ve never actually touched a component with LM7805 stamped on the outside. There&#39;s always other letters stamped on the outside like &#39;LM7805&#39; or &#39;LV78X05&#39; or some such crazyiness. Just know that there are many many manufacturers out there and they are all producing the same basic part, with small tweaks to each one. What you need is one of these generic parts that is designated as a &#39;5V linear regulator&#39;. If you&#39;re playing in a breadboard, you&#39;ll also want it in the TO-92 or TO-220 package. More about packages in a later lecture, just go with it for the moment.</p>
+	<p>
+		You&#39;ve got your regulator in hand, you&#39;ve got the wall wart. Time to connect them up.</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/LM7805-Pinout.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/LM7805-Pinout.jpg" /></p>
+	<p align="left">
+		Here you can see the &#39;pin-out&#39; of the LM7805. Say &#39;IGO&#39; in your head and commit this to memory (input, ground, output). You&#39;ll probably hook up a lot of these. When in doubt, always check the datasheet before hooking up a new part - or else be close to the on/off switch! Input is the input voltage of anything greater than about 7V. GND is ground. Output is the 5V output pin. Your wall wart should have two wires. One is 9V, the other is GND. All grounds need to be connected together for current to flow across the system. One more time - connect all grounds. This is the #2 reason why novii can&#39;t get a system to work. For our breadboard, we will be inputting 9V (or whatever transformer you&#39;ve got up to about 15V) and outputting 0V (GND) and 5V to our breadboard rails.</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/PowerSupply1.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/PowerSupply1.jpg" /></p>
+	<p align="left">
+		We are going to go through a bunch of iterations of the power supply, adding parts as we go. Shown above, we have a basic regulator configuration. 9V in, we should see a rough 5V on the output.</p>
+	<p align="left">
+		<b>Schematic note:</b> The two ground pins are not shown connected. We assume that nets (the green wires) of the same name are connected together. Schematics can get big and complex, so you won&#39;t see all the wires together, but in your breadboard you need to connect all the GND pins together. In this case it&#39;s the GND wire from your wall wart connected to the GND pin on the regulator.</p>
+	<p align="left">
+		Cool. But why doesn&#39;t the multimeter read 5.000V? Electronics are not that good. The cheap-o regulators are +/-5% tolerate meaning you&#39;ll see between 5.25 and 4.75V. In practice, you should see between 5.1 and 4.9V with most run of the mill regulators. You can of course spend many $$ and get tighter tolerances but 5.1-4.9V will work fine for our purposes.</p>
+	<p align="left">
+		Now we should be worried about ripple. There is noise coming in the input pin, the regulator tries hard, but some of that noise gets onto the output pin. Your multimeter says 5.08V, but that&#39;s because it&#39;s averaging many readings together and showing you only the average. Do you know someone with a oscilloscope? If so, show them this tutorial and ask them to show you the noise on your 5V rail. With no filtering caps, you could see as much as 200mV of noise.</p>
+	<p align="left">
+		Whoa - what&#39;s a filtering cap? Filtering capacitors are large bulky capacitors that help smooth out ripple. There&#39;ve been lots of analogies about capacitors so here&#39;s another one for ya:</p>
+	<p align="left">
+		Capacitors act like water tanks. When your circuit pulls a bunch of water out of the system, the capacitor helps hold the voltage up temporarily until the power system can catch up. For example: you may live in a city with water and water pressure. If you take a shower you affect the pressure in the municipal water system ever so slightly. If everyone turned on their shower and flushed every toilet in the city, odds are the water pressure would fluctuate quite a bit! A big water tank helps minimize these pressure fluctuations. A big cap helps minimize the voltage fluctuations on your breadboard.</p>
+	<p align="left">
+		Is this something you can see happen? Unfortunately not really. You can probably run your system without filtering caps, but it&#39;s not good engineering practice. Give it a whirl without caps! But when things don&#39;t work, you&#39;ll wonder if it&#39;s the caps, or your code, or your timing, or maybe you blew out the sensor. Too many unknowns will make you crazy. My recommendation: just use a couple basic caps...</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/PowerSupply2.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/PowerSupply2.jpg" /></p>
+	<p align="left">
+		100uF (one-hundred micro farad) on the input and 10uF on the output. You will use a lot of 100uF and 10uF around power systems and you will eat 0.1uF (point one micro farad) caps like candy around micros. These two caps should smooth the input into the regulator and will smooth the output nicely.</p>
+	<p align="left">
+		Capacitors cannot deliver their stored energy instantaneously. Larger caps (1ouF and 100uF) store more energy, but they react more slowly. The smaller the capacitor, the faster it can deliver its stored energy.&nbsp; If you have a large power outage (power dips for 10-100ms), a big cap (100uF to 1000uF) will help &#39;hold up&#39; the falling voltage. A smaller cap (0.1uF) will help suppress higher frequency noise and shorter power dips (noise in the 1us to 100us range). Therefore, 0.1uF caps are located near the microcontroller to help with short bursts, where 100uF and 10uF caps are used on the power rails.</p>
+	<p align="left">
+		Now you see the schematic symbol looks a bit odd. What&#39;s with + and curved lines? This schematic component is indicating that the 100uF and 10uF cap are <i>polarized</i>. Oh jeebus, what&#39;s that? Time for a capacitor breakdown:</p>
+	<ul>
+		<li>
+			<p align="left">
+				Electrolytic caps: These are larger caps capable of storing 10uF to 1,000,000s of farads. They are cheap and great for bulk capacitance. They are polarized meaning there is a positive pin and a negative pin.</p>
+		</li>
+	</ul>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/commerce/images/Caps-3.jpg" /></p>
+	<p align="center">
+		The cap has a minus &#39;-&#39; sign on the cover indicating that pin needs to go to GND.</p>
+	<ul>
+		<li>
+			<p align="left">
+				Ceramic caps: These are the cheapest and most common cap you&#39;ll play with on a breadboard. They are NOT polarized so you can stick em in the breadboard any way you want. Ceramic caps cannot handle as large of capacitance as electrolytics so you&#39;ll need both on your breadboard system.</p>
+		</li>
+		<li>
+			<p align="left">
+				There are many more different kinds of capacitors but for the sake of your head exploding, we won&#39;t cover them here.</p>
+		</li>
+	</ul>
+	<p align="left">
+		Okay - now you need to work through some logic here. You know the positive part of the 100uF cap needs to be connected to the input pin, but only the negative pin is marked. Yes it&#39;s confusing - but you&#39;ll get used to it. Negative marked pin goes to ground, the other goes to the input pin.</p>
+	<p align="left">
+		What happens if you get them switched? Well here&#39;s where things may go poof.</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/leakycap-4.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/leakycap-4.jpg" /></p>
+	<p align="center">
+		From the left: Bad, good, ugly</p>
+	<p align="left">
+		This is what happens when you over-voltage or reverse voltage a polarized capacitor. The middle cap is normal. The cap on the left, you can see the top is slightly raised up. This is what happens when the electrolyte inside expands. And the cap on the right shows us what happens when this pressure is so great, it busts through the metal top. Notice the &#39;+&#39; imprinted into the tops of these caps? That imprint is there so that if the pressure does build up, the cap will fail like the unit on the right - rather than blowing the top half of the cap across the room.</p>
+	<p align="left">
+		This picture was taken from the inside of an old Gateway computer (circa 1999). Gateway had used some &#39;marginal&#39; 1000uF/16V capacitors. The /16V means they are rated to 16V. A 16V rating means they can withstand voltages up to 16V but no more. These caps were sitting on the 12V rail to smooth out the ripple but obviously they where failing. Gateway was trying to save $0.50 by using a capacitor that was too close to the maximum. Manufacturing is not perfect! With any production run, the population of capacitors and their tolerance looks like a bell curve. The majority of the 16V rated caps can withstand 16V. Some can 18V, even 22V! But the tolerance bell curve goes both ways; a small number of the capacitors rated at 16V will fail at 10V, some at 8V. You get a big enough ripple on the 12V line and you could pop the 16V rated cap. This is why most engineers talk of &#39;de-rating&#39; capacitors. If you have a 5V rail, you <i>do not</i> stick a 5V rated cap on the rail! A good rule of thumb is to de-rate any capacitor by 50%. So a 12V cap is good to be used on 6V rail, 24V cap on a 12V rail, etc.</p>
+	<p align="left">
+		Guess what happens when an electrolytic cap fails like the ones above? They quit working. In most cases, they &#39;fail safe&#39; meaning they won&#39;t work as a capacitor anymore <i>but</i> they won&#39;t short to ground. The real fun begins when the failure is so bad that the internals fuse together and you get a short to ground - then you can have some fun melt downs! In the case of this computer, the motherboard had all sorts of bad software failures because the power supply had too much ripple! The big filtering caps on the power supply had failed so the 12V was all over the place.</p>
+	<p align="left">
+		Similar failures can happen if you reverse the polarization of the cap. If the voltage is low (less than around 25V) the cap will probably just be damaged a bit. If you&#39;ve got a vacuum bell sitting around and you want to really cause some damage, ask a trained professional to hook up 10V cap backwards to 10,000V. It should instantaneously blow up like a pop corn kernel.</p>
+	<p align="left">
+		For your power supply filtering caps, I recommend using a 25V rated 100uF cap (100uF/25V) on the input and a 10uF/10V cap on the output. Engineers will tell you to &#39;derate&#39; the cap by 50% meaning if the label says 100V don&#39;t trust it past 50V. This is generally good practice. Following this idea, our 100uF/25V is good for inputs up to about 12.5V before we should worry that we may pop the electrolytes. Again, not mandatory, just don&#39;t expect a 5V rated cap to withstand a 9V input.</p>
+	<p align="left">
+		Back to our power supply! Don&#39;t worry about blowing things up just yet, you should be at low enough voltages you won&#39;t do any harm. Again, if things heat up/smoke/spark, just unplug or turn off the system. Speaking of turning things off - we need a power switch!</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/PowerSupply3.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/PowerSupply3.jpg" /></p>
+	<p align="left">
+		This will allow you to turn on/off the system. Handy. It can get <i>really</i> annoying pulling and inserting the power wires to power/kill your system.</p>
+	<p align="left">
+		Inside the small black enclosure, is a switch. The switch has three pins. It looks like a see-saw inside. The center pin is always connected to the middle of the see-saw and as you slide the switch back and forth, the see-saw rocks up and down. Slide the switch forward and the see-saw shorts from the center pin to the forward pin. Slide the switch back and the see-saw disconnects from the forward pin and shorts to the rear pin. We recommend you connect power to the center pin of the switch. When you slide the switch forward, power will short to an unconnected pin and do nothing (no power to your system). Slide the switch back and the center power pin will short to the wire running into your regulator, delivering power to your system (power on!).</p>
+	<p align="left">
+		Remember all the warning about reversing VCC and GND and how that is bad? Well if you connect your power supply backwards, that&#39;s bad. So let&#39;s protect ourselves!</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/PowerSupply4.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/PowerSupply4.jpg" /></p>
+	<p align="left">
+		That&#39;s a diode (marked D1). A diode lets current flow in one direction (in the direction of the arrow) and it blocks current from flowing in the opposite direction. This will allow 9V to flow in the right direction, and if you accidentally hook your power supply up the wrong way, it will block current from flowing backwards and damaging your system. Is it overkill? Pretty close. But we always design them into our development boards because we don&#39;t know what type of power supply you knuckleheads (also known as our paying customers) will plug on to our boards. If you plug the wrong type of wall wart onto a board, we want to protect you from yourself.</p>
+	<p align="left">
+		There are some down sides to a protection diode:</p>
+	<ul>
+		<li>
+			<p align="left">
+				All diodes have a voltage drop, meaning 9V on one side will drop to about 8.5V on the other. So your 9V wall wart just became 8.5V.</p>
+		</li>
+		<li>
+			<p align="left">
+				Diodes have a current rating. If you try to suck 1A (1 amp) through a 0.1A (one hundred mili-amp) rated diode, the diode will quickly heat up and fail. For reverse protection, we recommend a 1A 1N4001 diode. These are dirt cheap and very common.</p>
+		</li>
+	</ul>
+	<p align="left">
+		Note that diodes are polarized. They have a direction that you need to pay attention to. Many diodes have a band indicating the cathode. What&#39;s a cathode? Go google. All you really need to know is that the line on the schematic part is the same as the line on the diode. If you can&#39;t remember which is which, remember &#39;<b>a</b>rrow is for <b>a</b>node&#39;. Cheesy, yes.</p>
+	<p align="left">
+		So if you want to install this &#39;reverse protection diode&#39;, the 9V from your wall wart goes into the end of the diode without the band (the anode). The banded end (cathode) goes into your switch. Your switch then goes into the input. Throw the switch and you should see 5V on the output using your multimeter. Nifty. But I am tired of using my multimeter each time to check the 5V output. There must be a better way! Time to wire in the power LED.</p>
+	<p align="left">
+		Light emitting diodes (LEDs) are bits of silicon that light up when current flows through them. Go google for the science. As a general rule of thumb, LEDs can have 20mA max current flowing through them before they begin to fail.</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/PowerSupply5.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/PowerSupply5.jpg" /></p>
+	<p align="left">
+		So if you hooked up your LED like in the above schematic, it would light up <i>very</i> bright for a split second and then burn out. That&#39;s cause the LED is a diode and the current will flow from the anode (arrow) to the cathode (line) to ground - uncontrolled! The silicon will flow current at something like 1 amp for a split second and burn up. To limit this current flow to 20mA, we need Ohm&#39;s law. Yea, the book worms in the room suddenly perked up:</p>
+	<p align="left">
+		V = IR (this is Ohm&#39;s law)</p>
+	<p align="left">
+		If we have 5V, and we only want 20mA flowing through the LED:</p>
+	<p align="left">
+		5V = 0.02 * R</p>
+	<p align="left">
+		R = 250 Ohm</p>
+	<p align="left">
+		Now this is not completely true because the LED has a forward voltage drop, but don&#39;t worry too much about that. Hooking up LEDs is very common with micros. All you need to remember is that you&#39;re going to need to limit the current. The most basic way to do this is with a resistor. 220 Ohms will work (LED will be brighter), 330Ohm is also good (LED a bit dimmer), 1K (1000) will work as well. 220, 330, and 1K are more common resistor values.</p>
+	<p align="left">
+		I highly recommend you get your hands dirty. Hook up an LED to a 1k resistor, then a 330, then a 220, 100, 50, then finally blow the thing up by hooking it with no resistor. That was fun right? Good. You had a back-up right? Once the bit of silicon inside the LED is burned out, it is no good and the LED can be thrown away.</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/PowerSupply6.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/PowerSupply6.jpg" /></p>
+	<p align="center">
+		Eagle <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/ATmega8-RS232.zip" target="_blank"> schematic</a> / <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/ATmega8-RS232.pdf" target="_blank"> PDF</a></p>
+	<p align="left">
+		Our final power supply circuit. It seems like a lot of work, but once you set this up on your breadboard, you might never take it off. This is the basis for all things micro. The input voltage may change, the output voltage may change (to 3.3V for example), but the basics are all there. Flip the switch and you should have a nice 5V rail and an LED letting you know that everything is a-ok. <i>If the LED does not light up</i>, that means that something else on the 5V rail is sucking so much current that the LED cannot light up. This is a very strong indicator something is wrong. <b>If you turn on your system and the Power LED does not turn on, immediately turn off the system and check your wiring.</b></p>
+	<p align="left">
+		You may be wondering if the resistor/LED order matters. It does not. The resistor can come first and then the LED or as shown. Either configuration will correctly limit current through the LED.</p>
+	<p align="left">
+		If you think you may have blown up your LED then your LED will never turn on. You may want to check your power system with a multimeter instead.</p>
+	<p align="left">
+		Good, you&#39;ve made it this far. Now for some technical info about ripple/noise and why it&#39;s bad.</p>
+	<p align="left">
+		If you&#39;ve got major ripple on your power rail, say 500mV or more, this can cause your micro to latchup. This means that it was running fine at 4.8V, but at 4.3V it&#39;s not happy and will go into an unknown state. When the rail returns to 4.8V (because the ripple is bouncing the rail up and down), the micro goes from unknown to possibly latching up or freezing up. This is pretty rare these days because the chip manufacturers have done a good job of internally protecting against this, but in general, ripple is bad.</p>
+	<p align="left">
+		Say you&#39;ve got 500mV of ripple on your system and you&#39;re doing analog to digital conversions off of a temperature sensor. The temp sensor has an output pin that will output an analog voltage that will vary 100mV for every 1 degree C. So at 25 degrees C (room temperature) the sensor will output 2500mV or 2.5V. If your micro is doing analog-to-digital conversions on this signal, it has to compare what it &#39;thinks&#39; is a solid power rail of 5V against this changing analog signal from the temperature sensor. Well if your 5V &#39;solid&#39; rail has 500mV of ripple, the micro doesn&#39;t know this, and will report a regular 2.5V reading as varying between ~3.0V (3000mV = 30C) and ~2.0V (2000mV = 20C). This is wildly bad. You need a good &#39;clean&#39; power rail if you are doing anything with analog signals.</p>
+	<hr width="80%" />
+	<p align="left">
+		Now some notes and photos on breadboards:</p>
+	<p align="left">
+		Go read <a href="http://www.tigoe.net/pcomp/code/circuits/breadboards" target="_blank">Tom Igoe&#39;s breakdown</a> of the breadboard. In short, the power rails (the red/blue rows) are connected internally. The columns within the main area of the board are interconnected. So you can insert a wire into one hole and it will be electrically connected to a neighboring hole (vertical connections for the numbered columns, and horizontal connections for the blue/red power rails).</p>
+	<p align="left">
+		Historically, the blue rail or the horizontal row of holes next to the blue line is &#39;GND&#39; or ground. You can connect all the ground pins of all your components to this rail. Similarly, the red rail is for VCC. In our case, this is 5 volts.</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/BB-PowerSupply-0.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/BB-PowerSupply-0.jpg" /></p>
+	<p align="center">
+		Power jack, switch, LM7805, power LED</p>
+	<p align="left">
+		Here you can see power from the barrel jack being delivered to the slide switch, and then to the input pin of the v-reg. When the switch is thrown to the on position, the yellow LED turns on.</p>
+	<p align="left">
+		I cheated a bit.</p>
+	<p align="left">
+		Do you see that odd thing in the upper right corner of the picture? That is my wall wart plugged into a DC barrel jack. Most wall warts are terminated with a round connector called a &#39;barrel&#39;. The outside metal sheath is ground, and the inside metal is 9V. The two metal contacts are isolated. The DC barrel jack accepts this wall wart barrel (wall wart barrel slides into the jack with some friction to hold it in place). I don&#39;t like hacking the ends off power supplies and inserting the bare wires into a breadboard. Having energized bare wires bothers me. If the wires get pulled out of the breadboard because you kicked out the power cord, you&#39;ll have some tense moments until you get the power brick unplugged. So I soldered some short leads to the barrel jack so that I can plug/unplug my power cable from the breadboard. Easier to transport.</p>
+	<p align="left">
+		See the orange wire at the end of the barrel jack? That pin inside the DC barrel jack connects to the center of the wall wart barrel. The center of our wall wart barrel connectors are &#39;+&#39; or &#39;hot&#39; or &#39;9V&#39;, whatever you want to call it. So the end of the DC barrel jack is soldered to an orange wiring meaning it is &#39;+&#39;. This orange wire is then connected to the center pin of the power switch.</p>
+	<p align="left">
+		All ground connections are connected together. You will see a small black wire underneath the DC barrel jack. This is the pin that connects to the outside sheath of the wall wart barrel. This is the ground connection on the wall wart. This small black wire connects the ground of the wall wart to the ground on the breadboard.</p>
+	<p align="left">
+		I did not install a reverse protection diode. I *only* use center positive power supplies so I know I&#39;m safe. If you do anything similar, check your wall wart carefully with a multimeter before doing any testing.</p>
+	<p align="left">
+		<b>Note:</b> Our breadboard will have 5V and 0V rails. The blue rail is GND (considered 0V). Red is VCC (or called 5V).</p>
+	<p align="left">
+		<b>Note on LEDs:</b> LEDs are a polar device meaning you&#39;ve got to hook them up in the correct direction. Light emitting diodes (LED) have a cathode and an anode. How do you tell the difference? Imagine the schematic element:</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/BB-PowerSupply-6.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/BB-PowerSupply-6.jpg" /></p>
+	<p align="center">
+		An LED</p>
+	<p align="left">
+		Do you see the arrow? Do you see the flat line? A is for arrow. A is for anode. The physical LED will have a flat side corresponding to the flat line (the cathode) in the schematic picture. And there you go! When connecting an LED, you know that diodes only pass current in one direction (from anode to cathode - in the direction of the arrow!) so the flat side of the LED needs to be connected to ground some how (usually through a resistor first) and the other side (remember arrow) is the anode and needs to be connected to power for current to flow. If you hook it up backwards, it won&#39;t turn on, and you might damage the LED but probably not. Just verify that you&#39;ve got 5V on the correct rail and then flip your LED around if need be.</p>
+	<p align="center">
+		<img alt="The image “http://www.sparkfun.com/tutorial/BEE-Lectures/1-PowerSupply/BB-PowerSupply-1.jpg” cannot be displayed, because it contains errors." src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/BB-PowerSupply-1.jpg" /></p>
+	<p align="center">
+		Power supply with 10uF and 100uF caps in place</p>
+	<p align="left">
+		Note the polarization of the caps. The larger 100uF cap is directly connected to the Input and GND pins of the v-reg. The &#39;-&#39; sign is connected to the ground pin. The smaller 10uF is connected on the power rails. The &#39;-&#39; sign (in white) is connected to ground, the opposite leg is inserted into the &#39;+&#39; rail. The power LED is on!</p>
+	<p align="left">
+		<b>Note:</b> The center pin of the wall transformer is connected to the red wire on the rear of the barrel jack. This short wire is then routed by another wire to the slide switch. Do not connect this center pin/9V source to the power rail on your breadboard!</p>
+	<p align="left">
+		The slide switch has three legs. The center pin is considered the &#39;common&#39; pin. If the switch is thrown to the right, there is a connection from the center pin to the right pin. Slide it to the left and a connection to the left pin is made. When dealing with power, we want the raw voltage (9V in our case) delivered to the center pin of the switch. When I slide the switch to the left (as pictured above), current is allowed to flow from the center pin to the left pin and on to the voltage regulator. When I slide the switch to the right, the center pin is connected to the right pin (which is not connected to anything). In this state, current does not flow anywhere and the breadboard remains powered down. Voila! We have a power switch.</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/BB-PowerSupply-5.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/BB-PowerSupply-5.jpg" /></p>
+	<p align="center">
+		Power LED is not lighting!</p>
+	<p align="left">
+		This picture is key. When I initially wired up this circuit, I flipped the switch and the power LED didn&#39;t light. That was VERY bad indicating there is a massive short somewhere. Even the good guys screw up now and again. Whip out your trusty multimeter and start probing in continuity mode.</p>
+	<p align="left">
+		<b>Quick note:</b> I highly recommend you purchase a multimeter with a &#39;continuity&#39; feature built in. This mode allows you to &#39;tone&#39; out circuits. In this mode, if you touch the two probes together, you should hear a tone indicating that there is a direct connection between one probe and the other (obviously - you have them touching!). This feature is used countless times during trouble shooting. In the above example, by probing from one GND rail to another, I noticed that I could not get a tone. Therefore, there was a break in the circuit somewhere which lead me to realize the break is in the rails.</p>
+	<p align="left">
+		If you&#39;ve got a medium sized breadboard such as the one shown above, you&#39;ll notice something horribly odd. The various holes of the power rails are not connected!</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/BB-PowerSupply-4.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/BB-PowerSupply-4.jpg" /></p>
+	<p align="center">
+		The yellow lines show what holes are inter-connected and where the breaks occur</p>
+	<p align="left">
+		There is a reason why the power rails are broken. If you have a breadboard with multiple and different power rails, you cannot share them on the same row of holes. So modern breadboards break the rails up so that you can isolate different parts of your circuit. For example, if you were building a really complex design you may need to have 5V and 3.3V on the same board. Because the rails are isolated from each other, you could just use various strips around your breadboard to be designed at 5V, 2.8V, etc. For the purposes of this tutorial (and for almost all breadboarding) we assume that you&#39;ll only be using 5V and GND.&nbsp; Therefore, we need to use short jumper wires to interconnect all the isolated rails, forming one continuous 5V rail and one continuous GND rail.</p>
+	<p align="left">
+		When I first wired up my power supply, I only had the long black/red jumpers on the right side of the board, but didn&#39;t have the small jumpers in the middle of the rails. Without these middle jumpers, only the bottom left rails (next to the 5V supply) actually have 5V and GND. Since the LED is connected to the upper left power and ground rails, the LED never got power! Therefore, you will probably need to use very short jumper wires (and some long ones on the end) to connect all the &#39;+&#39; rails (5V) together and all the &#39;-&#39; rails (GND) together.</p>
+	<p align="left">
+		Some additional nit-picky notes about breadboarding:</p>
+	<ol>
+		<li>
+			<p align="left">
+				You won&#39;t listen to this rule. Neither did I initially. Use a few different colors of wire! It&#39;s really helpful to see where the power and gnd wires go if GND is black and 5V is red. I wired 200 connections using only orange. When things didn&#39;t work, it was <i>hard</i> to figure out where all the connections went.</p>
+		</li>
+		<li>
+			<p align="left">
+				Don&#39;t worry about super-tight wires, and don&#39;t use huge loops. When cutting and stripping wire for breadboard connections, don&#39;t spend exorbitant amounts of time making the wire perfectly flat. It doesn&#39;t matter. That said, don&#39;t use 9&quot; of wire when 1&quot; will do. Make it clean.</p>
+		</li>
+		<li>
+			<p align="left">
+				The &#39;making things clean&#39; rule applies to LEDs, resistors, and crystals as well. Clip the legs! If you&#39;ve got OCD like I do, it can be hard to permanently alter a part in this way. What if I need the legs to reach further away on a future project?! It&#39;s ok. Resistors cost $0.005 each. If in the future, you need a resistor with full legs to reach from point A to point B, just get a new one. It&#39;s not worth having lots of exposed legs that could bend and short to other exposed legs.</p>
+		</li>
+	</ol>
+	<p align="left">
+		Now with your power supply built up, turn your multimeter to voltage and check your board voltage by probing from the Blue rail (0V or GND) and the red rail (5V or VCC).</p>
+	<p align="left">
+		<b>Note:</b> To use a multimeter you need to use <i>both</i> probes. Voltage refers to a potential. Using only one probe will get you nothing because you have to compare something against something else. In our world, we assume ground is 0V. So touch your black probe to any ground connection. Now you can measure the voltage on any other pin with the red probe. In the picture below, the black probe is touching the ground rail (0V), and the red probe is touching the 5V rail - thus we are viewing what voltage is exposed on the red probe compared to ground. If we put both probes on the 5V rail, the multimeter would show 0V because there is no difference in voltage between the probes.</p>
+	<p align="left">
+		Guess what happens when you push the black probe against the 5V rail and the red probe against the ground rail? The multimeter will show -5V. This is because the multimeter assumes the black probe is touching 0V. There is still a difference of 5V between the probes so the multimeter shows -5V.</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BEE-Lectures/1-PowerSupply/BB-PowerSupply-3.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/1-PowerSupply/BB-PowerSupply-3.jpg" /></p>
+	<p align="center">
+		4.98V on the 5V rail</p>
+	<p align="left">
+		So you don&#39;t have 5.000V. Nothing in engineering is perfect. If you&#39;re within 100mV you&#39;re doing just fine. These cheap-o voltage regulators are cheap for a reason - and we don&#39;t need high-precision. 4.9V to 5.1V is just fine.</p>
+	<p align="left">
+		Congratulations! You&#39;ve built up your very first breadboard! Now leave this 5V power supply wired in your breadboard! You are going to use it many times...</p>
+	<p align="center">
+		<a href="http://www.sparkfun.com/commerce/product_info.php?products_id=8357" id="image-main-link" onclick="" target="_blank"> <img alt="" border="0" id="image-main" src="http://www.sparkfun.com/commerce/images/PTC-01-M.jpg" /></a></p>
+	<p align="center">
+		A 500mA PTC<a href="http://www.sparkfun.com/commerce/product_info.php?products_id=8357#" id="image-main-link" onclick=""> </a></p>
+	<p align="left">
+		<b>Quick Note:</b> <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=8357" target="_blank"> PTCs</a> are your friend! PTC = positive temperature coefficient. Beginners will often create shorts or accidentally hook things up backwards. A PTC (also known as a <a href="http://en.wikipedia.org/wiki/Thermistor" target="_blank"> thermistor</a>) is a device that will increase in resistance as current flows through it. These PTCs can be designed so that at a certain current flow (let&#39;s say 500mA), the resistance increases dramatically, thus limiting the current flow. Basically, the PTC acts as a resettable fuse! You will want to place this device in series, before your voltage regulator. If your circuit draws more than 500mA (if you short power to ground for instance), the PTC will heat up and limit the current to 250mA. Once you remove the short, the current will drop back down, the PTC will cool off and the circuit will start operating normally again. Very cool little component that has saved many of my designs from smoking.</p>
+	<p style="text-align: center;">
+		<a classname="" href="http://www.sparkfun.com/tutorial/BeginningEmbedded/1-PowerSupply/PowerSupply7-L.jpg" name="" target="_blank"><img alt="http://www.sparkfun.com/tutorial/BeginningEmbedded/1-PowerSupply/PowerSupply7.jpg" src="http://www.sparkfun.com/tutorial/BeginningEmbedded/1-PowerSupply/PowerSupply7.jpg" /></a></p>
+	<p align="left">
+		This is how the PTC looks in circuit. The PTC is wired in line. As the current of the circuit flows through the PTC, it will trip if the current is too large, cutting off the rest of the system.</p>
+	<p align="left">
+		We love feedback! Please report typos, comments, or recommendations to <a href="mailto:spark@sparkfun.com">spark@sparkfun.com</a>.</p>
+	<p align="left">
+		&nbsp;</p>
+	<p align="left">
+		<a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=57">Lecture 1 - Background and Power Supply</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=93"><br />
+		<br />
+		Lecture 2 - How to Get Code Onto a Microcontroller</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=95"><br />
+		<br />
+		Lecture 3 - What is an oscillator?</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=104"><br />
+		<br />
+		Lecture 4 - UART and Serial Communication</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=105"><br />
+		<br />
+		Lecture 5 - AVR GCC Compiling</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=106"><br />
+		<br />
+		Lecture 6 - Soldering Basics</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=107"><br />
+		<br />
+		Lecture 7 - SMD Soldering</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=108"><br />
+		<br />
+		Lecture 8 - Eagle: Schematics</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=109"><br />
+		<br />
+		Lecture 9 - Eagle: PCB Layout</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=110"><br />
+		<br />
+		Lecture 10 - Eagle: Creating a new part</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=111"><br />
+		<br />
+		Common Mistakes, Tips and Tricks</a></p>
+</div></div>
+
+<div id="comments_container">
+  <h2 id="comments_header" class="collapsible grey big"><span class="arrow"></span>Comments <span class="count">57 comments</span></h2>
+<div id="comments" class="collapsible white">
+  <div style="padding: 20px">  <div style="text-align: center">
+    <b><a href="#" onclick="javascript: $('right').scrollTo(); $('user_login').select()">Login</a> to post comments.</b>
+  </div>
+</div>
+  <div class="comment" id="comment_373"><span class="header"><a href="http://www.sparkfun.com/users/46694" class="bold">xxxlepexxx</a> <span class="wide">|</span> <b>August 29, 2008 at  4:30 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_373">3</span></strong></span><br /></span><div class="body"><p>Thanks a lot, this tutorial is great, it has everything an electronic should know, even the obvious but tricky things. I saved it completely.</p>
+</div></div><div class="comment" id="comment_422"><span class="header"><a href="http://www.sparkfun.com/users/47384" class="bold">tj</a> <span class="wide">|</span> <b>September  7, 2008 at 11:46 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_422">2</span></strong></span><br /></span><div class="body"><p>That was really nice tutorial. I have a bachelors in engineering and have not used electronic circuits in a while, so it really helped refresh a lot of things. Thanks for doing that. </p>
+</div></div><div class="comment" id="comment_835"><span class="header"><a href="http://www.sparkfun.com/users/51869" class="bold">wuziq</a> <span class="wide">|</span> <b>November  3, 2008 at  2:20 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_835">2</span></strong></span><br /></span><div class="body"><p>really nice tutorial, i actually read the whole thing, and i never knew i could get so excited about a regulated power supply..  :D</p>
+</div></div><div class="comment" id="comment_886"><span class="header"><a href="http://www.sparkfun.com/users/52367" class="bold">Penguinator</a> <span class="wide">|</span> <b>November 10, 2008 at  5:43 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_886">2</span></strong></span><br /></span><div class="body"><p>Thanks for writing that article, I've learned more from reading this than I have in a long time! Very well written and easy to understand, which is different from many other books and articles I've tried to read on electronics.</p>
+</div></div><div class="comment" id="comment_996"><span class="header"><a href="http://www.sparkfun.com/users/44764" class="bold">nedium</a> <span class="wide">|</span> <b>November 17, 2008 at  1:06 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_996">2</span></strong></span><br /></span><div class="body"><p>Thanks for very very helpful, easy to understand tutorial.
+But, i have a question. How should we use PTC?
+Serial connection as a resistor or like a cap?
+It would be very good if you can integrate PTC to schematic.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_1129"><img class="avatar" src="https://secure.gravatar.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/7185" class="bold">Nate</a> <span class="wide">|</span> <b>December  3, 2008 at  9:26 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1129">1</span></strong></span><br /></span><div class="body"><p>Good question - it is wired in line. I've added an updated schematic upon your request. Checkout the end of this page near the PTC image.</p>
+</div></div></div></div><div class="comment" id="comment_2995"><span class="header"><a href="http://www.sparkfun.com/users/29984" class="bold">tr0nk</a> <span class="wide">|</span> <b>April 16, 2009 at  8:56 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2995">2</span></strong></span><br /></span><div class="body"><p>if you just need to get some pretty lights blinking (for an art project or something), and you find these tutorials overwhelming (even though they're awesome (!!)), you may want to start with an <b>arduino</b> programmer instead:</p>
+
+<p><b>Arduino USB Board</b>
+<a href="http://www.sparkfun.com/commerce/product_info.php?products_id=666">http://www.sparkfun.com/commerce/product<em>info.php?products</em>id=666</a>
+<a href="http://www.arduino.cc/">http://www.arduino.cc/</a></p>
+
+<p>it is still recommended that you read through the tutorials &#40;^_^)/</p>
+</div></div><div class="comment" id="comment_3465"><span class="header"><a href="http://www.sparkfun.com/users/70815" class="bold">Bogatyr</a> <span class="wide">|</span> <b>May 18, 2009 at  6:04 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3465">2</span></strong></span><br /></span><div class="body"><p>Thanks for a great tutorial.    I've been wondering about these little switches used in breadboard power circuits -- they're all pretty wimpy in the current department, e.g., the one listed in the parts kit for this tutorial is rated at 200mA.   Doesn't that mean that the entire current usage of the design hooked up to the supply circuit is limited to 200mA before the switch will weld open or otherwise destruct?</p>
+
+<p>All the beefier switches (1A+) that I've seen are huge and don't have pins suitable for direct/convenient use on a breadboard.   Are there higher rated but BB-friendly (no soldering required) switches available?  (Where?)</p>
+
+<p>thanks!</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_22408"><span class="header"><a href="http://www.sparkfun.com/users/54461" class="bold">Larius</a> <span class="wide">|</span> <b>December  7, 2010 at 10:33 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22408">1</span></strong></span><br /></span><div class="body"><p>I'd suggest semiconductor switching using a transistor rated for adequate current. Use the wimpy switch to "turn on" the base or gate of your transistor, and the transistor handles all current.</p>
+</div></div></div></div><div class="comment" id="comment_3611"><span class="header"><a href="http://www.sparkfun.com/users/71950" class="bold">ncsuece</a> <span class="wide">|</span> <b>May 29, 2009 at  2:59 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3611">2</span></strong></span><br /></span><div class="body"><p>Great tutorials! I really like to print out tutorials and follow along, esp. when they are long like this.  Is there a better way to print these tutorials? The light gray text and gray columns on the side make it a real pain to print and read. Is there a PDF or print-formatted version available?</p>
+
+<p>Thanks and keep up the great tutorials!</p>
+</div></div><div class="comment" id="comment_5222"><span class="header"><a href="http://www.sparkfun.com/users/82374" class="bold">SIGTERMer</a> <span class="wide">|</span> <b>September 13, 2009 at  5:40 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5222">2</span></strong></span><br /></span><div class="body"><p>best tutorial so far. two downsides though:
+- gray isn't the best color for this kind of reading.
+- a printable version should be made availabe, if it hasn't been already.</p>
+
+<p>never the less, good job :)</p>
+</div></div><div class="comment" id="comment_7120"><span class="header"><a href="http://www.sparkfun.com/users/64429" class="bold">Andros1200</a> <span class="wide">|</span> <b>November 25, 2009 at  7:54 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_7120">2</span></strong></span><br /></span><div class="body"><p>You have a spelling error in your OR microcontroller code.</p>
+
+<p>if (A == 1 || B == 1)
+{
+C = 1;
+}
+else
+{
+C = 0;
+{</p>
+
+<p>If you would notice the very last bracket is an opening bracket not a closing bracket.</p>
+
+<p>Very nice tutorial!</p>
+</div></div><div class="comment" id="comment_406"><span class="header"><a href="http://www.sparkfun.com/users/47195" class="bold">Estwald</a> <span class="wide">|</span> <b>September  5, 2008 at  3:27 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_406">1</span></strong></span><br /></span><div class="body"><p>Great tutorial, a nice addition for the totally inexperienced would be to add the diagrams for center positive and center negative barrel connectors.</p>
+</div></div><div class="comment" id="comment_1251"><span class="header"><a href="http://www.sparkfun.com/users/54387" class="bold">Gillerire</a> <span class="wide">|</span> <b>December 11, 2008 at  5:51 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1251">1</span></strong></span><br /></span><div class="body"><p>Thanks Nate :)</p>
+</div></div><div class="comment" id="comment_1425"><span class="header"><a href="http://www.sparkfun.com/users/121" class="bold">TBaumg</a> <span class="wide">|</span> <b>January  6, 2009 at  1:22 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1425">1</span></strong></span><br /></span><div class="body"><p>cpjolicoeur,</p>
+
+<p>An LED and Resistor in series create a single path(circuit) for electricity to flow through.  It doesn?t matter if the resistor is before or after the LED because the total impedance of that circuit is limited by the resistor.  </p>
+
+<p>It is similar to a water hose and a valve.  The valve is like a resistor; it can limit how much water can flow through it.  It doesn?t matter if the valve is at the supply side or the open side of the hose, the end result will be the same limited amount of water.  </p>
+
+<p>As long as you limit the amount of current that flows through the LED it will be fine.  Hope this helps.</p>
+</div></div><div class="comment" id="comment_1121"><span class="header"><a href="http://www.sparkfun.com/users/54387" class="bold">Gillerire</a> <span class="wide">|</span> <b>December  2, 2008 at  5:55 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1121">1</span></strong></span><br /></span><div class="body"><p>I agree with the comment above; could you please add some more explanation of the PTC and how it connects to the circuit.</p>
+
+<p>Also, I have always wondered about the values of filtering capacitors.  Why do you use 100uF on one side and 10uF on the other?  When should a 0.1uF be used?</p>
+
+<p>The explanation of the capacitor max voltage was very helpful.  Something I never knew about.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_1130"><img class="avatar" src="https://secure.gravatar.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/7185" class="bold">Nate</a> <span class="wide">|</span> <b>December  3, 2008 at  9:29 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1130">1</span></strong></span><br /></span><div class="body"><p>Good points. I've added more on the PTC and caps. Larger caps obviously store more energy, but they react more slowly. If you have a large power outage (power dips for 10-100ms), a big cap (100uF to 1000uF) will help 'hold up' the falling voltage. A smaller cap (0.1uF) will help suppress higher frequency noise and shorter power dips (noise in the 1us to 100us range). Therefore, 0.1uF caps are located near the microcontroller to help with short bursts, where 100uF and 10uF caps are used on the power rails.</p>
+</div></div></div></div><div class="comment" id="comment_1419"><span class="header"><a href="http://www.sparkfun.com/users/52971" class="bold">peterb</a> <span class="wide">|</span> <b>January  6, 2009 at  3:55 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1419">1</span></strong></span><br /></span><div class="body"><p>this is a great tutorial, having fun.
+when i set up my power supply though, i'm only getting 4V on the rails. why would that be?
+thanks,
+Peter</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_16837"><span class="header"><a href="http://www.sparkfun.com/users/138675" class="bold">ico</a> <span class="wide">|</span> <b>August  7, 2010 at  7:48 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_16837">1</span></strong></span><br /></span><div class="body"><p>The LM7805 ouput is 4.3V when using a 5V power supply, but 5.01V when using a 9V or 18V power supply.</p>
+
+<p>Checked the datasheet of LM7805, which said it should works well on input Vo = 5V to 18V and 24V, not sure why it ouput 4.3V when the input is 5V only.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_19191"><span class="header"><a href="http://www.sparkfun.com/users/72126" class="bold">boris_1981</a> <span class="wide">|</span> <b>October  6, 2010 at  7:44 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_19191">1</span></strong></span><br /></span><div class="body"><p>oopss.  gave it the wrong smilye.</p>
+</div></div></div></div></div></div><div class="comment" id="comment_1421"><span class="header"><a href="http://www.sparkfun.com/users/56506" class="bold">cpjolicoeur</a> <span class="wide">|</span> <b>January  6, 2009 at  7:00 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1421">1</span></strong></span><br /></span><div class="body"><p>I'm still relatively new to electronics and have a question.  When talking about the LED you mentioned:</p>
+
+<p>"You may be wondering if the resistor/LED order matters. It does not. The resistor can come first and then the LED or as shown. Either configuration will correctly limit current through the LED."</p>
+
+<p>Why is this so?  I don't understand why you can put the resistor on either side of the LED.  Wouldn't the resister need to come before the LED to resist the flow of power into the LED?  How does it help afterwards when the power has already gone through the LED?</p>
+</div></div><div class="comment" id="comment_1525"><span class="header"><a href="http://www.sparkfun.com/users/49023" class="bold">TheDoc</a> <span class="wide">|</span> <b>January 14, 2009 at  1:53 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1525">1</span></strong></span><br /></span><div class="body"><p>Excellent tutorial. One thing I'd like to ask is that my Voltage Regulator gets fairly warm - not so warm as to burn me. Nevertheless, I'm working on a gadget (mostly just an RGB thingy) that I want to give my grandma. Anyway, I just want to figure out to keep the voltage regular from getting so hot. Can I just put an extra resistor between the power in and the regulator or something?</p>
+
+<p>Wicked tutorial at any rate. Thanks tons!</p>
+</div></div><div class="comment" id="comment_1565"><span class="header"><a href="http://www.sparkfun.com/users/57931" class="bold">BeanForge</a> <span class="wide">|</span> <b>January 18, 2009 at  1:07 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1565">1</span></strong></span><br /></span><div class="body"><p>5.1V and a lovely yellow light!! Thanks for a great, well thought out tutorial. On to microcontrollers...</p>
+</div></div><div class="comment" id="comment_1709"><img class="avatar" src="https://secure.gravatar.com/avatar/9c24a031767c832b6d79f6f493d4b904?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/55643" class="bold">MattTheGeek</a> <span class="wide">|</span> <b>January 30, 2009 at  2:24 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1709">1</span></strong></span><br /></span><div class="body"><p>Thanks for the tutorial Nate.</p>
+</div></div><div class="comment" id="comment_2066"><span class="header"><a href="http://www.sparkfun.com/users/54968" class="bold">David McFarland</a> <span class="wide">|</span> <b>February 17, 2009 at 11:30 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2066">1</span></strong></span><br /></span><div class="body"><p>Great tutorial. Thanks.</p>
+
+<p>A couple of questions about the capacitors: 
+1. why do you use two?
+2. what would happen if you switch their positions (put the 10uF where the 100uF is in your schematic, and vice versa).</p>
+</div></div><div class="comment" id="comment_2462"><span class="header"><a href="http://www.sparkfun.com/users/62773" class="bold">mouse-wiz</a> <span class="wide">|</span> <b>March 17, 2009 at  4:18 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2462">1</span></strong></span><br /></span><div class="body"><p>I'm not sure I've ever been so excited to see an LED light up.  Great write up =D</p>
+</div></div><div class="comment" id="comment_2459"><span class="header"><a href="http://www.sparkfun.com/users/63683" class="bold">Michelle</a> <span class="wide">|</span> <b>March 16, 2009 at  3:51 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2459">1</span></strong></span><br /></span><div class="body"><p>a bit lengthy but awesome tutorial</p>
+</div></div><div class="comment" id="comment_3760"><span class="header"><a href="http://www.sparkfun.com/users/72551" class="bold">Manuel</a> <span class="wide">|</span> <b>June  9, 2009 at 12:31 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3760">1</span></strong></span><br /></span><div class="body"><p>Well, this kind of 5V source isn't the type I'd use. It wastes almost 50% of the power. This means that your 9V battery will last almost the half it should with a well made 5v source. There are some IC's from maxim that achieve high efficiencies. I've learned that in battery powered projects one should be as efficient as possible. Anyway, I think it's a well made tutorial and it's a good starting source for one's first projects. By the way, you are so right about the PTCs. I've seen several of my most sensitive IC's smoke to death in an instant and not because of short circuits. When using batteries one has to take into account the short circuit current it gives. It may be too small (CR2032 for example) or too high and may give trouble because there's no limit. PTCs are life savers.</p>
+</div></div><div class="comment" id="comment_4245"><span class="header"><a href="http://www.sparkfun.com/users/75912" class="bold">spangaroo</a> <span class="wide">|</span> <b>July 10, 2009 at 12:07 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4245">1</span></strong></span><br /></span><div class="body"><p>Great tutorial. I love learning more about power flows. </p>
+
+<p>I can see the resistor in the photo, but I don't see the 1N4001 diode. Am I missing something? I'm just trying to study all the components so I can set it up properly from the beginning.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_15773"><span class="header"><a href="http://www.sparkfun.com/users/126644" class="bold">Snibble</a> <span class="wide">|</span> <b>July 14, 2010 at  9:46 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_15773">1</span></strong></span><br /></span><div class="body"><p>See Nate's comment in the section below the first photo of the breadboard:</p>
+
+<p>"I did not install a reverse protection diode. I <em>only</em> use center positive power supplies so I know I'm safe."</p>
+
+<p>(...sounds like famous last words to me...)</p>
+</div></div></div></div><div class="comment" id="comment_4494"><span class="header"><a href="http://www.sparkfun.com/users/77598" class="bold">KB8RWX</a> <span class="wide">|</span> <b>July 28, 2009 at 10:32 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4494">1</span></strong></span><br /></span><div class="body"><p>Outstanding tutorial! Thanks.</p>
+</div></div><div class="comment" id="comment_5440"><span class="header"><a href="http://www.sparkfun.com/users/83846" class="bold">NathanWong</a> <span class="wide">|</span> <b>September 27, 2009 at  7:51 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5440">1</span></strong></span><br /></span><div class="body"><p>Thanks for taking the time to post such a great tutorial. I apologize if this is taken into account in some of your later tutorials (I intend to read them all!), but I just have one question: Some components, like the little LCD screens sold here, require 3.3V. How would this usually be provided? Would it be a parallel split at the end of the power circuit and another voltage regulator, or would it be a split before the voltage regulator and then have two circuits, one at 5V and one at 3.3V? I'm just trying to understand how to take advantage of having 9V (albeit unregulated) and needing both 5V and 3.3V. :) Thanks again!</p>
+</div></div><div class="comment" id="comment_5604"><span class="header"><a href="http://www.sparkfun.com/users/84283" class="bold">thejam</a> <span class="wide">|</span> <b>October  5, 2009 at  8:00 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5604">1</span></strong></span><br /></span><div class="body"><p>I just got the parts in the mail yesterday... What's funny to me is that I thought all the components were much bigger than they actually are.  Probably because I've only been looking at pictures for the past 2 weeks.</p>
+
+<p>But I put the power supply together, and it worked!  The LED lit up and didn't burn out.  And even more than that, I can read the schematics now too!  It all makes sense now that I can see it in my hands and on the schematic.  </p>
+
+<p>Thanks for these tutorials!</p>
+</div></div><div class="comment" id="comment_5762"><span class="header"><a href="http://www.sparkfun.com/users/84326" class="bold">Surya Sharma</a> <span class="wide">|</span> <b>October 15, 2009 at  5:02 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5762">1</span></strong></span><br /></span><div class="body"><p>How are PTC's coded? I need one for 500mA / 5V (USB specifications) The ones I have Read C1122 and 0135. How many amps are these?</p>
+</div></div><div class="comment" id="comment_6733"><span class="header"><a href="http://www.sparkfun.com/users/32415" class="bold">blalor</a> <span class="wide">|</span> <b>November 14, 2009 at  6:46 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_6733">1</span></strong></span><br /></span><div class="body"><p>There's a broken image; the image above the text "The cap has a minus '-' sign on the cover indicating that pin needs to go to GND." points to "http://www.sparkfun.com/commerce/images/Caps-3.jpg", which is 404'ing.</p>
+</div></div><div class="comment" id="comment_6744"><span class="header"><a href="http://www.sparkfun.com/users/90322" class="bold">hm</a> <span class="wide">|</span> <b>November 15, 2009 at 12:57 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_6744">1</span></strong></span><br /></span><div class="body"><p>This is a great tutorial! It was a lot of fun to read it cause there is nothing like this for computer programmers that know nothing of electronics!</p>
+
+<p>One point to mention is to Note that I BURNT MY LED because the GND pin of my voltage regulator was not connected to the shared ground! The regulator's output pin instead of +5V was giving out +9.8 V ! Just because of a missing GND connection.</p>
+
+<p>I suggest we make the GND connection of our regulator the final gate for all grounds connections in this circuit, so if that goes cut, our circuit would turn off instead of have dangerous voltage !</p>
+</div></div><div class="comment" id="comment_7411"><span class="header"><a href="http://www.sparkfun.com/users/94679" class="bold">Techn010g1ka11</a> <span class="wide">|</span> <b>December  6, 2009 at 12:52 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_7411">1</span></strong></span><br /></span><div class="body"><p>Great tutorial. Thanks!</p>
+</div></div><div class="comment" id="comment_7648"><span class="header"><a href="http://www.sparkfun.com/users/96706" class="bold">Ngesh</a> <span class="wide">|</span> <b>December 14, 2009 at  4:07 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_7648">1</span></strong></span><br /></span><div class="body"><p>The tuitorial is very informative. It has turned me into a Sparkfun fan!</p>
+</div></div><div class="comment" id="comment_8231"><span class="header"><a href="http://www.sparkfun.com/users/81021" class="bold">warlord</a> <span class="wide">|</span> <b>January  2, 2010 at  1:04 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_8231">1</span></strong></span><br /></span><div class="body"><p>I keep being amazed at how helpful the sparkfun community is. Good job! Well explained!</p>
+</div></div><div class="comment" id="comment_8409"><span class="header"><a href="http://www.sparkfun.com/users/36996" class="bold">Robban</a> <span class="wide">|</span> <b>January  5, 2010 at  4:40 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_8409">1</span></strong></span><br /></span><div class="body"><p>Would love to hear some examples of where you feel PICs are inadequate for your purposes. Is it just very specialized tasks or just in general? I'm still just a newbie but I've played around with a few different PICs in several projects and I've yet to come across something they can't do (of course, these are <em>basic</em> projects).</p>
+</div></div><div class="comment" id="comment_9682"><span class="header"><a href="http://www.sparkfun.com/users/115677" class="bold">ebrandt</a> <span class="wide">|</span> <b>January 18, 2010 at  7:36 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9682">1</span></strong></span><br /></span><div class="body"><p>This worked for me according to the instructions and I used ubuntu as the (parallel port) PC programmer. I had to make two small edits to the makefile to get it to work:</p>
+
+<ol>
+<li><p>remove the '-P lpt1' from the AVRDUDE_FLAGS (its not called lpt1 on ubuntu, and the default value is fine, so its OK to ommit that flag entirely.)</p></li>
+<li><p>I had to add '-E noreset' to the AVRDUDE_FLAGS. This deactivates the /reset line on the parallel port after programming. Without it, pin 1 stayed low after programming until I disconnected the programmer's reset line. With this flag I can leave the programmer connected.</p></li>
+</ol>
+
+<p>Just a few tips that anyone else using ubuntu might find useful. Happy blinking...</p>
+</div></div><div class="comment" id="comment_10593"><span class="header"><a href="http://www.sparkfun.com/users/118736" class="bold">SeaJay</a> <span class="wide">|</span> <b>February 17, 2010 at 10:48 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10593">1</span></strong></span><br /></span><div class="body"><p>Can the Pocket AVR Programmer be used instead of the AVR STK Parallel Port Dongle Programmer to support laptops without parallel ports? If not, are there any other fixes? Thanks in advance.</p>
+</div></div><div class="comment" id="comment_10941"><span class="header"><a href="http://www.sparkfun.com/users/122316" class="bold">alexl</a> <span class="wide">|</span> <b>March  1, 2010 at 10:58 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10941">1</span></strong></span><br /></span><div class="body"><p>I get a consistent 6.5ish volts out of the 10 or so L7805CVs I've tested this with.</p>
+
+<p>What's going wrong here? I'm using a standard 9v battery as my power source.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_10942"><span class="header"><a href="http://www.sparkfun.com/users/122316" class="bold">alexl</a> <span class="wide">|</span> <b>March  1, 2010 at 12:09 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10942">1</span></strong></span><br /></span><div class="body"><p>I figured it out: the batteries were dead in my multimeter.</p>
+</div></div></div></div><div class="comment" id="comment_12077"><span class="header"><a href="http://www.sparkfun.com/users/89739" class="bold">blen2r</a> <span class="wide">|</span> <b>April 11, 2010 at  9:22 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_12077">1</span></strong></span><br /></span><div class="body"><p>Nice tutorial!</p>
+
+<p>I was wondering if that ripple we were filtering with the capacitors is present when the power is coming from a battery?</p>
+</div></div><div class="comment" id="comment_12862"><span class="header"><a href="http://www.sparkfun.com/users/129043" class="bold">Klone38</a> <span class="wide">|</span> <b>April 30, 2010 at  8:22 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_12862">1</span></strong></span><br /></span><div class="body"><p>ARM microcontrolles actually stand for Advanced RISC Machines which were made by ARM holdings in the mid 1980 as a original substitute for the Motorola 68000 and National Semiconductor 32016 to be used in the Acorn Business Computer. the Motorola 68000 and National Semiconductor 32016 wern't strong enough in the computer so ARM holdings decided to invent a new chip called the ARM. for more info you can wikipedia ARM architecture, ARM Holdings, or Acorn Computers.</p>
+</div></div><div class="comment" id="comment_14919"><span class="header"><a href="http://www.sparkfun.com/users/139775" class="bold">ThomasCruz</a> <span class="wide">|</span> <b>June 25, 2010 at  1:14 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_14919">1</span></strong></span><br /></span><div class="body"><p>Hi, i would like to know if I can use an alternative part instead of using PTC... because PTC is not available here but NTC is.. can anyone help me about this... thanks in advance</p>
+</div></div><div class="comment" id="comment_15767"><span class="header"><a href="http://www.sparkfun.com/users/126644" class="bold">Snibble</a> <span class="wide">|</span> <b>July 14, 2010 at  6:31 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_15767">1</span></strong></span><br /></span><div class="body"><p>Agree that the AVR stuff is fun to play with at the price point, but have recently been doing MSP430 stuff at work and ran across a deal that might be interesting for some readers.  $4.30 for a couple of "value line" MSP chips and supporting board for experimenting.</p>
+
+<p><a href="http://www.ti-estore.com/Merchant2/merchant.mvc?Screen=PROD&Product_Code=MSP-EXP430G2">http://www.ti-estore.com/Merchant2/merchant.mvc?Screen=PROD&amp;Product_Code=MSP-EXP430G2</a></p>
+</div></div><div class="comment" id="comment_16642"><span class="header"><a href="http://www.sparkfun.com/users/79270" class="bold">RoboKaren</a> <span class="wide">|</span> <b>August  3, 2010 at  8:29 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_16642">1</span></strong></span><br /></span><div class="body"><p>I hope you know that the technical name for an LED that has had too much forward or reverse current through it is a DED: Dark Emitting Diode.</p>
+
+<p>Please modify your tutorial accordingly. :-)</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_16671"><img class="avatar" src="https://secure.gravatar.com/avatar/7241cdd54170fcc37ceabe075ab4b99f?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/49769" class="bold">Single T</a> <span class="wide">|</span> <b>August  4, 2010 at 10:10 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_16671">1</span></strong></span><br /></span><div class="body"><p>Thanks for the information, and input. We will make some changes.</p>
+</div></div></div></div><div class="comment" id="comment_18207"><span class="header"><a href="http://www.sparkfun.com/users/138189" class="bold">CTC-001</a> <span class="wide">|</span> <b>September 14, 2010 at  8:09 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_18207">1</span></strong></span><br /></span><div class="body"><p>This is a great lecture and it gets all this cool raw electronics gear in your hands.  Pretty new to electronics so this is perfect.  This simple circuit put together with an LED and everything, taken along with the first 50 pages or so of Electrical Engineering 101, has really helped me to feel like I got my feet wet.  Fun!
+<a href="http://www.sparkfun.com/commerce/product_info.php?products_id=9458">http://www.sparkfun.com/commerce/product<em>info.php?products</em>id=9458</a></p>
+</div></div><div class="comment" id="comment_20341"><span class="header"><a href="http://www.sparkfun.com/users/160361" class="bold">FLITE</a> <span class="wide">|</span> <b>November  4, 2010 at 11:19 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_20341">1</span></strong></span><br /></span><div class="body"><p>I don't totally understand this part:
+In the old days, microcontrollers were OTP or one-time-programmable meaning you could only program the micro once, test the code, and if your code didn't work, you threw it out and tried again. Now micros are 'flash' based meaning they have flash memory built inside that allows their code to be written and rewritten thousands of times. I've been programming micros for years and always burn out the microcontroller far before I hit the limit of flash programming cycles.</p>
+
+<p>I get that it means you can program them more than once now, but I am unsure as to what is meant by programming</p>
+</div></div><div class="comment" id="comment_20721"><span class="header"><a href="http://www.sparkfun.com/users/96485" class="bold">ibot</a> <span class="wide">|</span> <b>November 11, 2010 at  9:25 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_20721">1</span></strong></span><br /></span><div class="body"><p>Excellent tutorial! I had never thought about using a PTC in a voltage supply before, its perfect so a beginner like me won't burn up any components.</p>
+</div></div><div class="comment" id="comment_20964"><span class="header"><a href="http://www.sparkfun.com/users/161512" class="bold">dantheman</a> <span class="wide">|</span> <b>November 16, 2010 at 10:29 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_20964">1</span></strong></span><br /></span><div class="body"><p>Thanks I know absolutely nothing about electronics and was able to build the bread board in just three evenings.I even used and lit up the extra LED "Wow"<br />
+<br />
+ The thing I don't really understand about bread boards is how the hole/rows are configured. If you are in row 5, for instance is the row 6 always meant to be the ground row? Or is each row isolated from the other?<br />
+<br />
+Also I start with AC current in the house but the when you go into the bread board now there is a ground. Is this still AC current now or does it turn into DC. Thanks in advance I love this site.</p>
+</div></div><div class="comment" id="comment_28775"><span class="header"><a href="http://www.sparkfun.com/users/200393" class="bold">!LH@N</a> <span class="wide">|</span> <b>February  3, 2011 at  3:45 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_28775">1</span></strong></span><br /></span><div class="body"><p>Hi!
+Great Tutorial, thanks a lot! I just have a quick question. Why do you put the caps parallel? How does that work? I always thought if you put something parallel you have the same voltage, but obviously there is 9V on one cap and 5V on the other. How does that work?
+Please explain</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_28811"><span class="header"><a href="http://www.sparkfun.com/users/200393" class="bold">!LH@N</a> <span class="wide">|</span> <b>February  4, 2011 at  4:01 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_28811">1</span></strong></span><br /></span><div class="body"><p>Never mind, found the answer myself...the 10 uF cap is in series with the regulator, and them two are parallel to the other cap. Thanks anyway!</p>
+</div></div></div></div><div class="comment" id="comment_31241"><span class="header"><a href="http://www.sparkfun.com/users/207315" class="bold">Member207315</a> <span class="wide">|</span> <b>March  5, 2011 at 10:50 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31241">1</span></strong></span><br /></span><div class="body"><p>Why don't the pictures work for this tutorial?</p>
+</div></div></div>
+<br />
+</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      SparkFun Electronics <a href="http://www.sparkfun.com/news/300">&reg;</a>      <span class="wide">|</span>
+      <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6175+Longbow+Dr,+Boulder,+CO+80301&sll=40.006234,-105.224915&sspn=0.012113,0.020192&ie=UTF8&hq=&hnear=6175+Longbow+Dr,+Boulder,+Colorado+80301&t=h&z=16" target="_blank">Boulder, Colorado</a>
+      <span class="wide">|</span>
+      <a href="http://www.sparkfun.com/static/customer_service">Customer Service</a>
+    </div>
+        <script type="text/javascript" src="/js/cookiejar.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/sparkfun.js?sparkrev=1299616818"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript">function autoFireLightbox(){setTimeout(function(){SFE.stab_eyes()},250)}Event.observe(window,"load",autoFireLightbox,false);</script>
+    <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3404365-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

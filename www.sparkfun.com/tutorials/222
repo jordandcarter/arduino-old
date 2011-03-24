@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="google-site-verification" content="XUb2UlchrvwCWWyhXksBlqQy1STYtTEN_M0-tgQRHRs" />
+    <meta name="google-site-verification" content="gRUAvzBJ_533b-AGTmldOJfByU6TkojfUbWovB2wKJo" />
+    <title>Anode vs. Cathode - SparkFun Electronics</title>
+    <link rel="stylesheet" href="/css/screen.css?rev=1299616818" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css?rev=1299616818" type="text/css" media="print" />
+    <link rel="stylesheet" href="/css/lightbox.css?rev=1299616818" type="text/css" media="screen" />
+    <!-- IE is the bane of my existence. -->
+    <!--[if IE]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+    <link rel="feed" type="application/rss+xml" title="News" href="http://www.sparkfun.com/feeds/news/" />
+    <link rel="alternate" type="application/rss+xml" title="Products" href="http://www.sparkfun.com/feeds/products/" />
+    <link rel="alternate" type="application/rss+xml" title="Product Changes" href="http://www.sparkfun.com/feeds/changes/" />
+    <link rel="alternate" type="application/rss+xml" title="Comments" href="http://www.sparkfun.com/feeds/comments/" />
+    <link rel="alternate" type="application/rss+xml" title="Videos" href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&v=2&orderby=published" />
+    <link rel="apple-touch-icon" href="/fanboy.png" />
+    <link rev="canonical" type="text/html" href="http://sprkfn.com/t222" /> 
+    <script type="text/javascript">
+      var HTTP_SERVER = 'http://www.sparkfun.com',
+          HTTPS_SERVER = 'https://www.sparkfun.com',
+          HTTP_STATIC = 'http://dlnmh9ip6v2uc.cloudfront.net',
+          FULL_LAYOUT = true,
+          AUTHENTICATED = false;
+    </script>
+    <script type="text/javascript" src="/js/prototype.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <!-- turns out  that IE7 chokes if you don't load these separately. -->
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="/js/effects.js"></script>
+    <script type="text/javascript" src="/js/builder.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/lightbox.js?rev=1299616818"></script>
+  </head>
+  <body>
+    <div id="airlock" class="clearfix">
+
+      
+  <script>BANNER_ID = 36</script>
+
+<div id="header">
+  <a href="http://www.sparkfun.com/"><img width=188 height=105 class="logo" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/logo.gif" title="SparkFun Electronics" alt="SparkFun Electronics" /></a>
+  <a href="#products_menu" class="skip">Skip to menu</a>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <div id="banner-nav" style="display: none;">
+<img id="banner-goprev" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_left.png" height=23 width=23 />
+<img id="banner-all" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_all.png" height=23 width=23 />
+<img id="banner-gonext" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_right.png" height=23 width=23 />
+</div>
+<a id="banner-link" href="http://www.sparkfun.com/search/results?term=Alphanumeric+Display&amp;what=products"><img width=978 height=105 id="banner" src="http://dlnmh9ip6v2uc.cloudfront.net/images/banners/SFE03.0003.Banners-Alphanumeric.jpg" alt="" /></a>
+  <div id="header-menu">
+    <ul>
+      <li id="header_menu_index"><a href="http://www.sparkfun.com/index">Home</a></li>
+      <li id="header_menu_cservice"><a href="http://www.sparkfun.com/static/customer_service">Customer Service</a></li>
+      <li id="header_menu_tutorials" class="active"><a href="http://www.sparkfun.com/tutorials">Tutorials</a></li>
+      <li id="header_menu_forum"><a href="http://forum.sparkfun.com">Forum</a></li>
+      <li id="header_menu_distributors"><a href="http://www.sparkfun.com/distributors">Distributors</a></li>
+      <li id="header_menu_about"><a href="http://www.sparkfun.com/static/about">About Us</a></li>
+      <li id="header_menu_contact" class="last"><a href="http://www.sparkfun.com/static/contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="left">
+        <h2 class="collapsible" id="search_menu"><span class="arrow"></span>Search</h2>
+        <form class="collapsible search" style="display: block" action="http://www.sparkfun.com/search/results" id="search_form" method="get">
+  <input id="search_field" name="term" type="text" value="" />
+  <input type="submit" value="Go" class="button" />
+  <br />
+  <input id="products_search" type="radio" name="what" value="products" checked />
+  <label for="products_search">Products</label>
+  <br />
+  <input id="news_search" type="radio" name="what" value="news" />
+  <label for="news_search">News</label>
+  <br />
+  <input id="tutorials_search" type="radio" name="what" value="tutorials" />
+  <label for="tutorials_search">Tutorials</label>
+  <br />
+  <input id="comments_search" type="radio" name="what" value="comments" />
+  <label for="comments_search">Comments</label>
+</form>
+        <br />
+
+        <h2 id="products_menu" class="collapsible"><span class="arrow"></span>Products</h2>
+        
+<ul id="category_menu_list" class="collapsible" style="display: block">
+  <li id="menu_category_new_products"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/new_products">New Products</a></li>
+  <li id="menu_category_top"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/top">Top Sellers</a></li>
+  <li id="menu_category_featured"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/featured">Staff Picks</a></li>
+  <li id="menu_category_gift_certificates"><span class="arrow"></span><a href="https://www.sparkfun.com/gift_certificates">Gift Certificates</a></li>
+  <li><hr /></li>
+  <li id="menu_category_176"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/176">Books</a></li><li id="menu_category_20"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/20">Breakout Boards</a></li><li id="menu_category_70"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/70">Cables</a><ul style="display:none;"><li id="menu_category_140"><a href="http://www.sparkfun.com/categories/140">Audio</a></li><li id="menu_category_150"><a href="http://www.sparkfun.com/categories/150">Ethernet</a></li><li id="menu_category_72"><a href="http://www.sparkfun.com/categories/72">Hook Up</a></li><li id="menu_category_75"><a href="http://www.sparkfun.com/categories/75">Parallel</a></li><li id="menu_category_74"><a href="http://www.sparkfun.com/categories/74">Serial</a></li><li id="menu_category_71"><a href="http://www.sparkfun.com/categories/71">USB</a></li></ul></li><li id="menu_category_66"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/66">Cellular</a><ul style="display:none;"><li id="menu_category_67"><a href="http://www.sparkfun.com/categories/67">Antennas</a></li><li id="menu_category_69"><a href="http://www.sparkfun.com/categories/69">Eval Boards</a></li><li id="menu_category_68"><a href="http://www.sparkfun.com/categories/68">Modules</a></li></ul></li><li id="menu_category_154"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/154">Classes</a></li><li id="menu_category_51"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/51">Components</a><ul style="display:none;"><li id="menu_category_87"><a href="http://www.sparkfun.com/categories/87">ARM Microcontrollers</a></li><li id="menu_category_21"><a href="http://www.sparkfun.com/categories/21">AVR Microcontrollers</a></li><li id="menu_category_145"><a href="http://www.sparkfun.com/categories/145">Buttons/Switches</a></li><li id="menu_category_60"><a href="http://www.sparkfun.com/categories/60">General</a></li><li id="menu_category_90"><a href="http://www.sparkfun.com/categories/90">General ICs</a></li><li id="menu_category_89"><a href="http://www.sparkfun.com/categories/89">LEDs</a><ul><li id="menu_category_173"><a href="http://www.sparkfun.com/categories/173">10mm</a></li><li id="menu_category_171"><a href="http://www.sparkfun.com/categories/171">3mm</a></li><li id="menu_category_172"><a href="http://www.sparkfun.com/categories/172">5mm</a></li><li id="menu_category_170"><a href="http://www.sparkfun.com/categories/170">7-Segment</a></li><li id="menu_category_175"><a href="http://www.sparkfun.com/categories/175">Other</a></li><li id="menu_category_174"><a href="http://www.sparkfun.com/categories/174">SMD</a></li></ul></li><li id="menu_category_88"><a href="http://www.sparkfun.com/categories/88">Oscillators</a></li><li id="menu_category_22"><a href="http://www.sparkfun.com/categories/22">PIC Microcontrollers</a></li><li id="menu_category_124"><a href="http://www.sparkfun.com/categories/124">PICAXE Microcontrollers</a></li><li id="menu_category_132"><a href="http://www.sparkfun.com/categories/132">PSoC Microcontrollers</a></li><li id="menu_category_29"><a href="http://www.sparkfun.com/categories/29">SMD ICs</a></li></ul></li><li id="menu_category_2"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/2">Development Tools</a><ul style="display:none;"><li id="menu_category_184"><a href="http://www.sparkfun.com/categories/184">.NET</a></li><li id="menu_category_93"><a href="http://www.sparkfun.com/categories/93">ADuC</a></li><li id="menu_category_103"><a href="http://www.sparkfun.com/categories/103">Arduino</a></li><li id="menu_category_10"><a href="http://www.sparkfun.com/categories/10">AVR</a></li><li id="menu_category_164"><a href="http://www.sparkfun.com/categories/164">Beagle</a></li><li id="menu_category_187"><a href="http://www.sparkfun.com/categories/187">Chumby</a></li><li id="menu_category_109"><a href="http://www.sparkfun.com/categories/109">Coridium</a></li><li id="menu_category_136"><a href="http://www.sparkfun.com/categories/136">FPGA</a></li><li id="menu_category_101"><a href="http://www.sparkfun.com/categories/101">iPod</a></li><li id="menu_category_25"><a href="http://www.sparkfun.com/categories/25">LPC</a></li><li id="menu_category_11"><a href="http://www.sparkfun.com/categories/11">MSP</a></li><li id="menu_category_9"><a href="http://www.sparkfun.com/categories/9">PIC</a></li><li id="menu_category_125"><a href="http://www.sparkfun.com/categories/125">PICAXE</a></li><li id="menu_category_137"><a href="http://www.sparkfun.com/categories/137">PSoC</a></li><li id="menu_category_104"><a href="http://www.sparkfun.com/categories/104">Roomba</a></li><li id="menu_category_94"><a href="http://www.sparkfun.com/categories/94">SAM</a></li><li id="menu_category_95"><a href="http://www.sparkfun.com/categories/95">ST</a></li><li id="menu_category_167"><a href="http://www.sparkfun.com/categories/167">STAMP</a></li><li id="menu_category_107"><a href="http://www.sparkfun.com/categories/107">Wiring</a></li><li id="menu_category_169"><a href="http://www.sparkfun.com/categories/169">WIZnet</a></li><li id="menu_category_166"><a href="http://www.sparkfun.com/categories/166">XMOS</a></li><li id="menu_category_142"><a href="http://www.sparkfun.com/categories/142">Zune</a></li></ul></li><li id="menu_category_100"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/100">Dings and Dents</a></li><li id="menu_category_204"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/204">E-Textiles</a><ul style="display:none;"><li id="menu_category_205"><a href="http://www.sparkfun.com/categories/205">Aniomagic</a></li><li id="menu_category_210"><a href="http://www.sparkfun.com/categories/210">fabrickit</a></li><li id="menu_category_135"><a href="http://www.sparkfun.com/categories/135">LilyPad</a></li><li id="menu_category_206"><a href="http://www.sparkfun.com/categories/206">Materials</a></li></ul></li><li id="menu_category_4"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/4">GPS</a><ul style="display:none;"><li id="menu_category_18"><a href="http://www.sparkfun.com/categories/18">Antennas</a></li><li id="menu_category_86"><a href="http://www.sparkfun.com/categories/86">Eval Boards</a></li><li id="menu_category_17"><a href="http://www.sparkfun.com/categories/17">Modules</a></li></ul></li><li id="menu_category_157"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/157">Kits</a></li><li id="menu_category_76"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/76">LCDs</a><ul style="display:none;"><li id="menu_category_147"><a href="http://www.sparkfun.com/categories/147">Color</a></li><li id="menu_category_148"><a href="http://www.sparkfun.com/categories/148">Monochrome</a></li></ul></li><li id="menu_category_96"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/96">Port-O-Rotary</a></li><li id="menu_category_1"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/1">Programmers</a><ul style="display:none;"><li id="menu_category_26"><a href="http://www.sparkfun.com/categories/26">ARM</a></li><li id="menu_category_7"><a href="http://www.sparkfun.com/categories/7">AVR</a></li><li id="menu_category_156"><a href="http://www.sparkfun.com/categories/156">DSP</a></li><li id="menu_category_37"><a href="http://www.sparkfun.com/categories/37">MAXQ</a></li><li id="menu_category_8"><a href="http://www.sparkfun.com/categories/8">MSP</a></li><li id="menu_category_6"><a href="http://www.sparkfun.com/categories/6">PIC</a></li><li id="menu_category_126"><a href="http://www.sparkfun.com/categories/126">PICAXE</a></li><li id="menu_category_168"><a href="http://www.sparkfun.com/categories/168">XMOS</a></li></ul></li><li id="menu_category_53"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/53">Prototyping</a><ul style="display:none;"><li id="menu_category_54"><a href="http://www.sparkfun.com/categories/54">Batteries</a></li><li id="menu_category_149"><a href="http://www.sparkfun.com/categories/149">Boards</a></li><li id="menu_category_91"><a href="http://www.sparkfun.com/categories/91">Connectors</a></li><li id="menu_category_182"><a href="http://www.sparkfun.com/categories/182">Enclosures</a></li><li id="menu_category_55"><a href="http://www.sparkfun.com/categories/55">General</a></li><li id="menu_category_155"><a href="http://www.sparkfun.com/categories/155">Hardware</a></li><li id="menu_category_92"><a href="http://www.sparkfun.com/categories/92">Sockets</a></li><li id="menu_category_116"><a href="http://www.sparkfun.com/categories/116">Solar</a></li><li id="menu_category_141"><a href="http://www.sparkfun.com/categories/141">Wire</a></li></ul></li><li id="menu_category_207"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/207">Retail</a><ul style="display:none;"><li id="menu_category_212"><a href="http://www.sparkfun.com/categories/212">Arduino</a></li><li id="menu_category_216"><a href="http://www.sparkfun.com/categories/216">Components</a></li><li id="menu_category_213"><a href="http://www.sparkfun.com/categories/213">Kits</a></li><li id="menu_category_211"><a href="http://www.sparkfun.com/categories/211">Materials</a></li><li id="menu_category_215"><a href="http://www.sparkfun.com/categories/215">Prototyping</a></li><li id="menu_category_214"><a href="http://www.sparkfun.com/categories/214">Sensors</a></li><li id="menu_category_217"><a href="http://www.sparkfun.com/categories/217">Tools</a></li></ul></li><li id="menu_category_134"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/134">Retired</a><ul style="display:none;"><li id="menu_category_194"><a href="http://www.sparkfun.com/categories/194">Breakout Boards</a></li><li id="menu_category_203"><a href="http://www.sparkfun.com/categories/203">Cables</a></li><li id="menu_category_200"><a href="http://www.sparkfun.com/categories/200">Classes</a></li><li id="menu_category_192"><a href="http://www.sparkfun.com/categories/192">Components</a></li><li id="menu_category_191"><a href="http://www.sparkfun.com/categories/191">Development Tools</a></li><li id="menu_category_188"><a href="http://www.sparkfun.com/categories/188">GPS</a></li><li id="menu_category_190"><a href="http://www.sparkfun.com/categories/190">Kits</a></li><li id="menu_category_196"><a href="http://www.sparkfun.com/categories/196">LCD</a></li><li id="menu_category_201"><a href="http://www.sparkfun.com/categories/201">Programmers</a></li><li id="menu_category_195"><a href="http://www.sparkfun.com/categories/195">Prototyping</a></li><li id="menu_category_197"><a href="http://www.sparkfun.com/categories/197">Robotics</a></li><li id="menu_category_189"><a href="http://www.sparkfun.com/categories/189">Sensors</a></li><li id="menu_category_208"><a href="http://www.sparkfun.com/categories/208">SFE Widgets</a></li><li id="menu_category_198"><a href="http://www.sparkfun.com/categories/198">Swag</a></li><li id="menu_category_193"><a href="http://www.sparkfun.com/categories/193">Tools</a></li><li id="menu_category_199"><a href="http://www.sparkfun.com/categories/199">Wireless</a></li></ul></li><li id="menu_category_31"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/31">Robotics</a><ul style="display:none;"><li id="menu_category_179"><a href="http://www.sparkfun.com/categories/179">Drivers</a></li><li id="menu_category_181"><a href="http://www.sparkfun.com/categories/181">Kits</a></li><li id="menu_category_178"><a href="http://www.sparkfun.com/categories/178">Motors</a></li><li id="menu_category_202"><a href="http://www.sparkfun.com/categories/202">Other</a></li><li id="menu_category_180"><a href="http://www.sparkfun.com/categories/180">Wheels</a></li></ul></li><li id="menu_category_185"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/185">Sale</a></li><li id="menu_category_23"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/23">Sensors</a><ul style="display:none;"><li id="menu_category_80"><a href="http://www.sparkfun.com/categories/80">Accelerometers</a><ul><li id="menu_category_161"><a href="http://www.sparkfun.com/categories/161">1-axis</a></li><li id="menu_category_162"><a href="http://www.sparkfun.com/categories/162">2-axis</a></li><li id="menu_category_163"><a href="http://www.sparkfun.com/categories/163">3-axis</a></li></ul></li><li id="menu_category_146"><a href="http://www.sparkfun.com/categories/146">Biometrics</a></li><li id="menu_category_117"><a href="http://www.sparkfun.com/categories/117">Capacitive</a></li><li id="menu_category_151"><a href="http://www.sparkfun.com/categories/151">Current</a></li><li id="menu_category_143"><a href="http://www.sparkfun.com/categories/143">Flex / Force</a></li><li id="menu_category_85"><a href="http://www.sparkfun.com/categories/85">Gyros</a><ul><li id="menu_category_158"><a href="http://www.sparkfun.com/categories/158">1-axis</a></li><li id="menu_category_159"><a href="http://www.sparkfun.com/categories/159">2-axis</a></li><li id="menu_category_183"><a href="http://www.sparkfun.com/categories/183">3-axis</a></li></ul></li><li id="menu_category_144"><a href="http://www.sparkfun.com/categories/144">ID</a></li><li id="menu_category_160"><a href="http://www.sparkfun.com/categories/160">IMU</a></li><li id="menu_category_139"><a href="http://www.sparkfun.com/categories/139">Infrared</a></li><li id="menu_category_102"><a href="http://www.sparkfun.com/categories/102">Light / Imaging</a></li><li id="menu_category_83"><a href="http://www.sparkfun.com/categories/83">Magneto</a></li><li id="menu_category_84"><a href="http://www.sparkfun.com/categories/84">Proximity</a></li><li id="menu_category_165"><a href="http://www.sparkfun.com/categories/165">Radiation</a></li><li id="menu_category_186"><a href="http://www.sparkfun.com/categories/186">Sound</a></li><li id="menu_category_82"><a href="http://www.sparkfun.com/categories/82">Temperature</a></li><li id="menu_category_152"><a href="http://www.sparkfun.com/categories/152">Weather</a></li></ul></li><li id="menu_category_97"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/97">SFE Widgets</a></li><li id="menu_category_130"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/130">Swag</a></li><li id="menu_category_46"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/46">Tools</a><ul style="display:none;"><li id="menu_category_47"><a href="http://www.sparkfun.com/categories/47">Hand Tools</a></li><li id="menu_category_48"><a href="http://www.sparkfun.com/categories/48">Hot-Air Rework</a></li><li id="menu_category_177"><a href="http://www.sparkfun.com/categories/177">Instruments</a></li><li id="menu_category_28"><a href="http://www.sparkfun.com/categories/28">Power Supplies</a></li><li id="menu_category_49"><a href="http://www.sparkfun.com/categories/49">Soldering</a></li></ul></li><li id="menu_category_138"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/138">Tracking</a></li><li id="menu_category_16"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/16">Wireless</a><ul style="display:none;"><li id="menu_category_78"><a href="http://www.sparkfun.com/categories/78">Antennas</a></li><li id="menu_category_115"><a href="http://www.sparkfun.com/categories/115">Bluetooth</a></li><li id="menu_category_79"><a href="http://www.sparkfun.com/categories/79">General</a></li><li id="menu_category_113"><a href="http://www.sparkfun.com/categories/113">Modem</a></li><li id="menu_category_114"><a href="http://www.sparkfun.com/categories/114">Nordic</a></li><li id="menu_category_112"><a href="http://www.sparkfun.com/categories/112">WiFi</a></li><li id="menu_category_111"><a href="http://www.sparkfun.com/categories/111">Zigbee/802.15.4</a></li></ul></li>  <li><hr /></li>
+  <li>
+    <img style='float: left' src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/pdf.gif" />
+    <a href="http://sparkfun.com/download/PDFs/catalog.pdf">Full catalog</a>
+  </li>
+</ul>
+        <br />
+      </div>
+
+      <div id="right">
+        <div class="collapsible user">
+  <p class="cart-link"><img height="19" width="19" alt="" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_shoppingcart.gif"> 
+     <a href="http://www.sparkfun.com/cart"><span id="items_in_cart">0</span> items in your cart</a></p>
+  <form action="https://www.sparkfun.com/account/login" id="login" method="post">
+    <label for="user_login">Email</label>
+    <input id="user_login" type="text" tabindex="1" maxlength="320" name="user">
+    <label for="user_password">Password</label>
+    <input id="user_password" type="password" tabindex="2" maxlength="20" name="passwd">
+    <p class="right"><input type="submit" value="log in" class="button"></p>
+    <p><a href="https://www.sparkfun.com/account/forgot_password">Forgot your password?</a><br/>
+       No account? <a href="https://www.sparkfun.com/account/make">Register here</a>.</p>
+  </form>
+</div>
+<br>
+
+        <h2 id="feed_menu" class="collapsible"><span class="arrow"></span>Feeds</h2>
+        <ul class="collapsible feeds" style="display: block">
+  <li><a href="http://www.sparkfun.com/feeds/news">News</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/products">Products</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/changes">Product Changes</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/comments">Comments</a></li>
+  <li><a href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&amp;v=2&amp;orderby=published">Videos</a></li>
+</ul>
+        <br />
+
+        <h2 id="resources_menu" class="collapsible"><span class="arrow"></span>Resources</h2>
+        <ul class="collapsible resources" style="display: block">
+  <li><a href="http://www.sparkfun.com/news/263">Official SparkFun IRC Channel</a></li>
+  <li><a href="http://www.batchpcb.com/" target="_blank">Custom PCBs</a></li>
+  <li><a href="http://www.opencircuits.com/" target="_blank">Open Circuits</a></li>
+  <li><a href="http://www.ponoko.com/make-and-sell/electronics" target="_blank">Ponoko - Your Personal Factory</a></li>
+  <li><a href="http://www.sparkfun.com/static/jobs">Jobs @ SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/tutorials/92">Sell Your Widget on SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/quiz">Take the SparkFun Quiz</a></li>
+</ul>
+        <br />
+
+        <h2 id="currency_menu_head" class="collapsible"><span class="arrow"></span>Currency</h2>
+        
+<div class="collapsible" id="currency_menu">
+  Display prices in
+  <input type="hidden" id="preferred_currency" value="USD" />
+  <ul id="currency_menu_list" class="currency">
+          <li>
+        <a id="currency_USD" onclick="SFE.change_currency('USD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_checked.gif" />
+                US Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_CAD" onclick="SFE.change_currency('CAD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Canadian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_AUD" onclick="SFE.change_currency('AUD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Australian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_GBP" onclick="SFE.change_currency('GBP'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                British Pound        </a>
+    </li>
+          <li>
+        <a id="currency_EUR" onclick="SFE.change_currency('EUR'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Euro        </a>
+    </li>
+      </ul>
+  </div>
+
+<script language="javascript">
+var CURRENCIES = {"USD":{"code":"USD","title":"US Dollar","symbol_left":"$","symbol_right":"","decimal_point":".","thousands_point":",","decimal_places":"2","value":"1.0000"},"CAD":{"code":"CAD","title":"Canadian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9706"},"AUD":{"code":"AUD","title":"Australian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9957"},"GBP":{"code":"GBP","title":"British Pound","symbol_left":"&pound;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.6187"},"EUR":{"code":"EUR","title":"Euro","symbol_left":"&euro;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.7214"}}</script>
+        <br />
+
+        <h2 id="feedback_menu" class="collapsible"><span class="arrow"></span>Feedback</h2>
+        <form id="feedback" class="collapsible" style="display: block">
+  <label for="feedback_textarea" style="font-weight: bold">What's on your mind?</label>
+  <br />
+  <textarea id="feedback_textarea" name="feedback_text"></textarea>
+  <br /><br />
+  <label for="feedback_email">Please include your email address if you'd like us to respond to a specific question.</label>
+  <br />
+  <br />
+  <input type="text" id="feedback_email" name="email" /> 
+  <br />
+  <input onclick="SFE.mind_feedback(); return(false);" type="button" class="button" value="Submit" /> 
+</form>
+      </div>
+
+      <div id="center">
+        <a name="content" id="content"></a>
+        
+<h1 class="red-header">
+    <span class="link"><a href="http://www.sparkfun.com">Home</a> |</span><span class="link"><a href="http://www.sparkfun.com/tutorials/">Tutorials</a>|</span>  Anode vs. Cathode 
+</h1>
+
+<div class="news">
+  <p class="header">
+    <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/avatars/19938_sm.jpg" />
+    <a class="title" href="http://www.sparkfun.com/tutorials/222">Anode vs. Cathode</a>
+    <br />
+    by <a href="http://www.sparkfun.com/users/19938">CTaylor</a> | December 01, 2010 | <i><a style="cursor: pointer" onclick="javascript: if(!$('comments').visible()) { SFE.toggle_collapsible($('comments_header')); } $('comments_header').scrollTo();">11 comments</a></i>
+    <span class="skill">
+      Skill Level: 
+              <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" />
+        Beginner
+          </span>
+  </p>
+  <hr />
+  <p>
+	A diode is a semiconductor device that is common in electronics. The semiconductor inside a diode consists of two materials: n-type (negative) and p-type (positive). Current flows from the p-type material to the n-type material, but not in the reverse direction. When a positive voltage is applied to the p-type substrate, electrons &quot;jump&quot; from the n-type material to the p-type material.&nbsp;</p>
+<p>
+	An LED is a special kind of diode that emits visible light. When the electrons jump from the n-type to the p-type material in an LED, they drop an atomic energy level, and the energy produced is released as visible light. The wavelength of the light depends on the size of the energy level drop made by the electron.</p>
+<p style="text-align: center;">
+	<a href="http://en.wikipedia.org/wiki/LED"><img alt="" src="http://www.sparkfun.com/tutorial/Mini_LED_Tutorial/LED_Physics.PNG" /></a></p>
+<p>
+	The p-type material is normally referred to as the &ldquo;anode&rdquo; and the n-type material is referred to as the &ldquo;cathode&rdquo;. In schematic form, an LED is depicted as so:</p>
+<p style="text-align: center;">
+	<font face="Arial, sans-serif"><a href="http://www.sparkfun.com/tutorial/Mini_LED_Tutorial/Anode-Cathode.JPG" target="_blank"><img name="graphics1" src="http://www.sparkfun.com/tutorial/Mini_LED_Tutorial/Anode-Cathode.JPG" style="border-style: solid; border-width: 0px; width: 267px; height: 93px;" /></a></font></p>
+<p>
+	In its physical form, a through-hole LED usually looks like this:<br />
+	&nbsp;</p>
+<p style="text-align: center;">
+	<font face="Arial, sans-serif"><a href="http://www.sparkfun.com/commerce/product_info.php?products_id=9592"><img alt="" src="http://www.sparkfun.com/tutorial/Mini_LED_Tutorial/LED_Green.jpg" style="width: 329px; height: 329px;" /></a></font></p>
+<p>
+	Notice that the leads of the device are two different lengths. This is to indicate that one &ldquo;leg&rdquo; of the device is the anode, and the other is the cathode. On an LED device the longer leg is always the anode, and the shorter leg is the cathode. Current always flows from the anode to the cathode. In a simple circuit, the anode of the LED is connected to the positive voltage supply, and the cathode is connected to ground, or the negative voltage supply. A good way to remember the names using the schematic symbol is that &ldquo;anode&rdquo; and &ldquo;arrow&rdquo; both start with the letter &ldquo;a&rdquo;. So the side of the schematic symbol connected to the &ldquo;arrow&rdquo; is the &ldquo;anode&rdquo;, making the side connected to the line the cathode.</p>
+<p>
+	An LED device exhibits a characteristic voltage drop based on the material used as its semiconductor (usually between 1.5V and 4V). If an LED is connected directly to a power source with a voltage greater than the LED&#39;s characteristic voltage drop (and that power source can deliver enough current) the LED will &ldquo;burn out&rdquo;, destroying this device. Because of this, an LED is almost always used along with a &ldquo;current-limiting&rdquo; resistor. The resistor reduces the amount of current flowing through the LED, keeping it at a safe level that will not destroy the device. A normal (and safe) hookup for a standard 5mm LED looks like this:</p>
+<p style="text-align: center;">
+	<img alt="" src="http://www.sparkfun.com/tutorial/Mini_LED_Tutorial/LED_Hookup1.JPG" style="width: 236px; height: 433px;" /></p>
+<p>
+	Example question:<br />
+	<br />
+	In the diagram below, which lead of the LED should be connected to the negative terminal of the battery, A, or B?</p>
+<p style="text-align: center;">
+	<img alt="" src="http://www.sparkfun.com/tutorial/Mini_LED_Tutorial/LED_Example1.JPG" /></p>
+<p>
+	The answer is B, or the cathode. Current always flows from the anode to the cathode, so since current flows from the positive terminal of the battery to the negative, lead B should be connected to the negative terminal, and lead A should be connected to the resistor.</p></div>
+
+<div id="comments_container">
+  <h2 id="comments_header" class="collapsible grey big"><span class="arrow"></span>Comments <span class="count">11 comments</span></h2>
+<div id="comments" class="collapsible white">
+  <div style="padding: 20px">  <div style="text-align: center">
+    <b><a href="#" onclick="javascript: $('right').scrollTo(); $('user_login').select()">Login</a> to post comments.</b>
+  </div>
+</div>
+  <div class="comment" id="comment_22167"><span class="header"><a href="http://www.sparkfun.com/users/48603" class="bold">RobotNinja</a> <span class="wide">|</span> <b>December  3, 2010 at 10:27 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22167">3</span></strong></span><br /></span><div class="body"><p>I'm not a fan of going off the length of the legs: what happens if I cut the leads and then forget? So, there's usually a flat or a cut on the plastic lip at the bottom of the LED. So, I remember: "Cut is for C...cathode" and then my other memory is "Current flows alphabetically, anode to cathode."<br /></p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_22234"><span class="header"><a href="http://www.sparkfun.com/users/11098" class="bold">Member11098</a> <span class="wide">|</span> <b>December  4, 2010 at  7:02 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22234">3</span></strong></span><br /></span><div class="body"><p>Another mnemonic is "The flat is ground and the ground is flat."</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_22303"><span class="header"><a href="http://www.sparkfun.com/users/2348" class="bold">joesugar</a> <span class="wide">|</span> <b>December  5, 2010 at  7:49 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22303">1</span></strong></span><br /></span><div class="body"><p>This is quite possibly the first mnemonic I've seen that will help me remember this.  I <em>always</em> have to look it up.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_29229"><span class="header"><a href="http://www.sparkfun.com/users/86240" class="bold">MikeS</a> <span class="wide">|</span> <b>February  9, 2011 at  6:27 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_29229">1</span></strong></span><br /></span><div class="body"><p>I agree...that is genius...I always have to stick an LED into the power rail of my breadboard when beginning a project to remember which end of the LED is the anode.</p>
+</div></div></div></div></div></div><div class="comment" id="comment_24924"><span class="header"><a href="http://www.sparkfun.com/users/49842" class="bold">ashcan</a> <span class="wide">|</span> <b>January 11, 2011 at  4:27 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_24924">1</span></strong></span><br /></span><div class="body"><p>All well and good for this type of package. If I'm not sure (like the surface-mount LED's I've got that are about the size of a grain of coarse salt), I just power one up. If it doesn't work, flip it over. If it still doesn't, it never did. (My geek variation of the "If you love something" quote). Just watch your supply voltage/current.</p>
+</div></div></div></div><div class="comment" id="comment_22003"><span class="header"><a href="http://www.sparkfun.com/users/167141" class="bold">billclawson</a> <span class="wide">|</span> <b>December  1, 2010 at  4:01 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22003">1</span></strong></span><br /></span><div class="body"><p>If you're dealing with clear LEDs, you can look inside the device.  The cathode has a 'large' flat space on the end of it, where the LED semicondoctor is located.  The anode ends in a point, and a small wire runs from the anode tip to the center of the LED die on the cathode.  </p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_25189"><span class="header"><a href="http://www.sparkfun.com/users/7147" class="bold">Tom_7019</a> <span class="wide">|</span> <b>January 13, 2011 at  1:36 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_25189">1</span></strong></span><br /></span><div class="body"><p>This is the only way to go when importing cheap batches of LEDs from China. I've seen the flat and the short leg on both anode and cathode.</p>
+</div></div></div></div><div class="comment" id="comment_24136"><span class="header"><a href="http://www.sparkfun.com/users/2655" class="bold">LukeZ</a> <span class="wide">|</span> <b>January  3, 2011 at 12:24 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_24136">1</span></strong></span><br /></span><div class="body"><p>I always remember that cartoon strip with the freaked out lady, called "Cathy." She was always negative about everything - C for Cathy, Cathy is Negative, Cathode also begins with C, Cathode is Negative. </p>
+
+<p>Yeah, ok... not the shortest mnemonic... but it works. </p>
+</div></div><div class="comment" id="comment_25018"><span class="header"><a href="http://www.sparkfun.com/users/28891" class="bold">Myself</a> <span class="wide">|</span> <b>January 12, 2011 at 11:21 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_25018">1</span></strong></span><br /></span><div class="body"><p><strong><a href="/users/167141">billclawson</a>:</strong></p>
+
+<blockquote>
+  <p>If you're dealing with clear LEDs, you can look inside the device.  The cathode has a 'large' flat space on the end of it, where the LED semicondoctor is located.  The anode ends in a point, and a small wire runs from the anode tip to the center of the LED die on the cathode.  </p>
+</blockquote>
+
+<p>This is the most reliable way to tell. My little LED tester box has the following doodled onto it, all oriented the same way:
+Diode schematic symbol,
+words "anode" and "cathode",
+through-hole diagram with long and short lead,
+round LED diagram with flat spot on package,
+interior structure with anode bondwire,
+plus and minus symbols.</p>
+</div></div><div class="comment" id="comment_25176"><span class="header"><a href="http://www.sparkfun.com/users/189842" class="bold">Member189842</a> <span class="wide">|</span> <b>January 13, 2011 at 12:00 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_25176">1</span></strong></span><br /></span><div class="body"><p>ANODE THINK A+</p>
+</div></div><div class="comment" id="comment_30115"><span class="header"><a href="http://www.sparkfun.com/users/100666" class="bold">Petey</a> <span class="wide">|</span> <b>February 18, 2011 at  6:09 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_30115">1</span></strong></span><br /></span><div class="body"><p>Or yet another way to remember:
+Conventional current (+) flows in the direction of the arrow.</p>
+</div></div></div>
+<br />
+</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      SparkFun Electronics <a href="http://www.sparkfun.com/news/300">&reg;</a>      <span class="wide">|</span>
+      <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6175+Longbow+Dr,+Boulder,+CO+80301&sll=40.006234,-105.224915&sspn=0.012113,0.020192&ie=UTF8&hq=&hnear=6175+Longbow+Dr,+Boulder,+Colorado+80301&t=h&z=16" target="_blank">Boulder, Colorado</a>
+      <span class="wide">|</span>
+      <a href="http://www.sparkfun.com/static/customer_service">Customer Service</a>
+    </div>
+        <script type="text/javascript" src="/js/cookiejar.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/sparkfun.js?sparkrev=1299616818"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript">function autoFireLightbox(){setTimeout(function(){SFE.stab_eyes()},250)}Event.observe(window,"load",autoFireLightbox,false);</script>
+    <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3404365-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

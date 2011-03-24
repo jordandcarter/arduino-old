@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="google-site-verification" content="XUb2UlchrvwCWWyhXksBlqQy1STYtTEN_M0-tgQRHRs" />
+    <meta name="google-site-verification" content="gRUAvzBJ_533b-AGTmldOJfByU6TkojfUbWovB2wKJo" />
+    <title>Solder Paste Stenciling - SparkFun Electronics</title>
+    <link rel="stylesheet" href="/css/screen.css?rev=1299616818" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css?rev=1299616818" type="text/css" media="print" />
+    <link rel="stylesheet" href="/css/lightbox.css?rev=1299616818" type="text/css" media="screen" />
+    <!-- IE is the bane of my existence. -->
+    <!--[if IE]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+    <link rel="feed" type="application/rss+xml" title="News" href="http://www.sparkfun.com/feeds/news/" />
+    <link rel="alternate" type="application/rss+xml" title="Products" href="http://www.sparkfun.com/feeds/products/" />
+    <link rel="alternate" type="application/rss+xml" title="Product Changes" href="http://www.sparkfun.com/feeds/changes/" />
+    <link rel="alternate" type="application/rss+xml" title="Comments" href="http://www.sparkfun.com/feeds/comments/" />
+    <link rel="alternate" type="application/rss+xml" title="Videos" href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&v=2&orderby=published" />
+    <link rel="apple-touch-icon" href="/fanboy.png" />
+    <link rev="canonical" type="text/html" href="http://sprkfn.com/t58" /> 
+    <script type="text/javascript">
+      var HTTP_SERVER = 'http://www.sparkfun.com',
+          HTTPS_SERVER = 'https://www.sparkfun.com',
+          HTTP_STATIC = 'http://dlnmh9ip6v2uc.cloudfront.net',
+          FULL_LAYOUT = true,
+          AUTHENTICATED = false;
+    </script>
+    <script type="text/javascript" src="/js/prototype.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <!-- turns out  that IE7 chokes if you don't load these separately. -->
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="/js/effects.js"></script>
+    <script type="text/javascript" src="/js/builder.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/lightbox.js?rev=1299616818"></script>
+  </head>
+  <body>
+    <div id="airlock" class="clearfix">
+
+      
+  <script>BANNER_ID = 53</script>
+
+<div id="header">
+  <a href="http://www.sparkfun.com/"><img width=188 height=105 class="logo" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/logo.gif" title="SparkFun Electronics" alt="SparkFun Electronics" /></a>
+  <a href="#products_menu" class="skip">Skip to menu</a>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <div id="banner-nav" style="display: none;">
+<img id="banner-goprev" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_left.png" height=23 width=23 />
+<img id="banner-all" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_all.png" height=23 width=23 />
+<img id="banner-gonext" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_right.png" height=23 width=23 />
+</div>
+<a id="banner-link" href="http://www.sparkfun.com/products/10308"><img width=978 height=105 id="banner" src="http://dlnmh9ip6v2uc.cloudfront.net/images/banners/SFE03.0007.ED-HowToSolder-01.jpg" alt="" /></a>
+  <div id="header-menu">
+    <ul>
+      <li id="header_menu_index"><a href="http://www.sparkfun.com/index">Home</a></li>
+      <li id="header_menu_cservice"><a href="http://www.sparkfun.com/static/customer_service">Customer Service</a></li>
+      <li id="header_menu_tutorials" class="active"><a href="http://www.sparkfun.com/tutorials">Tutorials</a></li>
+      <li id="header_menu_forum"><a href="http://forum.sparkfun.com">Forum</a></li>
+      <li id="header_menu_distributors"><a href="http://www.sparkfun.com/distributors">Distributors</a></li>
+      <li id="header_menu_about"><a href="http://www.sparkfun.com/static/about">About Us</a></li>
+      <li id="header_menu_contact" class="last"><a href="http://www.sparkfun.com/static/contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="left">
+        <h2 class="collapsible" id="search_menu"><span class="arrow"></span>Search</h2>
+        <form class="collapsible search" style="display: block" action="http://www.sparkfun.com/search/results" id="search_form" method="get">
+  <input id="search_field" name="term" type="text" value="" />
+  <input type="submit" value="Go" class="button" />
+  <br />
+  <input id="products_search" type="radio" name="what" value="products" checked />
+  <label for="products_search">Products</label>
+  <br />
+  <input id="news_search" type="radio" name="what" value="news" />
+  <label for="news_search">News</label>
+  <br />
+  <input id="tutorials_search" type="radio" name="what" value="tutorials" />
+  <label for="tutorials_search">Tutorials</label>
+  <br />
+  <input id="comments_search" type="radio" name="what" value="comments" />
+  <label for="comments_search">Comments</label>
+</form>
+        <br />
+
+        <h2 id="products_menu" class="collapsible"><span class="arrow"></span>Products</h2>
+        
+<ul id="category_menu_list" class="collapsible" style="display: block">
+  <li id="menu_category_new_products"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/new_products">New Products</a></li>
+  <li id="menu_category_top"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/top">Top Sellers</a></li>
+  <li id="menu_category_featured"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/featured">Staff Picks</a></li>
+  <li id="menu_category_gift_certificates"><span class="arrow"></span><a href="https://www.sparkfun.com/gift_certificates">Gift Certificates</a></li>
+  <li><hr /></li>
+  <li id="menu_category_176"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/176">Books</a></li><li id="menu_category_20"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/20">Breakout Boards</a></li><li id="menu_category_70"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/70">Cables</a><ul style="display:none;"><li id="menu_category_140"><a href="http://www.sparkfun.com/categories/140">Audio</a></li><li id="menu_category_150"><a href="http://www.sparkfun.com/categories/150">Ethernet</a></li><li id="menu_category_72"><a href="http://www.sparkfun.com/categories/72">Hook Up</a></li><li id="menu_category_75"><a href="http://www.sparkfun.com/categories/75">Parallel</a></li><li id="menu_category_74"><a href="http://www.sparkfun.com/categories/74">Serial</a></li><li id="menu_category_71"><a href="http://www.sparkfun.com/categories/71">USB</a></li></ul></li><li id="menu_category_66"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/66">Cellular</a><ul style="display:none;"><li id="menu_category_67"><a href="http://www.sparkfun.com/categories/67">Antennas</a></li><li id="menu_category_69"><a href="http://www.sparkfun.com/categories/69">Eval Boards</a></li><li id="menu_category_68"><a href="http://www.sparkfun.com/categories/68">Modules</a></li></ul></li><li id="menu_category_154"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/154">Classes</a></li><li id="menu_category_51"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/51">Components</a><ul style="display:none;"><li id="menu_category_87"><a href="http://www.sparkfun.com/categories/87">ARM Microcontrollers</a></li><li id="menu_category_21"><a href="http://www.sparkfun.com/categories/21">AVR Microcontrollers</a></li><li id="menu_category_145"><a href="http://www.sparkfun.com/categories/145">Buttons/Switches</a></li><li id="menu_category_60"><a href="http://www.sparkfun.com/categories/60">General</a></li><li id="menu_category_90"><a href="http://www.sparkfun.com/categories/90">General ICs</a></li><li id="menu_category_89"><a href="http://www.sparkfun.com/categories/89">LEDs</a><ul><li id="menu_category_173"><a href="http://www.sparkfun.com/categories/173">10mm</a></li><li id="menu_category_171"><a href="http://www.sparkfun.com/categories/171">3mm</a></li><li id="menu_category_172"><a href="http://www.sparkfun.com/categories/172">5mm</a></li><li id="menu_category_170"><a href="http://www.sparkfun.com/categories/170">7-Segment</a></li><li id="menu_category_175"><a href="http://www.sparkfun.com/categories/175">Other</a></li><li id="menu_category_174"><a href="http://www.sparkfun.com/categories/174">SMD</a></li></ul></li><li id="menu_category_88"><a href="http://www.sparkfun.com/categories/88">Oscillators</a></li><li id="menu_category_22"><a href="http://www.sparkfun.com/categories/22">PIC Microcontrollers</a></li><li id="menu_category_124"><a href="http://www.sparkfun.com/categories/124">PICAXE Microcontrollers</a></li><li id="menu_category_132"><a href="http://www.sparkfun.com/categories/132">PSoC Microcontrollers</a></li><li id="menu_category_29"><a href="http://www.sparkfun.com/categories/29">SMD ICs</a></li></ul></li><li id="menu_category_2"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/2">Development Tools</a><ul style="display:none;"><li id="menu_category_184"><a href="http://www.sparkfun.com/categories/184">.NET</a></li><li id="menu_category_93"><a href="http://www.sparkfun.com/categories/93">ADuC</a></li><li id="menu_category_103"><a href="http://www.sparkfun.com/categories/103">Arduino</a></li><li id="menu_category_10"><a href="http://www.sparkfun.com/categories/10">AVR</a></li><li id="menu_category_164"><a href="http://www.sparkfun.com/categories/164">Beagle</a></li><li id="menu_category_187"><a href="http://www.sparkfun.com/categories/187">Chumby</a></li><li id="menu_category_109"><a href="http://www.sparkfun.com/categories/109">Coridium</a></li><li id="menu_category_136"><a href="http://www.sparkfun.com/categories/136">FPGA</a></li><li id="menu_category_101"><a href="http://www.sparkfun.com/categories/101">iPod</a></li><li id="menu_category_25"><a href="http://www.sparkfun.com/categories/25">LPC</a></li><li id="menu_category_11"><a href="http://www.sparkfun.com/categories/11">MSP</a></li><li id="menu_category_9"><a href="http://www.sparkfun.com/categories/9">PIC</a></li><li id="menu_category_125"><a href="http://www.sparkfun.com/categories/125">PICAXE</a></li><li id="menu_category_137"><a href="http://www.sparkfun.com/categories/137">PSoC</a></li><li id="menu_category_104"><a href="http://www.sparkfun.com/categories/104">Roomba</a></li><li id="menu_category_94"><a href="http://www.sparkfun.com/categories/94">SAM</a></li><li id="menu_category_95"><a href="http://www.sparkfun.com/categories/95">ST</a></li><li id="menu_category_167"><a href="http://www.sparkfun.com/categories/167">STAMP</a></li><li id="menu_category_107"><a href="http://www.sparkfun.com/categories/107">Wiring</a></li><li id="menu_category_169"><a href="http://www.sparkfun.com/categories/169">WIZnet</a></li><li id="menu_category_166"><a href="http://www.sparkfun.com/categories/166">XMOS</a></li><li id="menu_category_142"><a href="http://www.sparkfun.com/categories/142">Zune</a></li></ul></li><li id="menu_category_100"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/100">Dings and Dents</a></li><li id="menu_category_204"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/204">E-Textiles</a><ul style="display:none;"><li id="menu_category_205"><a href="http://www.sparkfun.com/categories/205">Aniomagic</a></li><li id="menu_category_210"><a href="http://www.sparkfun.com/categories/210">fabrickit</a></li><li id="menu_category_135"><a href="http://www.sparkfun.com/categories/135">LilyPad</a></li><li id="menu_category_206"><a href="http://www.sparkfun.com/categories/206">Materials</a></li></ul></li><li id="menu_category_4"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/4">GPS</a><ul style="display:none;"><li id="menu_category_18"><a href="http://www.sparkfun.com/categories/18">Antennas</a></li><li id="menu_category_86"><a href="http://www.sparkfun.com/categories/86">Eval Boards</a></li><li id="menu_category_17"><a href="http://www.sparkfun.com/categories/17">Modules</a></li></ul></li><li id="menu_category_157"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/157">Kits</a></li><li id="menu_category_76"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/76">LCDs</a><ul style="display:none;"><li id="menu_category_147"><a href="http://www.sparkfun.com/categories/147">Color</a></li><li id="menu_category_148"><a href="http://www.sparkfun.com/categories/148">Monochrome</a></li></ul></li><li id="menu_category_96"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/96">Port-O-Rotary</a></li><li id="menu_category_1"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/1">Programmers</a><ul style="display:none;"><li id="menu_category_26"><a href="http://www.sparkfun.com/categories/26">ARM</a></li><li id="menu_category_7"><a href="http://www.sparkfun.com/categories/7">AVR</a></li><li id="menu_category_156"><a href="http://www.sparkfun.com/categories/156">DSP</a></li><li id="menu_category_37"><a href="http://www.sparkfun.com/categories/37">MAXQ</a></li><li id="menu_category_8"><a href="http://www.sparkfun.com/categories/8">MSP</a></li><li id="menu_category_6"><a href="http://www.sparkfun.com/categories/6">PIC</a></li><li id="menu_category_126"><a href="http://www.sparkfun.com/categories/126">PICAXE</a></li><li id="menu_category_168"><a href="http://www.sparkfun.com/categories/168">XMOS</a></li></ul></li><li id="menu_category_53"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/53">Prototyping</a><ul style="display:none;"><li id="menu_category_54"><a href="http://www.sparkfun.com/categories/54">Batteries</a></li><li id="menu_category_149"><a href="http://www.sparkfun.com/categories/149">Boards</a></li><li id="menu_category_91"><a href="http://www.sparkfun.com/categories/91">Connectors</a></li><li id="menu_category_182"><a href="http://www.sparkfun.com/categories/182">Enclosures</a></li><li id="menu_category_55"><a href="http://www.sparkfun.com/categories/55">General</a></li><li id="menu_category_155"><a href="http://www.sparkfun.com/categories/155">Hardware</a></li><li id="menu_category_92"><a href="http://www.sparkfun.com/categories/92">Sockets</a></li><li id="menu_category_116"><a href="http://www.sparkfun.com/categories/116">Solar</a></li><li id="menu_category_141"><a href="http://www.sparkfun.com/categories/141">Wire</a></li></ul></li><li id="menu_category_207"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/207">Retail</a><ul style="display:none;"><li id="menu_category_212"><a href="http://www.sparkfun.com/categories/212">Arduino</a></li><li id="menu_category_216"><a href="http://www.sparkfun.com/categories/216">Components</a></li><li id="menu_category_213"><a href="http://www.sparkfun.com/categories/213">Kits</a></li><li id="menu_category_211"><a href="http://www.sparkfun.com/categories/211">Materials</a></li><li id="menu_category_215"><a href="http://www.sparkfun.com/categories/215">Prototyping</a></li><li id="menu_category_214"><a href="http://www.sparkfun.com/categories/214">Sensors</a></li><li id="menu_category_217"><a href="http://www.sparkfun.com/categories/217">Tools</a></li></ul></li><li id="menu_category_134"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/134">Retired</a><ul style="display:none;"><li id="menu_category_194"><a href="http://www.sparkfun.com/categories/194">Breakout Boards</a></li><li id="menu_category_203"><a href="http://www.sparkfun.com/categories/203">Cables</a></li><li id="menu_category_200"><a href="http://www.sparkfun.com/categories/200">Classes</a></li><li id="menu_category_192"><a href="http://www.sparkfun.com/categories/192">Components</a></li><li id="menu_category_191"><a href="http://www.sparkfun.com/categories/191">Development Tools</a></li><li id="menu_category_188"><a href="http://www.sparkfun.com/categories/188">GPS</a></li><li id="menu_category_190"><a href="http://www.sparkfun.com/categories/190">Kits</a></li><li id="menu_category_196"><a href="http://www.sparkfun.com/categories/196">LCD</a></li><li id="menu_category_201"><a href="http://www.sparkfun.com/categories/201">Programmers</a></li><li id="menu_category_195"><a href="http://www.sparkfun.com/categories/195">Prototyping</a></li><li id="menu_category_197"><a href="http://www.sparkfun.com/categories/197">Robotics</a></li><li id="menu_category_189"><a href="http://www.sparkfun.com/categories/189">Sensors</a></li><li id="menu_category_208"><a href="http://www.sparkfun.com/categories/208">SFE Widgets</a></li><li id="menu_category_198"><a href="http://www.sparkfun.com/categories/198">Swag</a></li><li id="menu_category_193"><a href="http://www.sparkfun.com/categories/193">Tools</a></li><li id="menu_category_199"><a href="http://www.sparkfun.com/categories/199">Wireless</a></li></ul></li><li id="menu_category_31"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/31">Robotics</a><ul style="display:none;"><li id="menu_category_179"><a href="http://www.sparkfun.com/categories/179">Drivers</a></li><li id="menu_category_181"><a href="http://www.sparkfun.com/categories/181">Kits</a></li><li id="menu_category_178"><a href="http://www.sparkfun.com/categories/178">Motors</a></li><li id="menu_category_202"><a href="http://www.sparkfun.com/categories/202">Other</a></li><li id="menu_category_180"><a href="http://www.sparkfun.com/categories/180">Wheels</a></li></ul></li><li id="menu_category_185"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/185">Sale</a></li><li id="menu_category_23"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/23">Sensors</a><ul style="display:none;"><li id="menu_category_80"><a href="http://www.sparkfun.com/categories/80">Accelerometers</a><ul><li id="menu_category_161"><a href="http://www.sparkfun.com/categories/161">1-axis</a></li><li id="menu_category_162"><a href="http://www.sparkfun.com/categories/162">2-axis</a></li><li id="menu_category_163"><a href="http://www.sparkfun.com/categories/163">3-axis</a></li></ul></li><li id="menu_category_146"><a href="http://www.sparkfun.com/categories/146">Biometrics</a></li><li id="menu_category_117"><a href="http://www.sparkfun.com/categories/117">Capacitive</a></li><li id="menu_category_151"><a href="http://www.sparkfun.com/categories/151">Current</a></li><li id="menu_category_143"><a href="http://www.sparkfun.com/categories/143">Flex / Force</a></li><li id="menu_category_85"><a href="http://www.sparkfun.com/categories/85">Gyros</a><ul><li id="menu_category_158"><a href="http://www.sparkfun.com/categories/158">1-axis</a></li><li id="menu_category_159"><a href="http://www.sparkfun.com/categories/159">2-axis</a></li><li id="menu_category_183"><a href="http://www.sparkfun.com/categories/183">3-axis</a></li></ul></li><li id="menu_category_144"><a href="http://www.sparkfun.com/categories/144">ID</a></li><li id="menu_category_160"><a href="http://www.sparkfun.com/categories/160">IMU</a></li><li id="menu_category_139"><a href="http://www.sparkfun.com/categories/139">Infrared</a></li><li id="menu_category_102"><a href="http://www.sparkfun.com/categories/102">Light / Imaging</a></li><li id="menu_category_83"><a href="http://www.sparkfun.com/categories/83">Magneto</a></li><li id="menu_category_84"><a href="http://www.sparkfun.com/categories/84">Proximity</a></li><li id="menu_category_165"><a href="http://www.sparkfun.com/categories/165">Radiation</a></li><li id="menu_category_186"><a href="http://www.sparkfun.com/categories/186">Sound</a></li><li id="menu_category_82"><a href="http://www.sparkfun.com/categories/82">Temperature</a></li><li id="menu_category_152"><a href="http://www.sparkfun.com/categories/152">Weather</a></li></ul></li><li id="menu_category_97"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/97">SFE Widgets</a></li><li id="menu_category_130"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/130">Swag</a></li><li id="menu_category_46"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/46">Tools</a><ul style="display:none;"><li id="menu_category_47"><a href="http://www.sparkfun.com/categories/47">Hand Tools</a></li><li id="menu_category_48"><a href="http://www.sparkfun.com/categories/48">Hot-Air Rework</a></li><li id="menu_category_177"><a href="http://www.sparkfun.com/categories/177">Instruments</a></li><li id="menu_category_28"><a href="http://www.sparkfun.com/categories/28">Power Supplies</a></li><li id="menu_category_49"><a href="http://www.sparkfun.com/categories/49">Soldering</a></li></ul></li><li id="menu_category_138"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/138">Tracking</a></li><li id="menu_category_16"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/16">Wireless</a><ul style="display:none;"><li id="menu_category_78"><a href="http://www.sparkfun.com/categories/78">Antennas</a></li><li id="menu_category_115"><a href="http://www.sparkfun.com/categories/115">Bluetooth</a></li><li id="menu_category_79"><a href="http://www.sparkfun.com/categories/79">General</a></li><li id="menu_category_113"><a href="http://www.sparkfun.com/categories/113">Modem</a></li><li id="menu_category_114"><a href="http://www.sparkfun.com/categories/114">Nordic</a></li><li id="menu_category_112"><a href="http://www.sparkfun.com/categories/112">WiFi</a></li><li id="menu_category_111"><a href="http://www.sparkfun.com/categories/111">Zigbee/802.15.4</a></li></ul></li>  <li><hr /></li>
+  <li>
+    <img style='float: left' src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/pdf.gif" />
+    <a href="http://sparkfun.com/download/PDFs/catalog.pdf">Full catalog</a>
+  </li>
+</ul>
+        <br />
+      </div>
+
+      <div id="right">
+        <div class="collapsible user">
+  <p class="cart-link"><img height="19" width="19" alt="" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_shoppingcart.gif"> 
+     <a href="http://www.sparkfun.com/cart"><span id="items_in_cart">0</span> items in your cart</a></p>
+  <form action="https://www.sparkfun.com/account/login" id="login" method="post">
+    <label for="user_login">Email</label>
+    <input id="user_login" type="text" tabindex="1" maxlength="320" name="user">
+    <label for="user_password">Password</label>
+    <input id="user_password" type="password" tabindex="2" maxlength="20" name="passwd">
+    <p class="right"><input type="submit" value="log in" class="button"></p>
+    <p><a href="https://www.sparkfun.com/account/forgot_password">Forgot your password?</a><br/>
+       No account? <a href="https://www.sparkfun.com/account/make">Register here</a>.</p>
+  </form>
+</div>
+<br>
+
+        <h2 id="feed_menu" class="collapsible"><span class="arrow"></span>Feeds</h2>
+        <ul class="collapsible feeds" style="display: block">
+  <li><a href="http://www.sparkfun.com/feeds/news">News</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/products">Products</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/changes">Product Changes</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/comments">Comments</a></li>
+  <li><a href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&amp;v=2&amp;orderby=published">Videos</a></li>
+</ul>
+        <br />
+
+        <h2 id="resources_menu" class="collapsible"><span class="arrow"></span>Resources</h2>
+        <ul class="collapsible resources" style="display: block">
+  <li><a href="http://www.sparkfun.com/news/263">Official SparkFun IRC Channel</a></li>
+  <li><a href="http://www.batchpcb.com/" target="_blank">Custom PCBs</a></li>
+  <li><a href="http://www.opencircuits.com/" target="_blank">Open Circuits</a></li>
+  <li><a href="http://www.ponoko.com/make-and-sell/electronics" target="_blank">Ponoko - Your Personal Factory</a></li>
+  <li><a href="http://www.sparkfun.com/static/jobs">Jobs @ SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/tutorials/92">Sell Your Widget on SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/quiz">Take the SparkFun Quiz</a></li>
+</ul>
+        <br />
+
+        <h2 id="currency_menu_head" class="collapsible"><span class="arrow"></span>Currency</h2>
+        
+<div class="collapsible" id="currency_menu">
+  Display prices in
+  <input type="hidden" id="preferred_currency" value="USD" />
+  <ul id="currency_menu_list" class="currency">
+          <li>
+        <a id="currency_USD" onclick="SFE.change_currency('USD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_checked.gif" />
+                US Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_CAD" onclick="SFE.change_currency('CAD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Canadian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_AUD" onclick="SFE.change_currency('AUD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Australian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_GBP" onclick="SFE.change_currency('GBP'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                British Pound        </a>
+    </li>
+          <li>
+        <a id="currency_EUR" onclick="SFE.change_currency('EUR'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Euro        </a>
+    </li>
+      </ul>
+  </div>
+
+<script language="javascript">
+var CURRENCIES = {"USD":{"code":"USD","title":"US Dollar","symbol_left":"$","symbol_right":"","decimal_point":".","thousands_point":",","decimal_places":"2","value":"1.0000"},"CAD":{"code":"CAD","title":"Canadian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9706"},"AUD":{"code":"AUD","title":"Australian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9957"},"GBP":{"code":"GBP","title":"British Pound","symbol_left":"&pound;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.6187"},"EUR":{"code":"EUR","title":"Euro","symbol_left":"&euro;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.7214"}}</script>
+        <br />
+
+        <h2 id="feedback_menu" class="collapsible"><span class="arrow"></span>Feedback</h2>
+        <form id="feedback" class="collapsible" style="display: block">
+  <label for="feedback_textarea" style="font-weight: bold">What's on your mind?</label>
+  <br />
+  <textarea id="feedback_textarea" name="feedback_text"></textarea>
+  <br /><br />
+  <label for="feedback_email">Please include your email address if you'd like us to respond to a specific question.</label>
+  <br />
+  <br />
+  <input type="text" id="feedback_email" name="email" /> 
+  <br />
+  <input onclick="SFE.mind_feedback(); return(false);" type="button" class="button" value="Submit" /> 
+</form>
+      </div>
+
+      <div id="center">
+        <a name="content" id="content"></a>
+        
+<h1 class="red-header">
+    <span class="link"><a href="http://www.sparkfun.com">Home</a> |</span><span class="link"><a href="http://www.sparkfun.com/tutorials/">Tutorials</a>|</span>  Solder Paste Stenciling 
+</h1>
+
+<div class="news">
+  <p class="header">
+    <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/avatars/7185_sm.jpg" />
+    <a class="title" href="http://www.sparkfun.com/tutorials/58">Solder Paste Stenciling</a>
+    <br />
+    by <a href="http://www.sparkfun.com/users/7185">Nate</a> | August 01, 2006 | <i><a style="cursor: pointer" onclick="javascript: if(!$('comments').visible()) { SFE.toggle_collapsible($('comments_header')); } $('comments_header').scrollTo();">21 comments</a></i>
+    <span class="skill">
+      Skill Level: 
+              <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_intermediate.gif" />
+        Intermediate
+          </span>
+  </p>
+  <hr />
+  <!--title:Things I never learned in college-->
+<p>
+	Here&#39;s a quickie tutorial that I wish I would have learned in college - at least as a technical elective - in the Electrical Engineering program at the Univ. of Colorado... Instead, we got to learn the hard way!</p>
+<p>
+	We are constantly attempting to share what we&#39;ve learned about surface mount soldering. This tutorial will show you what it takes to use a cheap-o solder paste stencil to apply solder paste. It&#39;s not that hard. There are some up-front costs, but it&#39;s easily within the means of the average hobbyist.</p>
+<p>
+	We are basically tipping our entire hand by disclosing our manufacturing processes. What do we get out of it? Nothing really. Please take this to heart and tell your friends about our site. We&#39;ve sunk $1000s in equipment only to discover much of it was not needed. We hope to educate you enough to avoid our pitfalls.</p>
+<p>
+	The usual warnings apply. Solder paste may or may not kill you - just stop licking your hands and you should be ok. One way to tell you&#39;ve got lead poisoning is dementia. So here at SparkFun, we really don&#39;t know if we&#39;re washing our hands enough...</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-5.jpg" /></p>
+<p align="center">
+	Here is what we will be stenciling today!</p>
+<p>
+	Tools you&#39;re going to need:</p>
+<ul>
+	<li>
+		Stencil</li>
+	<li>
+		PCB that matches the Stencil</li>
+	<li>
+		Solder Paste (Kester Easy 256)</li>
+	<li>
+		Wiper of some sort</li>
+	<li>
+		Flat spot/table</li>
+	<li>
+		Good lighting!</li>
+	<li>
+		Rubbing Alcohol</li>
+	<li>
+		Lots of paper towels</li>
+</ul>
+<p>
+	Optional Stuff:</p>
+<ul>
+	<li>
+		Tupperware container</li>
+	<li>
+		Mini-fridge</li>
+	<li>
+		Screw driver or mixing tool</li>
+	<li>
+		Trashed PCBs for framing</li>
+</ul>
+<p>
+	SMD Reflow Tutorials:</p>
+<ul>
+	<li>
+		<a href="http://www.sparkfun.com/tutorials/59"> Reflow Skillet</a></li>
+	<li>
+		<a href="http://www.sparkfun.com/tutorials/60"> Reflow Toaster</a></li>
+</ul>
+<hr width="80%" />
+<p>
+	<b>Solder Paste -&nbsp; </b></p>
+<p>
+	Solder paste is a sticky grey substance that is somewhat liquid - well that&#39;s a paste now isn&#39;t it... Pretty much lead and tin mixed together with flux and some other magic ingredients. We use Easy 256 from Kester. Why? It&#39;s a No-Clean paste which means after you are done reflowing the board, you&#39;re done! No need to wash the board. Any solder paste will do.</p>
+<p>
+	One of the main problems is getting the paste. A 500g jar can cost from $50-$200 which is bad enough. The company you purchase it from will most likely charge you an arm and a leg for overnight shipping, cold packaging, and hazardous handling. Yep, lead is considered hazardous. Who knew? To top things off, I mentioned this &quot;lead being hazardous&quot; thing to my sister who works as an Emergency Room Nurse. She pointed out that there are no symptoms of lead poisoning - short of dementia. One has to be specifically blood tested for higher levels of lead. So I&#39;m not sure if this means we&#39;re ok, or if we are actually poisoned and the preposterous nature of these tutorials are proof...</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-0.jpg" /></p>
+<p align="center">
+	Kester Easy Profile 256 - Notice our paste is expired...</p>
+<p>
+	The solder paste suppliers insist on shipping cold packed overnight delivery because the solder paste can become &#39;unusable&#39; if it&#39;s temperature is not closely maintained. Of course we didn&#39;t find this to be the case - but then again, we&#39;re not producing 10,000 units of a board. Just imagine if you screened and placed $40,000 worth of parts and PCBs only to find out the paste had gone bad. The batch might be lost. Who are you going to sue? Now you know why suppliers are so uptight, but we don&#39;t have to be...</p>
+<p>
+	We did notice that the paste will change over time without refrigeration. A syringe or tube of paste should be okay in an air tight container, in a cool place (basement), for multiple weeks. Buy your supply accordingly. It may make sense to buy a mini-fridge like we did from Tar-chet. $60 goes quite a ways these days.</p>
+<p>
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-4.jpg" /></p>
+<p>
+	There&#39;s some economics here that I refuse to calculate. But we save money by buying paste in larger quantities and then paying extra for storage (money for a fridge and energy costs). In the end, the paste lasts longer and I think it&#39;s cheaper in the long term. You could store the solder paste in your normal fridge but every other website says this is a <i>bad</i> idea. I&#39;ll agree because it costs me nothing. Remember the dementia thing?</p>
+<hr width="80%" />
+<p>
+	<b>Tools -&nbsp; </b></p>
+<p>
+	These are pretty basic. Do note that we are still looking for a good, cheap, replacement for our squeegee.</p>
+<p>
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-1.jpg" /></p>
+<p>
+	Mainly, you need a stir stick (screw driver), a whole bunch of paper towels, rubbing alcohol for clean-up, and some sort of a spatula/squeegee.&nbsp; I would recommend using a screw driver that you never plan on using again. For that matter, pretty much everything around the stenciling area gets grubby with dried paste after a few days of usage.</p>
+<p>
+	The $35 squeegee from Madell Tech came with our stencil printer (shown off to the right in the above picture). While the printer was a waste of $300, we do use the flat metal base - though you can use any flat surface. The problem with the printer is that it uses only framed stencils. Since we had no idea what we were doing initially, this sounded ok. We&#39;ve never actually bought a framed stencil (&gt;$150). Stencil printers will hold a framed stencil in place while the operator manipulates the position of the metal base (with PCB sitting on top) under the stencil with small dials all around the base. This would be ideal if we needed to stencil a large number of boards by hand, but for single units it actually really easy just to hold the stencil in place.</p>
+<p>
+	This squeegee has a replaceable thin metal blade that flexes nicely when you&#39;re applying paste. While I can&#39;t tell a difference, Ben claims the blade is wearing out - and this is common with higher end squeegees - but do you think I&#39;ll ever replace it? Probably not... As the blade wears out the aperture thicknesses become non-uniform : the blade digs into some holes while riding higher over others. A few stenciled PCBs and you&#39;ll see just how not-mission-critical this is. We&#39;ve had really good results with 0603, 0.5mm pitch QFNs, and BGAs! If you can&#39;t readily find a solder paste squeegee, we&#39;ve used razor blades with pretty good results.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-3.jpg" /></p>
+<p>
+	The solder paste is stored in the Tupperware container and that is in turn stored in a zip lock bag. This sealed package is stored in the fridge when not in use. Every time we use the paste, we give it a good stir with the screw driver. If the past seems dry or sticky, we add new paste from the large tube by shoving a (cleaner) screw driver in one end to forward the stopper. This goes against all recommendations so be warned - we are basically adding contaminants by mixing new paste with used paste. We also use the paste fairly chilled - we like the consistency to be thicker when stenciling. Again, the true aficionados claim it should be room temperature. Your guess is as good as ours - practice is the key here.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-2.jpg" /></p>
+<p align="center">
+	Here the squeegee is shown after its first use. Notice the nice layer on the paddle. It&#39;s primed and ready to go again!</p>
+<hr width="80%" />
+<p>
+	<b>The Stencil -&nbsp; </b></p>
+<p>
+	<a href="http://www.pololu.com/catalog/product/446" target="_blank">Pololu</a> is a good place to get a cheap plastic stencil. They charge a $20 setup fee and $1 per inch after that. They use either a 3mil or 4mil sheet of mylar and can get some pretty good accuracy. Ok, read that again: $20 setup and $1 per inch. That means if your PCB is a 3x4 PCB and you&#39;ve got the top paste gerber (*.gtp Protel) or bottom paste gerber (*.gbp) file, you can have a stencil for $32. $32! That&#39;s 1/5th the price of anyone else!</p>
+<p>
+	The stencil comes as a rolled piece of clear plastic. They can usually cut us a stencil same day or next day. USPS Priority from Nevada is 3 days. Not too shabby.</p>
+<p>
+	We use 4mil stencils for larger 0805-1206 parts and 3mil for tight pitch devices. Just ask Pololu for their recommendation. The thinner the stencil, the less paste will be applied. The thinner the paste, the lower the probability of jumpers and the higher probability of disconnects.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-10.jpg" /></p>
+<p align="center">
+	The clear Mylar laser cut solder paste stencil</p>
+<p align="left">
+	You may notice that there are multiples of designs and different designs on the same stencil. You can help offset the $20 setup fee by panelizing your different designs onto one stencil. While this may not help the hobbyist who works on only 1 or 2 layouts at a time, we cram 6 or 8 designs onto one sheet! It works - we promise.</p>
+<p>
+	Under the stencil is a 2x4 panel of MiRFs. Uber-tight, 0603 with the QFN nRF2401A IC. We panelize the design and send that panel file to Gold Phoenix. We then send the top paste layer (we rarely put parts on the back of PCBs these days) to Pololu to have the stencil cut. The stencil always beats the PCB in the mail.</p>
+<hr width="80%" />
+<p>
+	<b>Paste Time! -&nbsp; </b></p>
+<p>
+	Enough talk - time to paste! First we must surround the boards we want to stencil with other boards of similar thickness. Since we only deal with 0.062&quot; boards, this is a snap.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-11.jpg" /></p>
+<p>
+	Why the extra boards? As you drag the squeegee across the stencil, the stencil must remain flat or else the stencil will flex/ripple and paste will squeeze into and around the apertures where it&#39;s not supposed to be! This way you can drag the squeegee across a completely flat service that is the puzzle array of PCBs. Any trashed PCBs will do - as you can see, we have plenty.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-13.jpg" /></p>
+<p align="center">
+	See the stencil? The design we need on this stencil is loosely lined up with the board in the middle.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-14.jpg" /></p>
+<p align="center">
+	Next, a good glob of newly mixed paste is plopped down. This seems like a lot, especially at $0.25 a gram, but don&#39;t worry, we are going to recover 95% of it! You only have to do this once - the squeegee will contain enough residual paste for 10-15 applications. We use it 3-4 times and then scrape the paste back into the Tupperware dish.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-15.jpg" /></p>
+<p align="center">
+	Now is when you line up the stencil. Do you need to be dead on? Pretty close. Can I redo it if necessary? Of course - if you mess up it&#39;s not the end of the world, we&#39;ll show you! Ben installed a flood light next to the stencil area which helped tremendously with alignment.</p>
+<p align="center">
+	Again, note that the paste is actually <i>on top</i> the clear stencil (not on the PCB itself).</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-16.jpg" /></p>
+<p align="center">
+	Once you&#39;ve got the stencil right where you want it, pin it with your bad hand (I&#39;m left handed so I use my right). Hold the stencil to the framing PCBs underneath. Remember, if the stencil slips, you get to start over.</p>
+<p align="center">
+	You&#39;ll notice I am using a special &#39;paste squeegee&#39;. I believe we paid around $50 for this little guy. You can spend upwards of $500 for some professional SMD squeegees. However, a savvy SFE client pointed out this great woodworking website:</p>
+<p align="center">
+	<a href="http://www.leevalley.com/wood/page.aspx?c=1&amp;p=49548&amp;cat=1,310,41069" target="_blank"> http://www.leevalley.com/wood/page.aspx?c=1&amp;p=49548&amp;cat=1,310,41069</a></p>
+<p align="center">
+	<a href="http://www.leevalley.com/wood/page.aspx?c=1&amp;p=32670&amp;cat=1,310,41069" target="_blank"> http://www.leevalley.com/wood/page.aspx?c=1&amp;p=32670&amp;cat=1,310,41069</a></p>
+<p align="center">
+	<a href="http://www.leevalley.com/wood/page.aspx?c=1&amp;p=32672&amp;cat=1,310,41069" target="_blank"> http://www.leevalley.com/wood/page.aspx?c=1&amp;p=32672&amp;cat=1,310,41069</a></p>
+<p align="center">
+	We have not used these mini-scrapers but they look very promising! We&#39;ve also had some good luck with basic spackle spatulas from the hardware store.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-17.jpg" /></p>
+<p align="center">
+	Swipe #1 - I put a thick layer over 6 of the boards, go back and make sure you have everything covered. Pinning hand stays still.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-18.jpg" /></p>
+<p align="center">
+	Here is swipe #2 - board is covered. Pinning hand stays still.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-21.jpg" /></p>
+<p align="center">
+	Swipe #3 - finally, we swipe with a more vertical hold on the squeegee removing most of the paste remaining on the stencil - while leaving paste in the apertures filled up to the thickness of the stencil. The stencil is nearly clean and a quick inspection shows that all the apertures are filled (I didn&#39;t miss any, I promise!).</p>
+<p align="center">
+	Your pinning hand should be holding the stencil firmly in place. Again, if the stencil slips, you get to start over.</p>
+<p align="center">
+	Now, keeping your pinning hand in place, pull the opposite side of the stencil up - lifting the stencil away from your board and towards the pinning hand. In this case it would be the left side of the stencil being lifted towards the right hand. Lift your pinning hand only after the stencil is lifted from the board being worked.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-22.jpg" /></p>
+<p align="center">
+	Ohhhh! Ahhh! Ok, so this is a picture of the second board I stenciled. The larger the board, the harder it is to keep opposite corners lined up (true framed stencils will fix that problem). So I screwed the pooch with the first board I stencil. What to do? Take a picture of course!</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-25.jpg" /></p>
+<p align="center">
+	The first board that I stencil after coffee is on the left. Try #2 is on the right. Obviously the one on the left is so far off, it&#39;s not usable.&nbsp; All you have to do is wipe it off with a paper towel. No alcohol or scrubbing needed, just wiper &#39;er off good and start again by lining up the stencil. It can sit there for probably 45 minutes before the paste starts drying out and turning hard.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-27.jpg" /></p>
+<p align="center">
+	Oh, and the board on the right is probably the best I&#39;ve ever done. You can be off considerably and still get it to work *very well*. The human eye can actually detect very small difference between the paste and the pad. Don&#39;t be too picky your first try - believe me, it will work!</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-19.jpg" /></p>
+<p align="center">
+	There will be paste left on some parts of the stencil the second time around. You just have to be good at looking through the apertures and lining up the shinny pads. You can stop and clean the stencil, but this is not needed. Practice practice practice!</p>
+<hr width="80%" />
+<p>
+	<b>Cleaning the Stencil -&nbsp; </b></p>
+<p align="left">
+	So you&#39;re done playing and it&#39;s time to clean up. Rubbing alcohol is your friend.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-28.jpg" /></p>
+<p align="left">
+	Place the stencil on a paper towel and wet another paper towel with a little bit of alcohol. Wipe one side clean - it&#39;s pretty easy. Some of the excess paste will slide through to the other side. Flip the stencil over and repeat.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/SMD_Printing/Stencil-29.jpg" /></p>
+<p align="center">
+	Clean stencil!</p>
+<p align="left">
+	We store our stencils flat in a drawer. Don&#39;t leave alcohol on them for more than a minute or two or else the plastic Mylar will start to deform (very bad). Be gentle with the stencil and you can use it for &gt;100 applications. We&#39;ve nearly worn out a stencil but this was probably 100+ applications with nearly as many cleanings. The alcohol will thin the stencil over time.</p>
+<hr width="80%" />
+<p>
+	<b>Placing Components -&nbsp; </b></p>
+<p align="left">
+	Eventually, you will have a PCB with solder paste. Carefully avoid touching the PCB as the solder paste is easily disturbed. Picking it up by the corners is usually the best option.</p>
+<p align="left">
+	Unfortunately Jeff populated the MiRFs and cooked them on the <a href="http://www.sparkfun.com/tutorial/ReflowToaster/reflow-hotplate.htm"> Reflow Skillet</a> before I could snap a photo. That&#39;s right, we populate the PCBs by hand! <i>Anyone</i> can populate even the smallest of parts with only a pair of tweezers.</p>
+<p align="center">
+	<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/MiRF-0.jpg" /></p>
+<p align="left">
+	Placing 0603 components packed tightly around a QFN IC is actually not that bad. It has taken everyone in the office some practice, but all you need are your parts and a print-off indicating where the parts go. Ben can drink a full pot of coffee and plop parts down with amazing speed - just don&#39;t take his magical tweezers.</p>
+<p align="left">
+	You will find that you only have to be <i>close </i>to the correct placement. The surface tension of the liquid solder will actually pull smaller components into place and we&#39;ve seen multi-pin devices rotate themselves into place. It&#39;s quite fun to watch the boards reflow!</p>
+<p align="left">
+	So we hope to have shown you that solder paste stenciling is not that bad! You don&#39;t have to have immaculate precision or control. You can populate any board by hand with a pair tweezers and some practice.</p>
+<p align="left">
+	The final step is to bake your cookies. On to the <a href="tutorial_info.php?tutorials_id=59"> Reflow Skillet</a>!</p></div>
+
+<div id="comments_container">
+  <h2 id="comments_header" class="collapsible grey big"><span class="arrow"></span>Comments <span class="count">20 comments</span></h2>
+<div id="comments" class="collapsible white">
+  <div style="padding: 20px">  <div style="text-align: center">
+    <b><a href="#" onclick="javascript: $('right').scrollTo(); $('user_login').select()">Login</a> to post comments.</b>
+  </div>
+</div>
+  <div class="comment" id="comment_1065"><span class="header"><a href="http://www.sparkfun.com/users/53652" class="bold">andrewwynn</a> <span class="wide">|</span> <b>November 22, 2008 at 11:35 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1065">2</span></strong></span><br /></span><div class="body"><p>inspired by this thread, i did a 'DIY' stencil so i could test a pcb before ordering a real lasercut stencil. The step-by-step process i used is here: </p>
+
+<p>1) convert my computer file of the PCB to one with outlines for the solder stencil. 
+2) print it out on label paper (half sheet in this case) 
+3) stick onto some appropriate 3mil film, i used some anti-stat plastic.. it was a bit softer/thinner than i wished, but all i had on hand... make sure that the label is  bigger than the film. 
+4) stick label+film onto a backer, like 'white cardboard'. 
+5) with some serious magnification and an x-acto, cut out all the holes
+6) soak the label from the top with 'goo gone' or 'goof off' to release the adhesive
+7) clean off the film of any residual adhesive. </p>
+
+<p>baddabing.. saves $30-40 if you only need to make a handful of boards.. should be good for 10-20 boards if you are careful cutting. Also gives you instant gratification. </p>
+
+<p>-awr</p>
+</div></div><div class="comment" id="comment_12265"><span class="header"><a href="http://www.sparkfun.com/users/130027" class="bold">JeffB.</a> <span class="wide">|</span> <b>April 16, 2010 at 12:05 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_12265">2</span></strong></span><br /></span><div class="body"><p>One tip I have learned, is that you can practice your stenciling using toothpaste!   It's about the same consistency as solder paste.  Once you know you've got your technique down, you can switch to the $$$ real stuff.</p>
+
+<p>I use my PCB layout software to produce a stencil.  Then I print to Toner Transfer, and etch a .005 brass shim stock that I can get from K&amp;S at my local hobby store.   Just a couple bucks for the .005, and it produces good stencils.</p>
+
+<p>I set the grow radius for the pads to -6 .  I find this helps keep the solder paste to a more controlled location and helps guard against bridging.  Especially because I often reflow to a DIY PCB without a solder mask for protos.  </p>
+
+<p>Anybody have any tips for DIY solder mask?  I've used the Testors Acrylic, but that covers over the pads, and so only works well for hand soldering.  I've seen a Youtube video for a UV curable paint, but have not seen it for sale anywhere. SparkFun could get a large quantity and bottle it down?</p>
+</div></div><div class="comment" id="comment_685"><span class="header"><a href="http://www.sparkfun.com/users/50267" class="bold">bigblock</a> <span class="wide">|</span> <b>October 15, 2008 at  8:05 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_685">1</span></strong></span><br /></span><div class="body"><p>Why not make your own stencils at home too?</p>
+
+<p>If you know how to make the pcb then you know how to make the stencil.</p>
+
+<p>just search for copper foil in the search engine of your choice.
+I haven't done it myself but I do know you can get 3/4 mil foil from a few gillion different places.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div></div></div><div class="comment" id="comment_1067"><span class="header"><a href="http://www.sparkfun.com/users/53652" class="bold">andrewwynn</a> <span class="wide">|</span> <b>November 23, 2008 at 12:02 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1067">1</span></strong></span><br /></span><div class="body"><p>oops forgot to include a link to the pictures:
+<a href="http://gallery.me.com/andrewwynn#100088&bgcolor=ltgrey&view=mosaic&sel=0">http://gallery.me.com/andrewwynn#100088&amp;bgcolor=ltgrey&amp;view=mosaic&amp;sel=0</a></p>
+
+<p>(click on the small icons on the right to browse). </p>
+
+<p>Oh.. after making the 4" circle, i tried making a quick n dirty stencil for a 30mm circle project.. this time i simply applied some 2" wide kapton tape over the pcb, and cut out the pads.. took about 20 minutes.. VEEERRRY carefully removed the tape (actually i spread on paste on the first one) then moved the tape to a second board, and had two boards soldered with reflow heatplate in a matter of about 20 minutes including populating the boards (twice the performance of hand-soldering even with just two boards.. once i do a batch of 10 i expect 5x the performance! </p>
+
+<p>I got my solder paste from stencils unlimited.. $25 for 200g. of course cost more in shipping than the paste. </p>
+
+<p>-awr</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_1173"><img class="avatar" src="https://secure.gravatar.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/7185" class="bold">Nate</a> <span class="wide">|</span> <b>December  5, 2008 at  2:55 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1173">1</span></strong></span><br /></span><div class="body"><p>Wow! Neat trick! I never thought of cutting my own stencil by hand. Can you post some pictures that show how the reflow turned out?</p>
+</div></div></div></div><div class="comment" id="comment_526"><span class="header"><a href="http://www.sparkfun.com/users/45134" class="bold">KTownsend</a> <span class="wide">|</span> <b>September 26, 2008 at  8:08 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_526">1</span></strong></span><br /></span><div class="body"><p>"If the past seems dry or sticky, we add new paste from the large tube ..."</p>
+
+<p>Is that to bring on dementia to help deal with a dry and sticky past?</p>
+</div></div><div class="comment" id="comment_672"><span class="header"><a href="http://www.sparkfun.com/users/21400" class="bold">josheeg</a> <span class="wide">|</span> <b>October 11, 2008 at  2:33 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_672">1</span></strong></span><br /></span><div class="body"><p>Why not his from mouser for small quantity silver solder paste?<br />
+557-7459</p>
+
+<p>7459</p>
+
+<pre>Wahl    Soldering Irons/Accessories SILVER SOLDER PASTE     Page 2,081  In Stock
+</pre>
+
+<p>Click
+to
+View<br />
+1:  $5.03
+12:     $4.29</p>
+</div></div><div class="comment" id="comment_1526"><span class="header"><a href="http://www.sparkfun.com/users/57937" class="bold">Carlo</a> <span class="wide">|</span> <b>January 14, 2009 at  5:20 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1526">1</span></strong></span><br /></span><div class="body"><p>maybe you could cut the stencils yourselves with a small laser diode and an homemade xy cnc, something like this:</p>
+
+<p><a href="http://it.youtube.com/watch?v=jAjRxIl2_bA&feature=related">http://it.youtube.com/watch?v=jAjRxIl2_bA&amp;feature=related</a></p>
+</div></div><div class="comment" id="comment_1611"><span class="header"><a href="http://www.sparkfun.com/users/57937" class="bold">Carlo</a> <span class="wide">|</span> <b>January 23, 2009 at  5:07 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1611">1</span></strong></span><br /></span><div class="body"><p>DIY milled framed brass stencil (with glue trick!):
+<a href="http://it.youtube.com/watch?v=Mq">http://it.youtube.com/watch?v=Mq-JrfIW24s</a></p>
+
+<p>For the squeegees, I think you can find them in shops dedicated to serigraphy and screen-printing.</p>
+
+<p>The Italian name for the tool is "racla" singular, "racle" plural.
+The French one "racle" singular, "racles" plural.</p>
+
+<p>See some examples here:
+<a href="http://www.racle">http://www.racle-poliuretano.it/</a></p>
+</div></div><div class="comment" id="comment_1748"><span class="header"><a href="http://www.sparkfun.com/users/58763" class="bold">mkg</a> <span class="wide">|</span> <b>February  2, 2009 at  9:44 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1748">1</span></strong></span><br /></span><div class="body"><p>My past is somewhat dry and sticky...but no matter how hard i apply new paste, it just wont become wet and loose...</p>
+</div></div><div class="comment" id="comment_7470"><span class="header"><a href="http://www.sparkfun.com/users/78098" class="bold">Colin.I</a> <span class="wide">|</span> <b>December  7, 2009 at 11:59 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_7470">1</span></strong></span><br /></span><div class="body"><p>Thanks for the reference to Pololu, but the shipping to Canada is about as much as the stencil!  Does anyone know where to get them in Canada for a similar price?</p>
+
+<p>Thanks :)</p>
+</div></div><div class="comment" id="comment_8206"><span class="header"><a href="http://www.sparkfun.com/users/78098" class="bold">Colin.I</a> <span class="wide">|</span> <b>January  1, 2010 at 12:02 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_8206">1</span></strong></span><br /></span><div class="body"><p>If anybody is interested in a bit more detail regarding this tutorial, I followed it pretty precisely and got GREAT results for my first product.</p>
+
+<p>I posted a ton of pictures along the way if you guys like the eye-candy.
+<a href="http://blog.nilok.ca/2009/12/first-qube-ever/">http://blog.nilok.ca/2009/12/first-qube-ever/</a></p>
+</div></div><div class="comment" id="comment_9567"><span class="header"><a href="http://www.sparkfun.com/users/115233" class="bold">BryanC</a> <span class="wide">|</span> <b>January 14, 2010 at  5:54 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9567">1</span></strong></span><br /></span><div class="body"><p>Why not just apply the paste directly with a small screwdriver or dental pick and eliminate the stencil altogether? Sloppy, sure but wouldn't it work in a pinch?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_18273"><span class="header"><a href="http://www.sparkfun.com/users/151458" class="bold">DaveA</a> <span class="wide">|</span> <b>September 16, 2010 at  1:59 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_18273">1</span></strong></span><br /></span><div class="body"><p>BryanC:</p>
+
+<p>I've been working with the Chipquick SMD 291AX syringe.  The boards include 0201, MSOP10, QFN24, TQFP64, and LTCC70 packages.  The boards are all professionally fabbed with solder masks and tinned pads.  </p>
+
+<p>The syringe works, but it is slow, tedious, and almost inevitably requires some hand rework after reflow to clean up solder bridges.  It's extremely time consuming to apply the paste, and it never goes on quite evenly, leading to skewed parts and pins with solder blobs.  I've had to rework several boards because the under-chip ground pad has either too much or too little solder, causing problems with pin adhesion as well as heat-dissipation issues.</p>
+
+<p>If I can actually get useable stencils from these Pololu folks for $20-50 I'm going to be the proverbial Pig in Mud.</p>
+
+<p>Cheers</p>
+</div></div></div></div><div class="comment" id="comment_11089"><span class="header"><a href="http://www.sparkfun.com/users/120872" class="bold">flyingpumpkin</a> <span class="wide">|</span> <b>March  5, 2010 at  2:21 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_11089">1</span></strong></span><br /></span><div class="body"><p>The article by Nate on stencils is great</p>
+
+<p>However.... rather than plastic stencils from Polulu why don't you try this <b><a href="http://www.renaelectronics.com/product_stencil.htm">SUPER COOL DIY kit </a></b>  from rena electronics:
+<a href="http://www.renaelectronics.com/product_stencil.htm">http://www.renaelectronics.com/product_stencil.htm</a> </p>
+
+<p>You print your stencils out on an overhead, place it over the photosensitive steel plate, expose it to light, develop it like film and have a super cool steel stencil that will last forever.  You can also have them made in (rust free) brass in case you want future archaeologists to reprint your circuit boards in the year 2525.
+http://www.renaelectronics.com/picts/stencil/all-samples.jpg
+<b> check out the 3-minute video narrated by an odd computer-voice girl</b></p>
+
+<p><a href="http://www.renaelectronics.com/picts/howto/stencil/movie_0001.wmv">http://www.renaelectronics.com/picts/howto/stencil/movie_0001.wmv</a></p>
+
+<p>Slick....</p>
+</div></div><div class="comment" id="comment_14692"><span class="header"><a href="http://www.sparkfun.com/users/136229" class="bold">bootstrap</a> <span class="wide">|</span> <b>June 19, 2010 at  5:20 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_14692">1</span></strong></span><br /></span><div class="body"><p>Applying solder paste with a stencil seems messy, and seems to have substantial time overheads for setup, redo when needed, cleaning stencils, cleaning poisons from the work area, cleaning hands, arms, and clothes... etc.</p>
+
+<p>Can someone who has ALSO applied solder paste manually with a "plunger type dispenser" or a "pressure-driven dispenser" [with foot-pedal] please compare the time and effort required?  Also, please compare the likelihood of opens and shorts with these two methods.</p>
+
+<p>Also, I was looking at pick-and-place machines and noticed they are all quite fast at applying solder paste dots all over a PCB (10,000+ dots per hour for even slow-poke machines).  This makes sense because the head only needs to move 1mm or so to apply the next dot, rather than 1 meter or so to pick up the next component and return to the location on the PCB.  So my other question is --- if you have a pick-and-place machine, why in the world would you not that machine apply your solder paste?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_22245"><span class="header"><a href="http://www.sparkfun.com/users/167960" class="bold">makbert</a> <span class="wide">|</span> <b>December  4, 2010 at 11:07 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22245">1</span></strong></span><br /></span><div class="body"><p><strong><a href="/users/136229">bootstrap</a>:</strong><br />
+<br /></p>
+
+<blockquote>
+  <p><p>Applying solder paste with a stencil seems messy, and seems to have substantial time overheads for setup, redo when needed, cleaning stencils, cleaning poisons from the work area, cleaning hands, arms, and clothes... etc.</p><br />
+  <br />
+  <p>Can someone who has ALSO applied solder paste manually with a "plunger type dispenser" or a "pressure-driven dispenser" [with foot-pedal] please compare the time and effort required?  Also, please compare the likelihood of opens and shorts with these two methods.</p><br />
+  <br />
+  <p>Also, I was looking at pick-and-place machines and noticed they are all quite fast at applying solder paste dots all over a PCB (10,000+ dots per hour for even slow-poke machines).  This makes sense because the head only needs to move 1mm or so to apply the next dot, rather than 1 meter or so to pick up the next component and return to the location on the PCB.  So my other question is --- if you have a pick-and-place machine, why in the world would you not that machine apply your solder paste?</p><br />
+  <br />
+  you would have change the whole system which takes longer than a dedicated printer.  Im guessing the printer lasts longer or needs less maintenance.  I work with pick and place machines and a stencil printer.  I could just imagine the problems with a pick and place doing the paste.  If you own a pick and place you might as well own a paste printer and a conveyor oven otherwise you don't need pick and place.  we do boards with 50,000+ connections and printer takes 15 seconds.<br />
+  http://www.digitalmedia-world.com/images/stories/April/NAB2/AJA-KONA-3.jpg<br />
+  We make those boards at 10 per hour but if parts are all stocked with parts you do 18 an hour, but you have to replenish parts a lot.<br />
+  http://www.youtube.com/watch?v=cKJ34ATlvK4<br />
+  that might get you an idea of it. when the 2nd machine goes slower its picking up the bigger components like the expensive bgas. if we had emerald x-ii like that we'd get 22 boards an hour probably at max</p>
+</blockquote>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_22246"><span class="header"><a href="http://www.sparkfun.com/users/167960" class="bold">makbert</a> <span class="wide">|</span> <b>December  4, 2010 at 11:19 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22246">1</span></strong></span><br /></span><div class="body"><p>or a board with 16 parts per board we make average 6000 per shift 8 hours.</p>
+</div></div></div></div></div></div><div class="comment" id="comment_14693"><span class="header"><a href="http://www.sparkfun.com/users/136229" class="bold">bootstrap</a> <span class="wide">|</span> <b>June 19, 2010 at  5:21 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_14693">1</span></strong></span><br /></span><div class="body"><p>... continue previous message ...</p>
+
+<p>Any advice on the best quality/value solder paste to buy and where to buy it --- for both dispenser application and for stencil application?  Is $65 per 500g jar reasonable?</p>
+
+<p>How much trouble is lead-free solder paste versus normal paste (as if they aren't both poison)?</p>
+</div></div><div class="comment" id="comment_24557"><span class="header"><a href="http://www.sparkfun.com/users/61888" class="bold">CharlieE</a> <span class="wide">|</span> <b>January  7, 2011 at  2:20 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_24557">1</span></strong></span><br /></span><div class="body"><p>Just one question - How do ya'll arrange your parts for placement?  After I have stenciled the board, I end up taking the piece of tape, opening up the number of parts that I need to place and dump them on a spot on my static mat.  I then pick them up and place them one by one.  I can't just pick them out of the tape, my tweezers are too big.  Any better ideas for arranging your parts to make placement easier?</p>
+</div></div></div>
+<br />
+</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      SparkFun Electronics <a href="http://www.sparkfun.com/news/300">&reg;</a>      <span class="wide">|</span>
+      <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6175+Longbow+Dr,+Boulder,+CO+80301&sll=40.006234,-105.224915&sspn=0.012113,0.020192&ie=UTF8&hq=&hnear=6175+Longbow+Dr,+Boulder,+Colorado+80301&t=h&z=16" target="_blank">Boulder, Colorado</a>
+      <span class="wide">|</span>
+      <a href="http://www.sparkfun.com/static/customer_service">Customer Service</a>
+    </div>
+        <script type="text/javascript" src="/js/cookiejar.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/sparkfun.js?sparkrev=1299616818"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript">function autoFireLightbox(){setTimeout(function(){SFE.stab_eyes()},250)}Event.observe(window,"load",autoFireLightbox,false);</script>
+    <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3404365-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

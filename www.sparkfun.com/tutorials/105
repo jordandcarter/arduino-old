@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="google-site-verification" content="XUb2UlchrvwCWWyhXksBlqQy1STYtTEN_M0-tgQRHRs" />
+    <meta name="google-site-verification" content="gRUAvzBJ_533b-AGTmldOJfByU6TkojfUbWovB2wKJo" />
+    <title>Beginning Embedded Electronics - 5 - SparkFun Electronics</title>
+    <link rel="stylesheet" href="/css/screen.css?rev=1299616818" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css?rev=1299616818" type="text/css" media="print" />
+    <link rel="stylesheet" href="/css/lightbox.css?rev=1299616818" type="text/css" media="screen" />
+    <!-- IE is the bane of my existence. -->
+    <!--[if IE]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+    <link rel="feed" type="application/rss+xml" title="News" href="http://www.sparkfun.com/feeds/news/" />
+    <link rel="alternate" type="application/rss+xml" title="Products" href="http://www.sparkfun.com/feeds/products/" />
+    <link rel="alternate" type="application/rss+xml" title="Product Changes" href="http://www.sparkfun.com/feeds/changes/" />
+    <link rel="alternate" type="application/rss+xml" title="Comments" href="http://www.sparkfun.com/feeds/comments/" />
+    <link rel="alternate" type="application/rss+xml" title="Videos" href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&v=2&orderby=published" />
+    <link rel="apple-touch-icon" href="/fanboy.png" />
+    <link rev="canonical" type="text/html" href="http://sprkfn.com/t105" /> 
+    <script type="text/javascript">
+      var HTTP_SERVER = 'http://www.sparkfun.com',
+          HTTPS_SERVER = 'https://www.sparkfun.com',
+          HTTP_STATIC = 'http://dlnmh9ip6v2uc.cloudfront.net',
+          FULL_LAYOUT = true,
+          AUTHENTICATED = false;
+    </script>
+    <script type="text/javascript" src="/js/prototype.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <!-- turns out  that IE7 chokes if you don't load these separately. -->
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="/js/effects.js"></script>
+    <script type="text/javascript" src="/js/builder.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/lightbox.js?rev=1299616818"></script>
+  </head>
+  <body>
+    <div id="airlock" class="clearfix">
+
+      
+  <script>BANNER_ID = 44</script>
+
+<div id="header">
+  <a href="http://www.sparkfun.com/"><img width=188 height=105 class="logo" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/logo.gif" title="SparkFun Electronics" alt="SparkFun Electronics" /></a>
+  <a href="#products_menu" class="skip">Skip to menu</a>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <div id="banner-nav" style="display: none;">
+<img id="banner-goprev" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_left.png" height=23 width=23 />
+<img id="banner-all" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_all.png" height=23 width=23 />
+<img id="banner-gonext" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_right.png" height=23 width=23 />
+</div>
+<a id="banner-link" href="http://www.sparkfun.com/products/9672"><img width=978 height=105 id="banner" src="http://dlnmh9ip6v2uc.cloudfront.net/images/banners/SFE03.0003.Banners-SolderingIron.jpg" alt="" /></a>
+  <div id="header-menu">
+    <ul>
+      <li id="header_menu_index"><a href="http://www.sparkfun.com/index">Home</a></li>
+      <li id="header_menu_cservice"><a href="http://www.sparkfun.com/static/customer_service">Customer Service</a></li>
+      <li id="header_menu_tutorials" class="active"><a href="http://www.sparkfun.com/tutorials">Tutorials</a></li>
+      <li id="header_menu_forum"><a href="http://forum.sparkfun.com">Forum</a></li>
+      <li id="header_menu_distributors"><a href="http://www.sparkfun.com/distributors">Distributors</a></li>
+      <li id="header_menu_about"><a href="http://www.sparkfun.com/static/about">About Us</a></li>
+      <li id="header_menu_contact" class="last"><a href="http://www.sparkfun.com/static/contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="left">
+        <h2 class="collapsible" id="search_menu"><span class="arrow"></span>Search</h2>
+        <form class="collapsible search" style="display: block" action="http://www.sparkfun.com/search/results" id="search_form" method="get">
+  <input id="search_field" name="term" type="text" value="" />
+  <input type="submit" value="Go" class="button" />
+  <br />
+  <input id="products_search" type="radio" name="what" value="products" checked />
+  <label for="products_search">Products</label>
+  <br />
+  <input id="news_search" type="radio" name="what" value="news" />
+  <label for="news_search">News</label>
+  <br />
+  <input id="tutorials_search" type="radio" name="what" value="tutorials" />
+  <label for="tutorials_search">Tutorials</label>
+  <br />
+  <input id="comments_search" type="radio" name="what" value="comments" />
+  <label for="comments_search">Comments</label>
+</form>
+        <br />
+
+        <h2 id="products_menu" class="collapsible"><span class="arrow"></span>Products</h2>
+        
+<ul id="category_menu_list" class="collapsible" style="display: block">
+  <li id="menu_category_new_products"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/new_products">New Products</a></li>
+  <li id="menu_category_top"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/top">Top Sellers</a></li>
+  <li id="menu_category_featured"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/featured">Staff Picks</a></li>
+  <li id="menu_category_gift_certificates"><span class="arrow"></span><a href="https://www.sparkfun.com/gift_certificates">Gift Certificates</a></li>
+  <li><hr /></li>
+  <li id="menu_category_176"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/176">Books</a></li><li id="menu_category_20"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/20">Breakout Boards</a></li><li id="menu_category_70"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/70">Cables</a><ul style="display:none;"><li id="menu_category_140"><a href="http://www.sparkfun.com/categories/140">Audio</a></li><li id="menu_category_150"><a href="http://www.sparkfun.com/categories/150">Ethernet</a></li><li id="menu_category_72"><a href="http://www.sparkfun.com/categories/72">Hook Up</a></li><li id="menu_category_75"><a href="http://www.sparkfun.com/categories/75">Parallel</a></li><li id="menu_category_74"><a href="http://www.sparkfun.com/categories/74">Serial</a></li><li id="menu_category_71"><a href="http://www.sparkfun.com/categories/71">USB</a></li></ul></li><li id="menu_category_66"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/66">Cellular</a><ul style="display:none;"><li id="menu_category_67"><a href="http://www.sparkfun.com/categories/67">Antennas</a></li><li id="menu_category_69"><a href="http://www.sparkfun.com/categories/69">Eval Boards</a></li><li id="menu_category_68"><a href="http://www.sparkfun.com/categories/68">Modules</a></li></ul></li><li id="menu_category_154"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/154">Classes</a></li><li id="menu_category_51"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/51">Components</a><ul style="display:none;"><li id="menu_category_87"><a href="http://www.sparkfun.com/categories/87">ARM Microcontrollers</a></li><li id="menu_category_21"><a href="http://www.sparkfun.com/categories/21">AVR Microcontrollers</a></li><li id="menu_category_145"><a href="http://www.sparkfun.com/categories/145">Buttons/Switches</a></li><li id="menu_category_60"><a href="http://www.sparkfun.com/categories/60">General</a></li><li id="menu_category_90"><a href="http://www.sparkfun.com/categories/90">General ICs</a></li><li id="menu_category_89"><a href="http://www.sparkfun.com/categories/89">LEDs</a><ul><li id="menu_category_173"><a href="http://www.sparkfun.com/categories/173">10mm</a></li><li id="menu_category_171"><a href="http://www.sparkfun.com/categories/171">3mm</a></li><li id="menu_category_172"><a href="http://www.sparkfun.com/categories/172">5mm</a></li><li id="menu_category_170"><a href="http://www.sparkfun.com/categories/170">7-Segment</a></li><li id="menu_category_175"><a href="http://www.sparkfun.com/categories/175">Other</a></li><li id="menu_category_174"><a href="http://www.sparkfun.com/categories/174">SMD</a></li></ul></li><li id="menu_category_88"><a href="http://www.sparkfun.com/categories/88">Oscillators</a></li><li id="menu_category_22"><a href="http://www.sparkfun.com/categories/22">PIC Microcontrollers</a></li><li id="menu_category_124"><a href="http://www.sparkfun.com/categories/124">PICAXE Microcontrollers</a></li><li id="menu_category_132"><a href="http://www.sparkfun.com/categories/132">PSoC Microcontrollers</a></li><li id="menu_category_29"><a href="http://www.sparkfun.com/categories/29">SMD ICs</a></li></ul></li><li id="menu_category_2"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/2">Development Tools</a><ul style="display:none;"><li id="menu_category_184"><a href="http://www.sparkfun.com/categories/184">.NET</a></li><li id="menu_category_93"><a href="http://www.sparkfun.com/categories/93">ADuC</a></li><li id="menu_category_103"><a href="http://www.sparkfun.com/categories/103">Arduino</a></li><li id="menu_category_10"><a href="http://www.sparkfun.com/categories/10">AVR</a></li><li id="menu_category_164"><a href="http://www.sparkfun.com/categories/164">Beagle</a></li><li id="menu_category_187"><a href="http://www.sparkfun.com/categories/187">Chumby</a></li><li id="menu_category_109"><a href="http://www.sparkfun.com/categories/109">Coridium</a></li><li id="menu_category_136"><a href="http://www.sparkfun.com/categories/136">FPGA</a></li><li id="menu_category_101"><a href="http://www.sparkfun.com/categories/101">iPod</a></li><li id="menu_category_25"><a href="http://www.sparkfun.com/categories/25">LPC</a></li><li id="menu_category_11"><a href="http://www.sparkfun.com/categories/11">MSP</a></li><li id="menu_category_9"><a href="http://www.sparkfun.com/categories/9">PIC</a></li><li id="menu_category_125"><a href="http://www.sparkfun.com/categories/125">PICAXE</a></li><li id="menu_category_137"><a href="http://www.sparkfun.com/categories/137">PSoC</a></li><li id="menu_category_104"><a href="http://www.sparkfun.com/categories/104">Roomba</a></li><li id="menu_category_94"><a href="http://www.sparkfun.com/categories/94">SAM</a></li><li id="menu_category_95"><a href="http://www.sparkfun.com/categories/95">ST</a></li><li id="menu_category_167"><a href="http://www.sparkfun.com/categories/167">STAMP</a></li><li id="menu_category_107"><a href="http://www.sparkfun.com/categories/107">Wiring</a></li><li id="menu_category_169"><a href="http://www.sparkfun.com/categories/169">WIZnet</a></li><li id="menu_category_166"><a href="http://www.sparkfun.com/categories/166">XMOS</a></li><li id="menu_category_142"><a href="http://www.sparkfun.com/categories/142">Zune</a></li></ul></li><li id="menu_category_100"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/100">Dings and Dents</a></li><li id="menu_category_204"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/204">E-Textiles</a><ul style="display:none;"><li id="menu_category_205"><a href="http://www.sparkfun.com/categories/205">Aniomagic</a></li><li id="menu_category_210"><a href="http://www.sparkfun.com/categories/210">fabrickit</a></li><li id="menu_category_135"><a href="http://www.sparkfun.com/categories/135">LilyPad</a></li><li id="menu_category_206"><a href="http://www.sparkfun.com/categories/206">Materials</a></li></ul></li><li id="menu_category_4"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/4">GPS</a><ul style="display:none;"><li id="menu_category_18"><a href="http://www.sparkfun.com/categories/18">Antennas</a></li><li id="menu_category_86"><a href="http://www.sparkfun.com/categories/86">Eval Boards</a></li><li id="menu_category_17"><a href="http://www.sparkfun.com/categories/17">Modules</a></li></ul></li><li id="menu_category_157"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/157">Kits</a></li><li id="menu_category_76"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/76">LCDs</a><ul style="display:none;"><li id="menu_category_147"><a href="http://www.sparkfun.com/categories/147">Color</a></li><li id="menu_category_148"><a href="http://www.sparkfun.com/categories/148">Monochrome</a></li></ul></li><li id="menu_category_96"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/96">Port-O-Rotary</a></li><li id="menu_category_1"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/1">Programmers</a><ul style="display:none;"><li id="menu_category_26"><a href="http://www.sparkfun.com/categories/26">ARM</a></li><li id="menu_category_7"><a href="http://www.sparkfun.com/categories/7">AVR</a></li><li id="menu_category_156"><a href="http://www.sparkfun.com/categories/156">DSP</a></li><li id="menu_category_37"><a href="http://www.sparkfun.com/categories/37">MAXQ</a></li><li id="menu_category_8"><a href="http://www.sparkfun.com/categories/8">MSP</a></li><li id="menu_category_6"><a href="http://www.sparkfun.com/categories/6">PIC</a></li><li id="menu_category_126"><a href="http://www.sparkfun.com/categories/126">PICAXE</a></li><li id="menu_category_168"><a href="http://www.sparkfun.com/categories/168">XMOS</a></li></ul></li><li id="menu_category_53"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/53">Prototyping</a><ul style="display:none;"><li id="menu_category_54"><a href="http://www.sparkfun.com/categories/54">Batteries</a></li><li id="menu_category_149"><a href="http://www.sparkfun.com/categories/149">Boards</a></li><li id="menu_category_91"><a href="http://www.sparkfun.com/categories/91">Connectors</a></li><li id="menu_category_182"><a href="http://www.sparkfun.com/categories/182">Enclosures</a></li><li id="menu_category_55"><a href="http://www.sparkfun.com/categories/55">General</a></li><li id="menu_category_155"><a href="http://www.sparkfun.com/categories/155">Hardware</a></li><li id="menu_category_92"><a href="http://www.sparkfun.com/categories/92">Sockets</a></li><li id="menu_category_116"><a href="http://www.sparkfun.com/categories/116">Solar</a></li><li id="menu_category_141"><a href="http://www.sparkfun.com/categories/141">Wire</a></li></ul></li><li id="menu_category_207"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/207">Retail</a><ul style="display:none;"><li id="menu_category_212"><a href="http://www.sparkfun.com/categories/212">Arduino</a></li><li id="menu_category_216"><a href="http://www.sparkfun.com/categories/216">Components</a></li><li id="menu_category_213"><a href="http://www.sparkfun.com/categories/213">Kits</a></li><li id="menu_category_211"><a href="http://www.sparkfun.com/categories/211">Materials</a></li><li id="menu_category_215"><a href="http://www.sparkfun.com/categories/215">Prototyping</a></li><li id="menu_category_214"><a href="http://www.sparkfun.com/categories/214">Sensors</a></li><li id="menu_category_217"><a href="http://www.sparkfun.com/categories/217">Tools</a></li></ul></li><li id="menu_category_134"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/134">Retired</a><ul style="display:none;"><li id="menu_category_194"><a href="http://www.sparkfun.com/categories/194">Breakout Boards</a></li><li id="menu_category_203"><a href="http://www.sparkfun.com/categories/203">Cables</a></li><li id="menu_category_200"><a href="http://www.sparkfun.com/categories/200">Classes</a></li><li id="menu_category_192"><a href="http://www.sparkfun.com/categories/192">Components</a></li><li id="menu_category_191"><a href="http://www.sparkfun.com/categories/191">Development Tools</a></li><li id="menu_category_188"><a href="http://www.sparkfun.com/categories/188">GPS</a></li><li id="menu_category_190"><a href="http://www.sparkfun.com/categories/190">Kits</a></li><li id="menu_category_196"><a href="http://www.sparkfun.com/categories/196">LCD</a></li><li id="menu_category_201"><a href="http://www.sparkfun.com/categories/201">Programmers</a></li><li id="menu_category_195"><a href="http://www.sparkfun.com/categories/195">Prototyping</a></li><li id="menu_category_197"><a href="http://www.sparkfun.com/categories/197">Robotics</a></li><li id="menu_category_189"><a href="http://www.sparkfun.com/categories/189">Sensors</a></li><li id="menu_category_208"><a href="http://www.sparkfun.com/categories/208">SFE Widgets</a></li><li id="menu_category_198"><a href="http://www.sparkfun.com/categories/198">Swag</a></li><li id="menu_category_193"><a href="http://www.sparkfun.com/categories/193">Tools</a></li><li id="menu_category_199"><a href="http://www.sparkfun.com/categories/199">Wireless</a></li></ul></li><li id="menu_category_31"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/31">Robotics</a><ul style="display:none;"><li id="menu_category_179"><a href="http://www.sparkfun.com/categories/179">Drivers</a></li><li id="menu_category_181"><a href="http://www.sparkfun.com/categories/181">Kits</a></li><li id="menu_category_178"><a href="http://www.sparkfun.com/categories/178">Motors</a></li><li id="menu_category_202"><a href="http://www.sparkfun.com/categories/202">Other</a></li><li id="menu_category_180"><a href="http://www.sparkfun.com/categories/180">Wheels</a></li></ul></li><li id="menu_category_185"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/185">Sale</a></li><li id="menu_category_23"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/23">Sensors</a><ul style="display:none;"><li id="menu_category_80"><a href="http://www.sparkfun.com/categories/80">Accelerometers</a><ul><li id="menu_category_161"><a href="http://www.sparkfun.com/categories/161">1-axis</a></li><li id="menu_category_162"><a href="http://www.sparkfun.com/categories/162">2-axis</a></li><li id="menu_category_163"><a href="http://www.sparkfun.com/categories/163">3-axis</a></li></ul></li><li id="menu_category_146"><a href="http://www.sparkfun.com/categories/146">Biometrics</a></li><li id="menu_category_117"><a href="http://www.sparkfun.com/categories/117">Capacitive</a></li><li id="menu_category_151"><a href="http://www.sparkfun.com/categories/151">Current</a></li><li id="menu_category_143"><a href="http://www.sparkfun.com/categories/143">Flex / Force</a></li><li id="menu_category_85"><a href="http://www.sparkfun.com/categories/85">Gyros</a><ul><li id="menu_category_158"><a href="http://www.sparkfun.com/categories/158">1-axis</a></li><li id="menu_category_159"><a href="http://www.sparkfun.com/categories/159">2-axis</a></li><li id="menu_category_183"><a href="http://www.sparkfun.com/categories/183">3-axis</a></li></ul></li><li id="menu_category_144"><a href="http://www.sparkfun.com/categories/144">ID</a></li><li id="menu_category_160"><a href="http://www.sparkfun.com/categories/160">IMU</a></li><li id="menu_category_139"><a href="http://www.sparkfun.com/categories/139">Infrared</a></li><li id="menu_category_102"><a href="http://www.sparkfun.com/categories/102">Light / Imaging</a></li><li id="menu_category_83"><a href="http://www.sparkfun.com/categories/83">Magneto</a></li><li id="menu_category_84"><a href="http://www.sparkfun.com/categories/84">Proximity</a></li><li id="menu_category_165"><a href="http://www.sparkfun.com/categories/165">Radiation</a></li><li id="menu_category_186"><a href="http://www.sparkfun.com/categories/186">Sound</a></li><li id="menu_category_82"><a href="http://www.sparkfun.com/categories/82">Temperature</a></li><li id="menu_category_152"><a href="http://www.sparkfun.com/categories/152">Weather</a></li></ul></li><li id="menu_category_97"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/97">SFE Widgets</a></li><li id="menu_category_130"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/130">Swag</a></li><li id="menu_category_46"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/46">Tools</a><ul style="display:none;"><li id="menu_category_47"><a href="http://www.sparkfun.com/categories/47">Hand Tools</a></li><li id="menu_category_48"><a href="http://www.sparkfun.com/categories/48">Hot-Air Rework</a></li><li id="menu_category_177"><a href="http://www.sparkfun.com/categories/177">Instruments</a></li><li id="menu_category_28"><a href="http://www.sparkfun.com/categories/28">Power Supplies</a></li><li id="menu_category_49"><a href="http://www.sparkfun.com/categories/49">Soldering</a></li></ul></li><li id="menu_category_138"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/138">Tracking</a></li><li id="menu_category_16"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/16">Wireless</a><ul style="display:none;"><li id="menu_category_78"><a href="http://www.sparkfun.com/categories/78">Antennas</a></li><li id="menu_category_115"><a href="http://www.sparkfun.com/categories/115">Bluetooth</a></li><li id="menu_category_79"><a href="http://www.sparkfun.com/categories/79">General</a></li><li id="menu_category_113"><a href="http://www.sparkfun.com/categories/113">Modem</a></li><li id="menu_category_114"><a href="http://www.sparkfun.com/categories/114">Nordic</a></li><li id="menu_category_112"><a href="http://www.sparkfun.com/categories/112">WiFi</a></li><li id="menu_category_111"><a href="http://www.sparkfun.com/categories/111">Zigbee/802.15.4</a></li></ul></li>  <li><hr /></li>
+  <li>
+    <img style='float: left' src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/pdf.gif" />
+    <a href="http://sparkfun.com/download/PDFs/catalog.pdf">Full catalog</a>
+  </li>
+</ul>
+        <br />
+      </div>
+
+      <div id="right">
+        <div class="collapsible user">
+  <p class="cart-link"><img height="19" width="19" alt="" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_shoppingcart.gif"> 
+     <a href="http://www.sparkfun.com/cart"><span id="items_in_cart">0</span> items in your cart</a></p>
+  <form action="https://www.sparkfun.com/account/login" id="login" method="post">
+    <label for="user_login">Email</label>
+    <input id="user_login" type="text" tabindex="1" maxlength="320" name="user">
+    <label for="user_password">Password</label>
+    <input id="user_password" type="password" tabindex="2" maxlength="20" name="passwd">
+    <p class="right"><input type="submit" value="log in" class="button"></p>
+    <p><a href="https://www.sparkfun.com/account/forgot_password">Forgot your password?</a><br/>
+       No account? <a href="https://www.sparkfun.com/account/make">Register here</a>.</p>
+  </form>
+</div>
+<br>
+
+        <h2 id="feed_menu" class="collapsible"><span class="arrow"></span>Feeds</h2>
+        <ul class="collapsible feeds" style="display: block">
+  <li><a href="http://www.sparkfun.com/feeds/news">News</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/products">Products</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/changes">Product Changes</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/comments">Comments</a></li>
+  <li><a href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&amp;v=2&amp;orderby=published">Videos</a></li>
+</ul>
+        <br />
+
+        <h2 id="resources_menu" class="collapsible"><span class="arrow"></span>Resources</h2>
+        <ul class="collapsible resources" style="display: block">
+  <li><a href="http://www.sparkfun.com/news/263">Official SparkFun IRC Channel</a></li>
+  <li><a href="http://www.batchpcb.com/" target="_blank">Custom PCBs</a></li>
+  <li><a href="http://www.opencircuits.com/" target="_blank">Open Circuits</a></li>
+  <li><a href="http://www.ponoko.com/make-and-sell/electronics" target="_blank">Ponoko - Your Personal Factory</a></li>
+  <li><a href="http://www.sparkfun.com/static/jobs">Jobs @ SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/tutorials/92">Sell Your Widget on SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/quiz">Take the SparkFun Quiz</a></li>
+</ul>
+        <br />
+
+        <h2 id="currency_menu_head" class="collapsible"><span class="arrow"></span>Currency</h2>
+        
+<div class="collapsible" id="currency_menu">
+  Display prices in
+  <input type="hidden" id="preferred_currency" value="USD" />
+  <ul id="currency_menu_list" class="currency">
+          <li>
+        <a id="currency_USD" onclick="SFE.change_currency('USD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_checked.gif" />
+                US Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_CAD" onclick="SFE.change_currency('CAD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Canadian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_AUD" onclick="SFE.change_currency('AUD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Australian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_GBP" onclick="SFE.change_currency('GBP'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                British Pound        </a>
+    </li>
+          <li>
+        <a id="currency_EUR" onclick="SFE.change_currency('EUR'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Euro        </a>
+    </li>
+      </ul>
+  </div>
+
+<script language="javascript">
+var CURRENCIES = {"USD":{"code":"USD","title":"US Dollar","symbol_left":"$","symbol_right":"","decimal_point":".","thousands_point":",","decimal_places":"2","value":"1.0000"},"CAD":{"code":"CAD","title":"Canadian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9706"},"AUD":{"code":"AUD","title":"Australian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9957"},"GBP":{"code":"GBP","title":"British Pound","symbol_left":"&pound;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.6187"},"EUR":{"code":"EUR","title":"Euro","symbol_left":"&euro;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.7214"}}</script>
+        <br />
+
+        <h2 id="feedback_menu" class="collapsible"><span class="arrow"></span>Feedback</h2>
+        <form id="feedback" class="collapsible" style="display: block">
+  <label for="feedback_textarea" style="font-weight: bold">What's on your mind?</label>
+  <br />
+  <textarea id="feedback_textarea" name="feedback_text"></textarea>
+  <br /><br />
+  <label for="feedback_email">Please include your email address if you'd like us to respond to a specific question.</label>
+  <br />
+  <br />
+  <input type="text" id="feedback_email" name="email" /> 
+  <br />
+  <input onclick="SFE.mind_feedback(); return(false);" type="button" class="button" value="Submit" /> 
+</form>
+      </div>
+
+      <div id="center">
+        <a name="content" id="content"></a>
+        
+<h1 class="red-header">
+    <span class="link"><a href="http://www.sparkfun.com">Home</a> |</span><span class="link"><a href="http://www.sparkfun.com/tutorials/">Tutorials</a>|</span>  Beginning Embedded Electronics - 5 
+</h1>
+
+<div class="news">
+  <p class="header">
+    <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/avatars/7185_sm.jpg" />
+    <a class="title" href="http://www.sparkfun.com/tutorials/105">Beginning Embedded Electronics - 5</a>
+    <br />
+    by <a href="http://www.sparkfun.com/users/7185">Nate</a> | June 19, 2008 | <i><a style="cursor: pointer" onclick="javascript: if(!$('comments').visible()) { SFE.toggle_collapsible($('comments_header')); } $('comments_header').scrollTo();">27 comments</a></i>
+    <span class="skill">
+      Skill Level: 
+              <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" />
+        Beginner
+          </span>
+  </p>
+  <hr />
+  <h2>Lecture 5 - AVR GCC Compiling</h2>
+                <div class="tutorial_text">
+                  
+<p>Sorry for the confusion. When these tutorials were written and
+photographed, we used the ATmega8. We now carry the newer ATmega168.
+You will find all ATmega168 information in the following pages, but the
+pictures will show an ATmega8.</p>
+<p>I know very little about the ins and outs of the AVR-GCC compiler.
+I've learned a few basics that helped me along the way, but when you
+run up against a jam, google and AVRfreaks.net are your friend.</p>
+<p>First, we did the blinky. Open this code in PN2 and make sure you
+can compile it. Click on Tools-&gt;Make All. The window in the bottom
+screen should say 'Process Exit Code: 0' meaning the compilation was
+successful. If not, there should be a line number listing of the
+problem line of code. Be sure to check above and below the indicated
+line for problems.</p>
+<p>In the second example C file called <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/5-Compiling/basic-out-atmega168.zip" target="_blank"> basic-out-atmega168.c</a> (<a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/5-Compiling/basic-out.zip" target="_blank">basic-out.c</a>  for the ATmega8), I've inserted a handful of functions and lines  of code. First of the black magic:</p>
+<blockquote>
+<p><b><font size="2">#define FOSC 16000000<br>
+#define BAUD 9600<br>
+#define MYUBRR FOSC/16/BAUD-1</font></b></p>
+</blockquote>
+<p>What is all this noise at the top of the file? This is a series of
+defines that calculates the MYUBRR variable with the correct number.
+Since serial communication depends on the fact that we will be
+transmitting and receiving at 9600 bits per second, it's crucial to
+tell the ATmega168 what bit rate to set. Because the ATmega168 is
+dictated by the oscillator that it is using, we must correctly
+calculate what value we need to load into the ATmega168 hardware so
+that the ATmega168 sends the serial pulses at the correct rate with a
+given oscillator type. In our case, we are using a 16MHz oscillator so
+we can setup the define statement as shown. MYUBRR is calculated at
+compile time and is loaded successfully into the hardware UART during
+run time.</p>
+<hr width="80%">
+<p><b>A reader's untested submission:</b></p>
+<blockquote>
+<p>The UBRR value calculation in Lecture 5 could be more accurate with the    following macro: </p>
+<blockquote>
+<p>#define MYUBRR (((((FOSC * 10) / (16L * BAUD)) + 5) / 10) - 1) </p>
+</blockquote>
+<p>There is also pretty useful web form for UBRR calculation: </p>
+<blockquote>
+<p>     <a href="http://www.wormfood.net/avrbaudcalc.php" class="moz-txt-link-freetext">     http://www.wormfood.net/avrbaudcalc.php</a></p>
+</blockquote> </blockquote> <hr width="80%"> <blockquote>
+<p><b><font size="1">static FILE mystdout = FDEV_SETUP_STREAM(uart_putchar,  NULL, _FDEV_SETUP_WRITE);</font></b></p>
+</blockquote>
+<p>This line creates a buffer for the printf statement to post to. I'd
+rather not explain it, simply because I don't understand it. When I am
+working on a new coding project I never start from a blank page, I
+*always* start from a known working program and slowly bring in bits of
+other projects to get the code I need, writing bits along the way.
+Please start from this printf example and build away. The purpose here
+is to get your printing string to the terminal window.</p>
+<p>Checkout the ioinit() function. You'll notice some new commands.</p>
+<blockquote>
+<p><b><font size="2">U</font></b><title>HTML clipboard</title><b><font size="2">CSR0B = (1&lt;&lt;RXEN0)|(1&lt;&lt;TXEN0);</font></b></p>
+</blockquote>
+<p>This is the really funky, but very practical, method of setting bits
+on the AVR series. RXEN0 is defined in some file as '5'. <title>HTML clipboard</title>1&lt;&lt;RXEN0 translates to 'shift a 1 to the left by 5 spaces'.&nbsp; This is handy 
+because you don't need to remember specifically where the RX enable bit resides, 
+you only need to know to set (or not set) the RXEN0 bit by using this bit 
+command. Same goes for TX enable. Using the example code above, these two bits 
+(RXEN0 and TXEN0) get set and loaded into UCSR0B register, enabling the TX and 
+RX hardware on the ATmega168. <rxen0 translates="" shift="" a="" 1="" left="" 5="" spaces="" .?="" is="" handy="" because="" don="" t="" remember="" specifically="" where="" enable="" resides,="" you="" only="" need="" know="" to="" (or="" not="" set)="" rxen0="" by="" this="" bit="" command.="" same="" goes="" for="" enable.="" using="" example="" code="" above,="" these="" two="" bits="" (rxen0="" txen0)="" get="" set="" loaded="" into="" ucsr0b="" register,="" enabling="" tx="" and="" rx="" hardware="" on="" the="" atmega168.=""><rxen0 atmega168.="" the="" on="" hardware="" rx="" and="" tx="" enabling="" ucsr0b="" into="" loaded="" set="" get="" bits="" two="" these="" code="" example="" using="" enable.="" for="" goes="" same="" command.="" bit="" this="" by="" rxen0="" not="" to="" know="" need="" only="" you="" enable="" where="" specifically="" remember="" t="" don="" because="" handy="" is="" spaces="" left="" a="" shift="" translates=""></rxen0></rxen0></p>
+
+<p>Finally, we see the very comfortable line of code:</p>
+<blockquote>
+<p><b><font size="2">printf("Test it! x = %d", x);</font></b></p>
+</blockquote>
+<p>What did you say? This is not a comfortable line of C code for you?
+Ok - printf is somewhat of a universal function to pass serial strings
+and variables to the outside world. The line of code above will pass
+the string "Test it! x =" to the serial port and it should display on
+the terminal window. After that, the %d gets converted to an actual
+decimal number so that whatever digital number is currently stored in
+the variable x gets printed to the terminal screen. So what? This
+simple printf statement allows you to print variable contents and see
+what's going on within your C program. </p>
+<p>Time to load the <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/5-Compiling/basic-out-atmega168.zip" target="_blank"> basic-out-atmega168.c</a>
+file onto your breadboard. Open up PN2, compile basic_out-atmega168.c.
+Power up your board, click on Tools-&gt;[WinAVR] Program from within
+Programmer's Notepad. The code should now be loaded onto your
+ATmega168. If WinAVR throws a verification error, try again. Open up
+the terminal window at 9600bps if you don't already have it open.</p>
+<p align="center"><img src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/5-Compiling/Compiling1.jpg" alt="" border="0"></p>
+<p align="center">Text output from the ATmega168 and MAX232 circuit</p>
+<p align="left">All right! We've got output from the ATmega168! Now let's talk  about some more of the code:</p>
+<blockquote>
+<p align="left"><font size="2"><b>sbi(PORTC, STATUS_LED);</b></font></p>
+</blockquote>
+<p>Another funky one if you're not used to the AVR series. To toggle a
+GPIO pin (general purpose input/output pin), you need to read the state
+of the port, mask the bit change into the state-word, and then write
+the 8-bits back onto the port effectively modifying just the one bit.
+Instead of doing all that by every time you want to toggle a port pin,
+there's this handy macro:</p>
+<blockquote>
+<p align="left"><font size="2"><b>#define sbi(var, mask) ((var) |= (uint8_t)(1  &lt;&lt; mask))</b></font></p>
+</blockquote>
+<p>SBI sets a bit. CBI clears a bit. You have to specify which port
+you're working with and which pin you want to alter. Throw another
+define at the top of your code:</p>
+<blockquote>
+<p align="left"><font size="2"><b>#define STATUS_LED 0</b></font></p>
+</blockquote>
+<p>Now you can control your STATUS_LED on PORT C using these two simple  commands:</p>
+<blockquote>
+<p><font size="2"><b>sbi(PORTC, STATUS_LED);</b></font></p>
+</blockquote>
+<p>To turn on the LED and </p>
+<blockquote>
+<p><font size="2"><b>cbi(PORTC, STATUS_LED);</b></font></p>
+</blockquote>
+<p>To turn it off.</p>
+<p>You should have an LED tied to pin 23 on the ATmega168. When in
+doubt, toggle your status LED to figure out where the code is hanging
+or use a printf statement.</p>
+<p>There are also some tweaks to the delay_ms() routine. Because we
+increased the oscillator from 1MHz to 16MHz, I increased the loop
+iterations to tie up the processor for longer. I didn't do any real
+calculations so don't depend on my delay_ms routine. delay_ms(1000)
+looks to be roughly a 1 second delay.</p>
+<p>Open <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/5-Compiling/basic-in-atmega168.zip" target="_blank">basic-in-atmega168.c</a> (<a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/5-Compiling/basic-in.zip" target="_blank">basic-in.c</a>  for the ATmega8) and load up your breadboard:</p>
+<p align="center"><img src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/5-Compiling/Compiling2.jpg" alt="" border="0"></p>
+<p align="center">Key presses and various responses</p>
+<p align="left">Here we see that whatever character we hit, the
+ATmega168 responds with 'I heard : ' and the character. Also, if you
+hit return, X, or g, you will see various special output.</p>
+<blockquote>
+<p><font size="2"><b>key_press = uart_getchar();<br>
+<br>
+printf("I heard : %c\n", key_press);<br>
+<br>
+if(key_press == 'g') printf(" GO!\n");<br>
+if(key_press == 'X') printf(" EXIT\n");<br>
+if(key_press == 13) printf(" RETURN\n");</b></font></p>
+</blockquote>
+<p>uart_getchar sits waiting for a character to appear in the UART.
+Once received, the ATmega168 outputs the character (%c) and goes to a
+new line (\n). It then checks to see if the key press was one of three
+special cases. If so, it prints an extra string accordingly. I hope you
+are starting to see the power of the input/act-upon/output that a
+microcontroller is capable of. With a little bit of work, you could
+program your own text-based adventure game. Go to town.</p>
+<p>Remember back when you were struggling to get your power supply wired up?  Nice job! Time to heat up your irons.</p>
+<p align="left">We love feedback! Please report typos, comments, or  recommendations to <a href="mailto:spark@sparkfun.com">spark@sparkfun.com</a>.</p><p align="left"><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=57">Lecture 1 - Background and Power Supply</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=93">Lecture 2 - How to Get Code Onto a Microcontroller</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=95">Lecture 3 - What is an oscillator?</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=104">Lecture 4 - UART and Serial Communication</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=105">Lecture 5 - AVR GCC Compiling</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=106">Lecture 6 - Soldering Basics</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=107">Lecture 7 - SMD Soldering</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=108">Lecture 8 - Eagle: Schematics</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=109">Lecture 9 - Eagle: PCB Layout</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=110">Lecture 10 - Eagle: Creating a new part</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=111">Common Mistakes, Tips and Tricks</a></p></div></div>
+
+<div id="comments_container">
+  <h2 id="comments_header" class="collapsible grey big"><span class="arrow"></span>Comments <span class="count">27 comments</span></h2>
+<div id="comments" class="collapsible white">
+  <div style="padding: 20px">  <div style="text-align: center">
+    <b><a href="#" onclick="javascript: $('right').scrollTo(); $('user_login').select()">Login</a> to post comments.</b>
+  </div>
+</div>
+  <div class="comment" id="comment_709"><span class="header"><a href="http://www.sparkfun.com/users/45352" class="bold">Blizzrad</a> <span class="wide">|</span> <b>October 19, 2008 at  2:07 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_709">2</span></strong></span><br /></span><div class="body"><p>Adding to what Neil said above, you can also change the FOSC and BAUD settings in the code if you want to use different clock speeds and baud rates with your AVR.</p>
+
+<p>This worked great for me on an ATmega48 at the default 1MHz internal clock using minicom under linux at 2400 bps.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_5328"><span class="header"><a href="http://www.sparkfun.com/users/79985" class="bold">Takaitra</a> <span class="wide">|</span> <b>September 19, 2009 at  9:07 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5328">1</span></strong></span><br /></span><div class="body"><p>Thanks Blizzrad. I am running my ATMega8 at 1MHz and was getting garbage printed to the terminal. I switched to 2400bps and updated FOSC and BAUD settings. Now it is working great.</p>
+</div></div></div></div><div class="comment" id="comment_487"><span class="header"><a href="http://www.sparkfun.com/users/45268" class="bold">Neil</a> <span class="wide">|</span> <b>September 16, 2008 at 11:12 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_487">1</span></strong></span><br /></span><div class="body"><p>What I discovered (eventually) is that in order for the above code to work with a 9600 bps terminal, the ATmega must be set up to operate at 16 MHz using the external oscillator.  Upon re-reading this tutorial, there is a mention of using 16 MHz, but it isn't that explicit.  Be sure to configure the fuse bits to use the external clock at 16 MHz!</p>
+</div></div><div class="comment" id="comment_486"><span class="header"><a href="http://www.sparkfun.com/users/45268" class="bold">Neil</a> <span class="wide">|</span> <b>September 16, 2008 at 11:11 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_486">1</span></strong></span><br /></span><div class="body"><p>When I went through this tutorial, I initially was getting garbage data showing up on my Tera Term screen.  I had been playing around with my ATmega's oscillator settings during tutorial step 3 and had left the ATmega set up for a low operating frequency.  </p>
+</div></div><div class="comment" id="comment_974"><span class="header"><a href="http://www.sparkfun.com/users/46660" class="bold">TheTrustedOne</a> <span class="wide">|</span> <b>November 15, 2008 at  8:03 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_974">1</span></strong></span><br /></span><div class="body"><p>Does anyone know of a tutorial or book that will take me through the AVR-GCC programming language? I have been programming for years and I keep hitting walls.</p>
+
+<p>I appreciate your time</p>
+
+<p>The Trusted One</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_1064"><span class="header"><a href="http://www.sparkfun.com/users/27120" class="bold">PolyTekPatrick</a> <span class="wide">|</span> <b>November 22, 2008 at 10:24 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1064">2</span></strong></span><br /></span><div class="body"><p>AVR-GCC is the name of the compiler, not the language. You write code in C or C++ and then compile it using the AVR-GCC compiler. If you've been programming for years, then I assume that you are already familiar with C or C++ or can easily learn them. You probably need to learn more about the hardware-specific features of your microcontroller, since the code for accessing these hardware features is non-standard and depends entirely on the microcontroller, library, and compiler you are using. If you have installed WinAVR you have the avr-libc library. Read more about its functions, constants, include files, interrupt syntax: <a href="http://www.nongnu.org/avr-libc/user-manual/index.html">http://www.nongnu.org/avr-libc/user-manual/index.html</a>
+To learn more about the hardware features and registers of your Atmel microcontroller, download the manual for your model, usually several hundred pages long. Use the index and just read about the feature you need, like the UART or SPI or ADC.</p>
+</div></div></div></div><div class="comment" id="comment_1159"><span class="header"><a href="http://www.sparkfun.com/users/49525" class="bold">Baixue</a> <span class="wide">|</span> <b>December  4, 2008 at  2:22 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1159">1</span></strong></span><br /></span><div class="body"><p>Can anyone tell me what F_CPU = 8000000 means in Makefile? If I want to run my uC at the default 1Mhz and TX/RX at 2400bps, should I change the define to:</p>
+
+define FOSC 1000000
+
+define BAUD 2400
+
+<p>and then also change F_CPU = 1000000 ?
+Appreicate any help. I am new to this.</p>
+</div></div><div class="comment" id="comment_4436"><span class="header"><a href="http://www.sparkfun.com/users/75744" class="bold">pithed</a> <span class="wide">|</span> <b>July 22, 2009 at  7:40 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4436">1</span></strong></span><br /></span><div class="body"><p>I wanted to do this tutorial but did not have the max232 to do the serial but did have an arduino (it has the ft232rl usb to serial chip).  I pulled the atmega out of the arduino (I didn't know what the program was on it and did not want to cause conflict) and attached the tx and rx ports to the tx and rx ports on the breadboard atmega168 circuit and it works great!  Thanks for the great tutorials they have really helped me get beyond basic arduino programming.</p>
+</div></div><div class="comment" id="comment_4731"><span class="header"><a href="http://www.sparkfun.com/users/32634" class="bold">Cybermongul</a> <span class="wide">|</span> <b>August 13, 2009 at  9:49 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4731">1</span></strong></span><br /></span><div class="body"><p>The C file compiles OK but when i tried to program the IC it returns this error :</p>
+
+<p>avrdude -p atmega168 -P lpt1 -c stk200    -U flash:w:basic-out-atmega168.hex</p>
+
+<p>avrdude: AVR device not responding
+avrdude: initialization failed, rc=-1
+         Double check connections and try again, or use -F to override
+         this check.</p>
+
+<p>avrdude done.  Thank you.
+make.exe: *** [program] Error 1</p>
+
+<blockquote>
+  <p>Process Exit Code: 2
+  Time Taken: 00:01</p>
+</blockquote>
+
+<p>Do i need the the JP1  (AVR<em>SPI</em>PROG)  as shown in the previous tutorial or the the serial connection as done in this video suffice the programming of the controller?</p>
+
+<p>What am i doing wrong here?</p>
+</div></div><div class="comment" id="comment_5191"><span class="header"><a href="http://www.sparkfun.com/users/79840" class="bold">PseudoEngineer</a> <span class="wide">|</span> <b>September 11, 2009 at  8:41 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5191">1</span></strong></span><br /></span><div class="body"><p>check your fuse bits, check those stupid capacitors around the crystal.  If they're not the right kind the whole thing goes down.</p>
+</div></div><div class="comment" id="comment_5445"><span class="header"><a href="http://www.sparkfun.com/users/83842" class="bold">aj</a> <span class="wide">|</span> <b>September 27, 2009 at 12:03 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5445">1</span></strong></span><br /></span><div class="body"><p>Great tutorial!  I am now trying to get scanf to work.  However, I seem to be unable to get scanf to wait for user input.  My code prompts for user input (via printf), then does scanf.  However, when it runs, the terminal spits out my printf statements constantly.  I am using AVR Studio 4 and an AVRisp. I wonder if I am initializing stdin incorrectly?</p>
+
+<p>I think I should modify the code in this tutorial by adding:</p>
+
+<p>static FILE mystdin = FDEV<em>SETUP</em>STREAM(NULL, uart<em>getchar, _FDEV</em>SETUP_WRITE);</p>
+
+<p>and</p>
+
+<p>stdin = &mystdin;</p>
+
+<p>I think I should also have the function uart_getchar from the tutorial's code, and I've included stdio.h and avr/io.h. I think I should then be able to call scanf in my main function, but it doesn't work.  Can someone help me?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_5446"><span class="header"><a href="http://www.sparkfun.com/users/83842" class="bold">aj</a> <span class="wide">|</span> <b>September 27, 2009 at 12:32 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5446">1</span></strong></span><br /></span><div class="body"><p>static int uart<em>getchar(FILE *stream)
+{
+    while( !(UCSRA &amp; (1&amp;#60&amp;#60RXC)) );
+    return(UDR);
+}//uart</em>getchar</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_5447"><span class="header"><a href="http://www.sparkfun.com/users/83842" class="bold">aj</a> <span class="wide">|</span> <b>September 27, 2009 at 12:34 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5447">1</span></strong></span><br /></span><div class="body"><p>I had forgotten to include my changes to uart_getchar().  My version is posted above.</p>
+</div></div></div></div></div></div><div class="comment" id="comment_7208"><span class="header"><a href="http://www.sparkfun.com/users/84737" class="bold">Electro</a> <span class="wide">|</span> <b>November 30, 2009 at  2:53 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_7208">1</span></strong></span><br /></span><div class="body"><p>My max232 IC was an ADM232L chip, so after following the connection schematic and testing the IC I was getting garbage.</p>
+
+<p>The solution was that I went back to the ADM232L data sheet and connected the capacitors as suggested. This made the circuit work for me, I hope this helps someone :D</p>
+</div></div><div class="comment" id="comment_8045"><span class="header"><a href="http://www.sparkfun.com/users/61147" class="bold">Aureau</a> <span class="wide">|</span> <b>December 28, 2009 at 10:24 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_8045">1</span></strong></span><br /></span><div class="body"><p>Great tutorial! Just as a note though, the user submitted response can be simplified. When simplified this
+(((((FOSC * 10) / (16L * BAUD)) + 5) / 10) - 1)
+turns into this
+FOSC/16/BAUD-(1/2)
+which is only .5 from your original equation.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_10451"><span class="header"><a href="http://www.sparkfun.com/users/17818" class="bold">Bonedog</a> <span class="wide">|</span> <b>February 12, 2010 at  1:34 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10451">1</span></strong></span><br /></span><div class="body"><p>For what it's worth, the formula for error percentage is:
+(( desired baudrate / actual baudrate) - 1) * 100</p>
+
+<p>The actual baudrate is:
+FOSC/(16*(UBRR+1))</p>
+
+<p>The UBRR value is:
+(FOSC/(16*desired baudrate))-1</p>
+
+<p>I have found that in C++ sometimes the order of calculations don't work in the standard order (MDAS) as expected, if put in certain data structures. ...or, it could be the operator... :-)</p>
+</div></div></div></div><div class="comment" id="comment_8750"><span class="header"><a href="http://www.sparkfun.com/users/86264" class="bold">Technologikall</a> <span class="wide">|</span> <b>January  7, 2010 at 12:13 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_8750">1</span></strong></span><br /></span><div class="body"><p>Hay when I try to download the  basic-out-atmega168.c file I get a  basic-out-atmega168 file without the extension. Then when I open it in PN I just get some strange blabla. When I tried to downlaod that ledblinkfile in the second tutorial I got the same thing. Also there was no makefile at all in that download for me. (I used Google to get those.) How comes? Is it because I'm in Europe? Or am I doing something wrong here?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_9569"><span class="header"><a href="http://www.sparkfun.com/users/100956" class="bold">DSB</a> <span class="wide">|</span> <b>January 14, 2010 at  7:12 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9569">1</span></strong></span><br /></span><div class="body"><p>I had the same problem. Use 7Zip to open it. When you see basic-out-atmega168 double click on that, and then you will see the two files you need (the .c and the Makefile). Unzip those to your folder and you're good to go.</p>
+</div></div></div></div><div class="comment" id="comment_10408"><span class="header"><a href="http://www.sparkfun.com/users/17818" class="bold">Bonedog</a> <span class="wide">|</span> <b>February 11, 2010 at  4:44 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10408">1</span></strong></span><br /></span><div class="body"><p>Don't know where has been mentioned, but somewhere in here it refers to downloading the amtega168 manual. In that manual, on page 195+ are tables that show the UBRRn value and the associated baud rate error for several clock frequencies. So, unless I am misreading this, by setting the internal 8 MHz clock to NOT divide by 8 (lfuse bit 0x7 to 1), the error percentage for 9600 baud drops from ~7 to 0.2. This may alleviate the need for an external crystal.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_10418"><span class="header"><a href="http://www.sparkfun.com/users/17818" class="bold">Bonedog</a> <span class="wide">|</span> <b>February 11, 2010 at  8:07 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10418">1</span></strong></span><br /></span><div class="body"><p>Okay, so now I've tested it with the internal oscillator set at 8 MHz and the lfuse div8 off and it works fine. I also changed the following:
+    #define FOSC 8000000
+    #define MYUBRR 51
+in order for everything to be in sync. I was getting an error before I changed the above MYUBRR, in this line:
+    //USART Baud rate: 9600
+    UBRR0H = MYUBRR >> 8;
+It may not be as accurate as with an external crystal, but the part count is lower. :)</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_10435"><span class="header"><a href="http://www.sparkfun.com/users/17818" class="bold">Bonedog</a> <span class="wide">|</span> <b>February 12, 2010 at  7:20 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10435">1</span></strong></span><br /></span><div class="body"><p>Forgot to mention; this works both breadboarded and on my stk500. 
+And I am using a FT232RL breakout board I got for another project. Makes it very simple to use, just a couple of jumpers: TX, RX, and GND. I don't have any MAX232 chips.</p>
+</div></div><div class="comment" id="comment_10453"><span class="header"><a href="http://www.sparkfun.com/users/17818" class="bold">Bonedog</a> <span class="wide">|</span> <b>February 12, 2010 at  1:44 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10453">1</span></strong></span><br /></span><div class="body"><p>An additional note is required here on the error I was getting. In the original article's formula for MYUBRR, if I placed () around the formula, the error mentioned goes away. Like:
+  #define MYUBRR (FOSC/16/BAUD-1)
+get's rid of this warning around line 65 or so:
+  //USART Baud rate: 9600
+  UBRR0H = MYUBRR >> 8;
+    In function 'ioinit':
+    warning: suggest parentheses around '-' inside '>>'</p>
+</div></div></div></div></div></div><div class="comment" id="comment_11546"><span class="header"><a href="http://www.sparkfun.com/users/121209" class="bold">JoshYoung</a> <span class="wide">|</span> <b>March 22, 2010 at  9:56 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_11546">1</span></strong></span><br /></span><div class="body"><p>Can someone please explain to me if this should work with the RS232 Shifter Board (<a href="http://www.sparkfun.com/commerce/product_info.php?products_id=133">http://www.sparkfun.com/commerce/product<em>info.php?products</em>id=133</a>) in Lesson 6? </p>
+
+<p>If not, why not? What do I need to change and why? Rather than just the steps to get it working, I'm trying to learn the ins and outs. </p>
+
+<p>Thanks for the awesome tutorials. Keep 'em coming!</p>
+</div></div><div class="comment" id="comment_17224"><span class="header"><a href="http://www.sparkfun.com/users/83842" class="bold">aj</a> <span class="wide">|</span> <b>August 16, 2010 at  9:21 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_17224">1</span></strong></span><br /></span><div class="body"><p>I'm still hoping eagerly that someone will help figure out how to get scanf to work (see comments above).  I tried this for my senior design project, but never quite figured it out.</p>
+</div></div><div class="comment" id="comment_19980"><span class="header"><a href="http://www.sparkfun.com/users/138675" class="bold">ico</a> <span class="wide">|</span> <b>October 26, 2010 at 11:27 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_19980">1</span></strong></span><br /></span><div class="body"><p>The 16MHz external crystal can at best work for a baud rate up to 19200, it does not work with any higher baud rate for the accuracy is too low after the prescaler division.</p>
+
+<p>To work for higher baud rate such as 115200, a precise UART friendly external crystal frequency is needed, such as 11.0592MHz (115200 * 96) or 7.3728MHz (115200 * 64).</p>
+
+<p>I've not tried these UART friendly crystal oscillators on AVR, because I recently have done a project using ST's STM32F101RB, an ARM Cortex M3 MCU, it's just about US$2, and with more features than similarly priced AVR or other architectures (PIC, C51 etc), and the performance is just not comparable.</p>
+
+<p>ARM Cortex is the king, I'll abandon all other CPU architectures from now on, except in some rare cases where the extreme low power requirement is a must.</p>
+</div></div><div class="comment" id="comment_22012"><span class="header"><a href="http://www.sparkfun.com/users/161338" class="bold">nmushov</a> <span class="wide">|</span> <b>December  1, 2010 at  7:22 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22012">1</span></strong></span><br /></span><div class="body"><p>Is it normal to take 315 seconds to upload 1826 bytes to the AVR? Thats 46bits/s, seems kinda slow.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_22128"><span class="header"><a href="http://www.sparkfun.com/users/161338" class="bold">nmushov</a> <span class="wide">|</span> <b>December  2, 2010 at  7:53 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22128">1</span></strong></span><br /></span><div class="body"><p>I was using a USB-Serial adapter with the serial programmer and that was causing the slowness. Hooked it up to the actual serial port and uploading to the AVR was done in a fraction of the time.</p>
+</div></div></div></div></div>
+<br />
+</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      SparkFun Electronics <a href="http://www.sparkfun.com/news/300">&reg;</a>      <span class="wide">|</span>
+      <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6175+Longbow+Dr,+Boulder,+CO+80301&sll=40.006234,-105.224915&sspn=0.012113,0.020192&ie=UTF8&hq=&hnear=6175+Longbow+Dr,+Boulder,+Colorado+80301&t=h&z=16" target="_blank">Boulder, Colorado</a>
+      <span class="wide">|</span>
+      <a href="http://www.sparkfun.com/static/customer_service">Customer Service</a>
+    </div>
+        <script type="text/javascript" src="/js/cookiejar.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/sparkfun.js?sparkrev=1299616818"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript">function autoFireLightbox(){setTimeout(function(){SFE.stab_eyes()},250)}Event.observe(window,"load",autoFireLightbox,false);</script>
+    <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3404365-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

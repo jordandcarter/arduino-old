@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="google-site-verification" content="XUb2UlchrvwCWWyhXksBlqQy1STYtTEN_M0-tgQRHRs" />
+    <meta name="google-site-verification" content="gRUAvzBJ_533b-AGTmldOJfByU6TkojfUbWovB2wKJo" />
+    <title>News - SparkFun Electronics</title>
+    <link rel="stylesheet" href="/css/screen.css?rev=1299616818" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css?rev=1299616818" type="text/css" media="print" />
+    <link rel="stylesheet" href="/css/lightbox.css?rev=1299616818" type="text/css" media="screen" />
+    <!-- IE is the bane of my existence. -->
+    <!--[if IE]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+    <link rel="feed" type="application/rss+xml" title="News" href="http://www.sparkfun.com/feeds/news/" />
+    <link rel="alternate" type="application/rss+xml" title="Products" href="http://www.sparkfun.com/feeds/products/" />
+    <link rel="alternate" type="application/rss+xml" title="Product Changes" href="http://www.sparkfun.com/feeds/changes/" />
+    <link rel="alternate" type="application/rss+xml" title="Comments" href="http://www.sparkfun.com/feeds/comments/" />
+    <link rel="alternate" type="application/rss+xml" title="Videos" href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&v=2&orderby=published" />
+    <link rel="apple-touch-icon" href="/fanboy.png" />
+     
+    <script type="text/javascript">
+      var HTTP_SERVER = 'http://www.sparkfun.com',
+          HTTPS_SERVER = 'https://www.sparkfun.com',
+          HTTP_STATIC = 'http://dlnmh9ip6v2uc.cloudfront.net',
+          FULL_LAYOUT = true,
+          AUTHENTICATED = false;
+    </script>
+    <script type="text/javascript" src="/js/prototype.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <!-- turns out  that IE7 chokes if you don't load these separately. -->
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="/js/effects.js"></script>
+    <script type="text/javascript" src="/js/builder.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/lightbox.js?rev=1299616818"></script>
+  </head>
+  <body>
+    <div id="airlock" class="clearfix">
+
+      
+  <script>BANNER_ID = 55</script>
+
+<div id="header">
+  <a href="http://www.sparkfun.com/"><img width=188 height=105 class="logo" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/logo.gif" title="SparkFun Electronics" alt="SparkFun Electronics" /></a>
+  <a href="#products_menu" class="skip">Skip to menu</a>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <div id="banner-nav" style="display: none;">
+<img id="banner-goprev" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_left.png" height=23 width=23 />
+<img id="banner-all" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_all.png" height=23 width=23 />
+<img id="banner-gonext" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_right.png" height=23 width=23 />
+</div>
+<a id="banner-link" href="http://www.sparkfun.com/tutorials/58"><img width=978 height=105 id="banner" src="http://dlnmh9ip6v2uc.cloudfront.net/images/banners/SFE03.0007.ED-StencilingTutorial-01.jpg" alt="" /></a>
+  <div id="header-menu">
+    <ul>
+      <li id="header_menu_index" class="active"><a href="http://www.sparkfun.com/index">Home</a></li>
+      <li id="header_menu_cservice"><a href="http://www.sparkfun.com/static/customer_service">Customer Service</a></li>
+      <li id="header_menu_tutorials"><a href="http://www.sparkfun.com/tutorials">Tutorials</a></li>
+      <li id="header_menu_forum"><a href="http://forum.sparkfun.com">Forum</a></li>
+      <li id="header_menu_distributors"><a href="http://www.sparkfun.com/distributors">Distributors</a></li>
+      <li id="header_menu_about"><a href="http://www.sparkfun.com/static/about">About Us</a></li>
+      <li id="header_menu_contact" class="last"><a href="http://www.sparkfun.com/static/contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="left">
+        <h2 class="collapsible" id="search_menu"><span class="arrow"></span>Search</h2>
+        <form class="collapsible search" style="display: block" action="http://www.sparkfun.com/search/results" id="search_form" method="get">
+  <input id="search_field" name="term" type="text" value="" />
+  <input type="submit" value="Go" class="button" />
+  <br />
+  <input id="products_search" type="radio" name="what" value="products" checked />
+  <label for="products_search">Products</label>
+  <br />
+  <input id="news_search" type="radio" name="what" value="news" />
+  <label for="news_search">News</label>
+  <br />
+  <input id="tutorials_search" type="radio" name="what" value="tutorials" />
+  <label for="tutorials_search">Tutorials</label>
+  <br />
+  <input id="comments_search" type="radio" name="what" value="comments" />
+  <label for="comments_search">Comments</label>
+</form>
+        <br />
+
+        <h2 id="products_menu" class="collapsible"><span class="arrow"></span>Products</h2>
+        
+<ul id="category_menu_list" class="collapsible" style="display: block">
+  <li id="menu_category_new_products"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/new_products">New Products</a></li>
+  <li id="menu_category_top"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/top">Top Sellers</a></li>
+  <li id="menu_category_featured"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/featured">Staff Picks</a></li>
+  <li id="menu_category_gift_certificates"><span class="arrow"></span><a href="https://www.sparkfun.com/gift_certificates">Gift Certificates</a></li>
+  <li><hr /></li>
+  <li id="menu_category_176"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/176">Books</a></li><li id="menu_category_20"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/20">Breakout Boards</a></li><li id="menu_category_70"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/70">Cables</a><ul style="display:none;"><li id="menu_category_140"><a href="http://www.sparkfun.com/categories/140">Audio</a></li><li id="menu_category_150"><a href="http://www.sparkfun.com/categories/150">Ethernet</a></li><li id="menu_category_72"><a href="http://www.sparkfun.com/categories/72">Hook Up</a></li><li id="menu_category_75"><a href="http://www.sparkfun.com/categories/75">Parallel</a></li><li id="menu_category_74"><a href="http://www.sparkfun.com/categories/74">Serial</a></li><li id="menu_category_71"><a href="http://www.sparkfun.com/categories/71">USB</a></li></ul></li><li id="menu_category_66"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/66">Cellular</a><ul style="display:none;"><li id="menu_category_67"><a href="http://www.sparkfun.com/categories/67">Antennas</a></li><li id="menu_category_69"><a href="http://www.sparkfun.com/categories/69">Eval Boards</a></li><li id="menu_category_68"><a href="http://www.sparkfun.com/categories/68">Modules</a></li></ul></li><li id="menu_category_154"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/154">Classes</a></li><li id="menu_category_51"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/51">Components</a><ul style="display:none;"><li id="menu_category_87"><a href="http://www.sparkfun.com/categories/87">ARM Microcontrollers</a></li><li id="menu_category_21"><a href="http://www.sparkfun.com/categories/21">AVR Microcontrollers</a></li><li id="menu_category_145"><a href="http://www.sparkfun.com/categories/145">Buttons/Switches</a></li><li id="menu_category_60"><a href="http://www.sparkfun.com/categories/60">General</a></li><li id="menu_category_90"><a href="http://www.sparkfun.com/categories/90">General ICs</a></li><li id="menu_category_89"><a href="http://www.sparkfun.com/categories/89">LEDs</a><ul><li id="menu_category_173"><a href="http://www.sparkfun.com/categories/173">10mm</a></li><li id="menu_category_171"><a href="http://www.sparkfun.com/categories/171">3mm</a></li><li id="menu_category_172"><a href="http://www.sparkfun.com/categories/172">5mm</a></li><li id="menu_category_170"><a href="http://www.sparkfun.com/categories/170">7-Segment</a></li><li id="menu_category_175"><a href="http://www.sparkfun.com/categories/175">Other</a></li><li id="menu_category_174"><a href="http://www.sparkfun.com/categories/174">SMD</a></li></ul></li><li id="menu_category_88"><a href="http://www.sparkfun.com/categories/88">Oscillators</a></li><li id="menu_category_22"><a href="http://www.sparkfun.com/categories/22">PIC Microcontrollers</a></li><li id="menu_category_124"><a href="http://www.sparkfun.com/categories/124">PICAXE Microcontrollers</a></li><li id="menu_category_132"><a href="http://www.sparkfun.com/categories/132">PSoC Microcontrollers</a></li><li id="menu_category_29"><a href="http://www.sparkfun.com/categories/29">SMD ICs</a></li></ul></li><li id="menu_category_2"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/2">Development Tools</a><ul style="display:none;"><li id="menu_category_184"><a href="http://www.sparkfun.com/categories/184">.NET</a></li><li id="menu_category_93"><a href="http://www.sparkfun.com/categories/93">ADuC</a></li><li id="menu_category_103"><a href="http://www.sparkfun.com/categories/103">Arduino</a></li><li id="menu_category_10"><a href="http://www.sparkfun.com/categories/10">AVR</a></li><li id="menu_category_164"><a href="http://www.sparkfun.com/categories/164">Beagle</a></li><li id="menu_category_187"><a href="http://www.sparkfun.com/categories/187">Chumby</a></li><li id="menu_category_109"><a href="http://www.sparkfun.com/categories/109">Coridium</a></li><li id="menu_category_136"><a href="http://www.sparkfun.com/categories/136">FPGA</a></li><li id="menu_category_101"><a href="http://www.sparkfun.com/categories/101">iPod</a></li><li id="menu_category_25"><a href="http://www.sparkfun.com/categories/25">LPC</a></li><li id="menu_category_11"><a href="http://www.sparkfun.com/categories/11">MSP</a></li><li id="menu_category_9"><a href="http://www.sparkfun.com/categories/9">PIC</a></li><li id="menu_category_125"><a href="http://www.sparkfun.com/categories/125">PICAXE</a></li><li id="menu_category_137"><a href="http://www.sparkfun.com/categories/137">PSoC</a></li><li id="menu_category_104"><a href="http://www.sparkfun.com/categories/104">Roomba</a></li><li id="menu_category_94"><a href="http://www.sparkfun.com/categories/94">SAM</a></li><li id="menu_category_95"><a href="http://www.sparkfun.com/categories/95">ST</a></li><li id="menu_category_167"><a href="http://www.sparkfun.com/categories/167">STAMP</a></li><li id="menu_category_107"><a href="http://www.sparkfun.com/categories/107">Wiring</a></li><li id="menu_category_169"><a href="http://www.sparkfun.com/categories/169">WIZnet</a></li><li id="menu_category_166"><a href="http://www.sparkfun.com/categories/166">XMOS</a></li><li id="menu_category_142"><a href="http://www.sparkfun.com/categories/142">Zune</a></li></ul></li><li id="menu_category_100"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/100">Dings and Dents</a></li><li id="menu_category_204"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/204">E-Textiles</a><ul style="display:none;"><li id="menu_category_205"><a href="http://www.sparkfun.com/categories/205">Aniomagic</a></li><li id="menu_category_210"><a href="http://www.sparkfun.com/categories/210">fabrickit</a></li><li id="menu_category_135"><a href="http://www.sparkfun.com/categories/135">LilyPad</a></li><li id="menu_category_206"><a href="http://www.sparkfun.com/categories/206">Materials</a></li></ul></li><li id="menu_category_4"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/4">GPS</a><ul style="display:none;"><li id="menu_category_18"><a href="http://www.sparkfun.com/categories/18">Antennas</a></li><li id="menu_category_86"><a href="http://www.sparkfun.com/categories/86">Eval Boards</a></li><li id="menu_category_17"><a href="http://www.sparkfun.com/categories/17">Modules</a></li></ul></li><li id="menu_category_157"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/157">Kits</a></li><li id="menu_category_76"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/76">LCDs</a><ul style="display:none;"><li id="menu_category_147"><a href="http://www.sparkfun.com/categories/147">Color</a></li><li id="menu_category_148"><a href="http://www.sparkfun.com/categories/148">Monochrome</a></li></ul></li><li id="menu_category_96"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/96">Port-O-Rotary</a></li><li id="menu_category_1"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/1">Programmers</a><ul style="display:none;"><li id="menu_category_26"><a href="http://www.sparkfun.com/categories/26">ARM</a></li><li id="menu_category_7"><a href="http://www.sparkfun.com/categories/7">AVR</a></li><li id="menu_category_156"><a href="http://www.sparkfun.com/categories/156">DSP</a></li><li id="menu_category_37"><a href="http://www.sparkfun.com/categories/37">MAXQ</a></li><li id="menu_category_8"><a href="http://www.sparkfun.com/categories/8">MSP</a></li><li id="menu_category_6"><a href="http://www.sparkfun.com/categories/6">PIC</a></li><li id="menu_category_126"><a href="http://www.sparkfun.com/categories/126">PICAXE</a></li><li id="menu_category_168"><a href="http://www.sparkfun.com/categories/168">XMOS</a></li></ul></li><li id="menu_category_53"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/53">Prototyping</a><ul style="display:none;"><li id="menu_category_54"><a href="http://www.sparkfun.com/categories/54">Batteries</a></li><li id="menu_category_149"><a href="http://www.sparkfun.com/categories/149">Boards</a></li><li id="menu_category_91"><a href="http://www.sparkfun.com/categories/91">Connectors</a></li><li id="menu_category_182"><a href="http://www.sparkfun.com/categories/182">Enclosures</a></li><li id="menu_category_55"><a href="http://www.sparkfun.com/categories/55">General</a></li><li id="menu_category_155"><a href="http://www.sparkfun.com/categories/155">Hardware</a></li><li id="menu_category_92"><a href="http://www.sparkfun.com/categories/92">Sockets</a></li><li id="menu_category_116"><a href="http://www.sparkfun.com/categories/116">Solar</a></li><li id="menu_category_141"><a href="http://www.sparkfun.com/categories/141">Wire</a></li></ul></li><li id="menu_category_207"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/207">Retail</a><ul style="display:none;"><li id="menu_category_212"><a href="http://www.sparkfun.com/categories/212">Arduino</a></li><li id="menu_category_216"><a href="http://www.sparkfun.com/categories/216">Components</a></li><li id="menu_category_213"><a href="http://www.sparkfun.com/categories/213">Kits</a></li><li id="menu_category_211"><a href="http://www.sparkfun.com/categories/211">Materials</a></li><li id="menu_category_215"><a href="http://www.sparkfun.com/categories/215">Prototyping</a></li><li id="menu_category_214"><a href="http://www.sparkfun.com/categories/214">Sensors</a></li><li id="menu_category_217"><a href="http://www.sparkfun.com/categories/217">Tools</a></li></ul></li><li id="menu_category_134"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/134">Retired</a><ul style="display:none;"><li id="menu_category_194"><a href="http://www.sparkfun.com/categories/194">Breakout Boards</a></li><li id="menu_category_203"><a href="http://www.sparkfun.com/categories/203">Cables</a></li><li id="menu_category_200"><a href="http://www.sparkfun.com/categories/200">Classes</a></li><li id="menu_category_192"><a href="http://www.sparkfun.com/categories/192">Components</a></li><li id="menu_category_191"><a href="http://www.sparkfun.com/categories/191">Development Tools</a></li><li id="menu_category_188"><a href="http://www.sparkfun.com/categories/188">GPS</a></li><li id="menu_category_190"><a href="http://www.sparkfun.com/categories/190">Kits</a></li><li id="menu_category_196"><a href="http://www.sparkfun.com/categories/196">LCD</a></li><li id="menu_category_201"><a href="http://www.sparkfun.com/categories/201">Programmers</a></li><li id="menu_category_195"><a href="http://www.sparkfun.com/categories/195">Prototyping</a></li><li id="menu_category_197"><a href="http://www.sparkfun.com/categories/197">Robotics</a></li><li id="menu_category_189"><a href="http://www.sparkfun.com/categories/189">Sensors</a></li><li id="menu_category_208"><a href="http://www.sparkfun.com/categories/208">SFE Widgets</a></li><li id="menu_category_198"><a href="http://www.sparkfun.com/categories/198">Swag</a></li><li id="menu_category_193"><a href="http://www.sparkfun.com/categories/193">Tools</a></li><li id="menu_category_199"><a href="http://www.sparkfun.com/categories/199">Wireless</a></li></ul></li><li id="menu_category_31"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/31">Robotics</a><ul style="display:none;"><li id="menu_category_179"><a href="http://www.sparkfun.com/categories/179">Drivers</a></li><li id="menu_category_181"><a href="http://www.sparkfun.com/categories/181">Kits</a></li><li id="menu_category_178"><a href="http://www.sparkfun.com/categories/178">Motors</a></li><li id="menu_category_202"><a href="http://www.sparkfun.com/categories/202">Other</a></li><li id="menu_category_180"><a href="http://www.sparkfun.com/categories/180">Wheels</a></li></ul></li><li id="menu_category_185"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/185">Sale</a></li><li id="menu_category_23"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/23">Sensors</a><ul style="display:none;"><li id="menu_category_80"><a href="http://www.sparkfun.com/categories/80">Accelerometers</a><ul><li id="menu_category_161"><a href="http://www.sparkfun.com/categories/161">1-axis</a></li><li id="menu_category_162"><a href="http://www.sparkfun.com/categories/162">2-axis</a></li><li id="menu_category_163"><a href="http://www.sparkfun.com/categories/163">3-axis</a></li></ul></li><li id="menu_category_146"><a href="http://www.sparkfun.com/categories/146">Biometrics</a></li><li id="menu_category_117"><a href="http://www.sparkfun.com/categories/117">Capacitive</a></li><li id="menu_category_151"><a href="http://www.sparkfun.com/categories/151">Current</a></li><li id="menu_category_143"><a href="http://www.sparkfun.com/categories/143">Flex / Force</a></li><li id="menu_category_85"><a href="http://www.sparkfun.com/categories/85">Gyros</a><ul><li id="menu_category_158"><a href="http://www.sparkfun.com/categories/158">1-axis</a></li><li id="menu_category_159"><a href="http://www.sparkfun.com/categories/159">2-axis</a></li><li id="menu_category_183"><a href="http://www.sparkfun.com/categories/183">3-axis</a></li></ul></li><li id="menu_category_144"><a href="http://www.sparkfun.com/categories/144">ID</a></li><li id="menu_category_160"><a href="http://www.sparkfun.com/categories/160">IMU</a></li><li id="menu_category_139"><a href="http://www.sparkfun.com/categories/139">Infrared</a></li><li id="menu_category_102"><a href="http://www.sparkfun.com/categories/102">Light / Imaging</a></li><li id="menu_category_83"><a href="http://www.sparkfun.com/categories/83">Magneto</a></li><li id="menu_category_84"><a href="http://www.sparkfun.com/categories/84">Proximity</a></li><li id="menu_category_165"><a href="http://www.sparkfun.com/categories/165">Radiation</a></li><li id="menu_category_186"><a href="http://www.sparkfun.com/categories/186">Sound</a></li><li id="menu_category_82"><a href="http://www.sparkfun.com/categories/82">Temperature</a></li><li id="menu_category_152"><a href="http://www.sparkfun.com/categories/152">Weather</a></li></ul></li><li id="menu_category_97"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/97">SFE Widgets</a></li><li id="menu_category_130"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/130">Swag</a></li><li id="menu_category_46"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/46">Tools</a><ul style="display:none;"><li id="menu_category_47"><a href="http://www.sparkfun.com/categories/47">Hand Tools</a></li><li id="menu_category_48"><a href="http://www.sparkfun.com/categories/48">Hot-Air Rework</a></li><li id="menu_category_177"><a href="http://www.sparkfun.com/categories/177">Instruments</a></li><li id="menu_category_28"><a href="http://www.sparkfun.com/categories/28">Power Supplies</a></li><li id="menu_category_49"><a href="http://www.sparkfun.com/categories/49">Soldering</a></li></ul></li><li id="menu_category_138"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/138">Tracking</a></li><li id="menu_category_16"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/16">Wireless</a><ul style="display:none;"><li id="menu_category_78"><a href="http://www.sparkfun.com/categories/78">Antennas</a></li><li id="menu_category_115"><a href="http://www.sparkfun.com/categories/115">Bluetooth</a></li><li id="menu_category_79"><a href="http://www.sparkfun.com/categories/79">General</a></li><li id="menu_category_113"><a href="http://www.sparkfun.com/categories/113">Modem</a></li><li id="menu_category_114"><a href="http://www.sparkfun.com/categories/114">Nordic</a></li><li id="menu_category_112"><a href="http://www.sparkfun.com/categories/112">WiFi</a></li><li id="menu_category_111"><a href="http://www.sparkfun.com/categories/111">Zigbee/802.15.4</a></li></ul></li>  <li><hr /></li>
+  <li>
+    <img style='float: left' src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/pdf.gif" />
+    <a href="http://sparkfun.com/download/PDFs/catalog.pdf">Full catalog</a>
+  </li>
+</ul>
+        <br />
+      </div>
+
+      <div id="right">
+        <div class="collapsible user">
+  <p class="cart-link"><img height="19" width="19" alt="" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_shoppingcart.gif"> 
+     <a href="http://www.sparkfun.com/cart"><span id="items_in_cart">0</span> items in your cart</a></p>
+  <form action="https://www.sparkfun.com/account/login" id="login" method="post">
+    <label for="user_login">Email</label>
+    <input id="user_login" type="text" tabindex="1" maxlength="320" name="user">
+    <label for="user_password">Password</label>
+    <input id="user_password" type="password" tabindex="2" maxlength="20" name="passwd">
+    <p class="right"><input type="submit" value="log in" class="button"></p>
+    <p><a href="https://www.sparkfun.com/account/forgot_password">Forgot your password?</a><br/>
+       No account? <a href="https://www.sparkfun.com/account/make">Register here</a>.</p>
+  </form>
+</div>
+<br>
+
+        <h2 id="feed_menu" class="collapsible"><span class="arrow"></span>Feeds</h2>
+        <ul class="collapsible feeds" style="display: block">
+  <li><a href="http://www.sparkfun.com/feeds/news">News</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/products">Products</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/changes">Product Changes</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/comments">Comments</a></li>
+  <li><a href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&amp;v=2&amp;orderby=published">Videos</a></li>
+</ul>
+        <br />
+
+        <h2 id="resources_menu" class="collapsible"><span class="arrow"></span>Resources</h2>
+        <ul class="collapsible resources" style="display: block">
+  <li><a href="http://www.sparkfun.com/news/263">Official SparkFun IRC Channel</a></li>
+  <li><a href="http://www.batchpcb.com/" target="_blank">Custom PCBs</a></li>
+  <li><a href="http://www.opencircuits.com/" target="_blank">Open Circuits</a></li>
+  <li><a href="http://www.ponoko.com/make-and-sell/electronics" target="_blank">Ponoko - Your Personal Factory</a></li>
+  <li><a href="http://www.sparkfun.com/static/jobs">Jobs @ SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/tutorials/92">Sell Your Widget on SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/quiz">Take the SparkFun Quiz</a></li>
+</ul>
+        <br />
+
+        <h2 id="currency_menu_head" class="collapsible"><span class="arrow"></span>Currency</h2>
+        
+<div class="collapsible" id="currency_menu">
+  Display prices in
+  <input type="hidden" id="preferred_currency" value="USD" />
+  <ul id="currency_menu_list" class="currency">
+          <li>
+        <a id="currency_USD" onclick="SFE.change_currency('USD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_checked.gif" />
+                US Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_CAD" onclick="SFE.change_currency('CAD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Canadian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_AUD" onclick="SFE.change_currency('AUD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Australian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_GBP" onclick="SFE.change_currency('GBP'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                British Pound        </a>
+    </li>
+          <li>
+        <a id="currency_EUR" onclick="SFE.change_currency('EUR'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Euro        </a>
+    </li>
+      </ul>
+  </div>
+
+<script language="javascript">
+var CURRENCIES = {"USD":{"code":"USD","title":"US Dollar","symbol_left":"$","symbol_right":"","decimal_point":".","thousands_point":",","decimal_places":"2","value":"1.0000"},"CAD":{"code":"CAD","title":"Canadian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9706"},"AUD":{"code":"AUD","title":"Australian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9957"},"GBP":{"code":"GBP","title":"British Pound","symbol_left":"&pound;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.6187"},"EUR":{"code":"EUR","title":"Euro","symbol_left":"&euro;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.7214"}}</script>
+        <br />
+
+        <h2 id="feedback_menu" class="collapsible"><span class="arrow"></span>Feedback</h2>
+        <form id="feedback" class="collapsible" style="display: block">
+  <label for="feedback_textarea" style="font-weight: bold">What's on your mind?</label>
+  <br />
+  <textarea id="feedback_textarea" name="feedback_text"></textarea>
+  <br /><br />
+  <label for="feedback_email">Please include your email address if you'd like us to respond to a specific question.</label>
+  <br />
+  <br />
+  <input type="text" id="feedback_email" name="email" /> 
+  <br />
+  <input onclick="SFE.mind_feedback(); return(false);" type="button" class="button" value="Submit" /> 
+</form>
+      </div>
+
+      <div id="center">
+        <a name="content" id="content"></a>
+        
+<h1 class="red-header">
+    <span class="link"><a href="http://www.sparkfun.com/">Home</a></span>
+  <span class="wide">|</span>
+  News - 2011.03.08</h1>
+
+<div class="news">
+  <p class="header">
+    <img src="https://secure.gravatar.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=30&r=pg" height=30 width=30 />
+    <a class="title" href="http://www.sparkfun.com/news/226">What is it you say you do here?</a>
+    <br />
+    by <a href="http://www.sparkfun.com/users/7185">Nate</a> |
+    March 08, 2011 |
+    <i><a href="http://www.sparkfun.com/news/226#comments" onclick="javascript: if(!$('comments').visible()) { SFE.toggle_collapsible($('comments_header')); } $('comments_header').scrollTo(); return false;">112 comments</a></i>
+  </p>
+  <hr />
+  <p>
+	When people ask me &#39;what we do at SparkFun&#39;, I have a something called an elevator speech. This is supposed to be a 30 second snippet of what you do, so if you have to explain it on an elevator, you can do so before the person gets to their floor. After 8 years of practice, I think I&#39;ve got the SparkFun elevator speech down to about 11 minutes. Even after 11 minutes of explanation, the person asks &quot;So you sell iPods and stuff?&quot; Yep. That&#39;s what we do here. Admittedly, us here, and you there, are on to something. But I don&#39;t think anyone quite knows what, and putting your finger on it is like poking fog.</p>
+<p>
+	And if I&#39;ve learned anything in the past 8 years of running SparkFun, it&#39;s that word of mouth recommendations are huge. Whether it&#39;s new music recommendations from friends, or someone helping me out with making a new part function, I place a lot more weight on personal connections. Now if we extend this to SparkFun users, if I don&#39;t have a good elevator pitch, how can I hope to have you all explain SparkFun to your friends?</p>
+<p style="text-align: center;">
+	<a href="http://www.fistfuloftalent.com/2010/01/wanted-normal-employee.html" target="_blank"><img alt="http://sparkfun.com/tutorial/news/donimo_normal.jpg" src="http://sparkfun.com/tutorial/news/donimo_normal.jpg" /></a><br />
+	Image lifted from this interesting <a href="http://www.fistfuloftalent.com/2010/01/wanted-normal-employee.html" target="_blank">HR blog</a></p>
+<p>
+	So what does SparkFun do? I think we sell shortcuts. If you need a barometric pressure sensor, you may come across the <a href="http://www.sparkfun.com/products/9694" target="_blank">BMP085</a> by Bosch. It looks like a great sensor, but it comes in a leadless SMD package. It may require some basic external components (decoupling caps, pull up resistors, etc.). Now let&#39;s look at the barriers to using this new technology:</p>
+<ul>
+	<li>
+		It requires a custom PCB and new footprint to be designed</li>
+	<li>
+		It requires soldering, most likely SMD</li>
+	<li>
+		It requires firmware of sorts to get the IC to function</li>
+</ul>
+<p>
+	Now you could design the PCB, soldering the IC, and write some firmware. But what happens when things go wrong?</p>
+<ul>
+	<li>
+		Did I mess up the PCB? Did I get the footprint wrong?</li>
+	<li>
+		How good is my soldering? Did I bridge some connections? Do I feel comfortable with tight pitch components?</li>
+	<li>
+		Is my firmware working correctly?</li>
+</ul>
+<p>
+	These potential pitfalls compound each other. We&#39;ve all been there! It&#39;s quite aggravating to spend days on a particular sub-project when I should be focusing on the bigger picture. So what does SparkFun do? We hit all those barriers for you:</p>
+<ul>
+	<li>
+		We&#39;ve been through many prototypes to get to a &#39;known good&#39; design</li>
+	<li>
+		We&#39;ve got the SMD tools and processes to solder whatever the new IC or technology may require</li>
+	<li>
+		We&#39;ve tested the board so that you know it works</li>
+	<li>
+		We write example skeleton code to get you headed in the right direction</li>
+	<li>
+		And for good measure we release the engineering files on most products. These contain &#39;known good&#39; footprints and basic functional schematics in case you want to spin your own PCB some day.</li>
+</ul>
+<p>
+	The products we sell are projects themselves. Nearly anyone can create the BMP085 breakout board at home - we try hard to show you that you can do it yourself (see Beginning Embedded Electronics <a href="http://www.sparkfun.com/tutorials" target="_blank">tutorials</a>). We just save you piles of time - a shortcut.</p>
+<p>
+	What else do we do? I realized long ago that if I needed something for a project, someone else probably did as well. I use an Xacto knife to <a href="http://www.sparkfun.com/tutorials/42" target="_blank">cut PCB traces</a>, so we started <a href="http://www.sparkfun.com/products/9200" target="_blank">selling one</a>. I found myself using a handful of different LEDs for projects, let&#39;s sell a kit of <a href="http://www.sparkfun.com/products/9881" target="_blank">common LEDs</a>. OMG - I hate making cables and finding mating connectors, let us <a href="http://www.sparkfun.com/products/9916" target="_blank">take care of that</a>. We build stuff just like you and if you hit a barrier, we&#39;ll try to help you over it.</p>
+<p>
+	We&#39;ve also been called &#39;the DigiKey filter&#39;. For the beginner in electronics, <a href="http://www.digikey.com" target="_blank">DigiKey</a>, <a href="http://www.mouser.com" target="_blank">Mouser</a>, and the rest of the big catalog distributors can be very daunting to navigate. Try searching for an &#39;LED&#39; on any of these sites and you&#39;ll get the phone book. If you&#39;ve just made an LED blink for the first time, you probably don&#39;t know if you need &quot;T-1 3/4&quot; or &quot;1206&quot;. What? We offer only a few LEDs - the ones that cover 90% of the applications out there. If you&#39;re wondering, <a href="http://www.sparkfun.com/products/9590" target="_blank"><em>this</em></a> is the LED you probably need. We don&#39;t carry every trimpot, we carry the trimpot <a href="http://www.sparkfun.com/products/9806" target="_blank">you probably need</a>. We enjoy getting beginners started, knowing quite well that someday you&#39;ll graduate and order directly from these much larger companies. We will never sell every resistor. We will never try to out-DigiKey DigiKey.</p>
+<p>
+	Therein lies my problem. The above summary is long and merely scratches the surface. And if I can&#39;t summarize what SparkFun does, how can I expect anyone who uses SparkFun goodies to recommend us to their friends? I would like to give you a one liner like &#39;Sharing Ingenuity&#39; but I want more. So what do you tell friends you do? How would you describe the nature of this odd world we play in?</p></div>
+
+<div id="comments_container">
+  <h2 id="comments_header" class="collapsible grey big"><span class="arrow"></span>Comments <span class="count">112 comments</span></h2>
+<div id="comments" class="collapsible white">
+  <div style="padding: 20px">  <div style="text-align: center">
+    <b><a href="#" onclick="javascript: $('right').scrollTo(); $('user_login').select()">Login</a> to post comments.</b>
+  </div>
+</div>
+  <div class="comment" id="comment_31440"><span class="header"><a href="http://www.sparkfun.com/users/28534" class="bold">Skimask</a> <span class="wide">|</span> <b>March  8, 2011 at  9:17 AM</b> *<img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31440">9</span></strong></span><br /></span><div class="body"><p>I am on a drug.  It's called Sparkfun.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31513"><span class="header"><a href="http://www.sparkfun.com/users/74469" class="bold">Blacklab1</a> <span class="wide">|</span> <b>March  8, 2011 at  1:45 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31513">2</span></strong></span><br /></span><div class="body"><p>That could explain why I get Sparkfun withdrawal when I am away from the internet.</p>
+</div></div><div class="comment" id="comment_31488"><span class="header"><a href="http://www.sparkfun.com/users/77505" class="bold">AlanS</a> <span class="wide">|</span> <b>March  8, 2011 at 12:36 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31488">1</span></strong></span><br /></span><div class="body"><p>Winning!</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31490"><span class="header"><a href="http://www.sparkfun.com/users/37794" class="bold">AdamTolley</a> <span class="wide">|</span> <b>March  8, 2011 at 12:49 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31490">1</span></strong></span><br /></span><div class="body"><p>winner, winner, Sparkfun dinner?</p>
+</div></div></div></div><div class="comment" id="comment_31529"><span class="header"><a href="http://www.sparkfun.com/users/57151" class="bold">eewestcoaster</a> <span class="wide">|</span> <b>March  8, 2011 at  3:14 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31529">1</span></strong></span><br /></span><div class="body"><p>Plan better.</p>
+</div></div><div class="comment" id="comment_31541"><span class="header"><a href="http://www.sparkfun.com/users/54461" class="bold">Larius</a> <span class="wide">|</span> <b>March  8, 2011 at  4:29 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31541">1</span></strong></span><br /></span><div class="body"><p>The sparkfun logo is red due to tiger blood.</p>
+</div></div></div></div><div class="comment" id="comment_31454"><span class="header"><a href="http://www.sparkfun.com/users/144973" class="bold">Nada</a> <span class="wide">|</span> <b>March  8, 2011 at 10:16 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31454">6</span></strong></span><br /></span><div class="body"><p>Here's the structure of an elevator pitch:
+Define the Market
+Define the Problem
+How you solve it
+Where the money is</p>
+
+<p>Here's your elevator pitch Nate
+"There is an increasingly popular movement for individuals and small businesses to create their own technology products and bypass the major industrial players, it's the long tail of the tech revolution.</p>
+
+<p>The problem has been that access to information and materials has traditionally been difficult for those not already involved in the industry which has led to inefficient distribution of products through the channel and limited it to a few power players and niche hobbyists.</p>
+
+<p>What we've done is provide a means of access to materials and information and built a community around our brand which encourages and develops this market of individuals and small groups, which only becomes richer and more successful as the market grows because they help each other.</p>
+
+<p>Because of this approach our business can grow exponentionally as this market grows and new members of our community are added.  It's not about the things we sell, which are great, it's about how and why we service our community that makes us great and an irreplaceable part of the market we serve.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31471"><span class="header"><a href="http://www.sparkfun.com/users/117449" class="bold">c-scott</a> <span class="wide">|</span> <b>March  8, 2011 at 11:10 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31471">1</span></strong></span><br /></span><div class="body"><p>I like Nate's elevator pitch better.  A "shortcut" is definitely why I use Sparkfun at work.  If the product I'm working on is evaluating a component or processor or bluetooth or whatever, I can order a breakout board from Sparkfun and be able to evaluate the component in a few days.  It also lets us get started writing firmware while the actual PCB design/manufacturing/industrial design/plastics, etc are done.  And it's easy to grab other breakout boards to hack together a few programmers or dev kits or whatever else we need to do development on the main product.</p>
+
+<p>Nada's elevator pitch, in contrast, makes my eyes glaze over and doesn't sound anything like why I use SparkFun.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31525"><span class="header"><a href="http://www.sparkfun.com/users/144973" class="bold">Nada</a> <span class="wide">|</span> <b>March  8, 2011 at  2:40 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31525">1</span></strong></span><br /></span><div class="body"><p>LOL, for sure man, I didn't expect to out-do the CEO.. but you're already in the choir.  The elevator pitch is for those who don't know a trim pot from a mosfet.  If they do, then you don't need an elevator pitch because you're booking lunch and having beers after work talking about killer robots and stuff.</p>
+
+<p>If you think the Sparkfun market of the future is mostly guys like you, I (totally respectfully) disagree.. I think it's guys more like me or others who are less sophisticated and skilled than you.  (YMMV, I don't really know myself, just my opinion etc.)</p>
+</div></div></div></div><div class="comment" id="comment_31517"><img class="avatar" src="https://secure.gravatar.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/7185" class="bold">Nate</a> <span class="wide">|</span> <b>March  8, 2011 at  2:18 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31517">1</span></strong></span><br /></span><div class="body"><p>Nada - This is a really well thought out pitch. It's all true. But I really enjoy giving real-world examples. Unfortunately as soon as you give an example of what one could build with electronics, the person you are talking to thinks that is all that can be built (you could build a robot! So you sell robots? No.). Universally configurable electronics just blows their mind.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31527"><span class="header"><a href="http://www.sparkfun.com/users/144973" class="bold">Nada</a> <span class="wide">|</span> <b>March  8, 2011 at  2:48 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31527">1</span></strong></span><br /></span><div class="body"><p>Thanks for the comment!  I think the real-world stuff comes after they say "Really.. Tell me more..".   I too love my products. I LOVE them.  Can I please have an hour of your time to talk about the brilliance of our modular code design on a SAAS platform to deliver multi-channel messages?  We have an API with over 700 unique ways of using our service! It's awesome! We wrote our own scripting language!Check out these awesome demos! (etc..)  If I did that you'd be reapeatedly beating on the 'open door' button of the elevator. Most people can't handle that much passion and lack the time/focus to digest it all.  However; once you hook them that you've got a good idea, they'll start asking you questions and that's when you hook 'em.</p>
+
+<p>As an anecdotal data point... I don't come to sparkfun EVERY DAY just to buy parts.  I cruise the forum, read the blog and the comments and try to tap into the community.  You also seem like fun people and obviously do fun stuff.  Sparkfun is not just a source of parts (there are a lot of those), it's the feeling that if I show up on AVC or Antimov or a tour, I'm among friends. THAT'S powerful man. </p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31665"><span class="header"><a href="http://www.sparkfun.com/users/63468" class="bold">svoynick</a> <span class="wide">|</span> <b>March 10, 2011 at 12:07 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31665">1</span></strong></span><br /></span><div class="body"><p>Nate and Nada - you both have excellent and absolutely valid points.  A critical part of an elevator pitch - heck of any human interaction for that matter - is <strong>knowing your audience.</strong></p>
+
+<p>Nada, your pitch is structured beautifully to target and attract a potential investor in the business, which is what most classic "elevator pitches" are designed to do - what they practice at Caltech and MIT and everywhere else someone hopes to hit it big with a new idea.  If you find yourself in an elevator with a "suit" from a VC firm, this is the pitch you give.  You talk branding, serving markets, and exponential growth.</p>
+
+<p>On the other hand, if you find yourself on the sidewalk with a scruffy looking type with soldering iron burns on his or her fingers, this is more likely the audience where you want to go more with the original: "The big distributors sell anything and everything.  We carry what you probably need."</p>
+
+<p>It's like tweaking your resume for different targets - you are not so much just distributing the exact same, standard story to everyone, but you flex the story you tell each time to match what you are trying to convey to that particular recipient...</p>
+</div></div></div></div></div></div><div class="comment" id="comment_31624"><span class="header"><a href="http://www.sparkfun.com/users/10498" class="bold">Marcoli</a> <span class="wide">|</span> <b>March  9, 2011 at  1:00 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31624">1</span></strong></span><br /></span><div class="body"><p>^^ Awesome! </p>
+
+<p>I would have said, "little bit o' this, little bit o' that..." =P</p>
+</div></div></div></div><div class="comment" id="comment_31444"><span class="header"><a href="http://www.sparkfun.com/users/148694" class="bold">suttonr</a> <span class="wide">|</span> <b>March  8, 2011 at  9:36 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31444">4</span></strong></span><br /></span><div class="body"><p>Q: "So you sell iPods and stuff?" 
+A: "nope, we sell the stuff to turn your ipod into a robot which will kill all humans"</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31495"><img class="avatar" src="https://secure.gravatar.com/avatar/d4e2f2c98dfd21dcc11da9f077c8cb36?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/161147" class="bold">Young Maker</a> <span class="wide">|</span> <b>March  8, 2011 at 12:58 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31495">2</span></strong></span><br /></span><div class="body"><p>That's the real answer. </p>
+
+<p>I've been explaning sparkfun to people then they say:</p>
+
+<blockquote>
+  <p>"So they sell iPods and stuff?"</p>
+</blockquote>
+
+<p>NOOOOO! they sell stuff to make your ipod into something WAYYYY better!</p>
+</div></div></div></div><div class="comment" id="comment_31461"><img class="avatar" src="https://secure.gravatar.com/avatar/f118645f40970a33273c281701006bef?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/153053" class="bold">Nakor</a> <span class="wide">|</span> <b>March  8, 2011 at 10:47 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31461">3</span></strong></span><br /></span><div class="body"><p>Well-well look. I already told you: I deal with the *** **** customers so the engineers don't have to. I have people skills; I am good at dealing with people. Can't you understand that? What the hell is wrong with you people?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31465"><span class="header"><a href="http://www.sparkfun.com/users/28293" class="bold">DJG</a> <span class="wide">|</span> <b>March  8, 2011 at 10:51 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31465">1</span></strong></span><br /></span><div class="body"><p>Gah! You beat me to it! :D</p>
+</div></div><div class="comment" id="comment_31518"><img class="avatar" src="https://secure.gravatar.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/7185" class="bold">Nate</a> <span class="wide">|</span> <b>March  8, 2011 at  2:19 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31518">1</span></strong></span><br /></span><div class="body"><p>Nice! I was hoping someone would get the Office Space throwback. </p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31653"><span class="header"><a href="http://www.sparkfun.com/users/64311" class="bold">EBeamBob</a> <span class="wide">|</span> <b>March  9, 2011 at  7:34 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31653">1</span></strong></span><br /></span><div class="body"><p>I can't be the only software type who, after seeing Office Space for the first time, cried out, "Oh GOD, this is my LIFE!"  :)</p>
+</div></div></div></div></div></div><div class="comment" id="comment_31493"><img class="avatar" src="https://secure.gravatar.com/avatar/b3797a17756c85eed30fdf52ee70daa5?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/27675" class="bold">brennen</a> <span class="wide">|</span> <b>March  8, 2011 at 12:57 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31493">3</span></strong></span><br /></span><div class="body"><p>I tell relatives at holiday get-togethers that if they wanted to build a robot in the garage, we could help 'em out. It's true, as far as it goes, and aside from the handful with engineering degrees and hobby electronics experience, it's the closest I can get without the eye-glaze setting in.</p>
+
+<p>I tell my technical friends that I get to hack for an organization that actually believes in the stuff I used to rant at them about when I was a teenaged shoeless free software hippie.</p>
+
+<p>I just tell most everyone else that I work on the Island of Misfit Toys.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31507"><img class="avatar" src="https://secure.gravatar.com/avatar/331335f957af430699d849fff32b515e?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/128471" class="bold">robacarp</a> <span class="wide">|</span> <b>March  8, 2011 at  1:22 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31507">2</span></strong></span><br /></span><div class="body"><p>Indeed.</p>
+</div></div></div></div><div class="comment" id="comment_31467"><span class="header"><a href="http://www.sparkfun.com/users/40791" class="bold">Ben121</a> <span class="wide">|</span> <b>March  8, 2011 at 11:01 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31467">2</span></strong></span><br /></span><div class="body"><p>Sparkfun is a cooking show for electronics. We also sell everything we use on the show so you can do it at home.</p>
+</div></div><div class="comment" id="comment_31468"><span class="header"><a href="http://www.sparkfun.com/users/79792" class="bold">Dan</a> <span class="wide">|</span> <b>March  8, 2011 at 11:01 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31468">2</span></strong></span><br /></span><div class="body"><p>Sparkfun specializes in rapid prototyping. It sells parts, kits, and prototype equipment, along with sample code, allowing the hobbyist to easily join the high-tech world, or providing professionals with a simple way to prototype complicated ideas.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31472"><span class="header"><a href="http://www.sparkfun.com/users/117449" class="bold">c-scott</a> <span class="wide">|</span> <b>March  8, 2011 at 11:11 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31472">1</span></strong></span><br /></span><div class="body"><p>That sounds right to me.</p>
+</div></div><div class="comment" id="comment_31520"><img class="avatar" src="https://secure.gravatar.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/7185" class="bold">Nate</a> <span class="wide">|</span> <b>March  8, 2011 at  2:23 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31520">1</span></strong></span><br /></span><div class="body"><p>This is really good. I'd say we specialize in rapid <em>electronics</em> prototyping. Rapid prototyping could be confused with 3D printing.</p>
+
+<p>We have a fair number of hobbyists as customers, but also zoologists, digital media students, professors, even lawyers. How do we include the artists? '...allowing anyone to easily join...'?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31567"><span class="header"><a href="http://www.sparkfun.com/users/117449" class="bold">c-scott</a> <span class="wide">|</span> <b>March  8, 2011 at  8:44 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31567">1</span></strong></span><br /></span><div class="body"><p>Hasn't SparkFun already hooked up with Ponoko to start removing the 'electronics' from 'rapid electronics prototyping'? ;-)</p>
+</div></div></div></div></div></div><div class="comment" id="comment_31473"><img class="avatar" src="https://secure.gravatar.com/avatar/7f5fd63cd388ec418ec8ca5ee8f258f0?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/159110" class="bold">jt3dstudio</a> <span class="wide">|</span> <b>March  8, 2011 at 11:12 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31473">2</span></strong></span><br /></span><div class="body"><p>Sparkfun makes learning curves far shorter and/or parts of learning curves unnecessary.  I've already been able to impress my boss at work(who has a masters in EE from Stanford) and get a subsequent raise by using some Sparkfun breakout boards and some simple coding to make a cool useful product.  Perhaps I could have done this without Sparkfun support, but I doubt I would have had the motivation to push through all the detail work that was already provided through the boards and links to tutorials on the site.  So that's my rather subjective two cents in regards to what Sparkfun does for me.</p>
+</div></div><div class="comment" id="comment_31499"><span class="header"><a href="http://www.sparkfun.com/users/43383" class="bold">dathomar</a> <span class="wide">|</span> <b>March  8, 2011 at  1:07 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31499">2</span></strong></span><br /></span><div class="body"><p>The Radio Shack of yesterday in the world of tomorrow</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31577"><span class="header"><a href="http://www.sparkfun.com/users/5951" class="bold">DomCoElectronics</a> <span class="wide">|</span> <b>March  8, 2011 at 10:55 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31577">1</span></strong></span><br /></span><div class="body"><p>This is a great comment.  How I do miss the Radio Shack of yesterday.  I still reminisce about my 200 in one kit from 25 years ago.</p>
+</div></div></div></div><div class="comment" id="comment_31536"><span class="header"><a href="http://www.sparkfun.com/users/98770" class="bold">Member98770</a> <span class="wide">|</span> <b>March  8, 2011 at  3:53 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31536">2</span></strong></span><br /></span><div class="body"><p>"Sparkfun is like learning how to play the piano in a day. Instead of staring out with theory, you just sit down and play."</p>
+
+<p>This creates passion, that accelorates the learning experience.
+Instant results, instant motivation, instant fun! </p>
+</div></div><div class="comment" id="comment_31539"><span class="header"><a href="http://www.sparkfun.com/users/82720" class="bold">Superteck</a> <span class="wide">|</span> <b>March  8, 2011 at  4:19 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31539">2</span></strong></span><br /></span><div class="body"><p>Sparkfun sells "Electronic Pixie Dust", you still have to add the "Happy Thought"...</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31564"><span class="header"><a href="http://www.sparkfun.com/users/22749" class="bold">Heffo</a> <span class="wide">|</span> <b>March  8, 2011 at  8:01 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31564">2</span></strong></span><br /></span><div class="body"><p>Sparkfun sells "Magic Blue Smoke" in a nice compact package, and shipped in a red box.</p>
+
+<p>Just try not to let the smoke out ;P</p>
+</div></div></div></div><div class="comment" id="comment_31544"><span class="header"><a href="http://www.sparkfun.com/users/40791" class="bold">Ben121</a> <span class="wide">|</span> <b>March  8, 2011 at  4:57 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31544">2</span></strong></span><br /></span><div class="body"><p>Sparkfun is to Radioshack
+What Amazon is to bookstore?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31607"><img class="avatar" src="https://secure.gravatar.com/avatar/c3fe05edad111df1e6c53bb654700aef?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/135081" class="bold">BlackJester</a> <span class="wide">|</span> <b>March  9, 2011 at 10:13 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31607">1</span></strong></span><br /></span><div class="body"><p>SparkFun's new motto right here!!</p>
+</div></div></div></div><div class="comment" id="comment_31546"><span class="header"><a href="http://www.sparkfun.com/users/31581" class="bold">RoBo101</a> <span class="wide">|</span> <b>March  8, 2011 at  5:28 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31546">2</span></strong></span><br /></span><div class="body"><p>If you were a Robot SparkFun would be your Porn site.</p>
+
+<p>?Anyone else?
+- If you were a Robot SparkFun would be your <strong><em>?</em></strong></p>
+
+<ul>
+<li>Me and my Robot hit SparkFun for the best <strong><em>?</em></strong></li>
+</ul>
+
+<p>~sorry if some find comparing SparkFun to porn degrading but hay it's HOT stuff!</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31553"><img class="avatar" src="https://secure.gravatar.com/avatar/840fe5cca95766c2fccbff11fc9d13e8?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/154228" class="bold">Nike</a> <span class="wide">|</span> <b>March  8, 2011 at  6:06 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31553">1</span></strong></span><br /></span><div class="body"><p>Just imagine what SparkFun's pick and place machine is to a robot.</p>
+</div></div></div></div><div class="comment" id="comment_31561"><span class="header"><a href="http://www.sparkfun.com/users/30386" class="bold">OldFar-SeeingArt</a> <span class="wide">|</span> <b>March  8, 2011 at  7:29 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31561">2</span></strong></span><br /></span><div class="body"><p>From here, it's obvious.</p>
+
+<p><strong>Sparkfun subverts the dominant paradigm</strong></p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31565"><img class="avatar" src="https://secure.gravatar.com/avatar/b3797a17756c85eed30fdf52ee70daa5?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/27675" class="bold">brennen</a> <span class="wide">|</span> <b>March  8, 2011 at  8:24 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31565">1</span></strong></span><br /></span><div class="body"><p>You probably need to work in something about core competencies. Or maybe synergy.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31600"><span class="header"><a href="http://www.sparkfun.com/users/30386" class="bold">OldFar-SeeingArt</a> <span class="wide">|</span> <b>March  9, 2011 at  8:49 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31600">1</span></strong></span><br /></span><div class="body"><p>Yeah, well, maybe, but I thought I'd leave the low hanging fruit for others.</p>
+</div></div></div></div><div class="comment" id="comment_31608"><img class="avatar" src="https://secure.gravatar.com/avatar/3f2ffc88a128ff5f69a13c855d407dab?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/207060" class="bold">NPoole</a> <span class="wide">|</span> <b>March  9, 2011 at 10:22 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31608">1</span></strong></span><br /></span><div class="body"><p>Oh, I thought we used web2.0 social-network team-building to crowdsource synergistic approaches to Tech-market penetration.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31626"><img class="avatar" src="https://secure.gravatar.com/avatar/c3fe05edad111df1e6c53bb654700aef?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/135081" class="bold">BlackJester</a> <span class="wide">|</span> <b>March  9, 2011 at  1:10 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31626">2</span></strong></span><br /></span><div class="body"><p>It scares me that this comment actually makes sense...</p>
+</div></div><div class="comment" id="comment_31614"><img class="avatar" src="https://secure.gravatar.com/avatar/3f2ffc88a128ff5f69a13c855d407dab?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/207060" class="bold">NPoole</a> <span class="wide">|</span> <b>March  9, 2011 at 10:59 AM</b> *<img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31614">1</span></strong></span><br /></span><div class="body"><p>That's weird, it feels like there used to be a post here...</p>
+</div></div></div></div></div></div><div class="comment" id="comment_31437"><span class="header"><a href="http://www.sparkfun.com/users/185186" class="bold">Perl</a> <span class="wide">|</span> <b>March  8, 2011 at  8:59 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31437">1</span></strong></span><br /></span><div class="body"><p>The answer is t-1 3/4, but a 1206 is big enough to work with too.</p>
+
+<p>"Sparkfun sells common eletronic componets and development kits to help hobbiest and entrepreneurs create thier own electronic projects, from making a LED blink or to making full blown <a href="http://www.youtube.com/watch?v=M71iVa8D1zs&amp;t=0m42s">robots</a>.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31441"><span class="header"><a href="http://www.sparkfun.com/users/28534" class="bold">Skimask</a> <span class="wide">|</span> <b>March  8, 2011 at  9:18 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31441">3</span></strong></span><br /></span><div class="body"><p>Spel chek iz ur frendz</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31615"><span class="header"><a href="http://www.sparkfun.com/users/185186" class="bold">Perl</a> <span class="wide">|</span> <b>March  9, 2011 at 11:08 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31615">1</span></strong></span><br /></span><div class="body"><p>The answer is t-1 3/4, but a 1206 is big enough to work with too.
+"Sparkfun sells common electronic components and create development kits to help hobbyist and entrepreneurs develop their own electronic projects, from making a LED blink or to making full blown robots.”</p>
+
+<p>Just for you. I hope it meets the Internet troll standered.</p>
+</div></div></div></div></div></div><div class="comment" id="comment_31438"><span class="header"><a href="http://www.sparkfun.com/users/182765" class="bold">Leonidas993</a> <span class="wide">|</span> <b>March  8, 2011 at  9:06 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31438">1</span></strong></span><br /></span><div class="body"><p>how about: "Sparkfun is as Sparkfun Does!" lol</p>
+</div></div><div class="comment" id="comment_31443"><img class="avatar" src="https://secure.gravatar.com/avatar/c6c9bda13fd0081c22c84be7be065b57?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/169945" class="bold">mbrown9412</a> <span class="wide">|</span> <b>March  8, 2011 at  9:33 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31443">1</span></strong></span><br /></span><div class="body"><p>"we bridge the gap for you, in all your small electronics needs"</p>
+
+<p>that last bit is replaceable...
+at least "we bridge the gap for you___________"</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31452"><span class="header"><a href="http://www.sparkfun.com/users/195367" class="bold">Kamiquasi</a> <span class="wide">|</span> <b>March  8, 2011 at 10:04 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31452">1</span></strong></span><br /></span><div class="body"><p>But I thought bridging gaps was listed under the Bad Things section?
+    * How good is my soldering? Did I bridge some connections? Do I feel comfortable with tight pitch components?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31460"><img class="avatar" src="https://secure.gravatar.com/avatar/c6c9bda13fd0081c22c84be7be065b57?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/169945" class="bold">mbrown9412</a> <span class="wide">|</span> <b>March  8, 2011 at 10:47 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31460">1</span></strong></span><br /></span><div class="body"><p>gaps as in, we solve things for you</p>
+</div></div></div></div></div></div><div class="comment" id="comment_31446"><span class="header"><a href="http://www.sparkfun.com/users/59070" class="bold">Philip</a> <span class="wide">|</span> <b>March  8, 2011 at  9:39 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31446">1</span></strong></span><br /></span><div class="body"><p>Just tell people you're an astronaut, job done.</p>
+
+<p>Or maybe, 'We dont sell servers' ;)</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31497"><span class="header"><a href="http://www.sparkfun.com/users/43383" class="bold">dathomar</a> <span class="wide">|</span> <b>March  8, 2011 at  1:04 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31497">1</span></strong></span><br /></span><div class="body"><p>Just to rattle the pot:</p>
+
+<p>"We sell servers!"</p>
+</div></div><div class="comment" id="comment_31498"><img class="avatar" src="https://secure.gravatar.com/avatar/650c24fe3c4ded7f3fe5a7c1a42b6437?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/86584" class="bold">ruZZ</a> <span class="wide">|</span> <b>March  8, 2011 at  1:06 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31498">1</span></strong></span><br /></span><div class="body"><p>They actually kind of do. Eg, the Arduino ethernet shield with the ethernet library is a very easy to get going web server :P </p>
+</div></div><div class="comment" id="comment_31522"><img class="avatar" src="https://secure.gravatar.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/7185" class="bold">Nate</a> <span class="wide">|</span> <b>March  8, 2011 at  2:26 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31522">1</span></strong></span><br /></span><div class="body"><p>Can we please not create fodder? SparkFun doesn't sell servers. :)</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31524"><span class="header"><a href="http://www.sparkfun.com/users/191970" class="bold">EvilGenius121</a> <span class="wide">|</span> <b>March  8, 2011 at  2:38 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31524">2</span></strong></span><br /></span><div class="body"><p>but we're still invited to blow them up on free day, right?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31554"><img class="avatar" src="https://secure.gravatar.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/7185" class="bold">Nate</a> <span class="wide">|</span> <b>March  8, 2011 at  6:09 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31554">1</span></strong></span><br /></span><div class="body"><p>Does the pope... Well yes, of course.</p>
+</div></div></div></div><div class="comment" id="comment_31603"><span class="header"><a href="http://www.sparkfun.com/users/37794" class="bold">AdamTolley</a> <span class="wide">|</span> <b>March  9, 2011 at  9:51 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31603">2</span></strong></span><br /></span><div class="body"><p>Then how do you explain THIS!?!:</p>
+
+<p>http://www.sparkfun.com/products/9474</p>
+
+<p><em>cue dramatic "chipmunk" music</em></p>
+</div></div></div></div></div></div><div class="comment" id="comment_31447"><span class="header"><a href="http://www.sparkfun.com/users/92861" class="bold">dbrunner</a> <span class="wide">|</span> <b>March  8, 2011 at  9:41 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31447">1</span></strong></span><br /></span><div class="body"><p>Although I've recommended SparkFun to dozens and dozens of people, I don't think I've ever summarized it up in less than 10 minutes. For those that understand electronics, that's not too long. For those people that don't, I usually reduce it to: An awesome company that actually interacts with their customers and sells the equivalent to Legos for electronic projects. By the time I say electronics, their eyes have already glazed over and it doesn't really matter what I say. Forget about mentioning open hardware!</p>
+</div></div><div class="comment" id="comment_31450"><span class="header"><a href="http://www.sparkfun.com/users/55736" class="bold">Member55736</a> <span class="wide">|</span> <b>March  8, 2011 at 10:00 AM</b> *<img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31450">1</span></strong></span><br /></span><div class="body"><p>"We do the actual electrical engineering part so you don't have to" :)</p>
+</div></div><div class="comment" id="comment_31457"><span class="header"><a href="http://www.sparkfun.com/users/27199" class="bold">Member27199</a> <span class="wide">|</span> <b>March  8, 2011 at 10:31 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31457">1</span></strong></span><br /></span><div class="body"><p>Its not simple, but i've done it a few times.
+For the most part my speech is somewhat like this, "
+For newbies and young engineers, especially students it will be hard to know all you need and navigate your way around datasheets and complexed engineering designs.
+For some parts, jacking on the wires and turning up the voltage wont work, even though these values are correct.</p>
+
+<p>To get the information you need, the skills you need (tutorials), the tools you need, go to SparkFun.</p>
+
+<p>They'll Get you started. </p>
+
+<p>And when you have designed your first prototype, go to BatchPCB.</p>
+
+<p>They'll get you started.</p>
+
+<ul>
+<li>The best thing since sliced bread (For us beginners, seriously, you are!)"</li>
+</ul>
+</div></div><div class="comment" id="comment_31459"><span class="header"><a href="http://www.sparkfun.com/users/115634" class="bold">Kuy</a> <span class="wide">|</span> <b>March  8, 2011 at 10:40 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31459">1</span></strong></span><br /></span><div class="body"><p><strong>Sparkfun: offering components, service and insight to help hobbyists complete the circuit.</strong></p>
+
+<p>In this case, "complete the circuit" is a metaphor for finishing a project with minimal headaches and for achieving great things at little cost.</p>
+</div></div><div class="comment" id="comment_31462"><img class="avatar" src="https://secure.gravatar.com/avatar/1dafce253c8629ff025a8e3f7191318f?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/30640" class="bold">Madbodger</a> <span class="wide">|</span> <b>March  8, 2011 at 10:48 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31462">1</span></strong></span><br /></span><div class="body"><p>The bit about "get it usable" with the breakout and adapter boards and such hits the nail on the head.  The same goes for filtering components for folks who just need an LED or trimpot and don't know which of the (literally) many thousands of choices would work.  Similarly, parts that are hard to obtain in
+hobbyist quantities, because the vendor only speaks Chinese, or minimum order quantity is 100k, or whatever.  Basically, you
+guys to a lot of the legwork and donkeywork, so we can get what we need to build something that works without duplicating the same frustrating steps hundreds of others would have to as well.  You act as a force multiplier, allowing our efforts to do more, and as a "frustration buffer", which is invaluable.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31523"><img class="avatar" src="https://secure.gravatar.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/7185" class="bold">Nate</a> <span class="wide">|</span> <b>March  8, 2011 at  2:29 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31523">1</span></strong></span><br /></span><div class="body"><p>Excellently said. I look forward to using 'I am a frustration buffer' in conversation someday soon.</p>
+</div></div></div></div><div class="comment" id="comment_31464"><span class="header"><a href="http://www.sparkfun.com/users/42951" class="bold">M</a> <span class="wide">|</span> <b>March  8, 2011 at 10:51 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31464">1</span></strong></span><br /></span><div class="body"><p>Sparkfun removes some of the technical barriers of electrical and software engineering so that inspiration can take hold in a wider community of hobbyists and creators.</p>
+</div></div><div class="comment" id="comment_31469"><img class="avatar" src="https://secure.gravatar.com/avatar/31a24995de6f252f0f461381aa59ee61?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/22150" class="bold">rsp</a> <span class="wide">|</span> <b>March  8, 2011 at 11:08 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31469">1</span></strong></span><br /></span><div class="body"><p>It's not what you sell, it's how it's sold.  There are lots of folks selling electronic components, breakout boards, kits, tools, supplies, etc.  Sure Sparkfun does that, but to me the Sparkfun difference is the "Sharing Ingenuity" attitude.  Most of the people that buy from Sparkfun would love to work there, or at least hang around with the kind of people that work there; that can't be said for Digi-Key or Mouser.  The products you sell are just incidental to what Sparkfun is really doing, which is having some fun and sharing it with their customers.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31476"><span class="header"><a href="http://www.sparkfun.com/users/90583" class="bold">Roger Williams</a> <span class="wide">|</span> <b>March  8, 2011 at 11:28 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31476">1</span></strong></span><br /></span><div class="body"><p>Agreed. Its the website - the community! How many companies have a blog on their home page, with comments?
+I have Sparkfun in my Morning Coffee on Firefox - just to read the latest blog entry.
+I also have TED.com.
+'rsp' hit upon a concept that is expanded upon here:
+http://www.ted.com/talks/simon<em>sinek</em>how<em>great</em>leaders<em>inspire</em>action.html
+I think Sparkfun fits in there as well!</p>
+</div></div></div></div><div class="comment" id="comment_31474"><img class="avatar" src="https://secure.gravatar.com/avatar/a8a1762ad631500f5b620a027dda4591?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/78977" class="bold">LJC41</a> <span class="wide">|</span> <b>March  8, 2011 at 11:15 AM</b> *<img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31474">1</span></strong></span><br /></span><div class="body"><p>Now I know why no one ever wants any of my cookies....... ;p</p>
+</div></div><div class="comment" id="comment_31475"><span class="header"><a href="http://www.sparkfun.com/users/161836" class="bold">straylight</a> <span class="wide">|</span> <b>March  8, 2011 at 11:17 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31475">1</span></strong></span><br /></span><div class="body"><p>Sparkfun: we sell electronic parts.</p>
+
+<p>how hard is it to say what you do?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31617"><img class="avatar" src="https://secure.gravatar.com/avatar/1dafce253c8629ff025a8e3f7191318f?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/30640" class="bold">Madbodger</a> <span class="wide">|</span> <b>March  9, 2011 at 11:18 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31617">1</span></strong></span><br /></span><div class="body"><p>That may be what they /do/, but it is not what they /are/, at least to me.  Lots of places sell electronic parts.  But SparkFun is special.  Instead of "here are a bunch of things you can buy", they
+add their own insight, and let us add ours as well.  So their
+message is more "isn't this cool?", "imagine what you could do with this!", "look what these people came up with!", and (implicitly, but importantly) "isn't this fun?"</p>
+</div></div></div></div><div class="comment" id="comment_31477"><span class="header"><a href="http://www.sparkfun.com/users/91674" class="bold">b33n</a> <span class="wide">|</span> <b>March  8, 2011 at 11:31 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31477">1</span></strong></span><br /></span><div class="body"><p>I tell people that I "tinker", and that's what you guys help me do, "Tinker" with things. </p>
+</div></div><div class="comment" id="comment_31484"><img class="avatar" src="https://secure.gravatar.com/avatar/fab5b93735032637677b34853a536ba6?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/140610" class="bold">cjenkins</a> <span class="wide">|</span> <b>March  8, 2011 at 12:09 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31484">1</span></strong></span><br /></span><div class="body"><p>Sparkfun is the only electronics store where I can see more than one (or at least one!) picture of what I'm buying, dimensions and with a good description of the item. Also, you can add what we can call "social electronic shopping", and that include other people feedback (I really like the comment section), open designs, to share proyects, etc. Actually, Sparkfun can inprove in that direction :D And a 4 positions DIP switch please :D (Only 8 positions is avalaible :( ) jeje</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31494"><img class="avatar" src="https://secure.gravatar.com/avatar/b3797a17756c85eed30fdf52ee70daa5?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/27675" class="bold">brennen</a> <span class="wide">|</span> <b>March  8, 2011 at 12:58 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31494">1</span></strong></span><br /></span><div class="body"><blockquote>
+  <p>Actually, Sparkfun can improve in that direction</p>
+</blockquote>
+
+<p>...let's just say we've got some things in the works.</p>
+</div></div></div></div><div class="comment" id="comment_31487"><span class="header"><a href="http://www.sparkfun.com/users/89056" class="bold">Renee</a> <span class="wide">|</span> <b>March  8, 2011 at 12:27 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31487">1</span></strong></span><br /></span><div class="body"><p>I think it was a Google talk where Nate said something along the lines of how Sparkfun is like Home Depot.</p>
+
+<p>You don't really go to Home Depot to buy a bathroom, but they do have everything you need and the experts to help you if you want to make your own bathroom.</p>
+
+<p>So I usually follow that up with something like you would go to Radio Shack to buy and iPod but you would go to Sparkfun to buy all of the parts to make your own and learn how it works in the process.</p>
+</div></div><div class="comment" id="comment_31503"><img class="avatar" src="https://secure.gravatar.com/avatar/b0e3656d5d56cafdb5c41cf2ad24511d?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/42370" class="bold">DaveEaton</a> <span class="wide">|</span> <b>March  8, 2011 at  1:16 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31503">1</span></strong></span><br /></span><div class="body"><p>It wouldn't work for an elevator speech, but generally, when one of my friends who likes to build stuff tells me they want to make something (like a yogurt maker that they can control over the internet...no, really) we find a computer, I say, "Dude, check this #$@$ out!" and we go to the website. If they are the type of person that needs anything more than to be left alone to surf, then I show them how to find your tutorials.</p>
+</div></div><div class="comment" id="comment_31510"><span class="header"><a href="http://www.sparkfun.com/users/141417" class="bold">Manwolf</a> <span class="wide">|</span> <b>March  8, 2011 at  1:32 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31510">1</span></strong></span><br /></span><div class="body"><p>I could tell you, but then I would have to kill you.</p>
+
+<p>I came for an Arduino Mega and stayed because of the little Red boxes.  I order parts just for the boxes.  I hope to complete my collection soon.</p>
+</div></div><div class="comment" id="comment_31512"><span class="header"><a href="http://www.sparkfun.com/users/28534" class="bold">Skimask</a> <span class="wide">|</span> <b>March  8, 2011 at  1:39 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31512">1</span></strong></span><br /></span><div class="body"><p>Phase 1: Collect Parts</p>
+
+<p>Phase 2: ???</p>
+
+<p>Phase 3: Profit</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31515"><span class="header"><a href="http://www.sparkfun.com/users/91674" class="bold">b33n</a> <span class="wide">|</span> <b>March  8, 2011 at  2:01 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31515">1</span></strong></span><br /></span><div class="body"><p>^^^
+LOL</p>
+</div></div><div class="comment" id="comment_31618"><img class="avatar" src="https://secure.gravatar.com/avatar/1dafce253c8629ff025a8e3f7191318f?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/30640" class="bold">Madbodger</a> <span class="wide">|</span> <b>March  9, 2011 at 11:30 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31618">1</span></strong></span><br /></span><div class="body"><p>You can find an elaboration on Phase 2 <a href="http://www.sparkfun.com/tutorials">here</a></p>
+</div></div></div></div><div class="comment" id="comment_31516"><img class="avatar" src="https://secure.gravatar.com/avatar/9a035e7a407c051d9bb92ec5a10a45f2?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/99201" class="bold">Marshall</a> <span class="wide">|</span> <b>March  8, 2011 at  2:02 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31516">1</span></strong></span><br /></span><div class="body"><p>SparkFun is a parts supplier for amateur electronics projects.  That's what I tell folks.</p>
+</div></div><div class="comment" id="comment_31519"><span class="header"><a href="http://www.sparkfun.com/users/100247" class="bold">ThinkerT</a> <span class="wide">|</span> <b>March  8, 2011 at  2:22 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31519">1</span></strong></span><br /></span><div class="body"><p>It would appear that this sentence: 
+We will never to try to out-DigiKey DigiKey</p>
+
+<p>has one too many to's!</p>
+</div></div><div class="comment" id="comment_31532"><span class="header"><a href="http://www.sparkfun.com/users/30698" class="bold">sfx</a> <span class="wide">|</span> <b>March  8, 2011 at  3:42 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31532">1</span></strong></span><br /></span><div class="body"><p>"Unfortunately, no one can be told what Sparkfun is. You have to see it for yourself. This is your last chance. After this, there is no turning back. You take the blue box, the story ends, you wake up in your bed and believe whatever you want to believe. You take the red box, you stay in Wonderland, and I show you how deep the rabbit hole goes." </p>
+
+<p>:)</p>
+</div></div><div class="comment" id="comment_31537"><span class="header"><a href="http://www.sparkfun.com/users/54159" class="bold">SteveS</a> <span class="wide">|</span> <b>March  8, 2011 at  3:58 PM</b> *<img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31537">1</span></strong></span><br /></span><div class="body"><p>"Sparkfun makes basic electronics accessible to beginners and complex electronics achievable for experienced hobbyists alike by innovating and truly value adding in a rapidly changing world" </p>
+
+<p>or</p>
+
+<p>"For electronics makers we make the tough things simple for beginners, the complex things easy for everyone and share the fun in the discoveries our customers make" </p>
+
+<p>Either one of those needs some (a few) product words to follow maybe... </p>
+
+<p>S   </p>
+</div></div><div class="comment" id="comment_31545"><span class="header"><a href="http://www.sparkfun.com/users/131294" class="bold">mrmark</a> <span class="wide">|</span> <b>March  8, 2011 at  5:16 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31545">1</span></strong></span><br /></span><div class="body"><p>you say you will never try to out digikey, digikey.
+then could you provide links an all your product pages for what parts there are and where to get them? or at least come up whith a list for where to get a "green smd led" or a 2.2nf smd cap, used on the itg 3200 breakout.</p>
+
+<p>thanks, keep up the good work!</p>
+</div></div><div class="comment" id="comment_31548"><span class="header"><a href="http://www.sparkfun.com/users/49568" class="bold">Chip Geek</a> <span class="wide">|</span> <b>March  8, 2011 at  5:45 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31548">1</span></strong></span><br /></span><div class="body"><p>Sparkfun is the modern equivalent of Heathkit.  Or it is the company Heathkit should have evolved into if it wasn't stuck on selling vacuum tubes.  Note: This explanation is only useful for old codgers like me that are half a century old.  Plus or minus. :-)</p>
+
+<p>Seriously, Sparkfun makes high tech design projects easier, simpler and faster to get done.  "Shortcuts" summarizes it nicely.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31661"><span class="header"><a href="http://www.sparkfun.com/users/78927" class="bold">bbotany</a> <span class="wide">|</span> <b>March  9, 2011 at 10:18 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31661">1</span></strong></span><br /></span><div class="body"><p>Sorry - not enough kits, or detailed and specific enough directions to be a Heathkit. Unless Heathkit was reinvented buffet-style.</p>
+
+<p>This is from someone who has wired his Heathkit code oscillator and key to a chumby hackerboard, and that to an AVR, and that to nearly a handful of opto-isolators, and that to the remote control for a half dozen outlets around the house... and thus I can, among other things, ask in Morse for my coffee to be ready at a particular time in the morning. I like buffet style!</p>
+
+<blockquote>
+  <p>Sparkfun: The Electronic Buffet and Snack Bar!</p>
+
+<pre> Happy hour Jan 7th!
+</pre>
+  
+  <p>(9am to 11am, or when the credit-keg twitters empty.)</p>
+</blockquote>
+</div></div></div></div><div class="comment" id="comment_31551"><span class="header"><a href="http://www.sparkfun.com/users/184114" class="bold">7Ronin</a> <span class="wide">|</span> <b>March  8, 2011 at  5:59 PM</b> *<img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31551">1</span></strong></span><br /></span><div class="body"><p>Deleted.  Someone beat me to the office space quotes.</p>
+</div></div><div class="comment" id="comment_31555"><span class="header"><a href="http://www.sparkfun.com/users/182915" class="bold">Omaga Sohe</a> <span class="wide">|</span> <b>March  8, 2011 at  6:29 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31555">1</span></strong></span><br /></span><div class="body"><p>I just reciently found this treasure chest of awesomenes.</p>
+
+<p>Being a electronics technecian, I lose sight of the fun of building a small device that turns on a led when the temp gets above 50 deg. Sparkfun just makes that seem fun agian.</p>
+
+<p>My version of you speach. </p>
+
+<p>Sparkfun teaches people that building your own electronics is easy, rewarding, and most importantly fun by giving people all the basic components, information, and help that they need to start they're own projects. </p>
+</div></div><div class="comment" id="comment_31552"><span class="header"><a href="http://www.sparkfun.com/users/188094" class="bold">Bill9603</a> <span class="wide">|</span> <b>March  8, 2011 at  6:03 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31552">1</span></strong></span><br /></span><div class="body"><p><a href="http://www.sparkfun.com/tutorials/42">Sparkfun made sparks fun!</a></p>
+</div></div><div class="comment" id="comment_31557"><img class="avatar" src="https://secure.gravatar.com/avatar/62b0fa9675701cfb8ea8b1285126cc2e?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/88029" class="bold">sgrace</a> <span class="wide">|</span> <b>March  8, 2011 at  6:46 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31557">1</span></strong></span><br /></span><div class="body"><p>Sparkfun - Where you can learn to be an electrical engineer.</p>
+</div></div><div class="comment" id="comment_31562"><span class="header"><a href="http://www.sparkfun.com/users/46420" class="bold">Hamilton Brad</a> <span class="wide">|</span> <b>March  8, 2011 at  7:30 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31562">1</span></strong></span><br /></span><div class="body"><p>If you wanted to become a great painter, you would need supplies like canvas, paint, brushes; maybe some lessons to teach you the basics, and something or somewhere to inspire you.</p>
+
+<p>If you were a car guy, you would probably have a car that you can tinker with, a junk yard and a parts store to go to, and would seek out other car people to hang out with, share tips, info and show your completed projects to (usually in a parking lot at night).</p>
+
+<p>If data sheets and computer chips excite you though, Sparkfun is where electronics geeks go to learn, get parts, share ideas, get help and be part of a community.</p>
+</div></div><div class="comment" id="comment_31563"><span class="header"><a href="http://www.sparkfun.com/users/87356" class="bold">Davidjh</a> <span class="wide">|</span> <b>March  8, 2011 at  7:42 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31563">1</span></strong></span><br /></span><div class="body"><p>There are so many good thoughts and ideas posted already, I think I'll just add what Sparkfun means to me--how I describe it: "Sparkfun is the company that gives EVERYBODY the chance to solve their electronic problems, be creative with electronics in ways they didn't think they could be, and gives everybody with the passion and desire the tools they need to create and have fun.  And they have fun doing so.  And they make it fun for me to do so, too.  Sparkfun is the best friend in electronics eveybody wishes they had".  I think if I had to pick one single line that best describes Sparkfun, that last line would be it. :)</p>
+</div></div><div class="comment" id="comment_31568"><span class="header"><a href="http://www.sparkfun.com/users/87526" class="bold">marxgen</a> <span class="wide">|</span> <b>March  8, 2011 at  8:51 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31568">1</span></strong></span><br /></span><div class="body"><p>Sparkfun, engineering for the masses.</p>
+</div></div><div class="comment" id="comment_31569"><span class="header"><a href="http://www.sparkfun.com/users/66675" class="bold">rwinscot</a> <span class="wide">|</span> <b>March  8, 2011 at  9:00 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31569">1</span></strong></span><br /></span><div class="body"><p>SparkFun you rule me.
+You hack and drive our passion.
+Blossom every mind.</p>
+</div></div><div class="comment" id="comment_31574"><span class="header"><a href="http://www.sparkfun.com/users/45458" class="bold">cipher</a> <span class="wide">|</span> <b>March  8, 2011 at 10:29 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31574">1</span></strong></span><br /></span><div class="body"><p>less spark, more fun</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31627"><img class="avatar" src="https://secure.gravatar.com/avatar/c3fe05edad111df1e6c53bb654700aef?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/135081" class="bold">BlackJester</a> <span class="wide">|</span> <b>March  9, 2011 at  1:14 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31627">1</span></strong></span><br /></span><div class="body"><p>Unless, of course, you WANT sparks.  (A la Tesla Coil).</p>
+</div></div></div></div><div class="comment" id="comment_31576"><span class="header"><a href="http://www.sparkfun.com/users/5951" class="bold">DomCoElectronics</a> <span class="wide">|</span> <b>March  8, 2011 at 10:46 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31576">1</span></strong></span><br /></span><div class="body"><p>In short you guys "Spark My Creativity"  You guys put a twist on electronics I might not have thought of trying.  Perfect example would be your stenciling video.  I never thought of doing a kapton stencil  I've always been ordering metal ones.</p>
+
+<p>P.S.  I have the same problem.  I'm a Reverse Engineer in an R&amp;D lab in my day job.  Try explaining that to people.</p>
+</div></div><div class="comment" id="comment_31588"><span class="header"><a href="http://www.sparkfun.com/users/149881" class="bold">biggles</a> <span class="wide">|</span> <b>March  9, 2011 at  6:30 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31588">1</span></strong></span><br /></span><div class="body"><p>Nate, you GHTs are definitely in the shortcut business. Just don't go too far so that it veckors TOO easy to cobble together a cool gadget or robot or whatever. The balance between "challenging " and "possible" is perfect right now, I think.</p>
+
+<p>Here's where the short-cutting falls short, though: ENCLOSURES! I'm tired of stuffing my creations in Altoid tins, cigar boxes or in the red SparkFun packaging material. The offerings from enclosure companies typically look rather 1985, so I wish there was a way to create exactly the box I need with any dimensions, any-shape openings and holes and what not. EAGLE  for boxes, I guess. </p>
+
+<p>Anyway - good work, SparkFun! Back to roaming the real-world stores for a suitable box...</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31589"><span class="header"><a href="http://www.sparkfun.com/users/149881" class="bold">biggles</a> <span class="wide">|</span> <b>March  9, 2011 at  6:32 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31589">1</span></strong></span><br /></span><div class="body"><p>GHTs? My iPhone got carried away w the spell-checking ... meant to say "you guys..."</p>
+</div></div><div class="comment" id="comment_31619"><img class="avatar" src="https://secure.gravatar.com/avatar/1dafce253c8629ff025a8e3f7191318f?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/30640" class="bold">Madbodger</a> <span class="wide">|</span> <b>March  9, 2011 at 11:41 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31619">1</span></strong></span><br /></span><div class="body"><p>You have an excellent idea there.  SparkFun already has an alliance with Ponoko.  And a parametric enclosure design program wouldn't be too hard to write.  Have a few basic models and options (Arduino holes, openings for LCD mounting, switches, etc.), let the user
+specify the size, emit a ready-to-go cutting file or (better yet)
+let the user specify the material, compute the cost, and submit the
+order all in one transaction!</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31628"><img class="avatar" src="https://secure.gravatar.com/avatar/c3fe05edad111df1e6c53bb654700aef?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/135081" class="bold">BlackJester</a> <span class="wide">|</span> <b>March  9, 2011 at  1:19 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31628">1</span></strong></span><br /></span><div class="body"><p>yes, yes, YES!  </p>
+</div></div></div></div></div></div><div class="comment" id="comment_31595"><img class="avatar" src="https://secure.gravatar.com/avatar/51301603f62b97a6fecdeeb3a5d41eca?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/38646" class="bold">Adam Davis</a> <span class="wide">|</span> <b>March  9, 2011 at  7:49 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31595">1</span></strong></span><br /></span><div class="body"><p>You know how you can build anything with Legos?  Well, you can build electronic things in the same way.  We sell the parts and pieces that make building an electronic thing as easy as building a Lego thing.</p>
+
+<p>While our customers could build things that already exist - like a furnace thermostat, or a remote control toy, or a car starter, generally our customers build things they can't get elsewhere.</p>
+
+<p>One of our customers tracks his base jumping - basically parachuting off cliffs - with electronics that tell him how fast he's going, how hard he landed, and his path as he floats through the canyons.</p>
+
+<p>Another customer built a treasure box for his fiance that would only open when she got close to their vacation destination.</p>
+
+<p>Some of our customers build lights and sensors into their clothing and costumes that react to how they move and the sounds around them.</p>
+
+<p>We make electronics as easy to use as Legos, so our customers can build exceptional objects.</p>
+</div></div><div class="comment" id="comment_31596"><img class="avatar" src="https://secure.gravatar.com/avatar/a8a1762ad631500f5b620a027dda4591?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/78977" class="bold">LJC41</a> <span class="wide">|</span> <b>March  9, 2011 at  7:55 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31596">1</span></strong></span><br /></span><div class="body"><p>How about "Here at Sparkfun, we package a little electronic love in every red box we send out!"</p>
+</div></div><div class="comment" id="comment_31605"><span class="header"><a href="http://www.sparkfun.com/users/1727" class="bold">elproducts</a> <span class="wide">|</span> <b>March  9, 2011 at 10:04 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31605">1</span></strong></span><br /></span><div class="body"><p>I've struggled with this type of pitch for years since I write books on Embedded electronics (www.elproducts.com).People would ask what kind of books do you write. I tried the robotics comparison, ipod comparison...nothing worked. They weren't my target audience so I had to do it much simpler. I finally settled on this.
+"I write and sell books that teach kids, adults, students or anybody interested, how to design their own electronic gadgets"</p>
+
+<p>It seems to work well.</p>
+
+<p>Sparkfun isn't much different.
+"You create and sell the components and information that kids, adults, students and anybody interested need to build their own electronic gadgets." </p>
+
+<p>Now you just need to add my books ;-)</p>
+</div></div><div class="comment" id="comment_31610"><span class="header"><a href="http://www.sparkfun.com/users/122640" class="bold">Member122640</a> <span class="wide">|</span> <b>March  9, 2011 at 10:25 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31610">1</span></strong></span><br /></span><div class="body"><p>We at Sparkfun sells electronic and electromechanical produces that fulfills the desired need of consumer and allow our customers inner Turing machine to get operational. We are technology experts. Our motto "Sell everything that blinks"</p>
+</div></div><div class="comment" id="comment_31616"><span class="header"><a href="http://www.sparkfun.com/users/116015" class="bold">FLAKElabs</a> <span class="wide">|</span> <b>March  9, 2011 at 11:09 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31616">1</span></strong></span><br /></span><div class="body"><p>Make cool stuff. Make cool stuff cooler. Help people make cool stuff.</p>
+</div></div><div class="comment" id="comment_31620"><span class="header"><a href="http://www.sparkfun.com/users/65884" class="bold">aboe</a> <span class="wide">|</span> <b>March  9, 2011 at 11:47 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31620">1</span></strong></span><br /></span><div class="body"><p>Nate, not only do you create shortcuts, you also, break down walls, build dialogue, teach, promote, connect, enable, and develop strategies that put electronic prototyping into the hands of anyone with an interest. You make a technical trade that has seemed, out of reach of the average person, easier to enter into and be part of. </p>
+</div></div><div class="comment" id="comment_31630"><span class="header"><a href="http://www.sparkfun.com/users/131876" class="bold">longshot</a> <span class="wide">|</span> <b>March  9, 2011 at  1:43 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31630">1</span></strong></span><br /></span><div class="body"><p>Sparkfun is part of the Electronics Reformation: we make electronics accessible to everyone, not just to electrical engineers.  </p>
+
+<p>Stunning analogy: </p>
+
+<p>If digikey sells sand, then Sparkfun sells bricks. Of all shapes and sizes.  From them, our customers build houses, sculptures, doghouses, castles, outhouses. Anything!</p>
+
+<p>hmmn...perhaps "brick" has an unfortunate connotation, so another analogy might be better.  :)</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31652"><img class="avatar" src="https://secure.gravatar.com/avatar/50e0e179c9466a614c80dfb29e200b6d?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/74612" class="bold">Pearce</a> <span class="wide">|</span> <b>March  9, 2011 at  7:24 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31652">1</span></strong></span><br /></span><div class="body"><p>Maybe the molds and shovels to make sand castles...I miss the beach :(</p>
+</div></div></div></div><div class="comment" id="comment_31633"><span class="header"><a href="http://www.sparkfun.com/users/43474" class="bold">North Alabama PC</a> <span class="wide">|</span> <b>March  9, 2011 at  2:16 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31633">1</span></strong></span><br /></span><div class="body"><p>what gives? no page update today?</p>
+</div></div><div class="comment" id="comment_31640"><span class="header"><a href="http://www.sparkfun.com/users/8128" class="bold">tonyo</a> <span class="wide">|</span> <b>March  9, 2011 at  3:54 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31640">1</span></strong></span><br /></span><div class="body"><p>OK, here's your elevator pitch:</p>
+
+<p>We sell electronic parts to beginners.</p>
+
+<p>80% of what they need they can buy from us.</p>
+
+<p>The other 20% they can get from Mouser and Digikey :-)</p>
+</div></div><div class="comment" id="comment_31658"><span class="header"><a href="http://www.sparkfun.com/users/47334" class="bold">c47334</a> <span class="wide">|</span> <b>March  9, 2011 at  9:59 PM</b> *<img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31658">1</span></strong></span><br /></span><div class="body"><p>Mix and match as appropriate:</p>
+
+<p>"SparkFun makes it easy to build custom electronics."</p>
+
+<p>"We provide tools, materials, and instruction."</p>
+
+<p>"We also sponsor fun events to build enthusiasm and innovation."</p>
+
+<p>"We cater to novices and busy professionals in (NUMBER OF) countries."</p>
+
+<p>"You should come visit us at (EVENT) next month. Bring the kids. It'll be fun! I'll hook you up with free tickets. Here's my card. Check out the videos on our website!"</p>
+
+<p>"Check this out! (HOLD UP PHONE/TABLET) Here's a photo of our equipment being launched into space by a customer. Here's a video of a killer robot created by a high school student. Here's a photo of a custom built industrial whatchamacallit that does goodthing."</p>
+
+<p>"Unlike massive industrial suppliers, we make it easy and personable."</p>
+
+<p>"We sell starter kits and building blocks."</p>
+
+<p>"Our community of customers provides product reviews on our website."</p>
+
+<p>"We have an online forum where our staff and customers show off and help each other out."</p>
+</div></div><div class="comment" id="comment_31663"><span class="header"><a href="http://www.sparkfun.com/users/19662" class="bold">PeterG</a> <span class="wide">|</span> <b>March  9, 2011 at 10:39 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31663">1</span></strong></span><br /></span><div class="body"><p>I always tell people that "SparkFun is my favorite source for Electronic Widgets." </p>
+
+<p>Often, that yields a quizzical look and the question "Like chips and stuff?"</p>
+
+<p>To which I usually answer, "Yes, but with heavy emphasis on the <strong>and stuff</strong>."</p>
+
+<p>This usually begets a round of "<em>Ah</em>, I see" nodding from folks who don't really understand (and don't really care to.) For those who do want to know more, the next stop is usually an '5 minute elevator'-like speech about how SparkFun is more than simply a parts supplier. There's the documentation, the custom Eagle parts, the breakout boards, the sample projects, the tie-ins with Ponoko and circuit board houses... Pretty much all the resources you need to turn parts into working projects.</p>
+
+<p>Peter. </p>
+</div></div><div class="comment" id="comment_31671"><img class="avatar" src="https://secure.gravatar.com/avatar/fa72209d9e9f90a00ee85f311f3775e8?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/164791" class="bold">RobotConjurer</a> <span class="wide">|</span> <b>March 10, 2011 at 12:42 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31671">1</span></strong></span><br /></span><div class="body"><p>In my applications your involvement goes beyond simply "selling shortcuts". Although certainly a part of what you do for my projects (and probably other enthusiasts), it is far from the whole picture. SparkFun approaches issues with a "starving student" and/or a user group like mentality. You provide reasonably priced prospective project components that are difficult, impossible or simply non-economical for an individual hobbyist to create. Keep creating.</p>
+</div></div></div>
+<br />
+</div>
+
+
+<h2 class="collapsible red">Past News Posts</h2>
+<div class="past-news collapsible red">
+  <div class="past-news-item clearfix">
+  <p class="image">
+          <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_th_FreeDay-blog-S.jpg" />
+      </p>
+  <h3>
+    <a href="http://www.sparkfun.com/news/563">Free Day Funds Expiring!</a>
+  </h3>
+  <p class="byline">
+    by <a href="http://www.sparkfun.com/users/52714">Emcee Grady</a> |
+    March 07, 2011 |
+    <em><a href="http://www.sparkfun.com/news/563#comments">37 comments</a></em>
+  </p>
+  <p>
+    Remember, your Free Day funds are expiring at the end of this week!<br />
+    <em><a href="http://www.sparkfun.com/news/563">more &raquo;</a></em>
+  </p>
+</div>
+<div class="past-news-item clearfix">
+  <p class="image">
+          <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_sip.jpg" />
+      </p>
+  <h3>
+    <a href="http://www.sparkfun.com/news/564">Arduino Controlled Sip-and-Puff</a>
+  </h3>
+  <p class="byline">
+    by <a href="http://www.sparkfun.com/users/52714">Emcee Grady</a> |
+    March 04, 2011 |
+    <em><a href="http://www.sparkfun.com/news/564#comments">23 comments</a></em>
+  </p>
+  <p>
+    Build your own Arduino Controlled Sip-and-Puff switch.<br />
+    <em><a href="http://www.sparkfun.com/news/564">more &raquo;</a></em>
+  </p>
+</div>
+<div class="past-news-item clearfix">
+  <p class="image">
+          <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_nejisaurus_calacter.jpg" />
+      </p>
+  <h3>
+    <a href="http://www.sparkfun.com/news/562">A gripping Thursday New Product Post!</a>
+  </h3>
+  <p class="byline">
+    by <a href="http://www.sparkfun.com/users/93309">RobertC.</a> |
+    March 03, 2011 |
+    <em><a href="http://www.sparkfun.com/news/562#comments">15 comments</a></em>
+  </p>
+  <p>
+    Hold on tight, we have some really cool products that just might grab your attention.<br />
+    <em><a href="http://www.sparkfun.com/news/562">more &raquo;</a></em>
+  </p>
+</div>
+<div class="past-news-item clearfix">
+  <p class="image">
+          <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/th_IMG_2739_i_ma.jpg" />
+      </p>
+  <h3>
+    <a href="http://www.sparkfun.com/news/561">Solder Stenciling Video</a>
+  </h3>
+  <p class="byline">
+    by <a href="http://www.sparkfun.com/users/52714">Emcee Grady</a> |
+    March 02, 2011 |
+    <em><a href="http://www.sparkfun.com/news/561#comments">27 comments</a></em>
+  </p>
+  <p>
+    So you want to learn to stencil?<br />
+    <em><a href="http://www.sparkfun.com/news/561">more &raquo;</a></em>
+  </p>
+</div>
+
+  <p class="fr padfiveten"><a href="http://www.sparkfun.com/news">See all past news &raquo;</a></p>
+</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      SparkFun Electronics <a href="http://www.sparkfun.com/news/300">&reg;</a>      <span class="wide">|</span>
+      <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6175+Longbow+Dr,+Boulder,+CO+80301&sll=40.006234,-105.224915&sspn=0.012113,0.020192&ie=UTF8&hq=&hnear=6175+Longbow+Dr,+Boulder,+Colorado+80301&t=h&z=16" target="_blank">Boulder, Colorado</a>
+      <span class="wide">|</span>
+      <a href="http://www.sparkfun.com/static/customer_service">Customer Service</a>
+    </div>
+        <script type="text/javascript" src="/js/cookiejar.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/sparkfun.js?sparkrev=1299616818"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript">function autoFireLightbox(){setTimeout(function(){SFE.stab_eyes()},250)}Event.observe(window,"load",autoFireLightbox,false);</script>
+    <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3404365-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

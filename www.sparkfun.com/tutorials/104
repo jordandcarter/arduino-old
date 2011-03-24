@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="google-site-verification" content="XUb2UlchrvwCWWyhXksBlqQy1STYtTEN_M0-tgQRHRs" />
+    <meta name="google-site-verification" content="gRUAvzBJ_533b-AGTmldOJfByU6TkojfUbWovB2wKJo" />
+    <title>Beginning Embedded Electronics - 4 - SparkFun Electronics</title>
+    <link rel="stylesheet" href="/css/screen.css?rev=1299616818" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css?rev=1299616818" type="text/css" media="print" />
+    <link rel="stylesheet" href="/css/lightbox.css?rev=1299616818" type="text/css" media="screen" />
+    <!-- IE is the bane of my existence. -->
+    <!--[if IE]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+    <link rel="feed" type="application/rss+xml" title="News" href="http://www.sparkfun.com/feeds/news/" />
+    <link rel="alternate" type="application/rss+xml" title="Products" href="http://www.sparkfun.com/feeds/products/" />
+    <link rel="alternate" type="application/rss+xml" title="Product Changes" href="http://www.sparkfun.com/feeds/changes/" />
+    <link rel="alternate" type="application/rss+xml" title="Comments" href="http://www.sparkfun.com/feeds/comments/" />
+    <link rel="alternate" type="application/rss+xml" title="Videos" href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&v=2&orderby=published" />
+    <link rel="apple-touch-icon" href="/fanboy.png" />
+    <link rev="canonical" type="text/html" href="http://sprkfn.com/t104" /> 
+    <script type="text/javascript">
+      var HTTP_SERVER = 'http://www.sparkfun.com',
+          HTTPS_SERVER = 'https://www.sparkfun.com',
+          HTTP_STATIC = 'http://dlnmh9ip6v2uc.cloudfront.net',
+          FULL_LAYOUT = true,
+          AUTHENTICATED = false;
+    </script>
+    <script type="text/javascript" src="/js/prototype.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <!-- turns out  that IE7 chokes if you don't load these separately. -->
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="/js/effects.js"></script>
+    <script type="text/javascript" src="/js/builder.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/lightbox.js?rev=1299616818"></script>
+  </head>
+  <body>
+    <div id="airlock" class="clearfix">
+
+      
+  <script>BANNER_ID = 61</script>
+
+<div id="header">
+  <a href="http://www.sparkfun.com/"><img width=188 height=105 class="logo" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/logo.gif" title="SparkFun Electronics" alt="SparkFun Electronics" /></a>
+  <a href="#products_menu" class="skip">Skip to menu</a>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <div id="banner-nav" style="display: none;">
+<img id="banner-goprev" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_left.png" height=23 width=23 />
+<img id="banner-all" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_all.png" height=23 width=23 />
+<img id="banner-gonext" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_right.png" height=23 width=23 />
+</div>
+<a id="banner-link" href="http://www.sparkfun.com/static/about"><img width=978 height=105 id="banner" src="http://dlnmh9ip6v2uc.cloudfront.net/images/banners/SFE03.0003.WhatIsThisPlace-04.jpg" alt="" /></a>
+  <div id="header-menu">
+    <ul>
+      <li id="header_menu_index"><a href="http://www.sparkfun.com/index">Home</a></li>
+      <li id="header_menu_cservice"><a href="http://www.sparkfun.com/static/customer_service">Customer Service</a></li>
+      <li id="header_menu_tutorials" class="active"><a href="http://www.sparkfun.com/tutorials">Tutorials</a></li>
+      <li id="header_menu_forum"><a href="http://forum.sparkfun.com">Forum</a></li>
+      <li id="header_menu_distributors"><a href="http://www.sparkfun.com/distributors">Distributors</a></li>
+      <li id="header_menu_about"><a href="http://www.sparkfun.com/static/about">About Us</a></li>
+      <li id="header_menu_contact" class="last"><a href="http://www.sparkfun.com/static/contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="left">
+        <h2 class="collapsible" id="search_menu"><span class="arrow"></span>Search</h2>
+        <form class="collapsible search" style="display: block" action="http://www.sparkfun.com/search/results" id="search_form" method="get">
+  <input id="search_field" name="term" type="text" value="" />
+  <input type="submit" value="Go" class="button" />
+  <br />
+  <input id="products_search" type="radio" name="what" value="products" checked />
+  <label for="products_search">Products</label>
+  <br />
+  <input id="news_search" type="radio" name="what" value="news" />
+  <label for="news_search">News</label>
+  <br />
+  <input id="tutorials_search" type="radio" name="what" value="tutorials" />
+  <label for="tutorials_search">Tutorials</label>
+  <br />
+  <input id="comments_search" type="radio" name="what" value="comments" />
+  <label for="comments_search">Comments</label>
+</form>
+        <br />
+
+        <h2 id="products_menu" class="collapsible"><span class="arrow"></span>Products</h2>
+        
+<ul id="category_menu_list" class="collapsible" style="display: block">
+  <li id="menu_category_new_products"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/new_products">New Products</a></li>
+  <li id="menu_category_top"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/top">Top Sellers</a></li>
+  <li id="menu_category_featured"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/featured">Staff Picks</a></li>
+  <li id="menu_category_gift_certificates"><span class="arrow"></span><a href="https://www.sparkfun.com/gift_certificates">Gift Certificates</a></li>
+  <li><hr /></li>
+  <li id="menu_category_176"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/176">Books</a></li><li id="menu_category_20"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/20">Breakout Boards</a></li><li id="menu_category_70"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/70">Cables</a><ul style="display:none;"><li id="menu_category_140"><a href="http://www.sparkfun.com/categories/140">Audio</a></li><li id="menu_category_150"><a href="http://www.sparkfun.com/categories/150">Ethernet</a></li><li id="menu_category_72"><a href="http://www.sparkfun.com/categories/72">Hook Up</a></li><li id="menu_category_75"><a href="http://www.sparkfun.com/categories/75">Parallel</a></li><li id="menu_category_74"><a href="http://www.sparkfun.com/categories/74">Serial</a></li><li id="menu_category_71"><a href="http://www.sparkfun.com/categories/71">USB</a></li></ul></li><li id="menu_category_66"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/66">Cellular</a><ul style="display:none;"><li id="menu_category_67"><a href="http://www.sparkfun.com/categories/67">Antennas</a></li><li id="menu_category_69"><a href="http://www.sparkfun.com/categories/69">Eval Boards</a></li><li id="menu_category_68"><a href="http://www.sparkfun.com/categories/68">Modules</a></li></ul></li><li id="menu_category_154"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/154">Classes</a></li><li id="menu_category_51"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/51">Components</a><ul style="display:none;"><li id="menu_category_87"><a href="http://www.sparkfun.com/categories/87">ARM Microcontrollers</a></li><li id="menu_category_21"><a href="http://www.sparkfun.com/categories/21">AVR Microcontrollers</a></li><li id="menu_category_145"><a href="http://www.sparkfun.com/categories/145">Buttons/Switches</a></li><li id="menu_category_60"><a href="http://www.sparkfun.com/categories/60">General</a></li><li id="menu_category_90"><a href="http://www.sparkfun.com/categories/90">General ICs</a></li><li id="menu_category_89"><a href="http://www.sparkfun.com/categories/89">LEDs</a><ul><li id="menu_category_173"><a href="http://www.sparkfun.com/categories/173">10mm</a></li><li id="menu_category_171"><a href="http://www.sparkfun.com/categories/171">3mm</a></li><li id="menu_category_172"><a href="http://www.sparkfun.com/categories/172">5mm</a></li><li id="menu_category_170"><a href="http://www.sparkfun.com/categories/170">7-Segment</a></li><li id="menu_category_175"><a href="http://www.sparkfun.com/categories/175">Other</a></li><li id="menu_category_174"><a href="http://www.sparkfun.com/categories/174">SMD</a></li></ul></li><li id="menu_category_88"><a href="http://www.sparkfun.com/categories/88">Oscillators</a></li><li id="menu_category_22"><a href="http://www.sparkfun.com/categories/22">PIC Microcontrollers</a></li><li id="menu_category_124"><a href="http://www.sparkfun.com/categories/124">PICAXE Microcontrollers</a></li><li id="menu_category_132"><a href="http://www.sparkfun.com/categories/132">PSoC Microcontrollers</a></li><li id="menu_category_29"><a href="http://www.sparkfun.com/categories/29">SMD ICs</a></li></ul></li><li id="menu_category_2"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/2">Development Tools</a><ul style="display:none;"><li id="menu_category_184"><a href="http://www.sparkfun.com/categories/184">.NET</a></li><li id="menu_category_93"><a href="http://www.sparkfun.com/categories/93">ADuC</a></li><li id="menu_category_103"><a href="http://www.sparkfun.com/categories/103">Arduino</a></li><li id="menu_category_10"><a href="http://www.sparkfun.com/categories/10">AVR</a></li><li id="menu_category_164"><a href="http://www.sparkfun.com/categories/164">Beagle</a></li><li id="menu_category_187"><a href="http://www.sparkfun.com/categories/187">Chumby</a></li><li id="menu_category_109"><a href="http://www.sparkfun.com/categories/109">Coridium</a></li><li id="menu_category_136"><a href="http://www.sparkfun.com/categories/136">FPGA</a></li><li id="menu_category_101"><a href="http://www.sparkfun.com/categories/101">iPod</a></li><li id="menu_category_25"><a href="http://www.sparkfun.com/categories/25">LPC</a></li><li id="menu_category_11"><a href="http://www.sparkfun.com/categories/11">MSP</a></li><li id="menu_category_9"><a href="http://www.sparkfun.com/categories/9">PIC</a></li><li id="menu_category_125"><a href="http://www.sparkfun.com/categories/125">PICAXE</a></li><li id="menu_category_137"><a href="http://www.sparkfun.com/categories/137">PSoC</a></li><li id="menu_category_104"><a href="http://www.sparkfun.com/categories/104">Roomba</a></li><li id="menu_category_94"><a href="http://www.sparkfun.com/categories/94">SAM</a></li><li id="menu_category_95"><a href="http://www.sparkfun.com/categories/95">ST</a></li><li id="menu_category_167"><a href="http://www.sparkfun.com/categories/167">STAMP</a></li><li id="menu_category_107"><a href="http://www.sparkfun.com/categories/107">Wiring</a></li><li id="menu_category_169"><a href="http://www.sparkfun.com/categories/169">WIZnet</a></li><li id="menu_category_166"><a href="http://www.sparkfun.com/categories/166">XMOS</a></li><li id="menu_category_142"><a href="http://www.sparkfun.com/categories/142">Zune</a></li></ul></li><li id="menu_category_100"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/100">Dings and Dents</a></li><li id="menu_category_204"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/204">E-Textiles</a><ul style="display:none;"><li id="menu_category_205"><a href="http://www.sparkfun.com/categories/205">Aniomagic</a></li><li id="menu_category_210"><a href="http://www.sparkfun.com/categories/210">fabrickit</a></li><li id="menu_category_135"><a href="http://www.sparkfun.com/categories/135">LilyPad</a></li><li id="menu_category_206"><a href="http://www.sparkfun.com/categories/206">Materials</a></li></ul></li><li id="menu_category_4"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/4">GPS</a><ul style="display:none;"><li id="menu_category_18"><a href="http://www.sparkfun.com/categories/18">Antennas</a></li><li id="menu_category_86"><a href="http://www.sparkfun.com/categories/86">Eval Boards</a></li><li id="menu_category_17"><a href="http://www.sparkfun.com/categories/17">Modules</a></li></ul></li><li id="menu_category_157"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/157">Kits</a></li><li id="menu_category_76"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/76">LCDs</a><ul style="display:none;"><li id="menu_category_147"><a href="http://www.sparkfun.com/categories/147">Color</a></li><li id="menu_category_148"><a href="http://www.sparkfun.com/categories/148">Monochrome</a></li></ul></li><li id="menu_category_96"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/96">Port-O-Rotary</a></li><li id="menu_category_1"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/1">Programmers</a><ul style="display:none;"><li id="menu_category_26"><a href="http://www.sparkfun.com/categories/26">ARM</a></li><li id="menu_category_7"><a href="http://www.sparkfun.com/categories/7">AVR</a></li><li id="menu_category_156"><a href="http://www.sparkfun.com/categories/156">DSP</a></li><li id="menu_category_37"><a href="http://www.sparkfun.com/categories/37">MAXQ</a></li><li id="menu_category_8"><a href="http://www.sparkfun.com/categories/8">MSP</a></li><li id="menu_category_6"><a href="http://www.sparkfun.com/categories/6">PIC</a></li><li id="menu_category_126"><a href="http://www.sparkfun.com/categories/126">PICAXE</a></li><li id="menu_category_168"><a href="http://www.sparkfun.com/categories/168">XMOS</a></li></ul></li><li id="menu_category_53"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/53">Prototyping</a><ul style="display:none;"><li id="menu_category_54"><a href="http://www.sparkfun.com/categories/54">Batteries</a></li><li id="menu_category_149"><a href="http://www.sparkfun.com/categories/149">Boards</a></li><li id="menu_category_91"><a href="http://www.sparkfun.com/categories/91">Connectors</a></li><li id="menu_category_182"><a href="http://www.sparkfun.com/categories/182">Enclosures</a></li><li id="menu_category_55"><a href="http://www.sparkfun.com/categories/55">General</a></li><li id="menu_category_155"><a href="http://www.sparkfun.com/categories/155">Hardware</a></li><li id="menu_category_92"><a href="http://www.sparkfun.com/categories/92">Sockets</a></li><li id="menu_category_116"><a href="http://www.sparkfun.com/categories/116">Solar</a></li><li id="menu_category_141"><a href="http://www.sparkfun.com/categories/141">Wire</a></li></ul></li><li id="menu_category_207"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/207">Retail</a><ul style="display:none;"><li id="menu_category_212"><a href="http://www.sparkfun.com/categories/212">Arduino</a></li><li id="menu_category_216"><a href="http://www.sparkfun.com/categories/216">Components</a></li><li id="menu_category_213"><a href="http://www.sparkfun.com/categories/213">Kits</a></li><li id="menu_category_211"><a href="http://www.sparkfun.com/categories/211">Materials</a></li><li id="menu_category_215"><a href="http://www.sparkfun.com/categories/215">Prototyping</a></li><li id="menu_category_214"><a href="http://www.sparkfun.com/categories/214">Sensors</a></li><li id="menu_category_217"><a href="http://www.sparkfun.com/categories/217">Tools</a></li></ul></li><li id="menu_category_134"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/134">Retired</a><ul style="display:none;"><li id="menu_category_194"><a href="http://www.sparkfun.com/categories/194">Breakout Boards</a></li><li id="menu_category_203"><a href="http://www.sparkfun.com/categories/203">Cables</a></li><li id="menu_category_200"><a href="http://www.sparkfun.com/categories/200">Classes</a></li><li id="menu_category_192"><a href="http://www.sparkfun.com/categories/192">Components</a></li><li id="menu_category_191"><a href="http://www.sparkfun.com/categories/191">Development Tools</a></li><li id="menu_category_188"><a href="http://www.sparkfun.com/categories/188">GPS</a></li><li id="menu_category_190"><a href="http://www.sparkfun.com/categories/190">Kits</a></li><li id="menu_category_196"><a href="http://www.sparkfun.com/categories/196">LCD</a></li><li id="menu_category_201"><a href="http://www.sparkfun.com/categories/201">Programmers</a></li><li id="menu_category_195"><a href="http://www.sparkfun.com/categories/195">Prototyping</a></li><li id="menu_category_197"><a href="http://www.sparkfun.com/categories/197">Robotics</a></li><li id="menu_category_189"><a href="http://www.sparkfun.com/categories/189">Sensors</a></li><li id="menu_category_208"><a href="http://www.sparkfun.com/categories/208">SFE Widgets</a></li><li id="menu_category_198"><a href="http://www.sparkfun.com/categories/198">Swag</a></li><li id="menu_category_193"><a href="http://www.sparkfun.com/categories/193">Tools</a></li><li id="menu_category_199"><a href="http://www.sparkfun.com/categories/199">Wireless</a></li></ul></li><li id="menu_category_31"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/31">Robotics</a><ul style="display:none;"><li id="menu_category_179"><a href="http://www.sparkfun.com/categories/179">Drivers</a></li><li id="menu_category_181"><a href="http://www.sparkfun.com/categories/181">Kits</a></li><li id="menu_category_178"><a href="http://www.sparkfun.com/categories/178">Motors</a></li><li id="menu_category_202"><a href="http://www.sparkfun.com/categories/202">Other</a></li><li id="menu_category_180"><a href="http://www.sparkfun.com/categories/180">Wheels</a></li></ul></li><li id="menu_category_185"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/185">Sale</a></li><li id="menu_category_23"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/23">Sensors</a><ul style="display:none;"><li id="menu_category_80"><a href="http://www.sparkfun.com/categories/80">Accelerometers</a><ul><li id="menu_category_161"><a href="http://www.sparkfun.com/categories/161">1-axis</a></li><li id="menu_category_162"><a href="http://www.sparkfun.com/categories/162">2-axis</a></li><li id="menu_category_163"><a href="http://www.sparkfun.com/categories/163">3-axis</a></li></ul></li><li id="menu_category_146"><a href="http://www.sparkfun.com/categories/146">Biometrics</a></li><li id="menu_category_117"><a href="http://www.sparkfun.com/categories/117">Capacitive</a></li><li id="menu_category_151"><a href="http://www.sparkfun.com/categories/151">Current</a></li><li id="menu_category_143"><a href="http://www.sparkfun.com/categories/143">Flex / Force</a></li><li id="menu_category_85"><a href="http://www.sparkfun.com/categories/85">Gyros</a><ul><li id="menu_category_158"><a href="http://www.sparkfun.com/categories/158">1-axis</a></li><li id="menu_category_159"><a href="http://www.sparkfun.com/categories/159">2-axis</a></li><li id="menu_category_183"><a href="http://www.sparkfun.com/categories/183">3-axis</a></li></ul></li><li id="menu_category_144"><a href="http://www.sparkfun.com/categories/144">ID</a></li><li id="menu_category_160"><a href="http://www.sparkfun.com/categories/160">IMU</a></li><li id="menu_category_139"><a href="http://www.sparkfun.com/categories/139">Infrared</a></li><li id="menu_category_102"><a href="http://www.sparkfun.com/categories/102">Light / Imaging</a></li><li id="menu_category_83"><a href="http://www.sparkfun.com/categories/83">Magneto</a></li><li id="menu_category_84"><a href="http://www.sparkfun.com/categories/84">Proximity</a></li><li id="menu_category_165"><a href="http://www.sparkfun.com/categories/165">Radiation</a></li><li id="menu_category_186"><a href="http://www.sparkfun.com/categories/186">Sound</a></li><li id="menu_category_82"><a href="http://www.sparkfun.com/categories/82">Temperature</a></li><li id="menu_category_152"><a href="http://www.sparkfun.com/categories/152">Weather</a></li></ul></li><li id="menu_category_97"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/97">SFE Widgets</a></li><li id="menu_category_130"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/130">Swag</a></li><li id="menu_category_46"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/46">Tools</a><ul style="display:none;"><li id="menu_category_47"><a href="http://www.sparkfun.com/categories/47">Hand Tools</a></li><li id="menu_category_48"><a href="http://www.sparkfun.com/categories/48">Hot-Air Rework</a></li><li id="menu_category_177"><a href="http://www.sparkfun.com/categories/177">Instruments</a></li><li id="menu_category_28"><a href="http://www.sparkfun.com/categories/28">Power Supplies</a></li><li id="menu_category_49"><a href="http://www.sparkfun.com/categories/49">Soldering</a></li></ul></li><li id="menu_category_138"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/138">Tracking</a></li><li id="menu_category_16"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/16">Wireless</a><ul style="display:none;"><li id="menu_category_78"><a href="http://www.sparkfun.com/categories/78">Antennas</a></li><li id="menu_category_115"><a href="http://www.sparkfun.com/categories/115">Bluetooth</a></li><li id="menu_category_79"><a href="http://www.sparkfun.com/categories/79">General</a></li><li id="menu_category_113"><a href="http://www.sparkfun.com/categories/113">Modem</a></li><li id="menu_category_114"><a href="http://www.sparkfun.com/categories/114">Nordic</a></li><li id="menu_category_112"><a href="http://www.sparkfun.com/categories/112">WiFi</a></li><li id="menu_category_111"><a href="http://www.sparkfun.com/categories/111">Zigbee/802.15.4</a></li></ul></li>  <li><hr /></li>
+  <li>
+    <img style='float: left' src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/pdf.gif" />
+    <a href="http://sparkfun.com/download/PDFs/catalog.pdf">Full catalog</a>
+  </li>
+</ul>
+        <br />
+      </div>
+
+      <div id="right">
+        <div class="collapsible user">
+  <p class="cart-link"><img height="19" width="19" alt="" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_shoppingcart.gif"> 
+     <a href="http://www.sparkfun.com/cart"><span id="items_in_cart">0</span> items in your cart</a></p>
+  <form action="https://www.sparkfun.com/account/login" id="login" method="post">
+    <label for="user_login">Email</label>
+    <input id="user_login" type="text" tabindex="1" maxlength="320" name="user">
+    <label for="user_password">Password</label>
+    <input id="user_password" type="password" tabindex="2" maxlength="20" name="passwd">
+    <p class="right"><input type="submit" value="log in" class="button"></p>
+    <p><a href="https://www.sparkfun.com/account/forgot_password">Forgot your password?</a><br/>
+       No account? <a href="https://www.sparkfun.com/account/make">Register here</a>.</p>
+  </form>
+</div>
+<br>
+
+        <h2 id="feed_menu" class="collapsible"><span class="arrow"></span>Feeds</h2>
+        <ul class="collapsible feeds" style="display: block">
+  <li><a href="http://www.sparkfun.com/feeds/news">News</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/products">Products</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/changes">Product Changes</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/comments">Comments</a></li>
+  <li><a href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&amp;v=2&amp;orderby=published">Videos</a></li>
+</ul>
+        <br />
+
+        <h2 id="resources_menu" class="collapsible"><span class="arrow"></span>Resources</h2>
+        <ul class="collapsible resources" style="display: block">
+  <li><a href="http://www.sparkfun.com/news/263">Official SparkFun IRC Channel</a></li>
+  <li><a href="http://www.batchpcb.com/" target="_blank">Custom PCBs</a></li>
+  <li><a href="http://www.opencircuits.com/" target="_blank">Open Circuits</a></li>
+  <li><a href="http://www.ponoko.com/make-and-sell/electronics" target="_blank">Ponoko - Your Personal Factory</a></li>
+  <li><a href="http://www.sparkfun.com/static/jobs">Jobs @ SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/tutorials/92">Sell Your Widget on SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/quiz">Take the SparkFun Quiz</a></li>
+</ul>
+        <br />
+
+        <h2 id="currency_menu_head" class="collapsible"><span class="arrow"></span>Currency</h2>
+        
+<div class="collapsible" id="currency_menu">
+  Display prices in
+  <input type="hidden" id="preferred_currency" value="USD" />
+  <ul id="currency_menu_list" class="currency">
+          <li>
+        <a id="currency_USD" onclick="SFE.change_currency('USD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_checked.gif" />
+                US Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_CAD" onclick="SFE.change_currency('CAD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Canadian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_AUD" onclick="SFE.change_currency('AUD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Australian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_GBP" onclick="SFE.change_currency('GBP'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                British Pound        </a>
+    </li>
+          <li>
+        <a id="currency_EUR" onclick="SFE.change_currency('EUR'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Euro        </a>
+    </li>
+      </ul>
+  </div>
+
+<script language="javascript">
+var CURRENCIES = {"USD":{"code":"USD","title":"US Dollar","symbol_left":"$","symbol_right":"","decimal_point":".","thousands_point":",","decimal_places":"2","value":"1.0000"},"CAD":{"code":"CAD","title":"Canadian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9706"},"AUD":{"code":"AUD","title":"Australian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9957"},"GBP":{"code":"GBP","title":"British Pound","symbol_left":"&pound;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.6187"},"EUR":{"code":"EUR","title":"Euro","symbol_left":"&euro;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.7214"}}</script>
+        <br />
+
+        <h2 id="feedback_menu" class="collapsible"><span class="arrow"></span>Feedback</h2>
+        <form id="feedback" class="collapsible" style="display: block">
+  <label for="feedback_textarea" style="font-weight: bold">What's on your mind?</label>
+  <br />
+  <textarea id="feedback_textarea" name="feedback_text"></textarea>
+  <br /><br />
+  <label for="feedback_email">Please include your email address if you'd like us to respond to a specific question.</label>
+  <br />
+  <br />
+  <input type="text" id="feedback_email" name="email" /> 
+  <br />
+  <input onclick="SFE.mind_feedback(); return(false);" type="button" class="button" value="Submit" /> 
+</form>
+      </div>
+
+      <div id="center">
+        <a name="content" id="content"></a>
+        
+<h1 class="red-header">
+    <span class="link"><a href="http://www.sparkfun.com">Home</a> |</span><span class="link"><a href="http://www.sparkfun.com/tutorials/">Tutorials</a>|</span>  Beginning Embedded Electronics - 4 
+</h1>
+
+<div class="news">
+  <p class="header">
+    <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/avatars/7185_sm.jpg" />
+    <a class="title" href="http://www.sparkfun.com/tutorials/104">Beginning Embedded Electronics - 4</a>
+    <br />
+    by <a href="http://www.sparkfun.com/users/7185">Nate</a> | June 19, 2008 | <i><a style="cursor: pointer" onclick="javascript: if(!$('comments').visible()) { SFE.toggle_collapsible($('comments_header')); } $('comments_header').scrollTo();">27 comments</a></i>
+    <span class="skill">
+      Skill Level: 
+              <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" />
+        Beginner
+          </span>
+  </p>
+  <hr />
+  <h2>Lecture 4 - UART and Serial Communication</h2>
+                <div class="tutorial_text">
+                  
+<p>Hello, Hello World</p>
+<p>You can get all the parts for this lecture <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=8394" target="_blank"> here</a>.</p>
+<p>Sorry for the confusion. When these tutorials were written and
+photographed, we used the ATmega8. We now carry the newer ATmega168.
+You will find all ATmega168 information in the following pages, but the
+pictures will show an ATmega8.</p>
+<p>The ATmega168 has tons of hardware built into it. Let's unleash the
+serial communication. Everyone has programmed the 'Hello World'
+program. You've got your micro breadboarded and running at 16MHz.
+You've got WinAVR up and running. We've already demonstrated LED
+control. Now it's time to pass some serial data back and forth.</p>
+<p>I am not a huge coder. I just want my printf() statement to do what
+it is supposed to do. I don't use a hardware debugger, I debug by
+printf statements. Sure, there are limitations with this, but for 90%
+of the applications out there, debugging with printf statements works
+just fine.</p>
+<p>First, a quick history of RS232. What is  <a href="http://en.wikipedia.org/wiki/RS-232" target="_blank">RS232</a>?
+It's just a name for a standard that has propagated from generation to
+generation of computers. The first computers had serial ports that used
+RS232, and even current computers have serial ports (or at least USB
+ports that act like RS232 ports). Back in the day, serial information
+needed to be passed from devices like printers, joysticks, scanners,
+etc to the computer. The simplest way to do this was to pass a series
+of 1s and 0s to the computer. Both the computer and the device agreed
+on a speed of information - 'bits per second'. A computer would pass
+image data to a printer at 9600 bits per second and the printer would
+listen for this stream of 1s and 0s expecting a new bit every 1/9600 =
+104us (104 micro-seconds, 0.000104 seconds). As long as the computer
+output bits at the pre-determined speed, the printer could listen. </p>
+<p>Zoom forward to today. Electronics have changed a bit. Before they
+were relatively high power, high voltage devices. The standard that is
+'RS232' dictates that a bit ranges from -12V to +12V. Modern
+electronics do not operate at such high positive and negative voltages.
+In fact, our ATmega168 runs 0V to 5V. So how do we get our 5V micro to
+talk the RS232 +/-12V voltages? This problem has been solved by the IC
+manufacturers of the world. They have made an IC that is generically
+known as the MAX232 (very close to RS232, no?).</p>
+<p>The MAX232 is an IC originally designed by a company called Maxim IC
+that converts the +/-12V signals of RS232 down to the 0/5V signals that
+our ATmega168 can understand. It also boosts the voltage of our
+ATmega168 to the needed +/-12V of the RS232 protocol so that a computer
+can understand our ATmega168 and vice versa. To get our ATmega168 IC
+sending serial characters to a computer, we have to send these serial
+signals through a MAX232 circuit so that the computer receives +/-12V
+RS232 signals. Don't worry if you're working with a chip labeled
+'ICL232' or 'ST232' - these are just generics of the MAX232. Everyone
+says 'MAX232' just like they say 'Kleenex' or Coke. The ICs all
+function the same and nearly all have the same pinout. </p>
+<p>The MAX232 circuit that we will be breadboarding looks like this:</p>
+<p align="center"> <img src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/4-UART/UART1.jpg" alt="" border="0"></p>
+<p align="center">MAX232 Circuit - Eagle <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/ATmega8-RS232.zip" target="_blank"> schematic</a> / <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/ATmega8-RS232.pdf" target="_blank"> PDF</a></p>
+<p align="left">This MAX232 IC uses three 0.1uF capacitors (C5, C6, C7) to  operate (go read about '<a href="http://en.wikipedia.org/wiki/Charge_pump" target="_blank">charge pumps</a>').
+You must have these installed. The forth (C8) is what is called a
+'decoupling cap'. As the MAX232 IC switches various signals (from
++/-12V to 0/5V) it uses bits of current. Because it needs these bits of
+current in bursts, it can disrupt your 5V supply. The C8 0.1uF
+capacitor helps 'decouple' or remove the ill effects of this IC
+(switching back and forth) from your power supply. This decoupling cap
+should be placed near the VCC and GND pins of the IC. This helps remove
+noise from your power system. Will your breadboard work without
+decoupling caps? Sure it will! Go without! But the day will come when
+something stops working and you're not sure why. Could it be my code?
+Do I have a short somewhere? A disconnect? Or perhaps I don't have
+enough decoupling caps? </p>
+<p align="left">A decoupling cap is meant to provide a quick burst of
+energy if the power supply dips down - sort of like a UPS system for
+your IC. The further the decoupling cap is from the IC, the less
+ability it has to provide that quick burst (long wires have intrinsic
+capacitance of their own). It's always good engineering practice to
+have at least one 0.1uF cap near any IC. Placing them within 0.5" of
+the VCC and GND pins is good. Placing them all the way across your
+breadboard won't do harm, they just won't provide as much help.</p>
+<p align="left">JP2 is a DB9 connector. It's called a 'DB9' connector
+because it contains 9 pins and is used universally for serial
+connections. You'll need a male to female serial cable to connect your
+breadboard's DB9 connector to the computer. The 'male' end of the cable
+has the metal pins, the 'female' end has the black colored plastic that
+receives the pins. If you look very close at a DB9 connector in real
+life, you can just make out some small numbers next to the holes.</p>
+<p align="left">So what all does this do? The ATmega168 is going to
+send 5V signals to the MAX232 IC. The MAX232 IC in turn will convert
+those 5V signals to +/-12V RS232 signals that the computer can
+understand through the DB9 port on the back of the computer. Admittedly
+this can be a bit ugly to setup at first. Will you believe me that once
+setup, this will be your life-line to sanity? The serial connection is
+everything! You'll need one on almost every application you do.</p>
+<p align="center"><img src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/4-UART/UART7.jpg" alt="" border="0"></p>
+<p align="center">Breadboard  with MAX232 and large loop-back jumper installed</p>
+<p align="left">Once you have everything wired, you'll need to open up
+a terminal program. If you're playing under Windows, you can open up
+the included 'Hyperterminal' program normally located under
+Programs-&gt;Accessories-&gt;Communications.&nbsp; Linux and Apple people,
+you probably know how to get a terminal program running (sorry I can't
+be more help!).</p>
+<p align="left">All terminal programs have the same basic function: to
+do serial. All you need to specify is a few simple rules to get your
+micro playing successfully with your computer. Let's just get through
+the Hyperterminal screens:</p>
+<p align="center"><img src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/4-UART/UART2.jpg" alt="" border="0"></p>
+<p align="center">Call it whatever you want</p>
+<p align="center"><img src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/4-UART/UART3.jpg" alt="" border="0"></p>
+<p align="center">More than likely, the serial port on your computer is COM1</p>
+<p align="center"><img src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/4-UART/UART4.jpg" alt="" border="0"></p>
+<p align="center">You want 9600bps 8-N-1 without flow control</p>
+<p align="left">The main settings are <b>9600bps</b> and <b>8-N-1</b>.
+This means that the micro and the computer agree to talk at a rate of
+9600bits per second (bps) and that each byte will have 8 data bits,
+with no parity bit, and only 1 stop bit. This '8-N-1' is very common
+and basic. If you like pain, go read about <a href="http://en.wikipedia.org/wiki/Parity_bit" target="_blank">parity</a>,  1.5 stop bits, and 5 data bits. No one really uses it in the breadboarding  world.</p>
+<p align="left">Mkay, you've got hyperterminal open and kicking. You've
+got your MAX232 (or equivalent circuit) built up and powered on. Before
+you connect it to your micro, you should test that the MAX232 circuit
+works. The easiest way to test a MAX232 circuit is to tie TX and RX
+together. It's called a 'loop-back' (the big yellow wire pictured
+above). Pretty self explanatory, but just follow along:</p>
+<p align="left">When you press the 'A' key on the computer in the
+hyperterminal window, a series of 1s and 0s get generated and pumped
+out the serial port on the back of your computer (8 bits: '01000001' to
+be specific = 65d = 41h - see <a href="http://www.asciitable.com/">www.asciitable.com</a>
+for more info). These 0s and 1s hit the MAX232 on your breadboard which
+dutifully changes these RS232 signals to TTL signals. The 0s and 1s get
+asserted on the R1OUT pin. Because you've tied the TX and RX pins
+together (R1OUT should be shorted to T1IN) these 0s and 1s get sent
+right back out the MAX232 and down the DB9 serial cable. Upon hitting
+the computer, the computer 'sees' these 1s and 0s and says 'oh! there
+is a device passing me the ASCII character A'. The computer then
+displays the character 'A' in the hyperterminal screen. This is the
+essence of a loop-back test. If everything is kosher, you should be
+able to jam away on the keyboard and see those letters echoed back to
+the terminal window. Pull the jumper out and the characters should stop
+echoing. Got it? Use it! In the future, when you need to test a serial
+interface, short TX and RX together to make sure things are working
+correctly.</p>
+<p align="left">All right, you've got the MAX232 working correctly. Now connect  the TX and RX pins of the ATmega168 to the MAX232 circuit. </p>
+<p align="center"><img src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/4-UART/UART5.jpg" alt="" border="0"></p>
+<p align="center">ATmega8 with power supply and MAX232 circuit. Eagle <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/ATmega8-RS232.zip" target="_blank"> schematic</a> / <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/ATmega8-RS232.pdf" target="_blank"> PDF</a></p>
+<p align="left">You may have noticed C9 magically appeared next to the
+ATmega168 in the schematic above. This is a 0.1uF decoupling capacitor
+for the ATmega168. A 0.1uF capacitor places near the ATmega168's VCC
+and GND pins will help reduce power supply noise being injected into
+the ATmega168. Again, your board will more than likely run without
+decoupling caps but I just want to instill in you a habit of using
+0.1uF like candy. </p>
+<p align="center"><img src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/4-UART/UART8.jpg" alt="" border="0"></p>
+<p align="center">TX and RX connections between MAX232 and ATmega8</p>
+<p align="left">Savvy travelers will note (upside down) the picture
+MAX232 IC is actually a SP3232(EBCP). What is this 'SP3232'? It's a the
+Sipex generic of the MAX232. Notice the '3' in front of the 232? The
+original MAX232 ICs were designed to interface 5V logic to RS232.
+Because circuits started to run on lower voltages (3.3V for instance)
+the IC manufacturers had to redesign the MAX232 ICs to be more
+efficient so that they could take this lower voltage and boost it up to
+12V for RS232. Hence the 3V designation 'SP3232'. This IC can input 3V
+TLL signals and successfully convert them to RS232. We are operating
+our breadboard at 5V but we are able to run our MAX232 from 3V up to 5V
+without problems.</p>
+<p align="left"><b>Trivia:</b> In the picture above, which IC is the
+older sibling? These ICs have simple date codes: 0641 and 0625 means
+both ICs were manufactured in 2006 in the 41st and 25th weeks of the
+year.</p>
+<p align="left">You should now have the hardware in place to allow you to do printf  statements. Let's mess with some code!</p>
+<hr width="80%">
+<p align="left">Feedback from a reader:</p>
+<blockquote>
+<p align="left">"Friends don't let friends use hyperterminal.&nbsp; It is one sucky    program.   <a href="http://hp.vector.co.jp/authors/VA002416/teraterm.html" target="_blank">   TeraTerm</a> works much better."</p>
+<p align="left">We agree. Hyperterminal is a bit buggy and can lock up.
+TeraTerm is much better. However, since nearly every Microsoft
+installation on the planet has Hyperterminal already installed, we
+stuck to using it to ease readers into serial communications. In
+general, once you get over the serial hurdle, stop using Hyperterminal
+and start using TeraTerm.</p>
+</blockquote> <hr width="80%">
+<p align="left">You can get all the parts for this lecture <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=8394" target="_blank"> here</a>.</p>
+<p align="left">We love feedback! Please report typos, comments, or  recommendations to <a href="mailto:spark@sparkfun.com">spark@sparkfun.com</a>.</p><p align="left"><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=57">Lecture 1 - Background and Power Supply</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=93">Lecture 2 - How to Get Code Onto a Microcontroller</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=95">Lecture 3 - What is an oscillator?</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=104">Lecture 4 - UART and Serial Communication</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=105">Lecture 5 - AVR GCC Compiling</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=106">Lecture 6 - Soldering Basics</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=107">Lecture 7 - SMD Soldering</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=108">Lecture 8 - Eagle: Schematics</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=109">Lecture 9 - Eagle: PCB Layout</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=110">Lecture 10 - Eagle: Creating a new part</a><br><br><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=111">Common Mistakes, Tips and Tricks</a></p> </div></div>
+
+<div id="comments_container">
+  <h2 id="comments_header" class="collapsible grey big"><span class="arrow"></span>Comments <span class="count">27 comments</span></h2>
+<div id="comments" class="collapsible white">
+  <div style="padding: 20px">  <div style="text-align: center">
+    <b><a href="#" onclick="javascript: $('right').scrollTo(); $('user_login').select()">Login</a> to post comments.</b>
+  </div>
+</div>
+  <div class="comment" id="comment_1278"><span class="header"><a href="http://www.sparkfun.com/users/54589" class="bold">yermom</a> <span class="wide">|</span> <b>December 15, 2008 at 10:33 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1278">2</span></strong></span><br /></span><div class="body"><p>Are pins 2 and 6 of the MAX232 chip really supposed to be connected together with a 0.1uf cap? All the other schematics I've seen have 2 and 6 going through 22uf caps to VCC and GND respectively.</p>
+</div></div><div class="comment" id="comment_3621"><span class="header"><a href="http://www.sparkfun.com/users/71494" class="bold">cjoudrey</a> <span class="wide">|</span> <b>May 30, 2009 at  8:35 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3621">2</span></strong></span><br /></span><div class="body"><p>Hey,
+How did you guys manage to put the wires in the db9 cap without soldering?
+Christian</p>
+</div></div><div class="comment" id="comment_19384"><span class="header"><a href="http://www.sparkfun.com/users/152625" class="bold">skatefriday</a> <span class="wide">|</span> <b>October 11, 2010 at  9:23 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_19384">2</span></strong></span><br /></span><div class="body"><p>For anyone who is struggling with this Hyperterminal did not work on a simple rs232 loopback test where I put pin 2 into pin 3 on the db9.  Switching to teraterm fixed that, so I knew at least my usb-serial dongle worked.</p>
+
+<p>The second problem was the sp3232 will not work as pictured and described in this tutorial.  You must connect the caps at pin 2 and pin 6 to ground as described in the sipex datasheet for the part.  So you need 5 caps.  Junctioning pin 2 and 6 with one cap does NOT work.  At least not with the chip that sparkfun shipped me.</p>
+</div></div><div class="comment" id="comment_1209"><span class="header"><a href="http://www.sparkfun.com/users/9887" class="bold">jes1510</a> <span class="wide">|</span> <b>December  8, 2008 at  8:21 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1209">1</span></strong></span><br /></span><div class="body"><p>Actually Vista does not come with Hyperterminal.  At least my installations of Vista home premium don't have it.  If for some reason I need a terminal program then I have to use a 3rd party package.</p>
+</div></div><div class="comment" id="comment_880"><span class="header"><a href="http://www.sparkfun.com/users/50348" class="bold">unebonnevie</a> <span class="wide">|</span> <b>November  9, 2008 at  1:18 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_880">1</span></strong></span><br /></span><div class="body"><p>See <a href="http://forum.sparkfun.com/viewtopic.php?t=12344">http://forum.sparkfun.com/viewtopic.php?t=12344</a></p>
+</div></div><div class="comment" id="comment_1657"><span class="header"><a href="http://www.sparkfun.com/users/57499" class="bold">cdub</a> <span class="wide">|</span> <b>January 27, 2009 at  1:03 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1657">1</span></strong></span><br /></span><div class="body"><p>My computer has NO serial ports aside from USB. I put together the USBTinyISP programmer so I could program the chip and have done the previous tutorials successfully. Now what? Do I get a USB  DB9 adapter? Suggestions welcome!</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_2079"><span class="header"><a href="http://www.sparkfun.com/users/61323" class="bold">dondurito</a> <span class="wide">|</span> <b>February 17, 2009 at 11:06 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2079">1</span></strong></span><br /></span><div class="body"><p>Hi cdub, have you been able to use the USB to DB9 for this tutorial?</p>
+
+<p>Did you use the USBTinyISP instead of the DB25 connector to program.</p>
+
+<p>My computer does not have a DB9 or a DB25 either.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_2228"><span class="header"><a href="http://www.sparkfun.com/users/58125" class="bold">ThatOneGuy</a> <span class="wide">|</span> <b>February 27, 2009 at  8:33 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2228">1</span></strong></span><br /></span><div class="body"><p>I have successfully used a usb to DB9 for serial comm with the RS232. Note however that adapters do not work with programmers. That goes for parallel as well.</p>
+</div></div></div></div><div class="comment" id="comment_16354"><span class="header"><a href="http://www.sparkfun.com/users/131769" class="bold">r4di0</a> <span class="wide">|</span> <b>July 27, 2010 at  7:34 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_16354">1</span></strong></span><br /></span><div class="body"><p>I got this to work without serial ports and without any major difficulty using the FTDI TTL to USB serial converter (<a href="http://www.sparkfun.com/commerce/product_info.php?products_id=9717">http://www.sparkfun.com/commerce/product<em>info.php?products</em>id=9717</a>).  I'm actually using a 3v one I had bough for Xbee use.  It was really easy.  Orange wire is Tx, Yellow is Rx.  Connect them for loopback.  I used minicom since I'm on linux.  I had to minicom -s at first, set the serial device to /dev/ttyUSB0.  The loopback didn't work until I disabled hardware flow control.</p>
+</div></div><div class="comment" id="comment_17855"><span class="header"><a href="http://www.sparkfun.com/users/137308" class="bold">Cyrusm</a> <span class="wide">|</span> <b>September  2, 2010 at  1:17 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_17855">1</span></strong></span><br /></span><div class="body"><p>Another thing that you could look into is to see if your motherboard has a serial interface, frequently the serial pinout exists on the mobo, but is not hooked up to an RS232 serial port since nobody besides wirebiters and nerds needs one.  you can then find a serial port on-line that will interface with the pinout for like 3 bucks. The same is frequently true of parallel ports as well.</p>
+</div></div></div></div><div class="comment" id="comment_4066"><span class="header"><a href="http://www.sparkfun.com/users/72197" class="bold">treepour</a> <span class="wide">|</span> <b>June 29, 2009 at  9:50 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4066">1</span></strong></span><br /></span><div class="body"><p>So like many folks,  I don't have a serial port.  It would really be nice, BTW, to add some tips/hints for those without serial ports to these tutorials . . .</p>
+
+<p>Anyhow, I've gotten this far using the USBTinyISP programmer, but now I'm stumped.  It seems I should be able to use the <a href="http://www.ftdichip.com/Products/EvaluationKits/TTL-232R.htm">FTDI USB/Serial/TTL</a> cable I use to communicate with Arduino, but I can't seem to get it working . . . do I still need the MAX232 circuit?  Do I need something different?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_4285"><span class="header"><a href="http://www.sparkfun.com/users/63817" class="bold">Michelle</a> <span class="wide">|</span> <b>July 11, 2009 at 10:54 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4285">1</span></strong></span><br /></span><div class="body"><p>I'm having a similar problem (no db9/db25).  I'm thinking if the max232's purpose is to change voltages from 5V to 12V and vice versa then we shouldn't need it if we are going from 5V (AVR chip) to 5V (USB).  is there something else the chip does that I'm missing.</p>
+
+<p>Any reason I can't hook this directly up and go from there?  <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=718">http://www.sparkfun.com/commerce/product<em>info.php?products</em>id=718</a></p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_4305"><span class="header"><a href="http://www.sparkfun.com/users/75052" class="bold">nevdull</a> <span class="wide">|</span> <b>July 12, 2009 at 10:34 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4305">1</span></strong></span><br /></span><div class="body"><p>Hi Michelle,
+The EIA-232 chip I use is the ti max232n [<a href="http://focus.ti.com/lit/ds/symlink/max232.pdf">http://focus.ti.com/lit/ds/symlink/max232.pdf</a>]. The datasheet has detailed information and seems more designed for implementing a full/partial RS-232-F standard without having a lot of external components to generate RS232 voltages from 3.3 or 5v and then convert them back down to CMOS/TTL levels (along with a few other niceties).  As for going from AVR to USB, maybe this could be a start:
+<a href="http://www.obdev.at/products/vusb/index.html"> Check out the schematic at the bottom</a></p>
+
+<p>Good luck!</p>
+</div></div></div></div></div></div><div class="comment" id="comment_4304"><span class="header"><a href="http://www.sparkfun.com/users/75052" class="bold">nevdull</a> <span class="wide">|</span> <b>July 12, 2009 at  9:55 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4304">1</span></strong></span><br /></span><div class="body"><p>Has anyone had a problem uploading their hex code to their AVR while PD0/PD1 is connected to pins 12/11 of the max232?  I use AVR Studio w/ avrdude to upload via USB from Win Vista to an ATmega328p on an Arduino board with a serial console RS232 to a FreeBSD box connected via the max232.</p>
+
+<p>When I run avrdude to upload the hex:
+avrdude -p m328p -c avrisp -P com3 -b 57600 -F -U flash:w:zork.hex
+avrdude:stk500<em>getsync(): not in sync: resp=0xff
+avrdude: stk500</em>disable(): protocol error, expect 0x14, resp=0xfc&lt;/code</p>
+
+<p>When I disconnect the RX/TX between the ATmega328p and the max232 it uploads fine.  Any suggestions?
+Thanks!</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_4306"><span class="header"><a href="http://www.sparkfun.com/users/75052" class="bold">nevdull</a> <span class="wide">|</span> <b>July 12, 2009 at 11:09 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4306">1</span></strong></span><br /></span><div class="body"><p>Solved!</p>
+</div></div></div></div><div class="comment" id="comment_4730"><span class="header"><a href="http://www.sparkfun.com/users/32634" class="bold">Cybermongul</a> <span class="wide">|</span> <b>August 13, 2009 at  9:24 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4730">1</span></strong></span><br /></span><div class="body"><p>Can some help me here.Do I need the JP1 (AVR<em>SP1</em>PROG) connected to the breadboard before i can program the controller?
+ I am getting a "process exit code: 2" error.
+I have been able to compile the the C file</p>
+</div></div><div class="comment" id="comment_6617"><span class="header"><a href="http://www.sparkfun.com/users/84779" class="bold">chux0r</a> <span class="wide">|</span> <b>November  7, 2009 at  9:17 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_6617">1</span></strong></span><br /></span><div class="body"><p>I am working through these using Linux tools. In this case I used minicom as my terminal emulator. Works pretty well!</p>
+
+<p><a href="http://herdingelectrons.blogspot.com/2009/11/installing-and-testing-serial.html">http://herdingelectrons.blogspot.com/2009/11/installing-and-testing-serial.html</a></p>
+</div></div><div class="comment" id="comment_8211"><span class="header"><a href="http://www.sparkfun.com/users/86264" class="bold">Technologikall</a> <span class="wide">|</span> <b>January  1, 2010 at  3:51 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_8211">1</span></strong></span><br /></span><div class="body"><p>I'm typing but don't see anything....</p>
+
+<p>I've connected TX and RX together too. Does anyone know what can be wrong here? Or is it just my wiring?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_10394"><span class="header"><a href="http://www.sparkfun.com/users/17818" class="bold">Bonedog</a> <span class="wide">|</span> <b>February 11, 2010 at  2:55 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10394">1</span></strong></span><br /></span><div class="body"><p>Are you using hardware or software control for the terminal program? Even with the TX-RX connection, if you haven't connected DTR-DSR, and RTS-CTS together, you may not see anything. Easy way is to turn off hardware and software control in the setup for your terminal program. I am using minicom in Linux, and the FTDI USB-232 breakout board and I had to do the same thing to test that board, even though it is for a GPS receiver and not the M168.</p>
+</div></div></div></div><div class="comment" id="comment_9619"><span class="header"><a href="http://www.sparkfun.com/users/71950" class="bold">ncsuece</a> <span class="wide">|</span> <b>January 15, 2010 at 11:00 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9619">1</span></strong></span><br /></span><div class="body"><p>so i wired up the max232 and was using a usb-serial converter from pololu from another project to talk to terra term and completely forgot that the converter is LOGIC LEVEL!  DOH!</p>
+
+<p>As far as I can tell it still works, can/should that damage the chip though?</p>
+</div></div><div class="comment" id="comment_10057"><span class="header"><a href="http://www.sparkfun.com/users/106998" class="bold">jomama</a> <span class="wide">|</span> <b>January 31, 2010 at  9:24 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10057">1</span></strong></span><br /></span><div class="body"><p>If you are getting garbage messages across serial, make sure to check that you have the right parts in your kit.  I got a 10 MHz crystal instead of the 16 MHz.  I spent way too many hours playing with fusebits and my wiring to eventually realize that my crystal wasn't 16 MHz.</p>
+</div></div><div class="comment" id="comment_19289"><span class="header"><a href="http://www.sparkfun.com/users/152625" class="bold">skatefriday</a> <span class="wide">|</span> <b>October  8, 2010 at  9:32 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_19289">1</span></strong></span><br /></span><div class="body"><p>As a bunch of people have said, nobody has serial ports anymore.  It would be very, very nice if some kind sould at sparkfun would update the tutorial to describe how to do this out of a usb port.</p>
+</div></div><div class="comment" id="comment_20678"><span class="header"><a href="http://www.sparkfun.com/users/157312" class="bold">mbwjr12</a> <span class="wide">|</span> <b>November 10, 2010 at 11:55 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_20678">1</span></strong></span><br /></span><div class="body"><p>I can confirm that this capacitor layout simply does not work for the very common (pin-compatible) max232a subsitute, the sp232acn. Connecting pins 2 and 6 via a capacitor instead of to Vcc and Ground causes very unreliable operation at 38400bps, with about one out of ten characters getting through correctly.</p>
+</div></div><div class="comment" id="comment_22713"><span class="header"><a href="http://www.sparkfun.com/users/131612" class="bold">zemm</a> <span class="wide">|</span> <b>December 12, 2010 at  4:25 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22713">1</span></strong></span><br /></span><div class="body"><p>Just a side note: if you are like me and have PuTTY open 24/7, you can use this familiar tool with serial communication also. I have my Bus Pirate, Adruino and FTDI-breakout in saved sessions along with linux servers.</p>
+</div></div><div class="comment" id="comment_27701"><span class="header"><a href="http://www.sparkfun.com/users/196403" class="bold">sctthrtr</a> <span class="wide">|</span> <b>January 23, 2011 at  4:17 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_27701">1</span></strong></span><br /></span><div class="body"><p>So.... how about a USB option?  Is this MAX232 chip the right tool for USB?  I don't want to buy this kit and an adapter from db9 to USB to find out I could have just used a different chip with a USB cord.  Not even mentioning a USB option in the tutorial kinda sucks.  The laptop I'm using was built in 2004 and only has USB ports.  This is not a new thing.</p>
+
+<p>So here I sit with a little blinking LED, a thirst for knowledge and a pocket full of money.  What next?</p>
+</div></div><div class="comment" id="comment_31245"><span class="header"><a href="http://www.sparkfun.com/users/165574" class="bold">alphaniner101</a> <span class="wide">|</span> <b>March  5, 2011 at 12:06 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31245">1</span></strong></span><br /></span><div class="body"><p>Is anyone else having an issue loading the pictures on this page?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31278"><span class="header"><a href="http://www.sparkfun.com/users/193719" class="bold">MostlyCarbon</a> <span class="wide">|</span> <b>March  6, 2011 at  8:37 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31278">1</span></strong></span><br /></span><div class="body"><p>Same here. I was wondering if It was only me. I tuned off my Adblock Plus. But that wasn't it.</p>
+
+<p>Where did all the pictures go?</p>
+</div></div></div></div></div>
+<br />
+</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      SparkFun Electronics <a href="http://www.sparkfun.com/news/300">&reg;</a>      <span class="wide">|</span>
+      <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6175+Longbow+Dr,+Boulder,+CO+80301&sll=40.006234,-105.224915&sspn=0.012113,0.020192&ie=UTF8&hq=&hnear=6175+Longbow+Dr,+Boulder,+Colorado+80301&t=h&z=16" target="_blank">Boulder, Colorado</a>
+      <span class="wide">|</span>
+      <a href="http://www.sparkfun.com/static/customer_service">Customer Service</a>
+    </div>
+        <script type="text/javascript" src="/js/cookiejar.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/sparkfun.js?sparkrev=1299616818"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript">function autoFireLightbox(){setTimeout(function(){SFE.stab_eyes()},250)}Event.observe(window,"load",autoFireLightbox,false);</script>
+    <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3404365-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

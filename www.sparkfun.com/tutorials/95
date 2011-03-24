@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="google-site-verification" content="XUb2UlchrvwCWWyhXksBlqQy1STYtTEN_M0-tgQRHRs" />
+    <meta name="google-site-verification" content="gRUAvzBJ_533b-AGTmldOJfByU6TkojfUbWovB2wKJo" />
+    <title>Beginning Embedded Electronics - 3 - SparkFun Electronics</title>
+    <link rel="stylesheet" href="/css/screen.css?rev=1299616818" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css?rev=1299616818" type="text/css" media="print" />
+    <link rel="stylesheet" href="/css/lightbox.css?rev=1299616818" type="text/css" media="screen" />
+    <!-- IE is the bane of my existence. -->
+    <!--[if IE]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+    <link rel="feed" type="application/rss+xml" title="News" href="http://www.sparkfun.com/feeds/news/" />
+    <link rel="alternate" type="application/rss+xml" title="Products" href="http://www.sparkfun.com/feeds/products/" />
+    <link rel="alternate" type="application/rss+xml" title="Product Changes" href="http://www.sparkfun.com/feeds/changes/" />
+    <link rel="alternate" type="application/rss+xml" title="Comments" href="http://www.sparkfun.com/feeds/comments/" />
+    <link rel="alternate" type="application/rss+xml" title="Videos" href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&v=2&orderby=published" />
+    <link rel="apple-touch-icon" href="/fanboy.png" />
+    <link rev="canonical" type="text/html" href="http://sprkfn.com/t95" /> 
+    <script type="text/javascript">
+      var HTTP_SERVER = 'http://www.sparkfun.com',
+          HTTPS_SERVER = 'https://www.sparkfun.com',
+          HTTP_STATIC = 'http://dlnmh9ip6v2uc.cloudfront.net',
+          FULL_LAYOUT = true,
+          AUTHENTICATED = false;
+    </script>
+    <script type="text/javascript" src="/js/prototype.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <!-- turns out  that IE7 chokes if you don't load these separately. -->
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="/js/effects.js"></script>
+    <script type="text/javascript" src="/js/builder.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/lightbox.js?rev=1299616818"></script>
+  </head>
+  <body>
+    <div id="airlock" class="clearfix">
+
+      
+  <script>BANNER_ID = 53</script>
+
+<div id="header">
+  <a href="http://www.sparkfun.com/"><img width=188 height=105 class="logo" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/logo.gif" title="SparkFun Electronics" alt="SparkFun Electronics" /></a>
+  <a href="#products_menu" class="skip">Skip to menu</a>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <div id="banner-nav" style="display: none;">
+<img id="banner-goprev" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_left.png" height=23 width=23 />
+<img id="banner-all" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_all.png" height=23 width=23 />
+<img id="banner-gonext" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_right.png" height=23 width=23 />
+</div>
+<a id="banner-link" href="http://www.sparkfun.com/products/10308"><img width=978 height=105 id="banner" src="http://dlnmh9ip6v2uc.cloudfront.net/images/banners/SFE03.0007.ED-HowToSolder-01.jpg" alt="" /></a>
+  <div id="header-menu">
+    <ul>
+      <li id="header_menu_index"><a href="http://www.sparkfun.com/index">Home</a></li>
+      <li id="header_menu_cservice"><a href="http://www.sparkfun.com/static/customer_service">Customer Service</a></li>
+      <li id="header_menu_tutorials" class="active"><a href="http://www.sparkfun.com/tutorials">Tutorials</a></li>
+      <li id="header_menu_forum"><a href="http://forum.sparkfun.com">Forum</a></li>
+      <li id="header_menu_distributors"><a href="http://www.sparkfun.com/distributors">Distributors</a></li>
+      <li id="header_menu_about"><a href="http://www.sparkfun.com/static/about">About Us</a></li>
+      <li id="header_menu_contact" class="last"><a href="http://www.sparkfun.com/static/contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="left">
+        <h2 class="collapsible" id="search_menu"><span class="arrow"></span>Search</h2>
+        <form class="collapsible search" style="display: block" action="http://www.sparkfun.com/search/results" id="search_form" method="get">
+  <input id="search_field" name="term" type="text" value="" />
+  <input type="submit" value="Go" class="button" />
+  <br />
+  <input id="products_search" type="radio" name="what" value="products" checked />
+  <label for="products_search">Products</label>
+  <br />
+  <input id="news_search" type="radio" name="what" value="news" />
+  <label for="news_search">News</label>
+  <br />
+  <input id="tutorials_search" type="radio" name="what" value="tutorials" />
+  <label for="tutorials_search">Tutorials</label>
+  <br />
+  <input id="comments_search" type="radio" name="what" value="comments" />
+  <label for="comments_search">Comments</label>
+</form>
+        <br />
+
+        <h2 id="products_menu" class="collapsible"><span class="arrow"></span>Products</h2>
+        
+<ul id="category_menu_list" class="collapsible" style="display: block">
+  <li id="menu_category_new_products"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/new_products">New Products</a></li>
+  <li id="menu_category_top"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/top">Top Sellers</a></li>
+  <li id="menu_category_featured"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/featured">Staff Picks</a></li>
+  <li id="menu_category_gift_certificates"><span class="arrow"></span><a href="https://www.sparkfun.com/gift_certificates">Gift Certificates</a></li>
+  <li><hr /></li>
+  <li id="menu_category_176"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/176">Books</a></li><li id="menu_category_20"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/20">Breakout Boards</a></li><li id="menu_category_70"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/70">Cables</a><ul style="display:none;"><li id="menu_category_140"><a href="http://www.sparkfun.com/categories/140">Audio</a></li><li id="menu_category_150"><a href="http://www.sparkfun.com/categories/150">Ethernet</a></li><li id="menu_category_72"><a href="http://www.sparkfun.com/categories/72">Hook Up</a></li><li id="menu_category_75"><a href="http://www.sparkfun.com/categories/75">Parallel</a></li><li id="menu_category_74"><a href="http://www.sparkfun.com/categories/74">Serial</a></li><li id="menu_category_71"><a href="http://www.sparkfun.com/categories/71">USB</a></li></ul></li><li id="menu_category_66"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/66">Cellular</a><ul style="display:none;"><li id="menu_category_67"><a href="http://www.sparkfun.com/categories/67">Antennas</a></li><li id="menu_category_69"><a href="http://www.sparkfun.com/categories/69">Eval Boards</a></li><li id="menu_category_68"><a href="http://www.sparkfun.com/categories/68">Modules</a></li></ul></li><li id="menu_category_154"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/154">Classes</a></li><li id="menu_category_51"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/51">Components</a><ul style="display:none;"><li id="menu_category_87"><a href="http://www.sparkfun.com/categories/87">ARM Microcontrollers</a></li><li id="menu_category_21"><a href="http://www.sparkfun.com/categories/21">AVR Microcontrollers</a></li><li id="menu_category_145"><a href="http://www.sparkfun.com/categories/145">Buttons/Switches</a></li><li id="menu_category_60"><a href="http://www.sparkfun.com/categories/60">General</a></li><li id="menu_category_90"><a href="http://www.sparkfun.com/categories/90">General ICs</a></li><li id="menu_category_89"><a href="http://www.sparkfun.com/categories/89">LEDs</a><ul><li id="menu_category_173"><a href="http://www.sparkfun.com/categories/173">10mm</a></li><li id="menu_category_171"><a href="http://www.sparkfun.com/categories/171">3mm</a></li><li id="menu_category_172"><a href="http://www.sparkfun.com/categories/172">5mm</a></li><li id="menu_category_170"><a href="http://www.sparkfun.com/categories/170">7-Segment</a></li><li id="menu_category_175"><a href="http://www.sparkfun.com/categories/175">Other</a></li><li id="menu_category_174"><a href="http://www.sparkfun.com/categories/174">SMD</a></li></ul></li><li id="menu_category_88"><a href="http://www.sparkfun.com/categories/88">Oscillators</a></li><li id="menu_category_22"><a href="http://www.sparkfun.com/categories/22">PIC Microcontrollers</a></li><li id="menu_category_124"><a href="http://www.sparkfun.com/categories/124">PICAXE Microcontrollers</a></li><li id="menu_category_132"><a href="http://www.sparkfun.com/categories/132">PSoC Microcontrollers</a></li><li id="menu_category_29"><a href="http://www.sparkfun.com/categories/29">SMD ICs</a></li></ul></li><li id="menu_category_2"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/2">Development Tools</a><ul style="display:none;"><li id="menu_category_184"><a href="http://www.sparkfun.com/categories/184">.NET</a></li><li id="menu_category_93"><a href="http://www.sparkfun.com/categories/93">ADuC</a></li><li id="menu_category_103"><a href="http://www.sparkfun.com/categories/103">Arduino</a></li><li id="menu_category_10"><a href="http://www.sparkfun.com/categories/10">AVR</a></li><li id="menu_category_164"><a href="http://www.sparkfun.com/categories/164">Beagle</a></li><li id="menu_category_187"><a href="http://www.sparkfun.com/categories/187">Chumby</a></li><li id="menu_category_109"><a href="http://www.sparkfun.com/categories/109">Coridium</a></li><li id="menu_category_136"><a href="http://www.sparkfun.com/categories/136">FPGA</a></li><li id="menu_category_101"><a href="http://www.sparkfun.com/categories/101">iPod</a></li><li id="menu_category_25"><a href="http://www.sparkfun.com/categories/25">LPC</a></li><li id="menu_category_11"><a href="http://www.sparkfun.com/categories/11">MSP</a></li><li id="menu_category_9"><a href="http://www.sparkfun.com/categories/9">PIC</a></li><li id="menu_category_125"><a href="http://www.sparkfun.com/categories/125">PICAXE</a></li><li id="menu_category_137"><a href="http://www.sparkfun.com/categories/137">PSoC</a></li><li id="menu_category_104"><a href="http://www.sparkfun.com/categories/104">Roomba</a></li><li id="menu_category_94"><a href="http://www.sparkfun.com/categories/94">SAM</a></li><li id="menu_category_95"><a href="http://www.sparkfun.com/categories/95">ST</a></li><li id="menu_category_167"><a href="http://www.sparkfun.com/categories/167">STAMP</a></li><li id="menu_category_107"><a href="http://www.sparkfun.com/categories/107">Wiring</a></li><li id="menu_category_169"><a href="http://www.sparkfun.com/categories/169">WIZnet</a></li><li id="menu_category_166"><a href="http://www.sparkfun.com/categories/166">XMOS</a></li><li id="menu_category_142"><a href="http://www.sparkfun.com/categories/142">Zune</a></li></ul></li><li id="menu_category_100"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/100">Dings and Dents</a></li><li id="menu_category_204"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/204">E-Textiles</a><ul style="display:none;"><li id="menu_category_205"><a href="http://www.sparkfun.com/categories/205">Aniomagic</a></li><li id="menu_category_210"><a href="http://www.sparkfun.com/categories/210">fabrickit</a></li><li id="menu_category_135"><a href="http://www.sparkfun.com/categories/135">LilyPad</a></li><li id="menu_category_206"><a href="http://www.sparkfun.com/categories/206">Materials</a></li></ul></li><li id="menu_category_4"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/4">GPS</a><ul style="display:none;"><li id="menu_category_18"><a href="http://www.sparkfun.com/categories/18">Antennas</a></li><li id="menu_category_86"><a href="http://www.sparkfun.com/categories/86">Eval Boards</a></li><li id="menu_category_17"><a href="http://www.sparkfun.com/categories/17">Modules</a></li></ul></li><li id="menu_category_157"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/157">Kits</a></li><li id="menu_category_76"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/76">LCDs</a><ul style="display:none;"><li id="menu_category_147"><a href="http://www.sparkfun.com/categories/147">Color</a></li><li id="menu_category_148"><a href="http://www.sparkfun.com/categories/148">Monochrome</a></li></ul></li><li id="menu_category_96"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/96">Port-O-Rotary</a></li><li id="menu_category_1"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/1">Programmers</a><ul style="display:none;"><li id="menu_category_26"><a href="http://www.sparkfun.com/categories/26">ARM</a></li><li id="menu_category_7"><a href="http://www.sparkfun.com/categories/7">AVR</a></li><li id="menu_category_156"><a href="http://www.sparkfun.com/categories/156">DSP</a></li><li id="menu_category_37"><a href="http://www.sparkfun.com/categories/37">MAXQ</a></li><li id="menu_category_8"><a href="http://www.sparkfun.com/categories/8">MSP</a></li><li id="menu_category_6"><a href="http://www.sparkfun.com/categories/6">PIC</a></li><li id="menu_category_126"><a href="http://www.sparkfun.com/categories/126">PICAXE</a></li><li id="menu_category_168"><a href="http://www.sparkfun.com/categories/168">XMOS</a></li></ul></li><li id="menu_category_53"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/53">Prototyping</a><ul style="display:none;"><li id="menu_category_54"><a href="http://www.sparkfun.com/categories/54">Batteries</a></li><li id="menu_category_149"><a href="http://www.sparkfun.com/categories/149">Boards</a></li><li id="menu_category_91"><a href="http://www.sparkfun.com/categories/91">Connectors</a></li><li id="menu_category_182"><a href="http://www.sparkfun.com/categories/182">Enclosures</a></li><li id="menu_category_55"><a href="http://www.sparkfun.com/categories/55">General</a></li><li id="menu_category_155"><a href="http://www.sparkfun.com/categories/155">Hardware</a></li><li id="menu_category_92"><a href="http://www.sparkfun.com/categories/92">Sockets</a></li><li id="menu_category_116"><a href="http://www.sparkfun.com/categories/116">Solar</a></li><li id="menu_category_141"><a href="http://www.sparkfun.com/categories/141">Wire</a></li></ul></li><li id="menu_category_207"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/207">Retail</a><ul style="display:none;"><li id="menu_category_212"><a href="http://www.sparkfun.com/categories/212">Arduino</a></li><li id="menu_category_216"><a href="http://www.sparkfun.com/categories/216">Components</a></li><li id="menu_category_213"><a href="http://www.sparkfun.com/categories/213">Kits</a></li><li id="menu_category_211"><a href="http://www.sparkfun.com/categories/211">Materials</a></li><li id="menu_category_215"><a href="http://www.sparkfun.com/categories/215">Prototyping</a></li><li id="menu_category_214"><a href="http://www.sparkfun.com/categories/214">Sensors</a></li><li id="menu_category_217"><a href="http://www.sparkfun.com/categories/217">Tools</a></li></ul></li><li id="menu_category_134"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/134">Retired</a><ul style="display:none;"><li id="menu_category_194"><a href="http://www.sparkfun.com/categories/194">Breakout Boards</a></li><li id="menu_category_203"><a href="http://www.sparkfun.com/categories/203">Cables</a></li><li id="menu_category_200"><a href="http://www.sparkfun.com/categories/200">Classes</a></li><li id="menu_category_192"><a href="http://www.sparkfun.com/categories/192">Components</a></li><li id="menu_category_191"><a href="http://www.sparkfun.com/categories/191">Development Tools</a></li><li id="menu_category_188"><a href="http://www.sparkfun.com/categories/188">GPS</a></li><li id="menu_category_190"><a href="http://www.sparkfun.com/categories/190">Kits</a></li><li id="menu_category_196"><a href="http://www.sparkfun.com/categories/196">LCD</a></li><li id="menu_category_201"><a href="http://www.sparkfun.com/categories/201">Programmers</a></li><li id="menu_category_195"><a href="http://www.sparkfun.com/categories/195">Prototyping</a></li><li id="menu_category_197"><a href="http://www.sparkfun.com/categories/197">Robotics</a></li><li id="menu_category_189"><a href="http://www.sparkfun.com/categories/189">Sensors</a></li><li id="menu_category_208"><a href="http://www.sparkfun.com/categories/208">SFE Widgets</a></li><li id="menu_category_198"><a href="http://www.sparkfun.com/categories/198">Swag</a></li><li id="menu_category_193"><a href="http://www.sparkfun.com/categories/193">Tools</a></li><li id="menu_category_199"><a href="http://www.sparkfun.com/categories/199">Wireless</a></li></ul></li><li id="menu_category_31"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/31">Robotics</a><ul style="display:none;"><li id="menu_category_179"><a href="http://www.sparkfun.com/categories/179">Drivers</a></li><li id="menu_category_181"><a href="http://www.sparkfun.com/categories/181">Kits</a></li><li id="menu_category_178"><a href="http://www.sparkfun.com/categories/178">Motors</a></li><li id="menu_category_202"><a href="http://www.sparkfun.com/categories/202">Other</a></li><li id="menu_category_180"><a href="http://www.sparkfun.com/categories/180">Wheels</a></li></ul></li><li id="menu_category_185"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/185">Sale</a></li><li id="menu_category_23"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/23">Sensors</a><ul style="display:none;"><li id="menu_category_80"><a href="http://www.sparkfun.com/categories/80">Accelerometers</a><ul><li id="menu_category_161"><a href="http://www.sparkfun.com/categories/161">1-axis</a></li><li id="menu_category_162"><a href="http://www.sparkfun.com/categories/162">2-axis</a></li><li id="menu_category_163"><a href="http://www.sparkfun.com/categories/163">3-axis</a></li></ul></li><li id="menu_category_146"><a href="http://www.sparkfun.com/categories/146">Biometrics</a></li><li id="menu_category_117"><a href="http://www.sparkfun.com/categories/117">Capacitive</a></li><li id="menu_category_151"><a href="http://www.sparkfun.com/categories/151">Current</a></li><li id="menu_category_143"><a href="http://www.sparkfun.com/categories/143">Flex / Force</a></li><li id="menu_category_85"><a href="http://www.sparkfun.com/categories/85">Gyros</a><ul><li id="menu_category_158"><a href="http://www.sparkfun.com/categories/158">1-axis</a></li><li id="menu_category_159"><a href="http://www.sparkfun.com/categories/159">2-axis</a></li><li id="menu_category_183"><a href="http://www.sparkfun.com/categories/183">3-axis</a></li></ul></li><li id="menu_category_144"><a href="http://www.sparkfun.com/categories/144">ID</a></li><li id="menu_category_160"><a href="http://www.sparkfun.com/categories/160">IMU</a></li><li id="menu_category_139"><a href="http://www.sparkfun.com/categories/139">Infrared</a></li><li id="menu_category_102"><a href="http://www.sparkfun.com/categories/102">Light / Imaging</a></li><li id="menu_category_83"><a href="http://www.sparkfun.com/categories/83">Magneto</a></li><li id="menu_category_84"><a href="http://www.sparkfun.com/categories/84">Proximity</a></li><li id="menu_category_165"><a href="http://www.sparkfun.com/categories/165">Radiation</a></li><li id="menu_category_186"><a href="http://www.sparkfun.com/categories/186">Sound</a></li><li id="menu_category_82"><a href="http://www.sparkfun.com/categories/82">Temperature</a></li><li id="menu_category_152"><a href="http://www.sparkfun.com/categories/152">Weather</a></li></ul></li><li id="menu_category_97"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/97">SFE Widgets</a></li><li id="menu_category_130"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/130">Swag</a></li><li id="menu_category_46"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/46">Tools</a><ul style="display:none;"><li id="menu_category_47"><a href="http://www.sparkfun.com/categories/47">Hand Tools</a></li><li id="menu_category_48"><a href="http://www.sparkfun.com/categories/48">Hot-Air Rework</a></li><li id="menu_category_177"><a href="http://www.sparkfun.com/categories/177">Instruments</a></li><li id="menu_category_28"><a href="http://www.sparkfun.com/categories/28">Power Supplies</a></li><li id="menu_category_49"><a href="http://www.sparkfun.com/categories/49">Soldering</a></li></ul></li><li id="menu_category_138"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/138">Tracking</a></li><li id="menu_category_16"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/16">Wireless</a><ul style="display:none;"><li id="menu_category_78"><a href="http://www.sparkfun.com/categories/78">Antennas</a></li><li id="menu_category_115"><a href="http://www.sparkfun.com/categories/115">Bluetooth</a></li><li id="menu_category_79"><a href="http://www.sparkfun.com/categories/79">General</a></li><li id="menu_category_113"><a href="http://www.sparkfun.com/categories/113">Modem</a></li><li id="menu_category_114"><a href="http://www.sparkfun.com/categories/114">Nordic</a></li><li id="menu_category_112"><a href="http://www.sparkfun.com/categories/112">WiFi</a></li><li id="menu_category_111"><a href="http://www.sparkfun.com/categories/111">Zigbee/802.15.4</a></li></ul></li>  <li><hr /></li>
+  <li>
+    <img style='float: left' src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/pdf.gif" />
+    <a href="http://sparkfun.com/download/PDFs/catalog.pdf">Full catalog</a>
+  </li>
+</ul>
+        <br />
+      </div>
+
+      <div id="right">
+        <div class="collapsible user">
+  <p class="cart-link"><img height="19" width="19" alt="" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_shoppingcart.gif"> 
+     <a href="http://www.sparkfun.com/cart"><span id="items_in_cart">0</span> items in your cart</a></p>
+  <form action="https://www.sparkfun.com/account/login" id="login" method="post">
+    <label for="user_login">Email</label>
+    <input id="user_login" type="text" tabindex="1" maxlength="320" name="user">
+    <label for="user_password">Password</label>
+    <input id="user_password" type="password" tabindex="2" maxlength="20" name="passwd">
+    <p class="right"><input type="submit" value="log in" class="button"></p>
+    <p><a href="https://www.sparkfun.com/account/forgot_password">Forgot your password?</a><br/>
+       No account? <a href="https://www.sparkfun.com/account/make">Register here</a>.</p>
+  </form>
+</div>
+<br>
+
+        <h2 id="feed_menu" class="collapsible"><span class="arrow"></span>Feeds</h2>
+        <ul class="collapsible feeds" style="display: block">
+  <li><a href="http://www.sparkfun.com/feeds/news">News</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/products">Products</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/changes">Product Changes</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/comments">Comments</a></li>
+  <li><a href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&amp;v=2&amp;orderby=published">Videos</a></li>
+</ul>
+        <br />
+
+        <h2 id="resources_menu" class="collapsible"><span class="arrow"></span>Resources</h2>
+        <ul class="collapsible resources" style="display: block">
+  <li><a href="http://www.sparkfun.com/news/263">Official SparkFun IRC Channel</a></li>
+  <li><a href="http://www.batchpcb.com/" target="_blank">Custom PCBs</a></li>
+  <li><a href="http://www.opencircuits.com/" target="_blank">Open Circuits</a></li>
+  <li><a href="http://www.ponoko.com/make-and-sell/electronics" target="_blank">Ponoko - Your Personal Factory</a></li>
+  <li><a href="http://www.sparkfun.com/static/jobs">Jobs @ SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/tutorials/92">Sell Your Widget on SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/quiz">Take the SparkFun Quiz</a></li>
+</ul>
+        <br />
+
+        <h2 id="currency_menu_head" class="collapsible"><span class="arrow"></span>Currency</h2>
+        
+<div class="collapsible" id="currency_menu">
+  Display prices in
+  <input type="hidden" id="preferred_currency" value="USD" />
+  <ul id="currency_menu_list" class="currency">
+          <li>
+        <a id="currency_USD" onclick="SFE.change_currency('USD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_checked.gif" />
+                US Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_CAD" onclick="SFE.change_currency('CAD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Canadian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_AUD" onclick="SFE.change_currency('AUD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Australian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_GBP" onclick="SFE.change_currency('GBP'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                British Pound        </a>
+    </li>
+          <li>
+        <a id="currency_EUR" onclick="SFE.change_currency('EUR'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Euro        </a>
+    </li>
+      </ul>
+  </div>
+
+<script language="javascript">
+var CURRENCIES = {"USD":{"code":"USD","title":"US Dollar","symbol_left":"$","symbol_right":"","decimal_point":".","thousands_point":",","decimal_places":"2","value":"1.0000"},"CAD":{"code":"CAD","title":"Canadian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9706"},"AUD":{"code":"AUD","title":"Australian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9957"},"GBP":{"code":"GBP","title":"British Pound","symbol_left":"&pound;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.6187"},"EUR":{"code":"EUR","title":"Euro","symbol_left":"&euro;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.7214"}}</script>
+        <br />
+
+        <h2 id="feedback_menu" class="collapsible"><span class="arrow"></span>Feedback</h2>
+        <form id="feedback" class="collapsible" style="display: block">
+  <label for="feedback_textarea" style="font-weight: bold">What's on your mind?</label>
+  <br />
+  <textarea id="feedback_textarea" name="feedback_text"></textarea>
+  <br /><br />
+  <label for="feedback_email">Please include your email address if you'd like us to respond to a specific question.</label>
+  <br />
+  <br />
+  <input type="text" id="feedback_email" name="email" /> 
+  <br />
+  <input onclick="SFE.mind_feedback(); return(false);" type="button" class="button" value="Submit" /> 
+</form>
+      </div>
+
+      <div id="center">
+        <a name="content" id="content"></a>
+        
+<h1 class="red-header">
+    <span class="link"><a href="http://www.sparkfun.com">Home</a> |</span><span class="link"><a href="http://www.sparkfun.com/tutorials/">Tutorials</a>|</span>  Beginning Embedded Electronics - 3 
+</h1>
+
+<div class="news">
+  <p class="header">
+    <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/avatars/7185_sm.jpg" />
+    <a class="title" href="http://www.sparkfun.com/tutorials/95">Beginning Embedded Electronics - 3</a>
+    <br />
+    by <a href="http://www.sparkfun.com/users/7185">Nate</a> | June 19, 2008 | <i><a style="cursor: pointer" onclick="javascript: if(!$('comments').visible()) { SFE.toggle_collapsible($('comments_header')); } $('comments_header').scrollTo();">31 comments</a></i>
+    <span class="skill">
+      Skill Level: 
+              <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" />
+        Beginner
+          </span>
+  </p>
+  <hr />
+  <h2>
+	Lecture 3 - What is an oscillator?</h2>
+<div class="tutorial_text">
+	<p>
+		You can get all the parts for this lecture <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=8391" target="_blank"> here</a>.</p>
+	<p>
+		Sorry for the confusion. When these tutorials were written and photographed, we used the ATmega8. We now carry the newer ATmega168. You will find all ATmega168 information in the following pages, but the pictures will show an ATmega8.</p>
+	<p>
+		You&#39;ve got the LED blinking on your ATmega168 - congrats! That&#39;s a huge step. Now it&#39;s time to make it blink faster!</p>
+	<p>
+		You loaded code onto the chip and the ATmega168 is running that code, but how is it running? And how fast? Any micro needs a clock source. Think of it like a a type of &#39;musical beat&#39; that the micro uses to to execute its code in a set manner. Without a clock, the micro doesn&#39;t know how to run the code, and with a sloppy clock (one that varies a lot) the code runs at an undetermined rate. You must have a clock of some sort and sometimes you need a very accurate clock. You ever try dancing to a CD that skips? It can be very hard!</p>
+	<p>
+		There are many ways to generate a &#39;beat&#39; for the microcontroller. The ATmega168 gives many options. Here is a quick breakdown of the different types of beat generators:</p>
+	<ol>
+		<li>
+			External RC - This is generally used for *very low cost* applications. Using a resistor and a capacitor, the charge/discharge rate can be used as a clock input. I&#39;ve never really used this type of clock.</li>
+		<li>
+			Internal RC - This is the super cool oscillator. Found on newer micros, you can just ask the ATmega168 to generate its own clock! The silicon has a built in oscillator. Unfortunately it&#39;s not very accurate.</li>
+		<li>
+			External Oscillator - The is the defacto standard. Attach a quartz crystal (&#39;crystal&#39; for short) to the two osc pins and the code executes at this given frequency.</li>
+		<li>
+			External Resonator - A resonator is a bit cheaper than an oscillator but has worse tolerances.</li>
+		<li>
+			External Clock - Instead of an oscillator, you can use a powered clock driver. Handy if you have multiple devices that need to run on the same frequency. I&#39;ve never used this option.</li>
+	</ol>
+	<p align="center">
+		For some great information about clock sources and their uses, checkout this app note from <a href="http://www.avrfreaks.net/modules/FreaksArticles/files/21/Why%20you%20need%20a%20Clock%20Source.pdf" target="_blank"> AVRFreaks</a>.</p>
+	<p>
+		I really only use 3 out of these 5 options so I&#39;m going to delve into them more:</p>
+	<p>
+		<b>Internal RC -</b></p>
+	<p>
+		Atmel is very smart! They ship the ATmega168 preconfigured to use the 1MHz internal oscillator. The ATmega168 (and AVRs in general) can operate at 1 instruction per clock cycle. This means that every time the oscillator goes through one cycle, one instruction is completed (this is roughly true - there are some instructions that take more than one clock cycle). Because we are using stock ATmega168s, we are running the blink code at 1MHz or 1MIPS (million instructions per second). You read that right - 1 million things a second! That&#39;s pretty impressive. What&#39;s the problem with the internal osc? It has a tolerance of +/-5% and a max speed of 8MHz. +/-5% tolerance means your ATmega168 might run at 1,000,000 * 1.05 = 1,050,000 IPS while your neighbors&#39; ATmega168 runs at 1,000,000 * 0.95 = 950,000 IPS. This may not sound like much difference but in the digital world, this is huge! Also, the ATmega168 has a max speed of 20MHz (the internal osc runs max up to 8MHz) so if you really wanna push this IC to the max, you&#39;ll need a to use an external oscillator.</p>
+	<p>
+		<b>External Oscillator -</b></p>
+	<p>
+		This one is most common type of clock source.</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/3-Oscillators/Xtal-US.jpg" /></p>
+	<p>
+		Quartz crystal oscillators come in all different flavors and frequencies. Some of the more common freq are 20MHz, 16MHz, 10MHz, 4MHz. There are also some frequencies like 14.7456MHz, 9.216MHz, and 32.768kHz that are available because these frequencies are multiples of speeds needed for serial communications and for timing. For example - if you need really accurate 9600bps serial communications, 9.216MHz divided by 960 = 9600. There is no integer that divides nicely into 16MHz to get 9600. So serial communications at 9.216MHz will be very accurate while serial at 16MHz will always have some small amount of error.&nbsp;</p>
+	<p>
+		Inside the metal housing is a small piece of quartz crystal that has been precisely cut in size so that the piece of crystal vibrates at a specific frequency. The ATmega&#39;s internal osc was +/-5% tolerant. On the other hand, a crystal is normally &#39;+/-20ppm&#39;. This means the frequency is accurate within +/-20 parts per million! So you might have a 16,000,020MHz crystal while your neighbor has a 15,999,980MHz. This is equivalent to +/-0.00000125%. The crystal is 4 million times more accurate than the internal oscillator!</p>
+	<blockquote>
+		<p>
+			<b>Technical note:</b> Sorry to swamp your brain with nitty gritty details, but this is reasonably important. The silver metal device shown above is a <i> <a href="http://en.wikipedia.org/wiki/Crystal_oscillator" target="_blank"> crystal</a></i>. It is not technically an <i> <a href="http://en.wikipedia.org/wiki/Electronic_oscillator" target="_blank"> oscillator</a></i>. Crystals are cheap. True oscillators are expensive ($2-$4 range). What is the difference? An oscillator uses power and creates a true frequency pulse. This pulse can be used to drive all sorts of peripherals. A crystal is a purely passive device that requires some external drivers to get it to become an &#39;oscillator&#39;. Luckily for us and the purposes of this tutorial, 99% of all microcontrollers have built-in circuitry so that by attaching a cheap &#39;crystal&#39; to the two input pins, the internal drivers will drive the crystal, create an oscillator, and the micro will have a good clock source. Please forgive us and all the other technical documents that incorrectly use &#39;oscillator&#39; and &#39;crystal&#39; interchangeably.</p>
+	</blockquote>
+	<p>
+		Some negatives of crystals:</p>
+	<ol>
+		<li>
+			Crystals are a bit expensive. $0.25 compared to $0.10 of a resonator.</li>
+		<li>
+			They cannot be made as small as a resonator (crystals take up more PCB area).</li>
+		<li>
+			Crystals require &#39;load capacitors&#39;. Load capacitors start the crystal oscillating. Without the load caps, your crystal may function today, but someday it may not. Load caps are cheap, but they take more room on the PCB.</li>
+	</ol>
+	<p>
+		<b>External Resonator - </b></p>
+	<p>
+		Resonators fall in between the internal RC and a crystal.</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/3-Oscillators/Resonators.jpg" /></p>
+	<p align="left">
+		A resonator is a piece of ceramic that is manufactured in such a way to oscillate at a given frequency. Unfortunately this process is difficult to do well. Resonators have a standard tolerance of +/-0.5%. So resonators are 10 times more accurate than the internal oscillator but they are still a bit &#39;loose&#39; compared to crystals.</p>
+	<p align="left">
+		Resonators tend to be cheaper than crystals. Resonators tend to be lower frequency than crystals. Resonators are cool because they have the &#39;load caps&#39; built into the 3-pin device! Resonators can be made *very small* and can minimize your PCB area.</p>
+	<p align="left">
+		So pick your poison. For many applications the internal oscillator is just fine! But if you&#39;re trying to do serial communication, 5% is usually too poor (serial tolerance is 1-2%). I&#39;ve used crystals for most of my projects. But for the really small devices, I&#39;ve used a resonator. Anything that deals with digital RF signals requires some really tight tolerance crystals. Any oscillator will fluctuate a bit over time (this is called &#39;aging&#39;) and any clock will vary with temperature.</p>
+	<p>
+		As mentioned earlier, the ATmega168 ships configured with an internal 1MHz osc. But we can push it faster - and better! Let&#39;s setup the ATmega168 to run at 16MHz with an external crystal.</p>
+	<p>
+		What are some of the side-effects of running the ATmega168 at this higher frequency? You will not be able to run the IC at this higher freq at lower voltages (such as 3.3V or 2.8V). Since we are dealing with a 5V supply, this is not a deal breaker. At 20MHz the micro will consume more power than at 1MHz. These are all things to consider when developing your own system.</p>
+	<p>
+		How fast can I push it?</p>
+	<p>
+		The max speed for the ATmega168 is 20MHz or 20MIPS! That&#39;s blindingly fast!</p>
+	<p>
+		Get your 16MHz crystal out and find pins PB6/7.</p>
+	<p align="center">
+		<img alt="" src="http://sparkfun.com/images/tutorials/BeginningEmbedded/3-Oscillators/Osc-0.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="center">
+		Plug the crystal legs into these two pins and connect these pins to ground through two 22pF caps.</p>
+	<p align="left">
+		This completes the needed hardware, now we need to tell the ATmega168 to use the external crystal.</p>
+	<p align="left">
+		<b><a name="FuseBits"></a>Fuse Bits - </b></p>
+	<p align="left">
+		This was one of the wildest, hardest thing to get used to with AVRs. The fuse bits are a very low-level configuration system. By setting or clearing these bits you can completely change how the AVR functions. I was a PIC guy for many years and PIC configuration bits were easy. You just clicked on a nice Windows GUI or programmed the bits directly into your C code. No fuss. AVRs are very different and you can literally break your AVR if you program the fuse bits willy-nilly.</p>
+	<p align="left">
+		There are two bytes on the ATmega168 that make up the &#39;fuse bits&#39;. If you haven&#39;t already, download the full <a href="http://www.atmel.com/dyn/products/product_card.asp?part_id=3303" target="_blank">ATmega168 datasheet</a> (currently it&#39;s 376 pages long!) and save it to your desktop. If you&#39;ve never read a datasheet, don&#39;t worry! You don&#39;t need to know all 376 pages, you just need to know how to absorb information from it - and that&#39;s not trivial!</p>
+	<p align="left">
+		Let&#39;s do a search for &#39;fuse bits&#39;. We get directed towards the &#39;Clock Sources&#39; section. What a coincidence! (Be sure to have the book marks or section bar open so that you can see the different sections of the datasheet.) There are so many options for clock sources into the ATmega168. Let&#39;s start with tweaking the internal oscillator from 1MHz to 8MHz.</p>
+	<p align="center">
+		<img alt="" src="http://sparkfun.com/images/tutorials/BeginningEmbedded/3-Oscillators/Osc-1.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="left">
+		From page 34 (section 8.6): &quot;By default, the Internal RC Oscillator provides an approximate 8.0 MHz clock. Though voltage and temperature dependent, this clock can be very accurately calibrated by the user. The device is shipped with the CKDIV8 Fuse programmed. See &ldquo;System Clock Prescaler&rdquo; on page 37 for more details.&quot;</p>
+	<p align="left">
+		So to get the internal oscillator to run faster, we need to change the CKDIV8 fuse bit.</p>
+	<p align="center">
+		<img alt="" src="http://sparkfun.com/images/tutorials/BeginningEmbedded/3-Oscillators/Osc-2.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="left">
+		Ahah! Here we see how the ATmega168 worked right out of the box. Atmel ships these to use the &#39;Calibrated Internal RC Oscillator&#39; (8MHz) with the &#39;Divide clock by 8&#39; set as well (1MHz). Very good. Now we just need to change the CKDIV8 bit.</p>
+	<p align="left">
+		Default Low Fuse Byte : 0b.0110.0010</p>
+	<p align="left">
+		New Low Fuse Byte : 0b.1110.0010</p>
+	<p align="left">
+		Using these new fuse bits, the ATmega168 should start running at 8MHz internal osc and we should see the LED blink 8 times as fast! There is a couple ways to do this, but the way that I&#39;ve found to be most straight forward is a bit command line intense. Open up a command prompt and type &#39;avrdude&#39;. You should get a mass of help text. If you&#39;re using a PG1 (serial) or PG2 (parallel) programmer, you&#39;ll need to select the right string:</p>
+	<p>
+		To read the ATmega168 fuses:</p>
+	<ul>
+		<li>
+			PG1 (serial):
+			<ul>
+				<li>
+					avrdude -p m168 -P COM1 -c ponyser -U lfuse:r:-:h -U hfuse:r:-:h</li>
+			</ul>
+		</li>
+		<li>
+			PG2 (parallel):
+			<ul>
+				<li>
+					avrdude -p m168 -P lpt1 -c stk200 -U lfuse:r:-:h -U hfuse:r:-:h</li>
+			</ul>
+		</li>
+	</ul>
+	<p>
+		Again, I am going to assume you&#39;re using the PG2, but you can modify the strings to work with a serial programmer. This basic string should cause avrdude to report back the default fuses for the ATmega168 - High fuse = 0xDF, Low fuse = 0x62</p>
+	<p>
+		How do I form a new fuse byte? Keep searching for &#39;fuse bits&#39; until you hit page 288. This shows the two fuse bytes (high and low) and their default values. All you need to do is change the lower fuse byte from 0x62 (0b.0110.0010) to 0xE2 (0b.1110.0010). Now we splice this into the previous read string and switch from read to write.</p>
+	<p>
+		Internal 8MHz:</p>
+	<ul>
+		<li>
+			avrdude -p m168 -P lpt1 -c stk200 -U lfuse:w:0xE2:m</li>
+	</ul>
+	<p>
+		Run this string at the command prompt and wamm-o, your AVR should be running at 8MHz. I have had a few instances where avrdude reports some errors reading the fuses and prompts if I want to &#39;recover&#39; the fuse settings or some such error. I&#39;m not sure what the error is. You can say yes/no (doesn&#39;t matter), and then send the same string. The second try should successfully set the fuses. All right, the LED should be blinking like crazy, now let&#39;s take it up one more notch to 16MHz.</p>
+	<p align="center">
+		<img alt="" src="http://sparkfun.com/images/tutorials/BeginningEmbedded/3-Oscillators/Osc-3.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="center">
+		Notice how I don&#39;t have 22pF load caps on my 16MHz crystal? Bad engineer! Bad!</p>
+	<p align="center">
+		What are 22pF used for? These small capacitors help &#39;load&#39; the crystal allowing it to oscillate. Without them, the crystal may not start oscillating - hence, your system might not run. This rarely happens, but in a full blown product, this would be disastrous! It&#39;s ok to skip them for bread boarding purposes, but good engineering practices require them.</p>
+	<p>
+		You will need to have the 16MHz crystal attached to the oscillator pins as shown in the last schematic above. Go back to the &#39;Clock Sources&#39; category in the datasheet and do a bit of research for the external crystal oscillator option. I&#39;ll give you a hint, it&#39;s going to look something like this:</p>
+	<ul>
+		<li>
+			CKDIV8 = 1</li>
+		<li>
+			CKOUT = 1</li>
+		<li>
+			SUT1 = 1</li>
+		<li>
+			SUT0 = 0</li>
+		<li>
+			CKSEL3 = 0</li>
+		<li>
+			CKSEL2 = 1</li>
+		<li>
+			CKSEL1 = 1</li>
+		<li>
+			CKSEL0 = 0</li>
+	</ul>
+	<p>
+		16MHz external osc:</p>
+	<ul>
+		<li>
+			avrdude -p m168 -P lpt1 -c stk200 -U lfuse:w:0xE6:m</li>
+	</ul>
+	<p>
+		Once you get this programmed, the ATmega168 should be utilizing the external 16MHz oscillator blinking the LED super-fast. If not, check your load capacitors and the xtal connections. The ATmega168 has a maximum speed of 20MHz (20 MIPS!). Try overclocking your micro some day with a 30MHz or 40MHz crystal. More than likely it will work just fine, but you&#39;d never want to design a real system around an out-of-spec clock speed.</p>
+	<p>
+		Homework time. You will need to learn how to use your multimeter to measure current consumption. Because current is measured in series (voltage is measured in parallel) you will need to find a spot on your breadboard where all the current being used by your bread board can be interrupted and measured. Measure the current draw:</p>
+	<ol>
+		<li>
+			When the ATmega168 is in reset = ?</li>
+		<li>
+			When the ATmega168 is running with 1MHz internal osc = ?</li>
+		<li>
+			8MHz internal osc = ?</li>
+		<li>
+			16MHz external osc = ?</li>
+	</ol>
+	<p>
+		A great resource that we use religiously is the AVR fuse calculator:</p>
+	<p style="text-align: center;">
+		<a classname="" href="http://palmavr.sourceforge.net/cgi-bin/fc.cgi" name="" target="_blank">http://palmavr.sourceforge.net/cgi-bin/fc.cgi</a></p>
+	<p>
+		Use it to double check your fuse settings and avoid permanently killing your AVR.</p>
+	<p>
+		During each one of these experiments, do a quick temperature test of your voltage regulator. In general, the regulator should be cool enough to touch. If it&#39;s red hot (be careful!) you should turn off your breadboard and check for shorts.</p>
+	<p>
+		Why do regulators heat up? We are using a very basic linear regulator. This type of regulator inputs a higher voltage (in my case 9V) and outputs a lower voltage (5V). The difference in voltage is expelled as heat through the metal tab. This heat is measured in wasted power or Watts. If your input is 9V, output is 5V, and your 5V system uses 50mA:</p>
+	<ul>
+		<li>
+			(9 - 5) * 0.050 = 0.2W or 200mW</li>
+	</ul>
+	<p>
+		200mW will cause the regulator to heat up a bit. How about an amp?</p>
+	<ul>
+		<li>
+			(9 - 5) * 1.000 = 4W!</li>
+	</ul>
+	<p>
+		That&#39;s some serious heat! The regulator will be very hot and may be permanently damaged if it&#39;s allowed to run at super-high temperatures for extended periods of time.</p>
+	<p>
+		You may have noticed, by lowering the input voltage, we can reduce the amount of heat expelled. Why not just input 5V and call it a day? These cheap linear voltage regulators require something called &#39;drop-out voltage&#39;. This is a very non-technical term for the extra voltage the regulator needs to output the required voltage. Anything below this voltage and the regulator will &#39;drop-out&#39; the output voltage below the rated voltage. For LM7805 it&#39;s a good rule of thumb to have 1.5V of overhead meaning you need to input at least 6.5V to get 5V on the output. If you input less than 6.5V (4 AA batteries for instance), the 5V output is not guaranteed. Each voltage regulator is different so check the datasheet for the part in your hand! Some v-regs are specifically designed to have low drop out voltage. Some smaller v-regs have as low as 50mV! Our standard 3.3V regulator requires a minimum of 3.35V to output a solid 3.3V.</p>
+	<p>
+		Many regulators have an internal shutdown feature that prevent the regulator from destroying itself if there is a short on the output. If you flip the power switch on your breadboard and the LED doesn&#39;t turn on, odds are your voltage regulator is trying so hard to output enough current (because you&#39;ve hooked up a component backwards or worse) that the regulator shuts down and the LED has no power to illuminate. If this is the case, shut down your breadboard asap.</p>
+	<p>
+		In general, voltage regulators will run warm. This is ok. It you ever smell something odd or you can feel a heat wave from your breadboard, just shut things down and take a second look.</p>
+	<p>
+		You can get all the parts for this lecture <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=8391" target="_blank"> here</a>.</p>
+	<p>
+		From now on we will run things with an external 16MHz crystal. Vary as your project needs it.</p>
+	<p align="left">
+		We love feedback! Please report typos, comments, or recommendations to <a href="mailto:spark@sparkfun.com">spark@sparkfun.com</a>.</p>
+	<p align="left">
+		&nbsp;</p>
+	<p align="left">
+		<a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=57">Lecture 1 - Background and Power Supply</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=93"><br />
+		<br />
+		Lecture 2 - How to Get Code Onto a Microcontroller</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=95"><br />
+		<br />
+		Lecture 3 - What is an oscillator?</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=104"><br />
+		<br />
+		Lecture 4 - UART and Serial Communication</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=105"><br />
+		<br />
+		Lecture 5 - AVR GCC Compiling</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=106"><br />
+		<br />
+		Lecture 6 - Soldering Basics</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=107"><br />
+		<br />
+		Lecture 7 - SMD Soldering</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=108"><br />
+		<br />
+		Lecture 8 - Eagle: Schematics</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=109"><br />
+		<br />
+		Lecture 9 - Eagle: PCB Layout</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=110"><br />
+		<br />
+		Lecture 10 - Eagle: Creating a new part</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=111"><br />
+		<br />
+		Common Mistakes, Tips and Tricks</a></p>
+</div></div>
+
+<div id="comments_container">
+  <h2 id="comments_header" class="collapsible grey big"><span class="arrow"></span>Comments <span class="count">31 comments</span></h2>
+<div id="comments" class="collapsible white">
+  <div style="padding: 20px">  <div style="text-align: center">
+    <b><a href="#" onclick="javascript: $('right').scrollTo(); $('user_login').select()">Login</a> to post comments.</b>
+  </div>
+</div>
+  <div class="comment" id="comment_1120"><span class="header"><a href="http://www.sparkfun.com/users/40747" class="bold">JeffB</a> <span class="wide">|</span> <b>December  2, 2008 at  2:41 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1120">1</span></strong></span><br /></span><div class="body"><p>Well, I've been struggling with tutorial as others have for the last few days, and someone should check behind me but I think i've got something going here for the atmega8 people on a few problems</p>
+
+<p>avrdude -p m8 -P COM1 -c ponyser -U lfuse:w:0xE4:m</p>
+
+<p>did the trick for the Device not found stuff
+and 0xE4 works (i believe) to set to 8mhz Internal RC osc and disable the chkdiv8 bit.. referring to table 9 under clock sources that is in atmega8 datasheet, E6 which is 0110 isnt assigned to any clock speed and so im guessing defaults to the 1mhz?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_1131"><img class="avatar" src="https://secure.gravatar.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/7185" class="bold">Nate</a> <span class="wide">|</span> <b>December  3, 2008 at  9:36 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1131">1</span></strong></span><br /></span><div class="body"><p>I'm wrapping my head around your exact question: You are correct - the ATmega's ship with the default 1MHz internal osc set. Sounds like you successfully removed the clock/8 setting, allowing the chip to run at 8MHz with the internal oscillator. Good!</p>
+</div></div></div></div><div class="comment" id="comment_849"><span class="header"><a href="http://www.sparkfun.com/users/50348" class="bold">unebonnevie</a> <span class="wide">|</span> <b>November  4, 2008 at 11:30 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_849">1</span></strong></span><br /></span><div class="body"><p>Oh, man...</p>
+
+<p>Before wiring up the crystal and the caps in, avrdude read the fuse bits correctly on my ATMEGA8-16PU (16Mhz max.) and output two bytes, 0xe1 and 0xd9 in that order.  Then I turned off the power and wired the crystal in and avrdude wrote 1 byte of lfuse, byte 0xE6, as well as verified it.  Now the LED does not blink at all!</p>
+
+<p>I attempted to do a read again and get the below.</p>
+
+<p>avrdude: AVR device not responding
+avrdude: initialization failed, rc=-1
+Double check connections and try again, or use -F to override this check.</p>
+
+<p>Tips? Thx</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_850"><span class="header"><a href="http://www.sparkfun.com/users/50348" class="bold">unebonnevie</a> <span class="wide">|</span> <b>November  4, 2008 at 11:50 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_850">1</span></strong></span><br /></span><div class="body"><p>AVRDude now says my ATMEGA8 device signature is 0xffffff.  The correct device id is 0x1E9307.</p>
+
+<p>avrdude: Device signature = 0xffffff</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_1094"><span class="header"><a href="http://www.sparkfun.com/users/53382" class="bold">Malweth</a> <span class="wide">|</span> <b>November 28, 2008 at  8:42 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1094">1</span></strong></span><br /></span><div class="body"><p>I had the same problem. I was using the ATMega168, but my situation was otherwise identical. I turned off the power, removed the 22pF caps and it is blinking like a champ!</p>
+
+<p>I don't have an O-scope to figure out what was going on, but I verified this by setting the low fuse bit back to 62, replacing the caps, and setting it back again to E6.</p>
+
+<p>Sure was to find out I hadn't bricked my first AVR.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_1109"><span class="header"><a href="http://www.sparkfun.com/users/53382" class="bold">Malweth</a> <span class="wide">|</span> <b>December  1, 2008 at 11:16 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1109">1</span></strong></span><br /></span><div class="body"><p>Such an obvious mistake I made.
+The reason why my Crystal wasn't driven using the capacitors... I put the wrong caps in! I used the .1 uF instead of the 22 pF caps. </p>
+
+<p>About four times the capacitance surely helped stop any oscillation.</p>
+</div></div></div></div></div></div></div></div><div class="comment" id="comment_1293"><span class="header"><a href="http://www.sparkfun.com/users/45598" class="bold">SteveNM</a> <span class="wide">|</span> <b>December 18, 2008 at 10:18 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1293">1</span></strong></span><br /></span><div class="body"><p>Once the crystal is connected to PB6 and PB7 and the fuse bits are set to use it, can you  use these ports as I/O again (assuming you reset the fuse bits to their original values)....</p>
+</div></div><div class="comment" id="comment_1350"><span class="header"><a href="http://www.sparkfun.com/users/32634" class="bold">Cybermongul</a> <span class="wide">|</span> <b>December 28, 2008 at 12:07 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1350">1</span></strong></span><br /></span><div class="body"><p>Can someone give a hand here.I am new to this.Where do i go on the AVR's Programmer Notepad to change it to a CLI.Or is it possible to use the inhouse CLI from DOS</p>
+</div></div><div class="comment" id="comment_2385"><span class="header"><a href="http://www.sparkfun.com/users/63349" class="bold">David</a> <span class="wide">|</span> <b>March 11, 2009 at  3:42 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2385">1</span></strong></span><br /></span><div class="body"><p>How would I know that 4W is too much for the regulator besides trying it out and finding out it gets hot?</p>
+</div></div><div class="comment" id="comment_2511"><span class="header"><a href="http://www.sparkfun.com/users/61505" class="bold">beaustew</a> <span class="wide">|</span> <b>March 20, 2009 at  6:36 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2511">1</span></strong></span><br /></span><div class="body"><p>Everything has worked well up until trying to use avrdude to set the low fuse value to hex E6. avrdude reports that E6 is an invalid byte value for use in immediate mode. Any ideas anyone?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_2519"><span class="header"><a href="http://www.sparkfun.com/users/61505" class="bold">beaustew</a> <span class="wide">|</span> <b>March 21, 2009 at  5:03 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2519">1</span></strong></span><br /></span><div class="body"><p>OK, my bad, I typed O instead of 0 into the command line. However, based on the data sheet for the atmega168, I used 0xEF for the low fuse byte, rather than the 0xE6 as stated in the tutorial. They both work, but the data sheet indicates that CKSEL3 needs to be 1. Any comments?</p>
+</div></div></div></div><div class="comment" id="comment_2828"><span class="header"><a href="http://www.sparkfun.com/users/62427" class="bold">phobias</a> <span class="wide">|</span> <b>April  7, 2009 at  8:51 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2828">1</span></strong></span><br /></span><div class="body"><p>Think I hit the willy-nilly problem. "AVRs are very different and you can literally break your AVR if you program the fuse bits willy-nilly."</p>
+
+<p>Going along fine until I tried to program the fuse bits for the external clock mode and then wham-o,  The light turned off and I can't even read a valid chip id anymore</p>
+
+<p>Think my AVR is hosed?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_2992"><span class="header"><a href="http://www.sparkfun.com/users/62427" class="bold">phobias</a> <span class="wide">|</span> <b>April 16, 2009 at  5:48 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2992">1</span></strong></span><br /></span><div class="body"><p>Have a new AVR and up and running.  Lets not be willy nilly anymore.</p>
+</div></div></div></div><div class="comment" id="comment_2901"><span class="header"><a href="http://www.sparkfun.com/users/61505" class="bold">beaustew</a> <span class="wide">|</span> <b>April 10, 2009 at  9:26 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2901">1</span></strong></span><br /></span><div class="body"><p>Hi,</p>
+
+<p>Have successfully completed lectures 1,2,3. However, tried to run my app. with the parallel cable disconnected from computer and it wouldn't run. Why not? Which leads to the question - if you develop a device that actually accomplishes something useful, how does the atmega168 need to be wired once the parallel cable connectors are removed? I tried the datasheet to see if I could figure this out, but not a hope.</p>
+</div></div><div class="comment" id="comment_2991"><span class="header"><a href="http://www.sparkfun.com/users/62427" class="bold">phobias</a> <span class="wide">|</span> <b>April 16, 2009 at  5:47 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2991">1</span></strong></span><br /></span><div class="body"><p>You don't need to have it plugged in to work.</p>
+</div></div><div class="comment" id="comment_3933"><span class="header"><a href="http://www.sparkfun.com/users/72227" class="bold">dsweet</a> <span class="wide">|</span> <b>June 20, 2009 at  3:35 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3933">1</span></strong></span><br /></span><div class="body"><p>I had the same problem as unebonnevie.  Everything worked beauitfully until I sent the "avrdude -p m168 -P COM1 -c ponyser -U lfuse:w:0xe6:m" command.  The LED shut off and now any attmept to read or write to the atmega168 with avrdude produces a "AVR device not responding" message.  Similar to unebonnevie, it no longer has a valid device signature.  It is now 0x000000 and used to be 0x1e9406.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_3934"><span class="header"><a href="http://www.sparkfun.com/users/72227" class="bold">dsweet</a> <span class="wide">|</span> <b>June 20, 2009 at  4:31 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3934">1</span></strong></span><br /></span><div class="body"><p>Ignore my previous post.  Similar to Malweth, I put in the wrong cap but unlike Malweth's situation my crystal did not oscillate with out the caps.</p>
+</div></div></div></div><div class="comment" id="comment_4097"><span class="header"><a href="http://www.sparkfun.com/users/73775" class="bold">tlo57</a> <span class="wide">|</span> <b>July  1, 2009 at 11:12 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4097">1</span></strong></span><br /></span><div class="body"><p>Is the ATmega168 and ATmega8 identical besides the more memory? If I were to follow the tutorial with an ATmega8 would I get the same results?</p>
+</div></div><div class="comment" id="comment_5190"><span class="header"><a href="http://www.sparkfun.com/users/79840" class="bold">PseudoEngineer</a> <span class="wide">|</span> <b>September 11, 2009 at  8:29 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5190">1</span></strong></span><br /></span><div class="body"><p>Well, after reading several comments and saying to myself "I'M NOT GOING TO PUT THE WRONG CAPS IN!"...I put the wrong caps in...works better now...</p>
+
+<p>Is there some standard way of reading the codes on these things?  Do these teeny tiny letters actual mean anything?  Anyway to check what the actual value is?</p>
+
+<p>stupid caps...</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_5205"><span class="header"><a href="http://www.sparkfun.com/users/58580" class="bold">Korremar</a> <span class="wide">|</span> <b>September 12, 2009 at  5:02 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5205">1</span></strong></span><br /></span><div class="body"><p>The capacitors are coded in pF, with the last number being the amount of zeros that follow first two numbers, make sense? 
+Example:the 220 on the one side means 22 with 0 0's or 22pF.</p>
+
+<p>Your .1uF caps should have 104 on one side.
+104 = 10 0000 = 100,000pF = 0.1uF.</p>
+</div></div></div></div><div class="comment" id="comment_9389"><span class="header"><a href="http://www.sparkfun.com/users/39754" class="bold">3M</a> <span class="wide">|</span> <b>January  9, 2010 at  8:53 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9389">1</span></strong></span><br /></span><div class="body"><p>I'm having the same problem as other people, but unfortunately after verifying my caps are correct I still have the problem.  It was working until I ran the command 'avrdude -p m168 -P /dev/ttyS0 -c ponyser -U lfuse:w:0xe6:m' and the LED stopped blinking.  My Atmega168 is now "not responding".  I'm certain I have 22pF caps before my crystal, and there is ground going through the crystal (hooking up one lead to VCC and one to a leg of the crystal gives me ~5V).  Does anyone know how I could save my Atmega?</p>
+</div></div><div class="comment" id="comment_12590"><img class="avatar" src="https://secure.gravatar.com/avatar/67b00ea4d8c0d303df78a31cc8afdb7b?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/47663" class="bold">acidblue</a> <span class="wide">|</span> <b>April 23, 2010 at  8:20 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_12590">1</span></strong></span><br /></span><div class="body"><p>I'm sorry but that fuse calculator you link to is extremely confusing.</p>
+
+<p><a href="http://palmavr.sourceforge.net/cgi-bin/fc.cgi">http://palmavr.sourceforge.net/cgi-bin/fc.cgi</a> </p>
+
+<p>I don't see Ext Osc 16Mhz listed.
+Iv'e tried setting manually but I get completely different hex values than the tutorial gives. 
+The low fuse should be 11100110, correct?
+But that gives a low fuse hex of 0x19.</p>
+
+<p>Could some one link a resource or something on how to use that calculator.
+I'm sooo lost.</p>
+</div></div><div class="comment" id="comment_15210"><span class="header"><a href="http://www.sparkfun.com/users/140613" class="bold">mikeymike</a> <span class="wide">|</span> <b>July  1, 2010 at 12:29 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_15210">1</span></strong></span><br /></span><div class="body"><p>hi,
+   I was wondering if you guy can help, I was able to accidently fix my problem but dont exactly understand how. I was able to hook up a avr atmega16 and create a blinking led with the internal rc clock. I follow the schematics on this article by using a Crystal 14.7456MHz external clock and connect it to the xtal2 and xtal1 which each pin of the clock are connect to a 22pf capacitor (fyi the capacitor has a print of "220" on one side and the other side has "k2j"). I connect both capicator to ground. when I change the lfuse to 0b11101111, it stop working. BUT if I disconnect the clock from ground it started WORKING!! is this the correct way to connect the clock and did I do something wrong? also I notice that the picture of the breadboard in the article connected the clock without connected it to ground as well, but I check multi sources and the schematic always connects the cystal clock to ground
+  thanks for the help</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_15253"><img class="avatar" src="https://secure.gravatar.com/avatar/ea255fbef3fbe7bf3aec2aad6fcc3bec?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/79567" class="bold">N8B</a> <span class="wide">|</span> <b>July  1, 2010 at  3:06 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_15253">1</span></strong></span><br /></span><div class="body"><p>You have the fuse bits set for a low power crystal oscillator. Set lfuse to 0b11100110, so you are using a full swing crystal oscillator instead.</p>
+</div></div><div class="comment" id="comment_15976"><span class="header"><a href="http://www.sparkfun.com/users/142163" class="bold">monno</a> <span class="wide">|</span> <b>July 18, 2010 at 10:26 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_15976">1</span></strong></span><br /></span><div class="body"><p>I also have the ATMega8 and successfully gone through the steps, everything is working great until the "avrdude -p m8 -P lpt1 -c pony-stk200 -U lfuse:w:0xE2:m" command, then suddenly, the led is full on, or maybe it is blinking too fast 16mhz, and the AVRdude is disgusted of my atmega8 and says, "Yikes!  Invalid device signature.
+Expected signature for ATMEGA8 is 1E 93 07", and the led goes off; power off, then back on, the led is on, and as soon as i try to reprogram, the led goes off.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_16044"><span class="header"><a href="http://www.sparkfun.com/users/142163" class="bold">monno</a> <span class="wide">|</span> <b>July 20, 2010 at 12:18 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_16044">1</span></strong></span><br /></span><div class="body"><p>to whom have fallen in the same mistake like myself, copying the commands without understanding them, i have an ATMega8, and i used the command "avrdude -p m8 -P lpt1 -c pony-stk200 -U lfuse:w:0xE2:m", as u can see, i have changed the command a bit because it didn't work with my chip and programmer, but i didn't change the value according to my chip, because the value 0xE2 does to the ATmega168, something different than what it does to the ATmega8, so what you should do before you write to your chip and render it unusable do visit the link provided "http://palmavr.sourceforge.net/cgi-bin/fc.cgi" and choose your chip, and the value you will be setting it to, and the avdude command will appear at the bottom of the page, to solve this problem, is to try to know what the command did to your chip, and in this case it has changed it to use external crystal,so u must provide it with the appropriate crystal to work</p>
+</div></div></div></div></div></div><div class="comment" id="comment_17116"><span class="header"><a href="http://www.sparkfun.com/users/82374" class="bold">SIGTERMer</a> <span class="wide">|</span> <b>August 14, 2010 at  1:49 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_17116">1</span></strong></span><br /></span><div class="body"><p>hi guys. I'd appreciate any insight you can give me regarding the following inconsistency. In your guide, it's mentioned that (for the low fuse byte):
+SUT1 = 1
+SUT0 = 0
+CKSEL0=0</p>
+
+<p>But this is not match what's stated in the datasheet (page 31; Table 8-6). according to the datasheet, the configuration mentioned here is for ceramic resonators and not a crystals.</p>
+
+<p>Furthermore, I tried it on the uc and it worked as expected. Please correct me if I understood wrong.</p>
+
+<p>P.S.: Thank you so much for this tutorial.</p>
+</div></div><div class="comment" id="comment_19166"><span class="header"><a href="http://www.sparkfun.com/users/138675" class="bold">ico</a> <span class="wide">|</span> <b>October  6, 2010 at  8:22 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_19166">1</span></strong></span><br /></span><div class="body"><p>It's always good to have all the supported oscillators in hand, when the fuse is written but the ATMega does not respond again, just try each oscillator in order, and it'll be restored, at least my ATMega48PA is restored this way.</p>
+
+<p>My CPU clock can be at most set to 16MHz with 1:1 prescaler to make the avrdude still work well without any error, if I use a 20MHz crystal, avrdude will report a wrong Device signature of 0x000102 mostly, it'll still try to write flash/fuse etc, and succeed to update the flash/fuse sometimes, but always verify wrong.</p>
+
+<p>I use a BSD style parallel cable of about 1.5 meter, I guess the cable is too long to have a reliable SPI signals on 20MHz clkCPU above?</p>
+</div></div><div class="comment" id="comment_20193"><span class="header"><a href="http://www.sparkfun.com/users/156363" class="bold">goblin</a> <span class="wide">|</span> <b>October 31, 2010 at  1:56 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_20193">1</span></strong></span><br /></span><div class="body"><p>i have the atmega328p and am having the same problem as unebonnevie.   my led is blinking with the crystal...(i had wrong caps but now have correct ones) but when trying to communicate with avr it gives me the same reply....avr device not responding.......did i fry the chip or is there a way to reset the thing????</p>
+</div></div><div class="comment" id="comment_23587"><span class="header"><a href="http://www.sparkfun.com/users/84448" class="bold">Matt</a> <span class="wide">|</span> <b>December 24, 2010 at  1:03 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_23587">1</span></strong></span><br /></span><div class="body"><p>"So you might have a 16,000,020MHz crystal while your neighbor has a 15,999,980MHz." WOW! Do you guys sell those crystals? Your AVRs must be made of liquid awesome ;)</p>
+
+<p>I guess you meant Hz, and not MHz there :)</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_27358"><span class="header"><a href="http://www.sparkfun.com/users/161197" class="bold">Electrical Juggernaut</a> <span class="wide">|</span> <b>January 19, 2011 at  8:38 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_27358">1</span></strong></span><br /></span><div class="body"><p>Yea I don't remember any AVR, or, any chip at all rated for 16 trillion hertz. Thats definitely a mishap/typo but common sense should catch that ;)</p>
+</div></div></div></div></div>
+<br />
+</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      SparkFun Electronics <a href="http://www.sparkfun.com/news/300">&reg;</a>      <span class="wide">|</span>
+      <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6175+Longbow+Dr,+Boulder,+CO+80301&sll=40.006234,-105.224915&sspn=0.012113,0.020192&ie=UTF8&hq=&hnear=6175+Longbow+Dr,+Boulder,+Colorado+80301&t=h&z=16" target="_blank">Boulder, Colorado</a>
+      <span class="wide">|</span>
+      <a href="http://www.sparkfun.com/static/customer_service">Customer Service</a>
+    </div>
+        <script type="text/javascript" src="/js/cookiejar.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/sparkfun.js?sparkrev=1299616818"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript">function autoFireLightbox(){setTimeout(function(){SFE.stab_eyes()},250)}Event.observe(window,"load",autoFireLightbox,false);</script>
+    <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3404365-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

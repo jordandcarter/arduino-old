@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="google-site-verification" content="XUb2UlchrvwCWWyhXksBlqQy1STYtTEN_M0-tgQRHRs" />
+    <meta name="google-site-verification" content="gRUAvzBJ_533b-AGTmldOJfByU6TkojfUbWovB2wKJo" />
+    <title>Beginning Embedded Electronics - 2 - SparkFun Electronics</title>
+    <link rel="stylesheet" href="/css/screen.css?rev=1299616818" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css?rev=1299616818" type="text/css" media="print" />
+    <link rel="stylesheet" href="/css/lightbox.css?rev=1299616818" type="text/css" media="screen" />
+    <!-- IE is the bane of my existence. -->
+    <!--[if IE]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+    <link rel="feed" type="application/rss+xml" title="News" href="http://www.sparkfun.com/feeds/news/" />
+    <link rel="alternate" type="application/rss+xml" title="Products" href="http://www.sparkfun.com/feeds/products/" />
+    <link rel="alternate" type="application/rss+xml" title="Product Changes" href="http://www.sparkfun.com/feeds/changes/" />
+    <link rel="alternate" type="application/rss+xml" title="Comments" href="http://www.sparkfun.com/feeds/comments/" />
+    <link rel="alternate" type="application/rss+xml" title="Videos" href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&v=2&orderby=published" />
+    <link rel="apple-touch-icon" href="/fanboy.png" />
+    <link rev="canonical" type="text/html" href="http://sprkfn.com/t93" /> 
+    <script type="text/javascript">
+      var HTTP_SERVER = 'http://www.sparkfun.com',
+          HTTPS_SERVER = 'https://www.sparkfun.com',
+          HTTP_STATIC = 'http://dlnmh9ip6v2uc.cloudfront.net',
+          FULL_LAYOUT = true,
+          AUTHENTICATED = false;
+    </script>
+    <script type="text/javascript" src="/js/prototype.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <!-- turns out  that IE7 chokes if you don't load these separately. -->
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="/js/effects.js"></script>
+    <script type="text/javascript" src="/js/builder.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/lightbox.js?rev=1299616818"></script>
+  </head>
+  <body>
+    <div id="airlock" class="clearfix">
+
+      
+  <script>BANNER_ID = 66</script>
+
+<div id="header">
+  <a href="http://www.sparkfun.com/"><img width=188 height=105 class="logo" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/logo.gif" title="SparkFun Electronics" alt="SparkFun Electronics" /></a>
+  <a href="#products_menu" class="skip">Skip to menu</a>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <div id="banner-nav" style="display: none;">
+<img id="banner-goprev" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_left.png" height=23 width=23 />
+<img id="banner-all" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_all.png" height=23 width=23 />
+<img id="banner-gonext" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_right.png" height=23 width=23 />
+</div>
+<a id="banner-link" href="http://www.sparkfun.com/products/9467"><img width=978 height=105 id="banner" src="http://dlnmh9ip6v2uc.cloudfront.net/images/banners/SFE03.0007-ToolKitDeluxeKit-01.jpg" alt="" /></a>
+  <div id="header-menu">
+    <ul>
+      <li id="header_menu_index"><a href="http://www.sparkfun.com/index">Home</a></li>
+      <li id="header_menu_cservice"><a href="http://www.sparkfun.com/static/customer_service">Customer Service</a></li>
+      <li id="header_menu_tutorials" class="active"><a href="http://www.sparkfun.com/tutorials">Tutorials</a></li>
+      <li id="header_menu_forum"><a href="http://forum.sparkfun.com">Forum</a></li>
+      <li id="header_menu_distributors"><a href="http://www.sparkfun.com/distributors">Distributors</a></li>
+      <li id="header_menu_about"><a href="http://www.sparkfun.com/static/about">About Us</a></li>
+      <li id="header_menu_contact" class="last"><a href="http://www.sparkfun.com/static/contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="left">
+        <h2 class="collapsible" id="search_menu"><span class="arrow"></span>Search</h2>
+        <form class="collapsible search" style="display: block" action="http://www.sparkfun.com/search/results" id="search_form" method="get">
+  <input id="search_field" name="term" type="text" value="" />
+  <input type="submit" value="Go" class="button" />
+  <br />
+  <input id="products_search" type="radio" name="what" value="products" checked />
+  <label for="products_search">Products</label>
+  <br />
+  <input id="news_search" type="radio" name="what" value="news" />
+  <label for="news_search">News</label>
+  <br />
+  <input id="tutorials_search" type="radio" name="what" value="tutorials" />
+  <label for="tutorials_search">Tutorials</label>
+  <br />
+  <input id="comments_search" type="radio" name="what" value="comments" />
+  <label for="comments_search">Comments</label>
+</form>
+        <br />
+
+        <h2 id="products_menu" class="collapsible"><span class="arrow"></span>Products</h2>
+        
+<ul id="category_menu_list" class="collapsible" style="display: block">
+  <li id="menu_category_new_products"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/new_products">New Products</a></li>
+  <li id="menu_category_top"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/top">Top Sellers</a></li>
+  <li id="menu_category_featured"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/featured">Staff Picks</a></li>
+  <li id="menu_category_gift_certificates"><span class="arrow"></span><a href="https://www.sparkfun.com/gift_certificates">Gift Certificates</a></li>
+  <li><hr /></li>
+  <li id="menu_category_176"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/176">Books</a></li><li id="menu_category_20"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/20">Breakout Boards</a></li><li id="menu_category_70"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/70">Cables</a><ul style="display:none;"><li id="menu_category_140"><a href="http://www.sparkfun.com/categories/140">Audio</a></li><li id="menu_category_150"><a href="http://www.sparkfun.com/categories/150">Ethernet</a></li><li id="menu_category_72"><a href="http://www.sparkfun.com/categories/72">Hook Up</a></li><li id="menu_category_75"><a href="http://www.sparkfun.com/categories/75">Parallel</a></li><li id="menu_category_74"><a href="http://www.sparkfun.com/categories/74">Serial</a></li><li id="menu_category_71"><a href="http://www.sparkfun.com/categories/71">USB</a></li></ul></li><li id="menu_category_66"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/66">Cellular</a><ul style="display:none;"><li id="menu_category_67"><a href="http://www.sparkfun.com/categories/67">Antennas</a></li><li id="menu_category_69"><a href="http://www.sparkfun.com/categories/69">Eval Boards</a></li><li id="menu_category_68"><a href="http://www.sparkfun.com/categories/68">Modules</a></li></ul></li><li id="menu_category_154"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/154">Classes</a></li><li id="menu_category_51"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/51">Components</a><ul style="display:none;"><li id="menu_category_87"><a href="http://www.sparkfun.com/categories/87">ARM Microcontrollers</a></li><li id="menu_category_21"><a href="http://www.sparkfun.com/categories/21">AVR Microcontrollers</a></li><li id="menu_category_145"><a href="http://www.sparkfun.com/categories/145">Buttons/Switches</a></li><li id="menu_category_60"><a href="http://www.sparkfun.com/categories/60">General</a></li><li id="menu_category_90"><a href="http://www.sparkfun.com/categories/90">General ICs</a></li><li id="menu_category_89"><a href="http://www.sparkfun.com/categories/89">LEDs</a><ul><li id="menu_category_173"><a href="http://www.sparkfun.com/categories/173">10mm</a></li><li id="menu_category_171"><a href="http://www.sparkfun.com/categories/171">3mm</a></li><li id="menu_category_172"><a href="http://www.sparkfun.com/categories/172">5mm</a></li><li id="menu_category_170"><a href="http://www.sparkfun.com/categories/170">7-Segment</a></li><li id="menu_category_175"><a href="http://www.sparkfun.com/categories/175">Other</a></li><li id="menu_category_174"><a href="http://www.sparkfun.com/categories/174">SMD</a></li></ul></li><li id="menu_category_88"><a href="http://www.sparkfun.com/categories/88">Oscillators</a></li><li id="menu_category_22"><a href="http://www.sparkfun.com/categories/22">PIC Microcontrollers</a></li><li id="menu_category_124"><a href="http://www.sparkfun.com/categories/124">PICAXE Microcontrollers</a></li><li id="menu_category_132"><a href="http://www.sparkfun.com/categories/132">PSoC Microcontrollers</a></li><li id="menu_category_29"><a href="http://www.sparkfun.com/categories/29">SMD ICs</a></li></ul></li><li id="menu_category_2"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/2">Development Tools</a><ul style="display:none;"><li id="menu_category_184"><a href="http://www.sparkfun.com/categories/184">.NET</a></li><li id="menu_category_93"><a href="http://www.sparkfun.com/categories/93">ADuC</a></li><li id="menu_category_103"><a href="http://www.sparkfun.com/categories/103">Arduino</a></li><li id="menu_category_10"><a href="http://www.sparkfun.com/categories/10">AVR</a></li><li id="menu_category_164"><a href="http://www.sparkfun.com/categories/164">Beagle</a></li><li id="menu_category_187"><a href="http://www.sparkfun.com/categories/187">Chumby</a></li><li id="menu_category_109"><a href="http://www.sparkfun.com/categories/109">Coridium</a></li><li id="menu_category_136"><a href="http://www.sparkfun.com/categories/136">FPGA</a></li><li id="menu_category_101"><a href="http://www.sparkfun.com/categories/101">iPod</a></li><li id="menu_category_25"><a href="http://www.sparkfun.com/categories/25">LPC</a></li><li id="menu_category_11"><a href="http://www.sparkfun.com/categories/11">MSP</a></li><li id="menu_category_9"><a href="http://www.sparkfun.com/categories/9">PIC</a></li><li id="menu_category_125"><a href="http://www.sparkfun.com/categories/125">PICAXE</a></li><li id="menu_category_137"><a href="http://www.sparkfun.com/categories/137">PSoC</a></li><li id="menu_category_104"><a href="http://www.sparkfun.com/categories/104">Roomba</a></li><li id="menu_category_94"><a href="http://www.sparkfun.com/categories/94">SAM</a></li><li id="menu_category_95"><a href="http://www.sparkfun.com/categories/95">ST</a></li><li id="menu_category_167"><a href="http://www.sparkfun.com/categories/167">STAMP</a></li><li id="menu_category_107"><a href="http://www.sparkfun.com/categories/107">Wiring</a></li><li id="menu_category_169"><a href="http://www.sparkfun.com/categories/169">WIZnet</a></li><li id="menu_category_166"><a href="http://www.sparkfun.com/categories/166">XMOS</a></li><li id="menu_category_142"><a href="http://www.sparkfun.com/categories/142">Zune</a></li></ul></li><li id="menu_category_100"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/100">Dings and Dents</a></li><li id="menu_category_204"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/204">E-Textiles</a><ul style="display:none;"><li id="menu_category_205"><a href="http://www.sparkfun.com/categories/205">Aniomagic</a></li><li id="menu_category_210"><a href="http://www.sparkfun.com/categories/210">fabrickit</a></li><li id="menu_category_135"><a href="http://www.sparkfun.com/categories/135">LilyPad</a></li><li id="menu_category_206"><a href="http://www.sparkfun.com/categories/206">Materials</a></li></ul></li><li id="menu_category_4"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/4">GPS</a><ul style="display:none;"><li id="menu_category_18"><a href="http://www.sparkfun.com/categories/18">Antennas</a></li><li id="menu_category_86"><a href="http://www.sparkfun.com/categories/86">Eval Boards</a></li><li id="menu_category_17"><a href="http://www.sparkfun.com/categories/17">Modules</a></li></ul></li><li id="menu_category_157"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/157">Kits</a></li><li id="menu_category_76"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/76">LCDs</a><ul style="display:none;"><li id="menu_category_147"><a href="http://www.sparkfun.com/categories/147">Color</a></li><li id="menu_category_148"><a href="http://www.sparkfun.com/categories/148">Monochrome</a></li></ul></li><li id="menu_category_96"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/96">Port-O-Rotary</a></li><li id="menu_category_1"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/1">Programmers</a><ul style="display:none;"><li id="menu_category_26"><a href="http://www.sparkfun.com/categories/26">ARM</a></li><li id="menu_category_7"><a href="http://www.sparkfun.com/categories/7">AVR</a></li><li id="menu_category_156"><a href="http://www.sparkfun.com/categories/156">DSP</a></li><li id="menu_category_37"><a href="http://www.sparkfun.com/categories/37">MAXQ</a></li><li id="menu_category_8"><a href="http://www.sparkfun.com/categories/8">MSP</a></li><li id="menu_category_6"><a href="http://www.sparkfun.com/categories/6">PIC</a></li><li id="menu_category_126"><a href="http://www.sparkfun.com/categories/126">PICAXE</a></li><li id="menu_category_168"><a href="http://www.sparkfun.com/categories/168">XMOS</a></li></ul></li><li id="menu_category_53"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/53">Prototyping</a><ul style="display:none;"><li id="menu_category_54"><a href="http://www.sparkfun.com/categories/54">Batteries</a></li><li id="menu_category_149"><a href="http://www.sparkfun.com/categories/149">Boards</a></li><li id="menu_category_91"><a href="http://www.sparkfun.com/categories/91">Connectors</a></li><li id="menu_category_182"><a href="http://www.sparkfun.com/categories/182">Enclosures</a></li><li id="menu_category_55"><a href="http://www.sparkfun.com/categories/55">General</a></li><li id="menu_category_155"><a href="http://www.sparkfun.com/categories/155">Hardware</a></li><li id="menu_category_92"><a href="http://www.sparkfun.com/categories/92">Sockets</a></li><li id="menu_category_116"><a href="http://www.sparkfun.com/categories/116">Solar</a></li><li id="menu_category_141"><a href="http://www.sparkfun.com/categories/141">Wire</a></li></ul></li><li id="menu_category_207"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/207">Retail</a><ul style="display:none;"><li id="menu_category_212"><a href="http://www.sparkfun.com/categories/212">Arduino</a></li><li id="menu_category_216"><a href="http://www.sparkfun.com/categories/216">Components</a></li><li id="menu_category_213"><a href="http://www.sparkfun.com/categories/213">Kits</a></li><li id="menu_category_211"><a href="http://www.sparkfun.com/categories/211">Materials</a></li><li id="menu_category_215"><a href="http://www.sparkfun.com/categories/215">Prototyping</a></li><li id="menu_category_214"><a href="http://www.sparkfun.com/categories/214">Sensors</a></li><li id="menu_category_217"><a href="http://www.sparkfun.com/categories/217">Tools</a></li></ul></li><li id="menu_category_134"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/134">Retired</a><ul style="display:none;"><li id="menu_category_194"><a href="http://www.sparkfun.com/categories/194">Breakout Boards</a></li><li id="menu_category_203"><a href="http://www.sparkfun.com/categories/203">Cables</a></li><li id="menu_category_200"><a href="http://www.sparkfun.com/categories/200">Classes</a></li><li id="menu_category_192"><a href="http://www.sparkfun.com/categories/192">Components</a></li><li id="menu_category_191"><a href="http://www.sparkfun.com/categories/191">Development Tools</a></li><li id="menu_category_188"><a href="http://www.sparkfun.com/categories/188">GPS</a></li><li id="menu_category_190"><a href="http://www.sparkfun.com/categories/190">Kits</a></li><li id="menu_category_196"><a href="http://www.sparkfun.com/categories/196">LCD</a></li><li id="menu_category_201"><a href="http://www.sparkfun.com/categories/201">Programmers</a></li><li id="menu_category_195"><a href="http://www.sparkfun.com/categories/195">Prototyping</a></li><li id="menu_category_197"><a href="http://www.sparkfun.com/categories/197">Robotics</a></li><li id="menu_category_189"><a href="http://www.sparkfun.com/categories/189">Sensors</a></li><li id="menu_category_208"><a href="http://www.sparkfun.com/categories/208">SFE Widgets</a></li><li id="menu_category_198"><a href="http://www.sparkfun.com/categories/198">Swag</a></li><li id="menu_category_193"><a href="http://www.sparkfun.com/categories/193">Tools</a></li><li id="menu_category_199"><a href="http://www.sparkfun.com/categories/199">Wireless</a></li></ul></li><li id="menu_category_31"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/31">Robotics</a><ul style="display:none;"><li id="menu_category_179"><a href="http://www.sparkfun.com/categories/179">Drivers</a></li><li id="menu_category_181"><a href="http://www.sparkfun.com/categories/181">Kits</a></li><li id="menu_category_178"><a href="http://www.sparkfun.com/categories/178">Motors</a></li><li id="menu_category_202"><a href="http://www.sparkfun.com/categories/202">Other</a></li><li id="menu_category_180"><a href="http://www.sparkfun.com/categories/180">Wheels</a></li></ul></li><li id="menu_category_185"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/185">Sale</a></li><li id="menu_category_23"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/23">Sensors</a><ul style="display:none;"><li id="menu_category_80"><a href="http://www.sparkfun.com/categories/80">Accelerometers</a><ul><li id="menu_category_161"><a href="http://www.sparkfun.com/categories/161">1-axis</a></li><li id="menu_category_162"><a href="http://www.sparkfun.com/categories/162">2-axis</a></li><li id="menu_category_163"><a href="http://www.sparkfun.com/categories/163">3-axis</a></li></ul></li><li id="menu_category_146"><a href="http://www.sparkfun.com/categories/146">Biometrics</a></li><li id="menu_category_117"><a href="http://www.sparkfun.com/categories/117">Capacitive</a></li><li id="menu_category_151"><a href="http://www.sparkfun.com/categories/151">Current</a></li><li id="menu_category_143"><a href="http://www.sparkfun.com/categories/143">Flex / Force</a></li><li id="menu_category_85"><a href="http://www.sparkfun.com/categories/85">Gyros</a><ul><li id="menu_category_158"><a href="http://www.sparkfun.com/categories/158">1-axis</a></li><li id="menu_category_159"><a href="http://www.sparkfun.com/categories/159">2-axis</a></li><li id="menu_category_183"><a href="http://www.sparkfun.com/categories/183">3-axis</a></li></ul></li><li id="menu_category_144"><a href="http://www.sparkfun.com/categories/144">ID</a></li><li id="menu_category_160"><a href="http://www.sparkfun.com/categories/160">IMU</a></li><li id="menu_category_139"><a href="http://www.sparkfun.com/categories/139">Infrared</a></li><li id="menu_category_102"><a href="http://www.sparkfun.com/categories/102">Light / Imaging</a></li><li id="menu_category_83"><a href="http://www.sparkfun.com/categories/83">Magneto</a></li><li id="menu_category_84"><a href="http://www.sparkfun.com/categories/84">Proximity</a></li><li id="menu_category_165"><a href="http://www.sparkfun.com/categories/165">Radiation</a></li><li id="menu_category_186"><a href="http://www.sparkfun.com/categories/186">Sound</a></li><li id="menu_category_82"><a href="http://www.sparkfun.com/categories/82">Temperature</a></li><li id="menu_category_152"><a href="http://www.sparkfun.com/categories/152">Weather</a></li></ul></li><li id="menu_category_97"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/97">SFE Widgets</a></li><li id="menu_category_130"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/130">Swag</a></li><li id="menu_category_46"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/46">Tools</a><ul style="display:none;"><li id="menu_category_47"><a href="http://www.sparkfun.com/categories/47">Hand Tools</a></li><li id="menu_category_48"><a href="http://www.sparkfun.com/categories/48">Hot-Air Rework</a></li><li id="menu_category_177"><a href="http://www.sparkfun.com/categories/177">Instruments</a></li><li id="menu_category_28"><a href="http://www.sparkfun.com/categories/28">Power Supplies</a></li><li id="menu_category_49"><a href="http://www.sparkfun.com/categories/49">Soldering</a></li></ul></li><li id="menu_category_138"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/138">Tracking</a></li><li id="menu_category_16"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/16">Wireless</a><ul style="display:none;"><li id="menu_category_78"><a href="http://www.sparkfun.com/categories/78">Antennas</a></li><li id="menu_category_115"><a href="http://www.sparkfun.com/categories/115">Bluetooth</a></li><li id="menu_category_79"><a href="http://www.sparkfun.com/categories/79">General</a></li><li id="menu_category_113"><a href="http://www.sparkfun.com/categories/113">Modem</a></li><li id="menu_category_114"><a href="http://www.sparkfun.com/categories/114">Nordic</a></li><li id="menu_category_112"><a href="http://www.sparkfun.com/categories/112">WiFi</a></li><li id="menu_category_111"><a href="http://www.sparkfun.com/categories/111">Zigbee/802.15.4</a></li></ul></li>  <li><hr /></li>
+  <li>
+    <img style='float: left' src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/pdf.gif" />
+    <a href="http://sparkfun.com/download/PDFs/catalog.pdf">Full catalog</a>
+  </li>
+</ul>
+        <br />
+      </div>
+
+      <div id="right">
+        <div class="collapsible user">
+  <p class="cart-link"><img height="19" width="19" alt="" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_shoppingcart.gif"> 
+     <a href="http://www.sparkfun.com/cart"><span id="items_in_cart">0</span> items in your cart</a></p>
+  <form action="https://www.sparkfun.com/account/login" id="login" method="post">
+    <label for="user_login">Email</label>
+    <input id="user_login" type="text" tabindex="1" maxlength="320" name="user">
+    <label for="user_password">Password</label>
+    <input id="user_password" type="password" tabindex="2" maxlength="20" name="passwd">
+    <p class="right"><input type="submit" value="log in" class="button"></p>
+    <p><a href="https://www.sparkfun.com/account/forgot_password">Forgot your password?</a><br/>
+       No account? <a href="https://www.sparkfun.com/account/make">Register here</a>.</p>
+  </form>
+</div>
+<br>
+
+        <h2 id="feed_menu" class="collapsible"><span class="arrow"></span>Feeds</h2>
+        <ul class="collapsible feeds" style="display: block">
+  <li><a href="http://www.sparkfun.com/feeds/news">News</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/products">Products</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/changes">Product Changes</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/comments">Comments</a></li>
+  <li><a href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&amp;v=2&amp;orderby=published">Videos</a></li>
+</ul>
+        <br />
+
+        <h2 id="resources_menu" class="collapsible"><span class="arrow"></span>Resources</h2>
+        <ul class="collapsible resources" style="display: block">
+  <li><a href="http://www.sparkfun.com/news/263">Official SparkFun IRC Channel</a></li>
+  <li><a href="http://www.batchpcb.com/" target="_blank">Custom PCBs</a></li>
+  <li><a href="http://www.opencircuits.com/" target="_blank">Open Circuits</a></li>
+  <li><a href="http://www.ponoko.com/make-and-sell/electronics" target="_blank">Ponoko - Your Personal Factory</a></li>
+  <li><a href="http://www.sparkfun.com/static/jobs">Jobs @ SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/tutorials/92">Sell Your Widget on SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/quiz">Take the SparkFun Quiz</a></li>
+</ul>
+        <br />
+
+        <h2 id="currency_menu_head" class="collapsible"><span class="arrow"></span>Currency</h2>
+        
+<div class="collapsible" id="currency_menu">
+  Display prices in
+  <input type="hidden" id="preferred_currency" value="USD" />
+  <ul id="currency_menu_list" class="currency">
+          <li>
+        <a id="currency_USD" onclick="SFE.change_currency('USD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_checked.gif" />
+                US Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_CAD" onclick="SFE.change_currency('CAD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Canadian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_AUD" onclick="SFE.change_currency('AUD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Australian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_GBP" onclick="SFE.change_currency('GBP'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                British Pound        </a>
+    </li>
+          <li>
+        <a id="currency_EUR" onclick="SFE.change_currency('EUR'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Euro        </a>
+    </li>
+      </ul>
+  </div>
+
+<script language="javascript">
+var CURRENCIES = {"USD":{"code":"USD","title":"US Dollar","symbol_left":"$","symbol_right":"","decimal_point":".","thousands_point":",","decimal_places":"2","value":"1.0000"},"CAD":{"code":"CAD","title":"Canadian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9706"},"AUD":{"code":"AUD","title":"Australian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9957"},"GBP":{"code":"GBP","title":"British Pound","symbol_left":"&pound;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.6187"},"EUR":{"code":"EUR","title":"Euro","symbol_left":"&euro;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.7214"}}</script>
+        <br />
+
+        <h2 id="feedback_menu" class="collapsible"><span class="arrow"></span>Feedback</h2>
+        <form id="feedback" class="collapsible" style="display: block">
+  <label for="feedback_textarea" style="font-weight: bold">What's on your mind?</label>
+  <br />
+  <textarea id="feedback_textarea" name="feedback_text"></textarea>
+  <br /><br />
+  <label for="feedback_email">Please include your email address if you'd like us to respond to a specific question.</label>
+  <br />
+  <br />
+  <input type="text" id="feedback_email" name="email" /> 
+  <br />
+  <input onclick="SFE.mind_feedback(); return(false);" type="button" class="button" value="Submit" /> 
+</form>
+      </div>
+
+      <div id="center">
+        <a name="content" id="content"></a>
+        
+<h1 class="red-header">
+    <span class="link"><a href="http://www.sparkfun.com">Home</a> |</span><span class="link"><a href="http://www.sparkfun.com/tutorials/">Tutorials</a>|</span>  Beginning Embedded Electronics - 2 
+</h1>
+
+<div class="news">
+  <p class="header">
+    <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/avatars/7185_sm.jpg" />
+    <a class="title" href="http://www.sparkfun.com/tutorials/93">Beginning Embedded Electronics - 2</a>
+    <br />
+    by <a href="http://www.sparkfun.com/users/7185">Nate</a> | June 19, 2008 | <i><a style="cursor: pointer" onclick="javascript: if(!$('comments').visible()) { SFE.toggle_collapsible($('comments_header')); } $('comments_header').scrollTo();">87 comments</a></i>
+    <span class="skill">
+      Skill Level: 
+              <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" />
+        Beginner
+          </span>
+  </p>
+  <hr />
+  <h2>
+	Lecture 2 - How to Get Code Onto a Microcontroller</h2>
+<div class="tutorial_text">
+	<p>
+		You can get all the parts for this lecture <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=8391" target="_blank"> here</a>. We also highly recommend that you get a multimeter with a &#39;continuity&#39; setting. A good quality multimeter with this setting goes for ~$60 and as high as $300 for a really spectacular one. We like our $60 cheapo.</p>
+	<p>
+		Sorry for the confusion. When these tutorials were written and photographed, we used the ATmega8. We now carry the newer ATmega328. You will find all ATmega328 information in the following pages, but the pictures will show an ATmega8.</p>
+	<p>
+		I&#39;m assuming you&#39;ve got your 5V supply tested and working. Next, we need to insert the ATmega into the breadboard and connect up power and ground.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/2-MicroProgramming/ResetSwitch.jpg" /></p>
+	<p align="center">
+		ATmega8 (works the same with ATmega168, and 328) straddling the middle row of the breadboard</p>
+	<p>
+		You will need to slightly bend in the legs of the <a href="http://en.wikipedia.org/wiki/Dual_in-line_package" target="_blank">DIP</a> (dual inline package) to get the ATmega to straddle the breadboard center. Be careful! Do not bend the pins too far inward. The pins of the ATmega should insert into the inner two most rows on the breadboard. I find it best to to insert one side and then slightly push the IC sideways until the other side of pins can insert into the opposite row on the breadboard. Confusing, I know.</p>
+	<p>
+		<b>Note: </b>The 5V &#39;rail&#39; is the horizontal row of holes next to the red line. You should have a wire connecting your 5V power regulator circuit to one hole on the 5V rail. This will energize all the holes next to the red line with 5V. This is true about the blue line as well. All the horizontal holes next to the blue line are connected together. One of these holes should be connected to the ground pin on your voltage regulator, and to the ground connection of your wall wart. You can connect the VCC pins on the ATmega328 to any holes along the 5V rail, and you connect the GND pins on the ATmega328 to any hole along the blue GND rail.</p>
+	<p>
+		Oh, hey! If no one ever told you, there is a really simple way to figure out where pin 1 is on an IC. The manufacturer of anything polarized (tantalum caps, electrolytic caps, LEDs, ICs, etc) will always put some sort of marking on the device to indicate the how the device is supposed to be oriented. For ICs, there is a small dimple on one end of the IC. The blue arrow in the picture is pointing to this dimple. The orange arrow points at pin 1, and the blue labels show how the pin numbers increase.</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/2-MicroProgramming/Pin1.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="center">
+		Pin labeling on an IC</p>
+	<p align="left">
+		Counting from the dimple, pin 1 is on the left and increases down the left side of the IC. The pin numbers jump to the right side row of pins and count up. See image from the ATmega328 datasheet below.</p>
+	<p>
+		The ATmega328 should be in the breadboard, pin 7 (VCC) and pin 20 (AVCC) should be connected to your 5V rail and pins 8 and 22 (GND) should be connected to GND on your bread board. If you turn your power circuit on, the ATmega328 is now running, but it has nothing to run!</p>
+	<p>
+		Actually this is not wholly true - there is one more connection that needs to be made before the ATmega328 starts running code. The RESET pin on the ATmega328 needs to be connected to VCC. You can either wire the RESET pin directly to 5V or you can &#39;tie it high&#39; by connecting the RESET pin to VCC through a resistor. This will allow you to add a momentary reset button. What&#39;s this? The reset line on the ATmega328 is exactly what it sounds like - it resets the micro just like the reset works on your computer. If you look at the ATmega328 datasheet you&#39;ll see the RESET label is written with a line above it. This is nomenclature that indicates the reset pin is active low. What is &#39;active low&#39;? The RESET pin is an input. A low level on this pin will put the micro into reset - i.e. the pin is activated with a low input, aka &#39;active low&#39;. So unless you want your ATmega328 to stay in reset, you&#39;ll need to pull this pin high.</p>
+	<p>
+		Now you need a reset button. A momentary switch is a switch that is activated (or closed) while you&#39;re touching it and open when you release the button. These are often called &#39;tactile switches&#39; because they &#39;click&#39; when you depress them giving the person pressing the button some &#39;tactile&#39; feedback.</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/2-MicroProgramming/Program1.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="left">
+		This is what the schematic part looks like. Notice pins 1 and 2 are connected together. 3 and 4 are connected together. And when you press &#39;de button, it temporarily connects 1/2+3/4 together.</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/commerce/images/PushButton.jpg" /></p>
+	<p align="center">
+		Notice this button has five legs. If your button has five legs, just ignore the middle leg - it&#39;s not connected to anything and can be clipped off.</p>
+	<p align="left">
+		To test this button, whip out the trusty multimeter and set it to the continuity setting. This is the setting on nicer, mid-grade multimeters that is crucial to troubleshooting and experimenting. Touch the probes together - you should hear a tone indicating that there is continuity or a (nearly) zero resistance path between the probes. Insert the button into the breadboard and probe the two pins on one side of the button. If you picked pins 1/2 or 3/4 you should hear a tone. These pins are permanently connected inside switch. If you picked pins 1/3 or 2/4, you won&#39;t hear a noise - but hit the button. By hitting the button you will make an electrical connection between all four pins - and you should hear the tone! This means you have electrical continuity.</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/2-MicroProgramming/Program2.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="center">
+		The schematic shows pins 1 and 2 of the reset switch connected together (connected to ground) and pins 3/4 connected together (connected to !RESET) . In practice, you just need the switch to work. Play with your multimeter and find two pins that don&#39;t make noise when the button is not touched, and do make noise when the button is depressed. Use these two pins.</p>
+	<p align="left">
+		The schematic shown above is what we&#39;re going for. The 10K resistor &#39;pulls&#39; the reset pin high during normal activity. By pulling the reset pin high, the ATmega328 runs normally. When you push the reset switch (S2), the reset pin sees a continuous connection to ground. Since the resistance through the depressed switch is nearly zero, it wins (compared to the resistance of the 10K resistor!) and the reset pin is pulled low, RESET is activated and the ATmega328 goes into reset. Release the button and the reset pin is pulled high again and the ATmega328 comes out of reset. Nifty!</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/2-MicroProgramming/ATmega168-Pinout.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="center">
+		ATmega328 pinout</p>
+	<p align="left">
+		See the dimple from the ATmega328 datasheet? Looking at the top of the IC (legs down), with the dimple to the top, pin numbers increase starting from 1 in the top left corner. This is how every IC pin is number. However, the orientation marking varies a bit between manufacturers and between packaging types. Look for a non-congruent marking like a dimple, small dot, white arrow, a notched corner - anything that makes that area of the chip different from the other parts of the chip probably indicates pin 1. When in doubt, check the datasheet.</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/2-MicroProgramming/ResetSwitch.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="center">
+		Reset wired next to a ATmega8 (same applies for the ATmega168, and ATmega328)</p>
+	<p align="left">
+		Learn how to use the the continuity setting on your multimeter. It will be vital to troubleshooting down the road!</p>
+	<p align="left">
+		Each microcontroller manufacturer has a different method to get code in the flash memory of the micro. In the past few years there has been emphasis placed on ISP or &quot;in system programming&quot;. ISP allows you to program the IC without having to disconnect the microcontroller from the application. This is not trivial! History was much more painful. Atmel has designed a relatively straight forward method that requires the control of a few pins (6 total). Because of this simple interface, the hardware programmer that is required to connect your computer to this ISP interface is very straight forward (cheap!) as well.</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/2-MicroProgramming/ISPConnector.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="center">
+		The red stripe indicates the location of Pin 1</p>
+	<p align="left">
+		Remember how we identified pin1 on the IC from the dimple? Well connectors also need polarization so that we don&#39;t reverse the orientation of the connector and fry things. Unfortunately the way connectors are numbered is opposite that of ICs. In the picture of the ISP connector, you see the red stripe indicating pin 1. An IC counts sequentially down one side. Connectors on the other hand, increase pin numbers, back and forth, as you work your way down the connector.</p>
+	<p align="left">
+		The programming chain looks something like this:</p>
+	<ol>
+		<li>
+			<p align="left">
+				There is a free C compiler called AVR-GCC. User writes code in C and then compiles that code into HEX files</p>
+		</li>
+		<li>
+			<p align="left">
+				AVR-GCC can be installed on the Windows platform with an easy WinAVR install program</p>
+		</li>
+		<li>
+			<p align="left">
+				The user gets this HEX code onto an AVR via the ISP pins</p>
+		</li>
+		<li>
+			<p align="left">
+				Both a serial port programmer and a parallel port programmere have been designed to connect the computer port to the AVR ISP pins</p>
+		</li>
+		<li>
+			<p align="left">
+				The computer runs a command line program to transfer the HEX file from the computer, to the serial or parallel port, and out to the AVR ISP pins</p>
+		</li>
+		<li>
+			<p align="left">
+				The micro runs the machine code (*.HEX files) once powered or reset</p>
+		</li>
+	</ol>
+	<p align="left">
+		What&#39;s a <a href="http://en.wikipedia.org/wiki/C_%28programming_language%29" target="_blank"> C compiler</a>? This is a program that inputs a program written in the C language and outputs a HEX file. We prefer to program in C because it is easier for us than assembly and more flexible than BASIC.</p>
+	<p align="left">
+		What&#39;s a <a href="http://www.google.com/url?sa=t&amp;ct=res&amp;cd=3&amp;url=http://en.wikipedia.org/wiki/Intel_HEX&amp;ei=QmkGR92EBIXQgAPjzJi0CA&amp;usg=AFQjCNGemALsOKy9x_-hcdpMPGWO_Djo9w&amp;sig2=zZuOxI0zNNKSV5fiFaihaA" target="_blank"> HEX file</a>? This is a file that contains various hexidecimal characters. These hex &#39;codes&#39; represent machine instructions that the ATmega328 understand. This file is what gets sent down to the programmer, and the programmer loads these machine instructions onto the ATmega328.</p>
+	<p align="left">
+		Before we can get too crazy, download and install <a href="http://sourceforge.net/project/showfiles.php?group_id=68108" target="_blank">WinAVR</a> on the computer that you will be doing your code development on. If this link goes out of date, a google search should take you straight to it. The windows install should be fairly straight forward - follow all the defaults. WinAVR contains a version of the GCC compiler and various other tools including avrdude and Programmer&#39;s Notepad. avrdude is a simple command line program that takes a HEX file and sends it to the serial or parallel port for programming onto an Atmel microcontroller.</p>
+	<p align="left">
+		Working backwards up this list, I&#39;ll provide you with an example &#39;Hello World&#39; HEX file that will prove that everything is working correctly on your micro. With any micro controller board, the first trick is always to get an LED to blink. This is the &#39;Hello World&#39; of embedded systems. Guess what <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/2-MicroProgramming/blink_1MHz.zip" target="_blank">blink_1MHz.hex</a> does?</p>
+	<p align="left">
+		With the blink hex file in hand, you now need to get it onto the micro. You will need to connect the AVR-PG1 (or the AVR-PG2) to the ATmega328. The easiest way to do this is with 9 wires running from your breadboard to the 10-pin connector on the ISP connector on the AVR-PG1/PG2.</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/2-MicroProgramming/Program3.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="left">
+		Jamming wires into the ISP connector is not a good long-term solution but for the sake of getting the LED to blink, it&#39;ll do. I&#39;ve cut short wires and stripped both ends. One stripped end is inserted into the end of the black programming connector, the other end is inserted into the breadboard.</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/2-MicroProgramming/ISP-Wired.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="center">
+		The AVR-PG2 parallel programmer wired into the ATmega328. I&#39;ve also wired up two 0.1uF caps. These decoupling caps are placed near the VCC and GND pins on the ATmega328 to help reduce noise into the IC. You may think you have a straight DC 5V but not really - these 0.1uF caps help reduce ripple on the 5V line. Yes, the ATmega328 will probably run without them but they&#39;re good to have installed.</p>
+	<p align="left">
+		<b>AVR ISP Note:</b> You really do have to wire all 4 GND pins. You cannot wire just one of the GND pins on the ISP connector.</p>
+	<p align="left">
+		Additionally we need an LED to control. This can be tied to any GPIO pin. PC0 looks like a good spot.</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/2-MicroProgramming/Program4.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="left">
+		The resistor/LED order does not matter - just remember (from Tutorial 1) that you must have the resistor! The GPIO pin doesn&#39;t actually matter. blink_1MHz.hex will toggle all the pins on all ports so you can hook the resistor to any pin. As you add more peripheral hardware you will want to dedicate some pins for alternate use (such as TX and RX pins for serial communication).</p>
+	<p align="left">
+		You&#39;re getting closer! Time to program the chip!</p>
+	<p align="left">
+		Once WinAVR is installed, you should have a few new icons on your desktop. Programmers Notepad is a nice code editor and highlighter.</p>
+	<p align="left">
+		What&#39;s a code editor/highlighter? When programming, you will need a text editor on your computer so that you can create (type) code. Once you&#39;ve created this &#39;code&#39; on your computer (inside the code editor) you will pass this code to the compiler (you will click a button that runs the compiler with the C file you&#39;ve typed) and the compiler will create a HEX file (assuming there are no problems or typos in your code). The highlighter? When creating code, it&#39;s often nice to have various parts of your program color coded so that you can tell a common things like <b>for( )</b> and <b>#define</b>. This highlighting helps a lot when programming.</p>
+	<p align="left">
+		Use whichever text tool you like. Notepad will work, but is pretty rudimentary. I also like <a href="http://home.arcor.de/jensaltmann/JFE/jfe_eng.htm" target="_blank">JFE</a> from my PIC days. Both have a &#39;tools&#39; option which is great but JFE is better in my opinion because it lists the C functions that you can double click on and navigate to. If there is a way to do a similar trick in Programmer&#39;s Notepad 2, please let me know! Because Programmers Notepad v2 (aka PN2) comes with the WinAVR installation, we&#39;ll use it!</p>
+	<p align="left">
+		AVR-GCC is extremely powerful, very complex, and difficult to use initially. I am used to passing a *.c file to a PIC compiler (<a href="http://www.bknd.com/cc5x/" target="_blank">CC5x</a>) and getting a HEX file back out. No fuss, no mess. Believe you me, the pain of getting AVR-GCC up and running is worth it. AVR-GCC is a truly nice compiler, and <i>it&#39;s free</i>. I&#39;ve included a stock <i>Makefile</i> and <i>blink_1MHz.c</i> file in <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/2-MicroProgramming/blink_1MHz.zip" target="_blank"> blink_1MHz.zip</a> to get you started. I am by no means a Linux or make type of person. All you need to know is that when you type &#39;make&#39; at the command prompt, the compiler is going to look for a file called &#39;Makefile&#39; (no file extension!) and use that file to direct how to compile your C file.</p>
+	<p align="center">
+		<img alt="" src="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/2-MicroProgramming/Program5.jpg" style="border-width: 0px; border-style: solid;" /></p>
+	<p align="left">
+		These are the only two files you should need to get blink to compile. Open up blink_1MHz.c in programmer&#39;s notepad and click on Tools-&gt;Make All. This is the same as typing &#39;make all&#39; from the command prompt from what ever directory you saved these two files. For example</p>
+	<blockquote>
+		<p align="left">
+			<b><font size="2">C:\Code\Blink&gt;make all</font></b></p>
+	</blockquote>
+	<p align="left">
+		should compile your code as well. It&#39;s just a bit easier to do this through the Programmer&#39;s Notepad interface rather than toggling back and forth to the Command Prompt window. Once you have successfully compiled the C file into a HEX file, you now need to get that hex file onto the AVR. It&#39;s finally time to power up your system! The cheap AVR programmers require the target (that&#39;s your breadboard) to provide power to the programmer (that&#39;s the AVR-PG1 or PG2). Power up your bread board - you should see the power LED come on. From here on out, I will assume you&#39;re using the AVR-PG2 parallel port programmer.</p>
+	<p align="left">
+		There is only two spots in the makefile that you should be concerned about at this time. These two spots are located under the&nbsp; programming options section. This makefile is huge, but scroll down to the Programming Options (avrdude) section. Now put a &#39;#&#39; in front of lines you want to comment out.</p>
+	<p align="left">
+		If you&#39;re using the AVR-PG1 (serial port programmer) you edit like this:</p>
+	<blockquote>
+		<p align="left">
+			<b><font size="2">#AVRDUDE_PROGRAMMER = stk200<br />
+			AVRDUDE_PROGRAMMER = ponyser<br />
+			<br />
+			# com1 = serial port. Use lpt1 to connect to parallel port.<br />
+			#AVRDUDE_PORT = lpt1<br />
+			AVRDUDE_PORT = COM1</font></b></p>
+	</blockquote>
+	<p align="left">
+		If you&#39;re using the AVR-PG2 (parallel port programmer) you edit like this:</p>
+	<blockquote>
+		<p align="left">
+			<b><font size="2">AVRDUDE_PROGRAMMER = stk200<br />
+			#AVRDUDE_PROGRAMMER = ponyser<br />
+			<br />
+			# com1 = serial port. Use lpt1 to connect to parallel port.<br />
+			AVRDUDE_PORT = lpt1<br />
+			#AVRDUDE_PORT = COM1</font></b></p>
+	</blockquote>
+	<p align="left">
+		Of course the port numbers depend on your specific computer but once you get things working, you&#39;ll be set for life. Assuming you&#39;ve edited and saved your makefile, go back to PN2. With your breadboard powered, click Tools-&gt;Program. This will send the command &#39;make program&#39; to the command prompt. If everything is setup correctly, you should have successfully loaded blink_1MHz.hex onto your target ATmega328 and your LED should be blinking.</p>
+	<p align="left">
+		If you get an error :</p>
+	<blockquote>
+		<p align="left">
+			<b><font size="2">can&#39;t open device &quot;giveio&quot;</font></b></p>
+	</blockquote>
+	<p align="left">
+		Then read <a href="http://www.site.uottawa.ca/%7Ejdesa066/avr_getting_started4.html" target="_blank">this page</a>. Basically you need to copy the giveio.sys file from C:\WinAVR/bin to the C:\Windows directory, then type <b> install_giveio.bat</b> at the command prompt.</p>
+	<p align="left">
+		<b>Typical Problems:</b></p>
+	<p align="left">
+		If you still are not able to program the AVR - this is where 99% of first time users end up. Dig in and troubleshoot.</p>
+	<p align="left">
+		Are the ISP connections correct? It&#39;s easy to get the ISP connector backwards. Take a look at the photos above.</p>
+	<p align="left">
+		Is there a loose wire? Pull out the multimeter and check that you&#39;ve got 5V being delivered to the VCC and GND pins on the ATmega328. Do the wires going into the ISP connector have a good solid connection?</p>
+	<p align="left">
+		Do you have your ATmega328 connected to both power and ground?</p>
+	<p align="left">
+		Is your 5V supply outputting 5V?</p>
+	<p align="left">
+		Do you have the right COM port or LPT port selected in your makefile?</p>
+	<p align="left">
+		There is a multitude of things to check. It&#39;s hard! I know. But once you get things correctly set up, and that LED blinks - it will feel fantastic!</p>
+	<p align="left">
+		Ok - I&#39;m going to assume that you got the code correctly loaded onto the AVR and that the LED is blinking. Congratulations! You are now well on your way to a whole world of pain! Once you get one thing working, it&#39;s hard to stop! GPS, datalogging, RF, PCB layout - it&#39;s all just a couple hops away.</p>
+	<p align="left">
+		You can get all the parts for this lecture <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=8391" target="_blank"> here</a>.</p>
+	<p align="left">
+		Here are some additional resources for AVR programming:</p>
+	<ul>
+		<li>
+			<p align="left">
+				<a href="http://piconomic.co.za/fwlib/index.html" target="_blank">http://piconomic.co.za/fwlib/index.html</a></p>
+		</li>
+		<li>
+			<p align="left">
+				<a href="http://www.salvitti.it/geo/sequencer/dev_tools/tutorial/GNU_C_Tutorial.html" target="_blank">http://www.salvitti.it/geo/sequencer/dev_tools/tutorial/GNU_C_Tutorial.html</a></p>
+		</li>
+		<li>
+			<a classname="" href="http://palmavr.sourceforge.net/cgi-bin/fc.cgi" name="" target="_blank">http://palmavr.sourceforge.net/cgi-bin/fc.cgi</a></li>
+	</ul>
+	<p align="left">
+		We love feedback! Please report typos, comments, or recommendations to <a href="mailto:spark@sparkfun.com">spark@sparkfun.com</a>.</p>
+	<p align="left">
+		<a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=57">Lecture 1 - Background and Power Supply</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=93"><br />
+		<br />
+		Lecture 2 - How to Get Code Onto a Microcontroller</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=95"><br />
+		<br />
+		Lecture 3 - What is an oscillator?</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=104"><br />
+		<br />
+		Lecture 4 - UART and Serial Communication</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=105"><br />
+		<br />
+		Lecture 5 - AVR GCC Compiling</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=106"><br />
+		<br />
+		Lecture 6 - Soldering Basics</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=107"><br />
+		<br />
+		Lecture 7 - SMD Soldering</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=108"><br />
+		<br />
+		Lecture 8 - Eagle: Schematics</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=109"><br />
+		<br />
+		Lecture 9 - Eagle: PCB Layout</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=110"><br />
+		<br />
+		Lecture 10 - Eagle: Creating a new part</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=111"><br />
+		<br />
+		Common Mistakes, Tips and Tricks</a></p>
+</div></div>
+
+<div id="comments_container">
+  <h2 id="comments_header" class="collapsible grey big"><span class="arrow"></span>Comments <span class="count">87 comments</span></h2>
+<div id="comments" class="collapsible white">
+  <div style="padding: 20px">  <div style="text-align: center">
+    <b><a href="#" onclick="javascript: $('right').scrollTo(); $('user_login').select()">Login</a> to post comments.</b>
+  </div>
+</div>
+  <div class="comment" id="comment_2131"><span class="header"><a href="http://www.sparkfun.com/users/46049" class="bold">hagna</a> <span class="wide">|</span> <b>February 20, 2009 at  2:17 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2131">2</span></strong></span><br /></span><div class="body"><p>on ubuntu hardy avrdude wouldn't program the micro and gave the following message:
+avrdude: Yikes!  Invalid device signature.
+avrdude: Expected signature for ATMEGA168 is 1E 94 06</p>
+
+<p>After I connected pin1 on the micro to the programmers RESET or SS pin avrdued was able to program it and the light blinks.</p>
+
+<p>Why doesn't this tutorial say anything about connecting SS to pin1?</p>
+</div></div><div class="comment" id="comment_2132"><span class="header"><a href="http://www.sparkfun.com/users/46049" class="bold">hagna</a> <span class="wide">|</span> <b>February 20, 2009 at  2:21 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2132">2</span></strong></span><br /></span><div class="body"><p>Oh and it also works if I hold down the reset button while I run avrdude.</p>
+</div></div><div class="comment" id="comment_824"><span class="header"><a href="http://www.sparkfun.com/users/50348" class="bold">unebonnevie</a> <span class="wide">|</span> <b>November  2, 2008 at  9:29 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_824">1</span></strong></span><br /></span><div class="body"><p>Hi,</p>
+
+<p>I got the ATMEGA8 programmed with the above lab, but the LED is NOT blinking. Made sure 5V is obtained, although I get about 5.07V of input.</p>
+
+<p>I get the below I did 'make program'.</p>
+
+<p>avrdude -p atmega8 -P lpt1 -c stk200    -U flash:w:blink_1MHz.hex</p>
+
+<p>avrdude: AVR device initialized and ready to accept instructions</p>
+
+<p>Reading | ##...# | 100% 0.00s</p>
+
+<p>avrdude: Device signature = 0x1e9307
+NOTE: FLASH memory has been specified, an erase cycle will be perfor</p>
+
+<pre>     To disable this feature, specify the -D option.
+</pre>
+
+<p>avrdude: erasing chip
+reading input file "blink<em>1MHz.hex"
+input file blink</em>1MHz.hex auto detected as Intel Hex</p>
+
+<p>avrdude: writing flash (300 bytes):
+Writing | ##...## | 100% 0.11s</p>
+
+<p>avrdude: 300 bytes of flash written
+verifying flash memory against blink<em>1MHz.hex:
+load data flash data from input file blink</em>1MHz.hex:
+input file blink<em>1MHz.hex auto detected as Intel Hex
+input file blink</em>1MHz.hex contains 300 bytes
+reading on-chip flash data:</p>
+
+<p>Reading | ##...### | 100% 0.09s</p>
+
+<p>avrdude: verifying ...
+300 bytes of flash verified
+Fuses OK</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_825"><span class="header"><a href="http://www.sparkfun.com/users/50348" class="bold">unebonnevie</a> <span class="wide">|</span> <b>November  2, 2008 at 10:04 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_825">1</span></strong></span><br /></span><div class="body"><p>Could the problem be that the .hex file is generated as 'Intel hex'?</p>
+
+<p>From avrdude's output:</p>
+
+<p>input file blink_1MHz.hex auto detected as Intel Hex </p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_827"><span class="header"><a href="http://www.sparkfun.com/users/50348" class="bold">unebonnevie</a> <span class="wide">|</span> <b>November  2, 2008 at  2:33 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_827">1</span></strong></span><br /></span><div class="body"><p>After a couple hours...It's turned out if I took out the switch S1, it WORKS!  Why does the last image (of this tutorial) that shows the flashing light and the ISP hook-up does NOT have the switch S1 shown in the breadboard?  Why was it taken out?  I use Omron's B3F-1005 switch, and the light does not blink when I wired the switch as shown in the tutorial's schematics.  I wire it as follows: pins 1-2 to the GND and pins 3-4 connect to my ATMEGA8's pin 1.  Then the 10K ohm resistor from the switch's pin 4 to the 5V supply.</p>
+
+<p>Any tips????</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_2347"><span class="header"><a href="http://www.sparkfun.com/users/63184" class="bold">BenP</a> <span class="wide">|</span> <b>March  9, 2009 at  2:59 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2347">1</span></strong></span><br /></span><div class="body"><p>You might have the switch in the wrong way, or it was shorted. Either way it would cause the micro to constantly reset itself. That sounds right to me.</p>
+</div></div></div></div></div></div><div class="comment" id="comment_3800"><span class="header"><a href="http://www.sparkfun.com/users/49066" class="bold">k3jw</a> <span class="wide">|</span> <b>June 12, 2009 at  8:58 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3800">1</span></strong></span><br /></span><div class="body"><p>I had the reset line install to pin 1, once this was remove it blinked!</p>
+</div></div></div></div><div class="comment" id="comment_831"><span class="header"><a href="http://www.sparkfun.com/users/50620" class="bold">nas</a> <span class="wide">|</span> <b>November  3, 2008 at  1:09 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_831">1</span></strong></span><br /></span><div class="body"><p>i really like your site and these great tutorials.  the one problem i ran into though which i beleive needs clarification is this:
+"You can either wire the RESET pin directly to 5V"
+i did this i wired the reset pin directly to 5V without using the switch and recieved errors from avrdude stating that the chip wasnt responding.  so eventually i just put the resistor inbetween gnd and the reset pin and everythign worked.  </p>
+
+<p>ps thanks for shipping my chip so quickly </p>
+</div></div><div class="comment" id="comment_1167"><span class="header"><a href="http://www.sparkfun.com/users/52660" class="bold">joelspark</a> <span class="wide">|</span> <b>December  4, 2008 at 10:07 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_1167">1</span></strong></span><br /></span><div class="body"><p>I couldn't get WinAVR/avr_dude to recognize my ATMEGA168 for the life of me with the parallel port AVR programmer.  I bought the AVRISPmkii from DigiKey and used AVR Studio 4 to program my chip after compiling from Programmer's Notepad, and now the chip is programmed and my circuit is working.</p>
+</div></div><div class="comment" id="comment_873"><span class="header"><a href="http://www.sparkfun.com/users/50348" class="bold">unebonnevie</a> <span class="wide">|</span> <b>November  8, 2008 at  1:46 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_873">1</span></strong></span><br /></span><div class="body"><p>I found the solution.  Please see <a href="http://forum.sparkfun.com/viewtopic.php?t=12789">http://forum.sparkfun.com/viewtopic.php?t=12789</a>.  Note that the solution is only for ATMEGA8.</p>
+
+<p>Here is the solution:  Just put a 1nF cap from OSC1 to ground, and a 370 ohm resistor from OSC1 to Vcc. </p>
+</div></div><div class="comment" id="comment_848"><span class="header"><a href="http://www.sparkfun.com/users/50348" class="bold">unebonnevie</a> <span class="wide">|</span> <b>November  4, 2008 at 10:56 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_848">1</span></strong></span><br /></span><div class="body"><p>I don't still understanding why my blink program is not running as soon as I wire the switch to the circuit.  Without it, my ATMEGA8 runs the blink program fine.  My circuit is exactly as shown in this tutorial.  I still have the connection from the RESET pin to the SPI programmer's pin 5; that is, all the connections for my programmer is still in place.</p>
+
+<p>Any tip?  Can't go to the next tutorial without having the switch installed and my blink program running :-) I really want to understand this.</p>
+
+<p>Thanks.</p>
+</div></div><div class="comment" id="comment_2076"><span class="header"><a href="http://www.sparkfun.com/users/61323" class="bold">dondurito</a> <span class="wide">|</span> <b>February 17, 2009 at  8:04 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2076">1</span></strong></span><br /></span><div class="body"><p>I don't have a LPT1(DB-25) port or a DB9 port on my new computer. All I have is USB. I opened the tower and I see 1 port unused and it's labeled "USB". The pin diagram is of 9 pins as follows:</p>
+
+<p>[::::']</p>
+
+<p>Is the 9 pin USB connection the same thing as a com port? should I connect the DB25 connector to the 9 pin USB connector?</p>
+</div></div><div class="comment" id="comment_2082"><span class="header"><a href="http://www.sparkfun.com/users/61349" class="bold">venkat</a> <span class="wide">|</span> <b>February 18, 2009 at  4:54 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2082">1</span></strong></span><br /></span><div class="body"><p>HERE IN PICTURE U HAV PUT SOME YELLOW CRYTAL,BUT U HAVNT EXPLINED DUDE</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_2461"><span class="header"><a href="http://www.sparkfun.com/users/63462" class="bold">Mattamatta</a> <span class="wide">|</span> <b>March 17, 2009 at  3:33 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2461">1</span></strong></span><br /></span><div class="body"><p>Those are the .1uF supply bypass caps.</p>
+</div></div></div></div><div class="comment" id="comment_2081"><span class="header"><a href="http://www.sparkfun.com/users/61349" class="bold">venkat</a> <span class="wide">|</span> <b>February 18, 2009 at  4:50 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2081">1</span></strong></span><br /></span><div class="body"><p>wat the reset switch actually does?
+can u clearly explain the connections for the ISP?</p>
+</div></div><div class="comment" id="comment_2192"><span class="header"><a href="http://www.sparkfun.com/users/61230" class="bold">Freethinker</a> <span class="wide">|</span> <b>February 24, 2009 at  2:46 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2192">1</span></strong></span><br /></span><div class="body"><p>Ok I hope this story helps someone...  So for the past two weeks I've been trying to get my chips programmed (AVRs &amp; 8052s) but to no avail.  It kept saying something about unable to detect microcontroller.  I tried four different programmers, home built and store bought, but nothing.  Couple nights ago I remembered that when I built my Frankenputer last year I didn't enable the parallel port in the bios thinking "who uses those anymore?" yeah... Opps! But my sever pain in the neck came when I couldn't get back into the bios to turn it on.  Why? Still not completely sure but I think it had something to do with me over clocking the thermal snot out of my CPU.  So anywho, I had to reset the bios so I could get into the bios, and then turn on the parallel port.  All is well now and my blood pressure is back within a healthy range.  Moral of the story... Make sure your parallel port is enabled in the bios before the urge to chuck heavy objects at your computer sets in...</p>
+</div></div><div class="comment" id="comment_2608"><span class="header"><a href="http://www.sparkfun.com/users/57112" class="bold">SurgicalSteel</a> <span class="wide">|</span> <b>March 27, 2009 at  3:30 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2608">1</span></strong></span><br /></span><div class="body"><p>Would it be possible to get a little explanation of the code. I think I understand all the hardware stuff, but I'm not really sure how the code is working. The only other experience I've had coding micros is with the arduino (language and hardware).</p>
+</div></div><div class="comment" id="comment_2487"><span class="header"><a href="http://www.sparkfun.com/users/62773" class="bold">mouse-wiz</a> <span class="wide">|</span> <b>March 19, 2009 at  2:19 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_2487">1</span></strong></span><br /></span><div class="body"><p>Blinky blinky blinky =D</p>
+
+<p>Apparently it likes the following BIOS settings:
+Parallel port address 378
+Mode bi-directional</p>
+
+<p>And despite claims that my PC is making about 378 being lpt2, the makefile still wants it to be lpt1.</p>
+
+<p>Next to try to trick it into working with the USB-parallel bridge so I don't have to take the board from table with laptop to P4 box ~_~</p>
+</div></div><div class="comment" id="comment_3440"><span class="header"><a href="http://www.sparkfun.com/users/15688" class="bold">Meir</a> <span class="wide">|</span> <b>May 15, 2009 at  1:17 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3440">1</span></strong></span><br /></span><div class="body"><p>Will the serial programmer(PGM-00014 &amp; CAB-00065) work the same as the parallel one(PGM-00013 &amp; CAB-00064)? The tutorial gives makefile settings for both but the parts package has the parallel port version. Also, is the programmer anything more than wires directly from pin to pin? Can I just connect the wires directly without the programmer?</p>
+
+<p>My other question is about the power supply. Would a 9v battery work better to reduce noise? If it would work, can I just replace the barrel with it and not change anything else? How long would the battery last?</p>
+
+<p>Thank you for your help in advance, I'm new and trying to get started as cheap as I can :)</p>
+</div></div><div class="comment" id="comment_3061"><span class="header"><a href="http://www.sparkfun.com/users/60339" class="bold">mjustison</a> <span class="wide">|</span> <b>April 21, 2009 at  7:47 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3061">1</span></strong></span><br /></span><div class="body"><p>Would the USBtinyISP usb programmer be a good option to use over the parallel programmer? My laptop does not have a parallel input.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_3341"><span class="header"><a href="http://www.sparkfun.com/users/63817" class="bold">Michelle</a> <span class="wide">|</span> <b>May  7, 2009 at 11:19 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3341">1</span></strong></span><br /></span><div class="body"><p>I have the USBtinyISP and it seems to be working great, although I can't get my LED to blink.</p>
+
+<p>Does removing the chip from my programmer and putting in on a breadboard reboot the chip?</p>
+</div></div></div></div><div class="comment" id="comment_3430"><span class="header"><a href="http://www.sparkfun.com/users/69608" class="bold">SteffenL</a> <span class="wide">|</span> <b>May 14, 2009 at  6:56 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3430">1</span></strong></span><br /></span><div class="body"><p>I followed tutorial 1 and 2 and thought I had it right - but nothing worked. I got an "avrdude: AVR device not responding" message from both, programmer's notebook and the cmd-line. I am using the parallel programmer connected to an IBM Thinkpad.
+Eventually I tried an other LPT port - and even though windows makes me believe there is only LPT1 in the system, avrdude works with LPT3 (the LED is now blinking nicely) - but only once.
+I cannot reprogram the ATmega unless I reboot my laptop. I get the same error message as before without a reboot. 
+Does anybody have an idea what's going on? (and maybe more importantly a solution that allows me to reprogram without rebooting)</p>
+
+<p>Thanks in advance.</p>
+</div></div><div class="comment" id="comment_3027"><span class="header"><a href="http://www.sparkfun.com/users/66613" class="bold">DanS</a> <span class="wide">|</span> <b>April 19, 2009 at  4:56 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3027">1</span></strong></span><br /></span><div class="body"><p>After programming i get some errors:</p>
+
+<p>avrdude: verification error, fist mismatch at byte 0x0000
+0x0C != 0x00</p>
+
+<p>and</p>
+
+<p>avrdude: safemode: lfuse changed! Was 62, and is now fe</p>
+
+<p>I am also a little confused by the switch.. It doesn't program unless I hold down the reset button. Is that how it is supposed to function?</p>
+</div></div><div class="comment" id="comment_3648"><span class="header"><a href="http://www.sparkfun.com/users/72382" class="bold">MarcK</a> <span class="wide">|</span> <b>June  2, 2009 at  5:30 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3648">1</span></strong></span><br /></span><div class="body"><p>Before I start these tutorials, showing my ignorance, I need to know what USB programmer works with these tutorials. Does the STK500 work for this in replacement of the AVR-PG2 Programmer or how about the USBtinyISP? It sounds like either would work?</p>
+</div></div><div class="comment" id="comment_3724"><span class="header"><a href="http://www.sparkfun.com/users/72197" class="bold">treepour</a> <span class="wide">|</span> <b>June  6, 2009 at  5:48 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3724">1</span></strong></span><br /></span><div class="body"><p>For those asking about the USBtinyISP, YES, IT DOES WORK!  That LED is blinking as I type!  :)</p>
+
+<p>I used the 6 pin connector so I could avoid the 4 ground wires.  You'll need to reference this schematic on ladyada's site to figure out which pin is which: <a href="http://www.ladyada.net/images/usbtinyisp/usbtinyisp2sch.png">http://www.ladyada.net/images/usbtinyisp/usbtinyisp2sch.png</a></p>
+
+<p>The VCC (pin 2) and GND (pin 6) pins are on the same side that as the ribbon. So:</p>
+
+<p>pin 1: MISO
+pin 2: VCC
+pin 3: SCK
+pin 4: MOSI
+pin 5: RST
+pin 6: GND</p>
+
+<p>It's very easy to get confused at this step -- I had to double-check and rewire many times.  Also, make sure you're using the ATmega168 pinout schematic to see where the corresponding chip pins are located -- the schematics for the older chip show the pins in different locations.  So, on the ATmega168 chip:</p>
+
+<p>MISO: pin 18
+VCC: pins 7
+SCK: pin 19
+MOSI: pin 17
+RST: pin 1
+GND: pin 8</p>
+
+<p>You also need to hook up pin 20 to your breadboard VCC and pin 22 to your breadboard GND.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_3725"><span class="header"><a href="http://www.sparkfun.com/users/72197" class="bold">treepour</a> <span class="wide">|</span> <b>June  6, 2009 at  5:58 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3725">1</span></strong></span><br /></span><div class="body"><p>Oh, also, if you're using the USBtinyISP, you need to use the following in your Makefile:</p>
+
+<p>AVRDUDE_PROGRAMMER = usbtiny</p>
+
+<p>Not sure what you'd need to set your port to on a PC, but on a Mac, this works:</p>
+
+<p>AVRDUDE_PORT = usb</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_3904"><span class="header"><a href="http://www.sparkfun.com/users/25098" class="bold">PSmith</a> <span class="wide">|</span> <b>June 18, 2009 at  9:10 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3904">1</span></strong></span><br /></span><div class="body"><p>I've got usbtiny working on a Windows (Vista) machine, and just like on the Mac, the port should be simply "usb". It's blinking away even as I speak.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_21722"><img class="avatar" src="https://secure.gravatar.com/avatar/308196487296a092c5cf31535b874449?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/155503" class="bold">N.Poole</a> <span class="wide">|</span> <b>November 27, 2010 at 12:53 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_21722">1</span></strong></span><br /></span><div class="body"><p>In my experience you can leave port = Com1 on a PC as long as you have the USBTiny driver installed and the programmer is = usbtiny<br />
+<br />
+Also, if you're doing this tutorial with an ATTINY13 just use that as the device name both in the makefile and when you initialize AVRDUDE. The list that avrdude gives you seems to indicate that you should input "t13" but it has no idea what you're talking about if you use that name. Just type "attiny13" <br />
+<br />
+Furthermore, if you unplug your programmer and find that light stops blinking (even though you're not using the programmer to power the target) yank out the reset wire to the ISP connector. When the power is out on the programmer (at least the usbtiny) it pulls the reset pin low.<br />
+<br />
+Alrighty, just my little chunk of advice. Have fun!</p>
+</div></div></div></div></div></div></div></div><div class="comment" id="comment_3799"><span class="header"><a href="http://www.sparkfun.com/users/72908" class="bold">Winguyen</a> <span class="wide">|</span> <b>June 12, 2009 at  8:21 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3799">1</span></strong></span><br /></span><div class="body"><p>I can't get the code to compile for me. I keep getting this error...</p>
+
+<p>Compiling: blink<em>1MHz.c
+avr-gcc -c -mmcu=atmega168 -I. -gdwarf-2 -DF</em>CPU=8000000UL  -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=blink<em>1MHz.lst  -std=gnu99 -MD -MP -MF .dep/blink</em>1MHz.o.d blink<em>1MHz.c -o blink</em>1MHz.o 
+blink<em>1MHz.c:60: fatal error: opening dependency file .dep/blink</em>1MHz.o.d: No such file or directory
+compilation terminated.
+make.exe: *** [blink_1MHz.o] Error 1</p>
+
+<blockquote>
+  <p>Process Exit Code: 2
+  Time Taken: 00:00</p>
+</blockquote>
+
+<p>I've looked over the code and I don't see any errors. Any help would be appreciated.</p>
+
+<p>Thanks</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_3831"><span class="header"><a href="http://www.sparkfun.com/users/72520" class="bold">Josh</a> <span class="wide">|</span> <b>June 15, 2009 at  1:05 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3831">1</span></strong></span><br /></span><div class="body"><p>In Windows Vista, I had to manually create the .dep folder in the directory I was trying to compile in. Windows explorer would not let me do this, so I did it through the command prompt.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_3832"><span class="header"><a href="http://www.sparkfun.com/users/72908" class="bold">Winguyen</a> <span class="wide">|</span> <b>June 15, 2009 at  6:33 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3832">1</span></strong></span><br /></span><div class="body"><p>What was the file you made called? I made one called .depblink_1MHz.o.d and it still doesn't work.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_3837"><span class="header"><a href="http://www.sparkfun.com/users/72520" class="bold">Josh</a> <span class="wide">|</span> <b>June 15, 2009 at  9:55 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3837">1</span></strong></span><br /></span><div class="body"><p>I had to make a folder called '.dep' in the directory my .c file was. So if my code sat in C:\code\blink<em>1MHz\, I needed an additional folder that I had to manually create 'C:\code\blink</em>1MHz&#46;dep\'. Once that folder was there, I compiled and it created the .o.d file</p>
+</div></div><div class="comment" id="comment_3838"><span class="header"><a href="http://www.sparkfun.com/users/72520" class="bold">Josh</a> <span class="wide">|</span> <b>June 15, 2009 at  9:57 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3838">1</span></strong></span><br /></span><div class="body"><p>Sorry my backslashes did not show up. I will use arrows to show sub folders instead</p>
+
+<p>C: -> code -> blink<em>1MHz, I needed an additional folder that I had to manually create 'C: -> code -> blink</em>1MHz -> .dep'. Once that folder was there, I compiled and it created the .o.d file</p>
+</div></div></div></div></div></div><div class="comment" id="comment_3829"><span class="header"><a href="http://www.sparkfun.com/users/72197" class="bold">treepour</a> <span class="wide">|</span> <b>June 14, 2009 at  7:50 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3829">1</span></strong></span><br /></span><div class="body"><p>Sounds like something is going wrong with the Makefile.  I'm not all that familiar with Makefiles, but it looks like it can't find a directory/file called .dep/blink_1MHz.o.d -- does the file actually exist (it should be created by the make process itself)?</p>
+</div></div></div></div><div class="comment" id="comment_4274"><span class="header"><a href="http://www.sparkfun.com/users/70071" class="bold">Mitzplug</a> <span class="wide">|</span> <b>July 10, 2009 at  7:15 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4274">1</span></strong></span><br /></span><div class="body"><p>I gad AVR parallel port programer and I fought for hours in order to make blink that damn led. I finaly success in modifing the BIOS parallel port configuration of my computer. Looks like it was realy important for my PC to set it to: ECP (Extended Capabilities Mode) and Port(O/I) 378
+Then only lpt3 works, dont ask me why.</p>
+</div></div><div class="comment" id="comment_4449"><span class="header"><a href="http://www.sparkfun.com/users/77226" class="bold">pieterc</a> <span class="wide">|</span> <b>July 24, 2009 at 12:28 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_4449">1</span></strong></span><br /></span><div class="body"><p>Hi!</p>
+
+<p>This link is old:
+<a href="http://www.piconomic.co.za/avr.php">http://www.piconomic.co.za/avr.php</a></p>
+
+<p>Please change it to:
+<a href="http://piconomic.berlios.de/">http://piconomic.berlios.de/</a></p>
+
+<p>Best regards,
+Pieter</p>
+</div></div><div class="comment" id="comment_5737"><span class="header"><a href="http://www.sparkfun.com/users/84283" class="bold">thejam</a> <span class="wide">|</span> <b>October 13, 2009 at  7:40 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5737">1</span></strong></span><br /></span><div class="body"><p>I opened up my stk200 and used the continuity test on my multimeter to make sure the pinouts were right, and I found 3 of the 4 not connected to anything.</p>
+
+<p>Just wondering why all 4 need to be connected when only one is really carrying anything...</p>
+
+<p>Also, the reason I was checking pinouts is that I've now gone through two different ATMega168 chips that don't respond to anything all of a sudden.  </p>
+
+<p>Well, the first one did for awhile and then stopped, but it was even buggy then (things like the LED only working until I unplugged the programmer, and then not working until the shield around the pins on the programmer were grounded.  Something I found out by accident when I went to plug it back in.).</p>
+
+<p>The second one doesn't work at all.  I get zero response.</p>
+
+<p>I thought at first all these problems were due to the fact that I received a 5v wall wart, and with the 5v regular there wasn't enough overhead, so my voltage rail was really around 4.75v.  So I just received a 9v wall wart and it's a solid perfect 5v all around now.  Still no help, however.</p>
+
+<p>Any thoughts?</p>
+</div></div><div class="comment" id="comment_5888"><span class="header"><a href="http://www.sparkfun.com/users/73561" class="bold">HebrewHammer</a> <span class="wide">|</span> <b>October 21, 2009 at  9:06 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5888">1</span></strong></span><br /></span><div class="body"><p>OK, I've been trying to figure it out and I can't. Why is there a resistor before the switch connected to RESET? I know it is to "pull RESET high", but how does the resistor do that? Why can't you just replace the resistor with a wire? Thanx!</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_10361"><span class="header"><a href="http://www.sparkfun.com/users/17818" class="bold">Bonedog</a> <span class="wide">|</span> <b>February 10, 2010 at  2:20 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10361">1</span></strong></span><br /></span><div class="body"><p>The resistor is there to limit the current to ground. Otherwise you would be shorting the power supply. Ohm's Law is:
+voltage / resistance = current, or:
+voltage / current = resistance. So you figure the 10K ohm resistor would limit the current flow through the resistor to 0.5 milliAmps (0.0005 A). This is important as the resistor is most likely a 1/4 watt resistor. The wattage (heating effect) through the resistor is Volts x current = 5 x .0005 = 2.5 milliWatts, much lower than the 250 mW rating of the resistor.</p>
+</div></div></div></div><div class="comment" id="comment_6514"><span class="header"><a href="http://www.sparkfun.com/users/88709" class="bold">Mangis</a> <span class="wide">|</span> <b>November  3, 2009 at  7:07 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_6514">1</span></strong></span><br /></span><div class="body"><p>Hello,</p>
+
+<p>Would this all work with ATMEGA8? i'm wondering because it's cheaper and easier to get here, in Lithuania :P</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_6533"><img class="avatar" src="https://secure.gravatar.com/avatar/50e0e179c9466a614c80dfb29e200b6d?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/74612" class="bold">Pearce</a> <span class="wide">|</span> <b>November  3, 2009 at  3:30 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_6533">1</span></strong></span><br /></span><div class="body"><p>Yes, it will work with the ATMEGA8</p>
+</div></div></div></div><div class="comment" id="comment_6749"><span class="header"><a href="http://www.sparkfun.com/users/90322" class="bold">hm</a> <span class="wide">|</span> <b>November 15, 2009 at 12:31 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_6749">1</span></strong></span><br /></span><div class="body"><p>You are GREAT! This tutorial is great too!
+Today I made my very first LED blink after 9 hours of constant work and destroying 3 ATMega16 micros! But the last one, by configuring the correct Fuse Bits was correctly programmed!</p>
+
+<p>I am running way beyond this tutorial now, implementing all my simulated Proteus AVR projects in the real world and it is so much fun and amazing!</p>
+</div></div><div class="comment" id="comment_6745"><span class="header"><a href="http://www.sparkfun.com/users/86213" class="bold">egor7</a> <span class="wide">|</span> <b>November 15, 2009 at  2:00 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_6745">1</span></strong></span><br /></span><div class="body"><p>All work's fine, thank you.</p>
+</div></div><div class="comment" id="comment_7661"><span class="header"><a href="http://www.sparkfun.com/users/69151" class="bold">prkarls</a> <span class="wide">|</span> <b>December 14, 2009 at  9:51 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_7661">1</span></strong></span><br /></span><div class="body"><p>The 10kOhm resistor is in place to limit the current I=(5V/10000Ohm) when the push button is closed. If it were not there the 5V rail would be shorted directly to ground when the push button is closed.</p>
+</div></div><div class="comment" id="comment_7833"><span class="header"><a href="http://www.sparkfun.com/users/94583" class="bold">bill8</a> <span class="wide">|</span> <b>December 20, 2009 at  3:40 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_7833">1</span></strong></span><br /></span><div class="body"><p>I was unable to unzip your blink_1MHz.zip file using WinZip 14.  Error states "Cannot open file: it does not appear to be a valid archive."</p>
+
+<p>Does the link in the tutorial still have the blink_1MHz.c and Makefile?</p>
+</div></div><div class="comment" id="comment_7979"><span class="header"><a href="http://www.sparkfun.com/users/86264" class="bold">Technologikall</a> <span class="wide">|</span> <b>December 26, 2009 at 12:33 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_7979">1</span></strong></span><br /></span><div class="body"><p>Hi I have a problem. When I download the link for the files, I don't get a makefile, I only get a file alled blink_1MHz. Where did the makefile go to?</p>
+</div></div><div class="comment" id="comment_8051"><span class="header"><a href="http://www.sparkfun.com/users/56372" class="bold">Tanksal</a> <span class="wide">|</span> <b>December 29, 2009 at  1:18 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_8051">1</span></strong></span><br /></span><div class="body"><p>I'm running Windows 7, and when trying to load the code to the microcontroller, I got the following error: can't open device "giveio"</p>
+
+<p>I clicked the link provided in the lesson, but the link was broken.  I then used the Windows Explorer GUI to copy C:\WinAVR\bin\giveio.sys to C:\Windows\giveio.sys, went to command prompt, and entered: install_giveio.bat</p>
+
+<p>It outputs the following: Copying the driver to the windows directory target file: C:\Windows\giveio.sys
+The system cannot find the file specified.
+Remove a running service if needed...
+Installing Windows NT/2k/XP driver: giveio
+Installing giveio from C:\Windows\giveio.sys... install failed (status 6): 
+The handle is invalid.</p>
+
+<p>starting giveio... start failed (status 6):
+The handle is invalid.</p>
+
+<p>ERROR: Installation of giveio failed</p>
+
+<p>Does anyone have an idea of what I'm doing wrong?</p>
+</div></div><div class="comment" id="comment_8196"><span class="header"><a href="http://www.sparkfun.com/users/96608" class="bold">EEStudent</a> <span class="wide">|</span> <b>December 31, 2009 at  7:36 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_8196">1</span></strong></span><br /></span><div class="body"><p>These tutorials are great. Thank you very much.</p>
+</div></div><div class="comment" id="comment_9633"><span class="header"><a href="http://www.sparkfun.com/users/94676" class="bold">cjh08052</a> <span class="wide">|</span> <b>January 16, 2010 at 11:04 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9633">1</span></strong></span><br /></span><div class="body"><p>For the most part I got everything working. I was wondering how long it takes to upload a program to your device? I'm using a home-built serial programmer based on the AVR-PG1B schematic. I did have to substitute some  of the components and was wondering if that is the root of my slow uploads or if this is just the norm?</p>
+
+<p>;-> (cjh)</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_9660"><span class="header"><a href="http://www.sparkfun.com/users/94676" class="bold">cjh08052</a> <span class="wide">|</span> <b>January 17, 2010 at  9:30 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9660">1</span></strong></span><br /></span><div class="body"><p>Update;</p>
+
+<p>I just pulled out an old laptop that has a com-port and everything works as I would have expected. I guess I'm having issues with my USB-2-serial cable.</p>
+
+<p>;-> (cjh)</p>
+</div></div></div></div><div class="comment" id="comment_9825"><span class="header"><a href="http://www.sparkfun.com/users/116325" class="bold">thatdinosaurguy</a> <span class="wide">|</span> <b>January 21, 2010 at  2:11 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9825">1</span></strong></span><br /></span><div class="body"><p>I'm going to buy the kits for lecture 1 and 2, but I have a question.  What if my computer doesn't have parallel or serial ports?  I'm sure I can get USB adapters, but will they be recognized properly and be able to send it to the micro?</p>
+</div></div><div class="comment" id="comment_9959"><span class="header"><a href="http://www.sparkfun.com/users/94821" class="bold">James1111</a> <span class="wide">|</span> <b>January 26, 2010 at 11:30 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9959">1</span></strong></span><br /></span><div class="body"><p>I am having trouble loading code onto Atmega168. I am using Serial Programmer. Code compiles fine, but when I go to load code onto AVR, I get the following error:</p>
+
+<blockquote>
+  <p>"make.exe" program
+  avrdude -p atmega168 -P COM1 -c ponyser    -U flash:w:blink_1MHz.hex </p>
+</blockquote>
+
+<p>avrdude: AVR device not responding
+avrdude: initialization failed, rc=-1
+         Double check connections and try again, or use -F to override
+         this check.</p>
+
+<p>avrdude done.  Thank you.</p>
+
+<p>make.exe: *** [program] Error 1</p>
+
+<blockquote>
+  <p>Process Exit Code: 2
+  Time Taken: 00:01</p>
+</blockquote>
+
+<p>Anyone have a solution to this problem??</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_9972"><span class="header"><a href="http://www.sparkfun.com/users/94676" class="bold">cjh08052</a> <span class="wide">|</span> <b>January 27, 2010 at 12:58 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9972">1</span></strong></span><br /></span><div class="body"><p>Two things to check (in case you haven't already).</p>
+
+<ol>
+<li>Make sure the power is on (for the AVR)</li>
+<li>Double check that you're using the right com-port (you're output states 'COM1'). If you're using a USB-to-serial cable, double check which com-port it was assigned in the system-settings.</li>
+</ol>
+
+<p>Hope this helps.</p>
+
+<p>;-> (cjh)</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_10008"><span class="header"><a href="http://www.sparkfun.com/users/94821" class="bold">James1111</a> <span class="wide">|</span> <b>January 29, 2010 at 12:08 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10008">1</span></strong></span><br /></span><div class="body"><p>I added a 20Mhz crystal and it worked. When it started it was not running off the 20Mhz crystal, but rather the 1Mhz default...wierd huh?</p>
+
+<p>It now works and I am able to reprogram it now without any problems, and edit the fuse bits to use it at 20Mhz!</p>
+
+<p>Serial com works no problem.</p>
+</div></div></div></div></div></div><div class="comment" id="comment_10364"><span class="header"><a href="http://www.sparkfun.com/users/17818" class="bold">Bonedog</a> <span class="wide">|</span> <b>February 10, 2010 at  2:44 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10364">1</span></strong></span><br /></span><div class="body"><p>First off, I too am a rank beginner with the Atmega168, et. al. But I just wanted to share what I might use as a blink.c code to simplify the delay piece:</p>
+
+include
+
+include
+
+<p>// delay.h is a standard avr-libc library module</p>
+
+<p>int main (void)
+{
+  // set PORTC pin 1 (PC0) for output
+  DDRC = 0x01;</p>
+
+<p>while (1)
+    {
+      // set LED off
+      PORTC = 0xfe;</p>
+
+<pre>  _delay_ms(250);
+
+  // set LED on
+  PORTC = 0xff;
+
+  _delay_ms(250);
+}
+</pre>
+
+<p>return 1;
+}</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_10365"><span class="header"><a href="http://www.sparkfun.com/users/17818" class="bold">Bonedog</a> <span class="wide">|</span> <b>February 10, 2010 at  2:53 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_10365">1</span></strong></span><br /></span><div class="body"><p>Ye gads! I forgot about the stripping of characters here. The include lines should read: 
+include avr/io.h with 'less than' before and 'greater than' symbols after the avr/io.h. Same with the util/delay.h.
+Oops!</p>
+</div></div></div></div><div class="comment" id="comment_11208"><span class="header"><a href="http://www.sparkfun.com/users/122002" class="bold">JohnS.</a> <span class="wide">|</span> <b>March  9, 2010 at  8:10 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_11208">1</span></strong></span><br /></span><div class="body"><p>Programmed a 328 with the AVR pocket programmer.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_21723"><img class="avatar" src="https://secure.gravatar.com/avatar/308196487296a092c5cf31535b874449?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/155503" class="bold">N.Poole</a> <span class="wide">|</span> <b>November 27, 2010 at 12:58 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_21723">1</span></strong></span><br /></span><div class="body"><p>Programmed a Tiny13. That pocket programmer is a killer buy, works great.</p>
+</div></div></div></div><div class="comment" id="comment_11300"><span class="header"><a href="http://www.sparkfun.com/users/96515" class="bold">driver13</a> <span class="wide">|</span> <b>March 13, 2010 at 12:13 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_11300">1</span></strong></span><br /></span><div class="body"><p>I've got it so close I can almost taste (okay, see) the LED blinking, but it comes out with:</p>
+
+<p>avrdude: Device signature = 0x1e950f
+avrdude: Expected signature for ATMEGA168 is 1E 94 06
+         Double check chip, or use -F to override this
+         check</p>
+
+<p>I'm using a 328 instead of the 168. Does anyone know how to either modify the code so it looks for the 328's signature or use the -F check override? Any help would be much appreciated.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_15706"><span class="header"><a href="http://www.sparkfun.com/users/141461" class="bold">RocketTaco</a> <span class="wide">|</span> <b>July 13, 2010 at 12:05 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_15706">1</span></strong></span><br /></span><div class="body"><p>I'm guessing you've got this by now, but I'll leave this note for others. I got the same error.</p>
+
+<p>Open the makefile, and find the line AVRDUDE<em>WRITE</em>FLASH. You can append AVRDude command-line options to this line and they will be run automatically when you choose Tools > [WinAVR] Program. Add -F to the end of this line and it will force the write.</p>
+
+<p>As far as I can tell there's no reason you can't use 168 code on a 328 (same chip, more memory) but AVRDude doesn't like it.</p>
+</div></div></div></div><div class="comment" id="comment_11616"><span class="header"><a href="http://www.sparkfun.com/users/125681" class="bold">Zan</a> <span class="wide">|</span> <b>March 24, 2010 at 11:43 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_11616">1</span></strong></span><br /></span><div class="body"><p>What if my PC haven't paralel port ? Can this work for my and how?
+gvozdan@gmail.com</p>
+</div></div><div class="comment" id="comment_11864"><span class="header"><a href="http://www.sparkfun.com/users/124423" class="bold">CleverAlias</a> <span class="wide">|</span> <b>April  3, 2010 at  6:56 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_11864">1</span></strong></span><br /></span><div class="body"><p>I'm trying to program the ATmega328P using this process, and have not had success yet.  I had to add a PCI card to get parallel and serial ports, and haven't been able to verify those ports yet. The XP device manager claims the parallel port is functioning and located at lpt3.</p>
+
+<p>I've checked voltages and SPI connections at least 4 times, and have tried a few variations of lpt port and MCU name in the makefile, but still am getting the "AVR device not responding" error.</p>
+
+<p>I can't tell if there is any major difference between the ATmega328P and the 168 that is the default in the makefile.  Any ideas?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_11870"><span class="header"><a href="http://www.sparkfun.com/users/124423" class="bold">CleverAlias</a> <span class="wide">|</span> <b>April  3, 2010 at 11:33 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_11870">1</span></strong></span><br /></span><div class="body"><p>For what it's worth, the I/O range for the parallel port is B8A8-B8AF, I guess not the typical address for an LPT port from reading the other posts.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_11887"><span class="header"><a href="http://www.sparkfun.com/users/124423" class="bold">CleverAlias</a> <span class="wide">|</span> <b>April  4, 2010 at  8:51 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_11887">1</span></strong></span><br /></span><div class="body"><p>It turns out that if you dig into the avrdude documentation, the ports lpt1, lpt2, and lpt3 are hard-coded to addresses 0x378, 0x278, and 0x3BC. My PCI parallel port is not at any of those addresses.</p>
+
+<p>The command line interface allows for this case, so change line 204 in the makefile to the address of your port</p>
+
+<p>AVRDUDE_PORT = 0xB8A8</p>
+
+<p>I'm not sure if it makes a difference, but I ended up with line 43 in the makefile as:</p>
+
+<p>MCU = atmega328p</p>
+
+<p>instead of 168<br />
+Hopefully this helps those who follow after.</p>
+</div></div></div></div></div></div><div class="comment" id="comment_12252"><span class="header"><a href="http://www.sparkfun.com/users/128522" class="bold">JeffC</a> <span class="wide">|</span> <b>April 15, 2010 at 11:34 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_12252">1</span></strong></span><br /></span><div class="body"><p>If you're using the USBtiny pocket programmer for the tutorial, do not include the -B 1 command line prompt at this stage: the microcontroller's not fast enough to keep up with the programmer using the -B 1 switch.</p>
+
+<p>In the makefile, I have these settings:</p>
+
+MCU name
+
+<p>MCU = m328p</p>
+
+Programming hardware: alf avr910 avrisp bascom bsd
+
+dt006 pavr picoweb pony-stk200 sp12 stk200 stk500
+
+<p>AVRDUDE_PROGRAMMER = usbtiny</p>
+
+com1 = serial port. Use lpt1 to connect to parallel port.
+
+<p>AVRDUDE_PORT = COM6</p>
+
+<p>(I'm not sure avrdude looks at the com port for a the USBtiny programmer.)</p>
+
+<p>Also, wiring up the 10 pin connector is kind of a bear. I used the 6 pin instead.  Note that the connector is keyed.  If you hold the connector so the holes are facing you, here are the pin numbers:</p>
+
+<p>6 4 2
+   5 3 1</p>
+
+<p>where the key protrusion is on the bottom, below pin 3.  The pins are as follows:</p>
+
+<p>1 - MISO
+  2 - VCC (+5 volts)
+  3 - SCK
+  4 - MOSI
+  5 - RST
+  6 - GND</p>
+</div></div><div class="comment" id="comment_12245"><span class="header"><a href="http://www.sparkfun.com/users/127141" class="bold">genii6</a> <span class="wide">|</span> <b>April 15, 2010 at  6:13 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_12245">1</span></strong></span><br /></span><div class="body"><p>Will this work with a home made DAPA parallel port programmer as described in this link: <a href="http://www.arduino.cc/en/Hacking/ParallelProgrammer">http://www.arduino.cc/en/Hacking/ParallelProgrammer</a></p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_12321"><span class="header"><a href="http://www.sparkfun.com/users/127141" class="bold">genii6</a> <span class="wide">|</span> <b>April 19, 2010 at 12:51 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_12321">1</span></strong></span><br /></span><div class="body"><p>I can verify that the parallel port programmer works. Tips on building it yourself. The cable should not be too long and I had to remove the resistor at pin 11 of the DB25 connector. I downloaded the ISP programmer windows software to test it out. If you are using avrdude, the following command should work:</p>
+
+<p>avrdude -p atmega8 -P lpt1 -c dapa</p>
+
+<p>This tells avrdude to identify your device. By default, a virgin atmega8 should have its fuse bits set to run at 1Mhz. You could try adding the 16 Mhz crystals and .22 caps as well if things don't work.</p>
+</div></div></div></div><div class="comment" id="comment_14015"><span class="header"><a href="http://www.sparkfun.com/users/105884" class="bold">Khalid</a> <span class="wide">|</span> <b>June  2, 2010 at  3:48 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_14015">1</span></strong></span><br /></span><div class="body"><p>Just a question; how would you program the ATmega if you don't have a parallel (printer) port on either your desktop or laptop?</p>
+</div></div><div class="comment" id="comment_15379"><span class="header"><a href="http://www.sparkfun.com/users/134672" class="bold">csquare</a> <span class="wide">|</span> <b>July  4, 2010 at  8:19 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_15379">1</span></strong></span><br /></span><div class="body"><p>Is there any way to get the computers serial port to program the atmega328 via a .hex file?</p>
+</div></div><div class="comment" id="comment_15942"><span class="header"><a href="http://www.sparkfun.com/users/137312" class="bold">msundst</a> <span class="wide">|</span> <b>July 17, 2010 at  8:03 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_15942">1</span></strong></span><br /></span><div class="body"><p>my laptop doesnt have a printer port. how do i use usb to program?</p>
+</div></div><div class="comment" id="comment_17050"><span class="header"><a href="http://www.sparkfun.com/users/141813" class="bold">Bartvoordummies</a> <span class="wide">|</span> <b>August 12, 2010 at  4:00 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_17050">1</span></strong></span><br /></span><div class="body"><p>Great tutorials, and dito comments. They've made me able to let the LED blink, via USB and @ 16 MHz. As a next experiment I've recently tried to programmed another simple thing (I try to activate one pin via a switch, once activated another pin needs to burn a LED for a couple seconds).</p>
+
+<p>So I've edited the Blink<em>1Mhz file and saved it as Tijdschakelaar. Then "Saved as" the makefile you've supplied in the same folder and edited it (actually just changed Target = Blink</em>1Mhz to Target Tijdschakelaar). Thinking this would do all I got was: Did not find rule to make Tijdschakelaar.elf.</p>
+
+<p>What could be the problem? Probably something dead obvious.
+Greetz from Belgium.</p>
+</div></div><div class="comment" id="comment_17158"><span class="header"><a href="http://www.sparkfun.com/users/77226" class="bold">pieterc</a> <span class="wide">|</span> <b>August 16, 2010 at  2:43 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_17158">1</span></strong></span><br /></span><div class="body"><p>The Piconomic FWLIB has been revised and updated. The following link is old:
+<a href="http://piconomic.berlios.de/avr_quick_start_guide.html">http://piconomic.berlios.de/avr<em>quick</em>start_guide.html</a></p>
+
+<p>It is now hosted at:
+<a href="http://piconomic.co.za/fwlib/_a_v_r___q_u_i_c_k___s_t_a_r_t___g_u_i_d_e.html">http://piconomic.co.za/fwlib/<em>a</em>v<em>r___q</em>u<em>i</em>c<em>k___s</em>t<em>a</em>r<em>t___g</em>u<em>i</em>d_e.html</a></p>
+
+<p>Enjoy!
+Pieter</p>
+</div></div><div class="comment" id="comment_17710"><span class="header"><a href="http://www.sparkfun.com/users/83407" class="bold">CVBruce</a> <span class="wide">|</span> <b>August 30, 2010 at 12:52 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_17710">1</span></strong></span><br /></span><div class="body"><p>For development on Mac OS X, you can download CrossPack for AVR instead of WinAVR. It can be found at <a href="http://www.obdev.at/products/crosspack/index.html">http://www.obdev.at/products/crosspack/index.html</a></p>
+</div></div><div class="comment" id="comment_18478"><span class="header"><a href="http://www.sparkfun.com/users/138189" class="bold">CTC-001</a> <span class="wide">|</span> <b>September 21, 2010 at 11:14 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_18478">1</span></strong></span><br /></span><div class="body"><p>I am stuck trying to use avrdude from the command prompt to 'check in' with the atmega 328 (or is this the Atmega328P?  It says P on the chip but not on the sparkfun product page) Whichever one it is, the DIP is on the breadboard and wired for power and wired to the 6 pin programming header via USBtinyISP.  Everything seems to be in place exactly perfectly, avrdude says 'hello' to the USBtinyISP but not to the chip.  What is the exact command line to get avrdude to 'register' with the chip?</p>
+</div></div><div class="comment" id="comment_18919"><span class="header"><a href="http://www.sparkfun.com/users/152625" class="bold">skatefriday</a> <span class="wide">|</span> <b>September 29, 2010 at  8:16 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_18919">1</span></strong></span><br /></span><div class="body"><p>I initially hooked up the pins on the connector in reverse.  If you look at the schematic and then look at the picture of the connector with the blue text pointing out the pin locations the schematic is the reverse of the picture if you are holding the connector in your hand with the red strip oriented up.</p>
+
+<p>At any rate, if I hook it up as in the picture, not as in the schematic, I get 0v on the reset pin into the atmega328.  If I remove the reset pin wire from the connector I get 5v going into the reset pin on the atmega328.</p>
+
+<p>Did I fry the pocket programmer?  Would it really be that easy to fry?</p>
+
+<p>So I can't program the mcu because it's being held in reset.  Any reason why the connector connections would pull that line low?  I know, a short to ground, but this is a brand new unit received in the mail from sparkfun a couple days ago.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_18932"><span class="header"><a href="http://www.sparkfun.com/users/152625" class="bold">skatefriday</a> <span class="wide">|</span> <b>September 30, 2010 at  8:57 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_18932">1</span></strong></span><br /></span><div class="body"><p>After probing the connector pins to figure out exactly where 5v was and then reconnecting all the wires, I was able to program the atmega328 with</p>
+
+<p>avrdude -p m328p -c usbtiny -U flash:w:blink.hex</p>
+</div></div></div></div><div class="comment" id="comment_19156"><span class="header"><a href="http://www.sparkfun.com/users/152625" class="bold">skatefriday</a> <span class="wide">|</span> <b>October  5, 2010 at 10:56 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_19156">1</span></strong></span><br /></span><div class="body"><p>If you have 5v before the 10k resistor at the reset switch, but 0v after the resistor is it fair to say there's a short in the circuit on your breadboard someplace?  I have a two 8 bit shift registers hooked up to the avr and a bunch of leds hooked up to the shift registers.</p>
+
+<p>Note that when the programmer is hooked up and supplying power to the avr, it runs, but when it's not hooked up, the reset line goes low after the resistor, but not before but the end result is that avr is in reset.</p>
+</div></div><div class="comment" id="comment_20644"><span class="header"><a href="http://www.sparkfun.com/users/156639" class="bold">zombi</a> <span class="wide">|</span> <b>November  9, 2010 at  8:33 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_20644">1</span></strong></span><br /></span><div class="body"><p>These tutorials are great, thanks for making them (I bought the kits for the first few from Sparkfun)</p>
+
+<p>My blinking LED worked first time :D There is one step missing from the tutorial - the first line of the makefile needs to be altered - change MCU name to match the micro you have.
+MCU = m328p
+worked for me with the micro provided in the kit. (Run make all and program after this change)</p>
+
+<p>I would also like more explanation about the "decoupling" caps added in the photo that are not shown in the schematic - or even a link or search term so I could learn the purpose of these caps.</p>
+</div></div><div class="comment" id="comment_20823"><span class="header"><a href="http://www.sparkfun.com/users/156548" class="bold">DerVundrPlumbs2</a> <span class="wide">|</span> <b>November 14, 2010 at 12:08 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_20823">1</span></strong></span><br /></span><div class="body"><p>It took me four hours but finally got this going.  I originally tried on my LPTless laptop using a USB to parallel port dongle through a virtual machine (long story) but could not get it to work.  I then added a PCI parallel port to my desktop figuring that the Programmers Notepad was looking for a specific address and this did not work either with lpt1.  I had been over and over the wiring, so I went into device manager (devmgmt.msc at command line) and opened the PCI parallel port device.  Under the resources tab it lists the IO location so I specified the starting location ("0xec00") instead of "lpt1" as the value for AVRDUDE_PORT in the make file.  I also changed the MCU value to "m328p" to match my chip as suggested in other posts.  Have to remember this is all case sensitive.  Finally works.  Hopefully this will help someone else now that parallel ports are hard to come by on modern machines.</p>
+</div></div><div class="comment" id="comment_20878"><span class="header"><a href="http://www.sparkfun.com/users/161338" class="bold">nmushov</a> <span class="wide">|</span> <b>November 15, 2010 at  9:23 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_20878">1</span></strong></span><br /></span><div class="body"><p>I'm waiting on my parts to start this tutorial so I cant test the voltages, but I'm confused on the RESET section. If there's a 10k Resistor between the 5V supply and Reset pin, wont the Reset pin see a significantly lower voltage than 5V? I'm new to all this, just trying to understand. Thanks!</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_20879"><span class="header"><a href="http://www.sparkfun.com/users/161338" class="bold">nmushov</a> <span class="wide">|</span> <b>November 15, 2010 at  9:34 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_20879">1</span></strong></span><br /></span><div class="body"><p>Does the reset pin just care if there's some voltage there? So it doesnt reset if it see's some voltage, but when the reset button is pushed, the voltage drops to zero on the reset pin, because there's a clear path to ground?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_21724"><img class="avatar" src="https://secure.gravatar.com/avatar/308196487296a092c5cf31535b874449?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/155503" class="bold">N.Poole</a> <span class="wide">|</span> <b>November 27, 2010 at  1:09 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_21724">1</span></strong></span><br /></span><div class="body"><p>Yeah guys, the reset pin is active low. So in the digital world, for all intents and purposes high is anything just below 5v (or 3.3v if you're running a 3.3 system) and low is anything just above 0v. Where they meet? That varies from chip to chip (there's a tut on it in the new bite-sized primers section) You seem to understand pretty well whats going on: The pin sees about 4-5v so it's "ON" but when you push the button it grounds the incoming voltage and the pin gets about 'nothing' volts. <br />
+What you're doing though is forgetting that the point of the switch ISN'T to route the RST pin to GND, it's to route the voltage off of the resistor to GND (Before it can reach the pin to pull it up) So when you push the switch you're sinking not only the chip to GND but also the system voltage, and what do you get when you ground the system voltage without a resistance? That's right: a short! So the resistor is there so that when you reset the IC, it doesn't short your supply. Sure, the IC would reset without it, but things might spark when you pushed the button, lol.<br />
+<br />
+Cheers!</p>
+</div></div></div></div></div></div><div class="comment" id="comment_22258"><span class="header"><a href="http://www.sparkfun.com/users/49842" class="bold">ashcan</a> <span class="wide">|</span> <b>December  4, 2010 at  3:04 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22258">1</span></strong></span><br /></span><div class="body"><p>I bought the kit for the tutorial and made it painlessly up to the point of programming the 328. No blinky, inconsistent messages (which should have been a clue itself), and a bad link for the 'read this page' for the giveio problem. Frustration starts here. Granted, this is a basic embedded tutorial, but a little more detail beyond some trial suggestions for the 'What now, when things don't work?'  would be nice, so here's some:<br />
+<br />
+First, I did some web surfing. (Actually, first, I copied the giveio thing and installed it, but I don't know if that had any signficant impact on my results or not.) The ATmega328P is programmed using an SPI (Serial Peripheral Interface) connection. This is well-documented in ATMEL application (app) note 910(http://www.atmel.com/dyn/resources/prod_documents/doc0943.pdf). From that, I learned that the information flowing from the laptop to the 328 is mostly controlled by SCK (pin 7 on the ICSP connector of the Olimex (AVR-PG2/STK) programmer) and MOSI (pin 1), so I started there. The guts of the Olimex connector are shown in: <br />
+http://www.olimex.com/dev/pdf/avr-pg2b.pdf. Extra points for getting the data sheet on the 74HC244 inside it. I <br />
+worked backwards through the 74HC244, and saw that SCK is driven from DB-25 pin 6 and MOSI from pin 7. I've got an oscilloscope, so I probed these two pins looking for signs of life, pulling my ground reference from pins 18-21 (I used 19, IIRC). No joy when I hit 'Program' from Programmer's Notepad. LPT1 wasn't playing. If I didn't have the o-scope, I'd have hooked up my trusty voltmeter (or a pulse catcher, if I had one). I ran across some programs on the web that turn the parallel pins on or off for debugging, so these could be used to see if your PC actually drives the parallel port from LPT1. They'd be handy with the voltmeter, but with the oscilloscope I didn't need them. Per some of the other commenters' suggestions, I tried lpt2 and lpt3, but still got nothing. I don't have a lot of patience for trial-and-error debugging anyway.<br />
+<br />
+I got WinAVR loaded onto my Gateway laptop, model M685-E, running Windows XP (Service pack 3), and using the parallel port on its docking station. The BIOS setting (F2 on power-up) for my parallel port was set to AUTO. I'm not quite sure what AUTO means, but given the choices of AUTO, ENABLE, or DISABLE, I changed it to enable. I was also given four choices for MODE. Given that I needed to hear back from the 328 on MISO, I didn't even bother trying 'output-only'. 'Bi-directional' didn't result in any output either, but I got wiggles using LPT1 for both 'EPP' and 'ECP'. The BIOS addresses were both 378 and I didn't feel the need to change them. Further creative scoping showed the wiggles included the $AC53 string used to put the 328 into programming mode, so my port problems were apparently fixed. Next, it was time to hook the hardware back up.<br />
+<br />
+Per the app note, the 328 is designed to set all its port pins as inputs while it's in reset mode, readying it to receive programming commands. Note that reset means pin 1 is grounded (Can we get the Sparkfun folks to correct the chip pinout picture in this tutorial so RESET has a line over it, please?). For those looking at the Olimex schematic, pin 5 does not appear connected at first glance. But if you look at IC1B, outputs Y2,Y3, and Y4 are wired to a little diamond/circle doodle with '(5)' above it. This notation is used sometimes in schematics to denote a connection when drawing a wire might make the schematic harder to read. For the unwitting, it ticks another point on the frustrate-o-meter. So according to this, the 328 reset is driven from DB-25 pin 9. All goodness so far.<br />
+<br />
+While we're looking at this schematic, also note ICSP pins 4,8, and 10 aren't connected to anything. In fact, the wires are physically cut off inside the Olimex programmer (The one I just got, anyhow). Despite the bold note in the tutorial about the ground pins, it just ain't true (or at least it isn't for me). Pin 6 is the only one that counts. So ultimately, you need six wires, not nine.<br />
+<br />
+Looking further at the Olimex schematic, notice that the power for the IC comes from the ICSP connector (through a diode). This makes it possible for the IC to operate at (and output) a different voltage than the parallel port that's driving it. This is NOT trivial.<br />
+<br />
+The wiggles from my parallel port were around 3 volts. I guess I shouldn't be surprised; manufacturers of systems with parallel and serial ports (especially laptops) have notoriously played fast and loose with port signal voltages for years, and you can't count on them.<br />
+<br />
+I was operating the 328 (and ICSP pin 2) at 5 volts. There was a .25-volt drop across the diode, so the 74HC244 was operating at 4.75 volts, which was still significantly higher than its 3-volt inputs. Chips like this have a defined minimum input voltage before they recognize the input as a logic '1' (It's on the datasheet). The higher the operating voltage, the higher the minimum input '1' voltage. Below this voltage, all bets are off, which I think contributed to my inconsistent initial results.<br />
+<br />
+I have a dc supply, so I skipped lecture 1. The 328 is designed to operate at voltages down to 1.8 volts, so I simply turned my supply voltage down (4.3 volts, in my case), to get the 74HC244 operating voltage more in-line with its inputs. Blinky blinky. Smile. Obviously, you folks with the 7805's can't simply turn down your voltage like I did (if that's truly your problem). There are ways to bias the 7805 to get something other than 5 volts from it, but the LM317 is better suited to being used in a variable supply. If you check out the schematic for this kit, you'll see it's set up roughly the same as your 7805, but instead of grounding it directly, there's some resistors there to control it (some folks use a trim pot): http://www.sparkfun.com/products/114<br />
+<br />
+Last note to all you who have been fortunate enough to be mesmerized by your new blinky: I turned off the laptop and the blinky stopped blinkying. I'd left the programmer attached, so turning off the computer also turns off the parallel port (duh). Seeing zeros on the parallel port forces the programmer to hold the 328 in reset mode, preventing it from running. If you yank the reset line from the programmer to port 1 on the 328, it blinkys again. <br /></p>
+</div></div><div class="comment" id="comment_28386"><span class="header"><a href="http://www.sparkfun.com/users/185337" class="bold">JonathanP</a> <span class="wide">|</span> <b>January 30, 2011 at  3:20 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_28386">1</span></strong></span><br /></span><div class="body"><p>Windows 7<br />
+Install WINAVR<br />
+Look at your PATH variable<br /></p>
+
+<p>I spent hours trying to figure out why I couldn't ping a network address from the command line, when I finally decided to look at my PATH variable.  What was there?</p>
+
+<p>C:\WinAVR-20100110\bin;C:\WinAVR-20100110\utils\bin</p>
+
+<p>The installer seems to have removed every other part of my PATH variable.</p>
+
+<p>I would recommend making a copy of your PATH before installing WINAVR.</p>
+
+<p>Good tutorial!  I finally got the ATmega328 working with this program before moving onto the next tutorial where I fried it.  But, got it all working on a new chip.</p>
+
+<p>Hope the PATH advice helps.</p>
+</div></div><div class="comment" id="comment_29742"><span class="header"><a href="http://www.sparkfun.com/users/201435" class="bold">FoxxCommand</a> <span class="wide">|</span> <b>February 15, 2011 at  5:44 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_29742">1</span></strong></span><br /></span><div class="body"><p>AAARRRRHHHH! How do I use the Pocket AVR Programmer with this?!?!?!</p>
+</div></div><div class="comment" id="comment_30200"><span class="header"><a href="http://www.sparkfun.com/users/137312" class="bold">msundst</a> <span class="wide">|</span> <b>February 19, 2011 at 12:51 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_30200">1</span></strong></span><br /></span><div class="body"><p>How do we do this with USB? Please HELP!!!</p>
+</div></div><div class="comment" id="comment_31197"><span class="header"><a href="http://www.sparkfun.com/users/161475" class="bold">J.R.</a> <span class="wide">|</span> <b>March  4, 2011 at  4:24 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31197">1</span></strong></span><br /></span><div class="body"><p>For those having trouble with "giveio" in Windows 7, see this website.</p>
+
+<p>http://www.avrfreaks.net/index.php?name=PNphpBB2&amp;file=viewtopic&amp;t=88034</p>
+
+<p>Basically it says, copy the 'giveio.sys' to 'c:/windows/system32', and then run 'install_giveio.bat' as an administrator.  (run as admin: right click on command prompt and click run as admin)</p>
+</div></div></div>
+<br />
+</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      SparkFun Electronics <a href="http://www.sparkfun.com/news/300">&reg;</a>      <span class="wide">|</span>
+      <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6175+Longbow+Dr,+Boulder,+CO+80301&sll=40.006234,-105.224915&sspn=0.012113,0.020192&ie=UTF8&hq=&hnear=6175+Longbow+Dr,+Boulder,+Colorado+80301&t=h&z=16" target="_blank">Boulder, Colorado</a>
+      <span class="wide">|</span>
+      <a href="http://www.sparkfun.com/static/customer_service">Customer Service</a>
+    </div>
+        <script type="text/javascript" src="/js/cookiejar.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/sparkfun.js?sparkrev=1299616818"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript">function autoFireLightbox(){setTimeout(function(){SFE.stab_eyes()},250)}Event.observe(window,"load",autoFireLightbox,false);</script>
+    <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3404365-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

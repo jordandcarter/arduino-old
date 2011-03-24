@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="google-site-verification" content="XUb2UlchrvwCWWyhXksBlqQy1STYtTEN_M0-tgQRHRs" />
+    <meta name="google-site-verification" content="gRUAvzBJ_533b-AGTmldOJfByU6TkojfUbWovB2wKJo" />
+    <title>Beginning Embedded Electronics - 9 - SparkFun Electronics</title>
+    <link rel="stylesheet" href="/css/screen.css?rev=1299616818" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css?rev=1299616818" type="text/css" media="print" />
+    <link rel="stylesheet" href="/css/lightbox.css?rev=1299616818" type="text/css" media="screen" />
+    <!-- IE is the bane of my existence. -->
+    <!--[if IE]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" type="text/css" media="screen" /><![endif]-->
+    <link rel="feed" type="application/rss+xml" title="News" href="http://www.sparkfun.com/feeds/news/" />
+    <link rel="alternate" type="application/rss+xml" title="Products" href="http://www.sparkfun.com/feeds/products/" />
+    <link rel="alternate" type="application/rss+xml" title="Product Changes" href="http://www.sparkfun.com/feeds/changes/" />
+    <link rel="alternate" type="application/rss+xml" title="Comments" href="http://www.sparkfun.com/feeds/comments/" />
+    <link rel="alternate" type="application/rss+xml" title="Videos" href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&v=2&orderby=published" />
+    <link rel="apple-touch-icon" href="/fanboy.png" />
+    <link rev="canonical" type="text/html" href="http://sprkfn.com/t109" /> 
+    <script type="text/javascript">
+      var HTTP_SERVER = 'http://www.sparkfun.com',
+          HTTPS_SERVER = 'https://www.sparkfun.com',
+          HTTP_STATIC = 'http://dlnmh9ip6v2uc.cloudfront.net',
+          FULL_LAYOUT = true,
+          AUTHENTICATED = false;
+    </script>
+    <script type="text/javascript" src="/js/prototype.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/scriptaculous.js?load=effects,builder"></script>
+    <!-- turns out  that IE7 chokes if you don't load these separately. -->
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="/js/effects.js"></script>
+    <script type="text/javascript" src="/js/builder.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/lightbox.js?rev=1299616818"></script>
+  </head>
+  <body>
+    <div id="airlock" class="clearfix">
+
+      
+  <script>BANNER_ID = 45</script>
+
+<div id="header">
+  <a href="http://www.sparkfun.com/"><img width=188 height=105 class="logo" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/logo.gif" title="SparkFun Electronics" alt="SparkFun Electronics" /></a>
+  <a href="#products_menu" class="skip">Skip to menu</a>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <div id="banner-nav" style="display: none;">
+<img id="banner-goprev" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_left.png" height=23 width=23 />
+<img id="banner-all" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_all.png" height=23 width=23 />
+<img id="banner-gonext" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/banner_right.png" height=23 width=23 />
+</div>
+<a id="banner-link" href="http://www.sparkfun.com/ponoko"><img width=978 height=105 id="banner" src="http://dlnmh9ip6v2uc.cloudfront.net/images/banners/SFE03.0005.Promos.PonokoSFE-06.jpg" alt="" /></a>
+  <div id="header-menu">
+    <ul>
+      <li id="header_menu_index"><a href="http://www.sparkfun.com/index">Home</a></li>
+      <li id="header_menu_cservice"><a href="http://www.sparkfun.com/static/customer_service">Customer Service</a></li>
+      <li id="header_menu_tutorials" class="active"><a href="http://www.sparkfun.com/tutorials">Tutorials</a></li>
+      <li id="header_menu_forum"><a href="http://forum.sparkfun.com">Forum</a></li>
+      <li id="header_menu_distributors"><a href="http://www.sparkfun.com/distributors">Distributors</a></li>
+      <li id="header_menu_about"><a href="http://www.sparkfun.com/static/about">About Us</a></li>
+      <li id="header_menu_contact" class="last"><a href="http://www.sparkfun.com/static/contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="left">
+        <h2 class="collapsible" id="search_menu"><span class="arrow"></span>Search</h2>
+        <form class="collapsible search" style="display: block" action="http://www.sparkfun.com/search/results" id="search_form" method="get">
+  <input id="search_field" name="term" type="text" value="" />
+  <input type="submit" value="Go" class="button" />
+  <br />
+  <input id="products_search" type="radio" name="what" value="products" checked />
+  <label for="products_search">Products</label>
+  <br />
+  <input id="news_search" type="radio" name="what" value="news" />
+  <label for="news_search">News</label>
+  <br />
+  <input id="tutorials_search" type="radio" name="what" value="tutorials" />
+  <label for="tutorials_search">Tutorials</label>
+  <br />
+  <input id="comments_search" type="radio" name="what" value="comments" />
+  <label for="comments_search">Comments</label>
+</form>
+        <br />
+
+        <h2 id="products_menu" class="collapsible"><span class="arrow"></span>Products</h2>
+        
+<ul id="category_menu_list" class="collapsible" style="display: block">
+  <li id="menu_category_new_products"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/new_products">New Products</a></li>
+  <li id="menu_category_top"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/top">Top Sellers</a></li>
+  <li id="menu_category_featured"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/featured">Staff Picks</a></li>
+  <li id="menu_category_gift_certificates"><span class="arrow"></span><a href="https://www.sparkfun.com/gift_certificates">Gift Certificates</a></li>
+  <li><hr /></li>
+  <li id="menu_category_176"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/176">Books</a></li><li id="menu_category_20"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/20">Breakout Boards</a></li><li id="menu_category_70"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/70">Cables</a><ul style="display:none;"><li id="menu_category_140"><a href="http://www.sparkfun.com/categories/140">Audio</a></li><li id="menu_category_150"><a href="http://www.sparkfun.com/categories/150">Ethernet</a></li><li id="menu_category_72"><a href="http://www.sparkfun.com/categories/72">Hook Up</a></li><li id="menu_category_75"><a href="http://www.sparkfun.com/categories/75">Parallel</a></li><li id="menu_category_74"><a href="http://www.sparkfun.com/categories/74">Serial</a></li><li id="menu_category_71"><a href="http://www.sparkfun.com/categories/71">USB</a></li></ul></li><li id="menu_category_66"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/66">Cellular</a><ul style="display:none;"><li id="menu_category_67"><a href="http://www.sparkfun.com/categories/67">Antennas</a></li><li id="menu_category_69"><a href="http://www.sparkfun.com/categories/69">Eval Boards</a></li><li id="menu_category_68"><a href="http://www.sparkfun.com/categories/68">Modules</a></li></ul></li><li id="menu_category_154"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/154">Classes</a></li><li id="menu_category_51"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/51">Components</a><ul style="display:none;"><li id="menu_category_87"><a href="http://www.sparkfun.com/categories/87">ARM Microcontrollers</a></li><li id="menu_category_21"><a href="http://www.sparkfun.com/categories/21">AVR Microcontrollers</a></li><li id="menu_category_145"><a href="http://www.sparkfun.com/categories/145">Buttons/Switches</a></li><li id="menu_category_60"><a href="http://www.sparkfun.com/categories/60">General</a></li><li id="menu_category_90"><a href="http://www.sparkfun.com/categories/90">General ICs</a></li><li id="menu_category_89"><a href="http://www.sparkfun.com/categories/89">LEDs</a><ul><li id="menu_category_173"><a href="http://www.sparkfun.com/categories/173">10mm</a></li><li id="menu_category_171"><a href="http://www.sparkfun.com/categories/171">3mm</a></li><li id="menu_category_172"><a href="http://www.sparkfun.com/categories/172">5mm</a></li><li id="menu_category_170"><a href="http://www.sparkfun.com/categories/170">7-Segment</a></li><li id="menu_category_175"><a href="http://www.sparkfun.com/categories/175">Other</a></li><li id="menu_category_174"><a href="http://www.sparkfun.com/categories/174">SMD</a></li></ul></li><li id="menu_category_88"><a href="http://www.sparkfun.com/categories/88">Oscillators</a></li><li id="menu_category_22"><a href="http://www.sparkfun.com/categories/22">PIC Microcontrollers</a></li><li id="menu_category_124"><a href="http://www.sparkfun.com/categories/124">PICAXE Microcontrollers</a></li><li id="menu_category_132"><a href="http://www.sparkfun.com/categories/132">PSoC Microcontrollers</a></li><li id="menu_category_29"><a href="http://www.sparkfun.com/categories/29">SMD ICs</a></li></ul></li><li id="menu_category_2"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/2">Development Tools</a><ul style="display:none;"><li id="menu_category_184"><a href="http://www.sparkfun.com/categories/184">.NET</a></li><li id="menu_category_93"><a href="http://www.sparkfun.com/categories/93">ADuC</a></li><li id="menu_category_103"><a href="http://www.sparkfun.com/categories/103">Arduino</a></li><li id="menu_category_10"><a href="http://www.sparkfun.com/categories/10">AVR</a></li><li id="menu_category_164"><a href="http://www.sparkfun.com/categories/164">Beagle</a></li><li id="menu_category_187"><a href="http://www.sparkfun.com/categories/187">Chumby</a></li><li id="menu_category_109"><a href="http://www.sparkfun.com/categories/109">Coridium</a></li><li id="menu_category_136"><a href="http://www.sparkfun.com/categories/136">FPGA</a></li><li id="menu_category_101"><a href="http://www.sparkfun.com/categories/101">iPod</a></li><li id="menu_category_25"><a href="http://www.sparkfun.com/categories/25">LPC</a></li><li id="menu_category_11"><a href="http://www.sparkfun.com/categories/11">MSP</a></li><li id="menu_category_9"><a href="http://www.sparkfun.com/categories/9">PIC</a></li><li id="menu_category_125"><a href="http://www.sparkfun.com/categories/125">PICAXE</a></li><li id="menu_category_137"><a href="http://www.sparkfun.com/categories/137">PSoC</a></li><li id="menu_category_104"><a href="http://www.sparkfun.com/categories/104">Roomba</a></li><li id="menu_category_94"><a href="http://www.sparkfun.com/categories/94">SAM</a></li><li id="menu_category_95"><a href="http://www.sparkfun.com/categories/95">ST</a></li><li id="menu_category_167"><a href="http://www.sparkfun.com/categories/167">STAMP</a></li><li id="menu_category_107"><a href="http://www.sparkfun.com/categories/107">Wiring</a></li><li id="menu_category_169"><a href="http://www.sparkfun.com/categories/169">WIZnet</a></li><li id="menu_category_166"><a href="http://www.sparkfun.com/categories/166">XMOS</a></li><li id="menu_category_142"><a href="http://www.sparkfun.com/categories/142">Zune</a></li></ul></li><li id="menu_category_100"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/100">Dings and Dents</a></li><li id="menu_category_204"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/204">E-Textiles</a><ul style="display:none;"><li id="menu_category_205"><a href="http://www.sparkfun.com/categories/205">Aniomagic</a></li><li id="menu_category_210"><a href="http://www.sparkfun.com/categories/210">fabrickit</a></li><li id="menu_category_135"><a href="http://www.sparkfun.com/categories/135">LilyPad</a></li><li id="menu_category_206"><a href="http://www.sparkfun.com/categories/206">Materials</a></li></ul></li><li id="menu_category_4"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/4">GPS</a><ul style="display:none;"><li id="menu_category_18"><a href="http://www.sparkfun.com/categories/18">Antennas</a></li><li id="menu_category_86"><a href="http://www.sparkfun.com/categories/86">Eval Boards</a></li><li id="menu_category_17"><a href="http://www.sparkfun.com/categories/17">Modules</a></li></ul></li><li id="menu_category_157"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/157">Kits</a></li><li id="menu_category_76"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/76">LCDs</a><ul style="display:none;"><li id="menu_category_147"><a href="http://www.sparkfun.com/categories/147">Color</a></li><li id="menu_category_148"><a href="http://www.sparkfun.com/categories/148">Monochrome</a></li></ul></li><li id="menu_category_96"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/96">Port-O-Rotary</a></li><li id="menu_category_1"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/1">Programmers</a><ul style="display:none;"><li id="menu_category_26"><a href="http://www.sparkfun.com/categories/26">ARM</a></li><li id="menu_category_7"><a href="http://www.sparkfun.com/categories/7">AVR</a></li><li id="menu_category_156"><a href="http://www.sparkfun.com/categories/156">DSP</a></li><li id="menu_category_37"><a href="http://www.sparkfun.com/categories/37">MAXQ</a></li><li id="menu_category_8"><a href="http://www.sparkfun.com/categories/8">MSP</a></li><li id="menu_category_6"><a href="http://www.sparkfun.com/categories/6">PIC</a></li><li id="menu_category_126"><a href="http://www.sparkfun.com/categories/126">PICAXE</a></li><li id="menu_category_168"><a href="http://www.sparkfun.com/categories/168">XMOS</a></li></ul></li><li id="menu_category_53"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/53">Prototyping</a><ul style="display:none;"><li id="menu_category_54"><a href="http://www.sparkfun.com/categories/54">Batteries</a></li><li id="menu_category_149"><a href="http://www.sparkfun.com/categories/149">Boards</a></li><li id="menu_category_91"><a href="http://www.sparkfun.com/categories/91">Connectors</a></li><li id="menu_category_182"><a href="http://www.sparkfun.com/categories/182">Enclosures</a></li><li id="menu_category_55"><a href="http://www.sparkfun.com/categories/55">General</a></li><li id="menu_category_155"><a href="http://www.sparkfun.com/categories/155">Hardware</a></li><li id="menu_category_92"><a href="http://www.sparkfun.com/categories/92">Sockets</a></li><li id="menu_category_116"><a href="http://www.sparkfun.com/categories/116">Solar</a></li><li id="menu_category_141"><a href="http://www.sparkfun.com/categories/141">Wire</a></li></ul></li><li id="menu_category_207"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/207">Retail</a><ul style="display:none;"><li id="menu_category_212"><a href="http://www.sparkfun.com/categories/212">Arduino</a></li><li id="menu_category_216"><a href="http://www.sparkfun.com/categories/216">Components</a></li><li id="menu_category_213"><a href="http://www.sparkfun.com/categories/213">Kits</a></li><li id="menu_category_211"><a href="http://www.sparkfun.com/categories/211">Materials</a></li><li id="menu_category_215"><a href="http://www.sparkfun.com/categories/215">Prototyping</a></li><li id="menu_category_214"><a href="http://www.sparkfun.com/categories/214">Sensors</a></li><li id="menu_category_217"><a href="http://www.sparkfun.com/categories/217">Tools</a></li></ul></li><li id="menu_category_134"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/134">Retired</a><ul style="display:none;"><li id="menu_category_194"><a href="http://www.sparkfun.com/categories/194">Breakout Boards</a></li><li id="menu_category_203"><a href="http://www.sparkfun.com/categories/203">Cables</a></li><li id="menu_category_200"><a href="http://www.sparkfun.com/categories/200">Classes</a></li><li id="menu_category_192"><a href="http://www.sparkfun.com/categories/192">Components</a></li><li id="menu_category_191"><a href="http://www.sparkfun.com/categories/191">Development Tools</a></li><li id="menu_category_188"><a href="http://www.sparkfun.com/categories/188">GPS</a></li><li id="menu_category_190"><a href="http://www.sparkfun.com/categories/190">Kits</a></li><li id="menu_category_196"><a href="http://www.sparkfun.com/categories/196">LCD</a></li><li id="menu_category_201"><a href="http://www.sparkfun.com/categories/201">Programmers</a></li><li id="menu_category_195"><a href="http://www.sparkfun.com/categories/195">Prototyping</a></li><li id="menu_category_197"><a href="http://www.sparkfun.com/categories/197">Robotics</a></li><li id="menu_category_189"><a href="http://www.sparkfun.com/categories/189">Sensors</a></li><li id="menu_category_208"><a href="http://www.sparkfun.com/categories/208">SFE Widgets</a></li><li id="menu_category_198"><a href="http://www.sparkfun.com/categories/198">Swag</a></li><li id="menu_category_193"><a href="http://www.sparkfun.com/categories/193">Tools</a></li><li id="menu_category_199"><a href="http://www.sparkfun.com/categories/199">Wireless</a></li></ul></li><li id="menu_category_31"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/31">Robotics</a><ul style="display:none;"><li id="menu_category_179"><a href="http://www.sparkfun.com/categories/179">Drivers</a></li><li id="menu_category_181"><a href="http://www.sparkfun.com/categories/181">Kits</a></li><li id="menu_category_178"><a href="http://www.sparkfun.com/categories/178">Motors</a></li><li id="menu_category_202"><a href="http://www.sparkfun.com/categories/202">Other</a></li><li id="menu_category_180"><a href="http://www.sparkfun.com/categories/180">Wheels</a></li></ul></li><li id="menu_category_185"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/185">Sale</a></li><li id="menu_category_23"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/23">Sensors</a><ul style="display:none;"><li id="menu_category_80"><a href="http://www.sparkfun.com/categories/80">Accelerometers</a><ul><li id="menu_category_161"><a href="http://www.sparkfun.com/categories/161">1-axis</a></li><li id="menu_category_162"><a href="http://www.sparkfun.com/categories/162">2-axis</a></li><li id="menu_category_163"><a href="http://www.sparkfun.com/categories/163">3-axis</a></li></ul></li><li id="menu_category_146"><a href="http://www.sparkfun.com/categories/146">Biometrics</a></li><li id="menu_category_117"><a href="http://www.sparkfun.com/categories/117">Capacitive</a></li><li id="menu_category_151"><a href="http://www.sparkfun.com/categories/151">Current</a></li><li id="menu_category_143"><a href="http://www.sparkfun.com/categories/143">Flex / Force</a></li><li id="menu_category_85"><a href="http://www.sparkfun.com/categories/85">Gyros</a><ul><li id="menu_category_158"><a href="http://www.sparkfun.com/categories/158">1-axis</a></li><li id="menu_category_159"><a href="http://www.sparkfun.com/categories/159">2-axis</a></li><li id="menu_category_183"><a href="http://www.sparkfun.com/categories/183">3-axis</a></li></ul></li><li id="menu_category_144"><a href="http://www.sparkfun.com/categories/144">ID</a></li><li id="menu_category_160"><a href="http://www.sparkfun.com/categories/160">IMU</a></li><li id="menu_category_139"><a href="http://www.sparkfun.com/categories/139">Infrared</a></li><li id="menu_category_102"><a href="http://www.sparkfun.com/categories/102">Light / Imaging</a></li><li id="menu_category_83"><a href="http://www.sparkfun.com/categories/83">Magneto</a></li><li id="menu_category_84"><a href="http://www.sparkfun.com/categories/84">Proximity</a></li><li id="menu_category_165"><a href="http://www.sparkfun.com/categories/165">Radiation</a></li><li id="menu_category_186"><a href="http://www.sparkfun.com/categories/186">Sound</a></li><li id="menu_category_82"><a href="http://www.sparkfun.com/categories/82">Temperature</a></li><li id="menu_category_152"><a href="http://www.sparkfun.com/categories/152">Weather</a></li></ul></li><li id="menu_category_97"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/97">SFE Widgets</a></li><li id="menu_category_130"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/130">Swag</a></li><li id="menu_category_46"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/46">Tools</a><ul style="display:none;"><li id="menu_category_47"><a href="http://www.sparkfun.com/categories/47">Hand Tools</a></li><li id="menu_category_48"><a href="http://www.sparkfun.com/categories/48">Hot-Air Rework</a></li><li id="menu_category_177"><a href="http://www.sparkfun.com/categories/177">Instruments</a></li><li id="menu_category_28"><a href="http://www.sparkfun.com/categories/28">Power Supplies</a></li><li id="menu_category_49"><a href="http://www.sparkfun.com/categories/49">Soldering</a></li></ul></li><li id="menu_category_138"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/138">Tracking</a></li><li id="menu_category_16"><span class="arrow"></span><a href="http://www.sparkfun.com/categories/16">Wireless</a><ul style="display:none;"><li id="menu_category_78"><a href="http://www.sparkfun.com/categories/78">Antennas</a></li><li id="menu_category_115"><a href="http://www.sparkfun.com/categories/115">Bluetooth</a></li><li id="menu_category_79"><a href="http://www.sparkfun.com/categories/79">General</a></li><li id="menu_category_113"><a href="http://www.sparkfun.com/categories/113">Modem</a></li><li id="menu_category_114"><a href="http://www.sparkfun.com/categories/114">Nordic</a></li><li id="menu_category_112"><a href="http://www.sparkfun.com/categories/112">WiFi</a></li><li id="menu_category_111"><a href="http://www.sparkfun.com/categories/111">Zigbee/802.15.4</a></li></ul></li>  <li><hr /></li>
+  <li>
+    <img style='float: left' src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/pdf.gif" />
+    <a href="http://sparkfun.com/download/PDFs/catalog.pdf">Full catalog</a>
+  </li>
+</ul>
+        <br />
+      </div>
+
+      <div id="right">
+        <div class="collapsible user">
+  <p class="cart-link"><img height="19" width="19" alt="" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_shoppingcart.gif"> 
+     <a href="http://www.sparkfun.com/cart"><span id="items_in_cart">0</span> items in your cart</a></p>
+  <form action="https://www.sparkfun.com/account/login" id="login" method="post">
+    <label for="user_login">Email</label>
+    <input id="user_login" type="text" tabindex="1" maxlength="320" name="user">
+    <label for="user_password">Password</label>
+    <input id="user_password" type="password" tabindex="2" maxlength="20" name="passwd">
+    <p class="right"><input type="submit" value="log in" class="button"></p>
+    <p><a href="https://www.sparkfun.com/account/forgot_password">Forgot your password?</a><br/>
+       No account? <a href="https://www.sparkfun.com/account/make">Register here</a>.</p>
+  </form>
+</div>
+<br>
+
+        <h2 id="feed_menu" class="collapsible"><span class="arrow"></span>Feeds</h2>
+        <ul class="collapsible feeds" style="display: block">
+  <li><a href="http://www.sparkfun.com/feeds/news">News</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/products">Products</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/changes">Product Changes</a></li>
+  <li><a href="http://www.sparkfun.com/feeds/comments">Comments</a></li>
+  <li><a href="http://gdata.youtube.com/feeds/base/users/sparkfun/uploads?alt=rss&amp;v=2&amp;orderby=published">Videos</a></li>
+</ul>
+        <br />
+
+        <h2 id="resources_menu" class="collapsible"><span class="arrow"></span>Resources</h2>
+        <ul class="collapsible resources" style="display: block">
+  <li><a href="http://www.sparkfun.com/news/263">Official SparkFun IRC Channel</a></li>
+  <li><a href="http://www.batchpcb.com/" target="_blank">Custom PCBs</a></li>
+  <li><a href="http://www.opencircuits.com/" target="_blank">Open Circuits</a></li>
+  <li><a href="http://www.ponoko.com/make-and-sell/electronics" target="_blank">Ponoko - Your Personal Factory</a></li>
+  <li><a href="http://www.sparkfun.com/static/jobs">Jobs @ SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/tutorials/92">Sell Your Widget on SparkFun</a></li>
+  <li><a href="http://www.sparkfun.com/quiz">Take the SparkFun Quiz</a></li>
+</ul>
+        <br />
+
+        <h2 id="currency_menu_head" class="collapsible"><span class="arrow"></span>Currency</h2>
+        
+<div class="collapsible" id="currency_menu">
+  Display prices in
+  <input type="hidden" id="preferred_currency" value="USD" />
+  <ul id="currency_menu_list" class="currency">
+          <li>
+        <a id="currency_USD" onclick="SFE.change_currency('USD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_checked.gif" />
+                US Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_CAD" onclick="SFE.change_currency('CAD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Canadian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_AUD" onclick="SFE.change_currency('AUD'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Australian Dollar        </a>
+    </li>
+          <li>
+        <a id="currency_GBP" onclick="SFE.change_currency('GBP'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                British Pound        </a>
+    </li>
+          <li>
+        <a id="currency_EUR" onclick="SFE.change_currency('EUR'); return(false);" href="#">
+                  <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_radio_unchecked.gif" />
+                Euro        </a>
+    </li>
+      </ul>
+  </div>
+
+<script language="javascript">
+var CURRENCIES = {"USD":{"code":"USD","title":"US Dollar","symbol_left":"$","symbol_right":"","decimal_point":".","thousands_point":",","decimal_places":"2","value":"1.0000"},"CAD":{"code":"CAD","title":"Canadian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9706"},"AUD":{"code":"AUD","title":"Australian Dollar","symbol_left":"$","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.9957"},"GBP":{"code":"GBP","title":"British Pound","symbol_left":"&pound;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.6187"},"EUR":{"code":"EUR","title":"Euro","symbol_left":"&euro;","symbol_right":null,"decimal_point":".","thousands_point":",","decimal_places":"2","value":"0.7214"}}</script>
+        <br />
+
+        <h2 id="feedback_menu" class="collapsible"><span class="arrow"></span>Feedback</h2>
+        <form id="feedback" class="collapsible" style="display: block">
+  <label for="feedback_textarea" style="font-weight: bold">What's on your mind?</label>
+  <br />
+  <textarea id="feedback_textarea" name="feedback_text"></textarea>
+  <br /><br />
+  <label for="feedback_email">Please include your email address if you'd like us to respond to a specific question.</label>
+  <br />
+  <br />
+  <input type="text" id="feedback_email" name="email" /> 
+  <br />
+  <input onclick="SFE.mind_feedback(); return(false);" type="button" class="button" value="Submit" /> 
+</form>
+      </div>
+
+      <div id="center">
+        <a name="content" id="content"></a>
+        
+<h1 class="red-header">
+    <span class="link"><a href="http://www.sparkfun.com">Home</a> |</span><span class="link"><a href="http://www.sparkfun.com/tutorials/">Tutorials</a>|</span>  Beginning Embedded Electronics - 9 
+</h1>
+
+<div class="news">
+  <p class="header">
+    <img src="http://dlnmh9ip6v2uc.cloudfront.net/images/avatars/7185_sm.jpg" />
+    <a class="title" href="http://www.sparkfun.com/tutorials/109">Beginning Embedded Electronics - 9</a>
+    <br />
+    by <a href="http://www.sparkfun.com/users/7185">Nate</a> | June 19, 2008 | <i><a style="cursor: pointer" onclick="javascript: if(!$('comments').visible()) { SFE.toggle_collapsible($('comments_header')); } $('comments_header').scrollTo();">38 comments</a></i>
+    <span class="skill">
+      Skill Level: 
+              <img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_skill_beginner.gif" />
+        Beginner
+          </span>
+  </p>
+  <hr />
+  <h2>
+	Lecture 9 - Eagle: PCB Layout</h2>
+<div class="tutorial_text">
+	<p>
+		To learn how to use Eagle, we are going to create a simple breakout board for a popular USB IC. The FT232RL is a USB to TTL serial converter. This section covers the physical layout of the PCB.</p>
+	<p>
+		We&#39;ve got the schematic captured and the connections should be made correctly. The next step is to arrange various components on a board and then send the board files out to a manufacturer (also called a fabrication or &#39;fab&#39; house).</p>
+	<p>
+		Layout is an art and engineers make bad artists.&nbsp; It&#39;s all about the small polishing - text labels, stand off holes, correct footprints. Just keep turning out PCBs and you&#39;ll see your layouts improve dramatically with practice.</p>
+	<p>
+		Before you do anything, turn on vector fonts! If you don&#39;t, your silkscreen text will be off on every PCB you create:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-22.jpg" /></p>
+	<p align="left">
+		From the Eagle control panel, click Options-&gt;User Interface</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-23.jpg" /></p>
+	<p align="left">
+		Select &#39;Always vector font&#39;.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/Eagle-LayoutMenu.jpg" /></p>
+	<p align="left">
+		Above is a breakdown of all the different buttons in the Layout window. You can view the name of each button by hovering over the button with your mouse. Many of the short-cuts from the Schematic window still apply:</p>
+	<ul>
+		<li>
+			<p align="left">
+				Press escape at any time to stop the current action and return to the Layout window</p>
+		</li>
+		<li>
+			<p align="left">
+				F7 to move a part</p>
+		</li>
+		<li>
+			<p align="left">
+				Alt+F7 to group a bunch together</p>
+		</li>
+		<li>
+			<p align="left">
+				F3 to delete a part</p>
+		</li>
+		<li>
+			<p align="left">
+				F4 to rename a part (change C7 to C2)</p>
+		</li>
+		<li>
+			<p align="left">
+				F5 to re-value a part (change 0.1uF to 10uF, etc)</p>
+		</li>
+		<li>
+			<p align="left">
+				F6 to smash a part (be able to move the name and value tags)</p>
+		</li>
+		<li>
+			<p align="left">
+				F9 to start routing a wire</p>
+		</li>
+		<li>
+			<p align="left">
+				Alt+F9 to rip up a wire</p>
+		</li>
+	</ul>
+	<p align="left">
+		If you get this error while moving bits around:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-32.jpg" /></p>
+	<p align="left">
+		This just means that you are trying to put a component outside of the allowed area. With the Light edition of Eagle, you can only place components in quadrant I (upper right quadrant), whereas the components show up by default in quadrant II (upper left quadrant). Just move the parts to a positive X and Y coordinate and you should be ok.</p>
+	<p>
+		Starting with our current layout:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-1.jpg" /></p>
+	<p align="left">
+		The first thing to do is correct the board outline. I don&#39;t know why Eagle slightly offsets the default border.</p>
+	<p align="left">
+		Make sure you&#39;re on a 0.1&quot; grid by pressing F10. Then hit F7 and hold control while clicking near the origin. This will grab the frame corner and force it onto the 0.1&quot; grid. Make the bottom left corner sit at (0,0):</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-2.jpg" /></p>
+	<p align="left">
+		Do this for the other three corners bringing them in to make a 1.5x1.0&quot; square board size.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-3.jpg" /></p>
+	<p align="left">
+		Now go to town bringing the components into the board area. Keep in mind the gold color un-routed &#39;air&#39; wires. The less twisted you make these by creatively arranging your components, the easier the trace routing will be.</p>
+	<p align="left">
+		Remember:</p>
+	<ul>
+		<li>
+			<p align="left">
+				Press F7 to move a component</p>
+		</li>
+		<li>
+			<p align="left">
+				Right click to rotate</p>
+		</li>
+		<li>
+			<p align="left">
+				Hold control to grab a component at its origin</p>
+		</li>
+		<li>
+			<p align="left">
+				Scroll wheel to zoom in/out</p>
+		</li>
+	</ul>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-4.jpg" /></p>
+	<p align="left">
+		Hit the Ratsnest button from time to time to recalculate the air wires.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-5.jpg" /></p>
+	<p align="left">
+		Here are the components arranged in a basic configuration. Another beef I have with Eagle is the default colors for the various layers make it impossible to see what is going to be printed on the silkscreen layer. Let&#39;s change the &#39;tPlace&#39; layer to pure white and change the &#39;tDocu&#39; layer to lemon yellow.</p>
+	<p align="left">
+		Click on the &#39;Display&#39; button, scroll down to layer 51 and double click on the gray box next to &#39;tDocu&#39;:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-25.jpg" /></p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/10-Eagle-NewPart/Schematic-26.jpg" /></p>
+	<p align="left">
+		Then click on the gray &#39;Color&#39; box and change it to something interesting like lemon yellow, then click ok. Anything you do on this layer will now be yellow. Do the same for layer 21 &#39;tPlace&#39;.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-6.jpg" /></p>
+	<p align="left">
+		Now this is starting to make sense! Anything in yellow is just there to indicate physical size. The yellow part of the USB connector is only there to indicate that the connector sticks over the edge that far. Only the white part of the USB connector footprint will actually show up on the silkscreen print on our PCB. Anything in light gray (tNames and tValues layers)<i> will not print </i>on the silkscreen layer<i>.</i> They&#39;re just there for your own reference. We can of course change how the various layers are processed (and include the value and name layers on the silkscreen) but this can cause a lot of squeezing and hassle. It&#39;s up to you and your design but we will leave the part indicators and values out of this layout.</p>
+	<p align="left">
+		The next thing we need to do, for all PCB layouts, is to add stand-off holes. These holes will allow you to insert a simple screw and hold a stand-off in place. Without standoffs, PCBs will sit uneven against a flat surface (because of the bumpy solder joints protruding on the bottom of the board). Having a PCB sit flat against a surface is also a bad idea electrically - I&#39;ve sent $200 up in smoke because some bits of clipped wire shorted against the bottom of my board when I was troubleshooting it.</p>
+	<p align="left">
+		I like to use <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=447" target="_blank"> 4-40 screws</a> and <a href="http://www.sparkfun.com/commerce/product_info.php?products_id=444" target="_blank"> 0.25&quot; diameter plastic standoffs</a> on everything. These 4-40 screws need a 0.13&quot; diameter hole and the standoffs have a 0.25&quot; outside diameter that we will need to take into account. If you have not already done so, add four of the &#39;Stand-Off&#39; components to the schematic (and therefore PCB). This component was created to couple the 0.13&quot; drill with a keepout ring. This keepout ring helps show were the screw head will fall. If you fail to take this keepout layer into account, the screw will go through the hole, but the screw head may run into or short components.</p>
+	<p align="left">
+		Throw four standoff holes around the corners of your board.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-12.jpg" /></p>
+	<p align="left">
+		Ahah! Now I see why I made that keepout circle. You can see where the standoffs would have run into the USB connector. Looks like we&#39;ve got some bumping to do...</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-13.jpg" /></p>
+	<p>
+		By using the group (Alt+F7) and the move (F7) commands, I increased the border to 1.5x1.2&quot; which is a bit bigger than I would like, but for the purposes of this tutorial, we&#39;re not going to stress tight packing of components - rather we want to stress the basics for a good PCB. Notice how I flipped and dropped C3 and C4 down a bit? Time to add labels!</p>
+	<p>
+		A &#39;C2&#39; label is handy when you&#39;re populating a board or when you&#39;re troubleshooting a complex circuit, but on a day to day basis, you probably won&#39;t need to know where C2 is. On the other hand, the TX and RX pins will probably be used every time you use the board! You really should label anything that will be connected to the outside world. To add a text label to a pin, click on the &#39;Text&#39; button:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/Eagle-LayoutMenu3.jpg" /></p>
+	<p align="left">
+		A window will pop up asking you what text you would like to add. Type &#39;TX&#39; and press enter. You will notice that the text may be appearing on an odd layer. Be sure that you add text on the tPlace layer.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/Eagle-LayoutMenu4.jpg" /></p>
+	<p align="center">
+		Drop down the layer menu and select tPlace for top silkscreen text</p>
+	<p align="left">
+		Once you&#39;ve placed &#39;TX&#39;, press escape. Eagle will now show the text window again. Enter &#39;RX&#39; and press enter. Repeat for RX, VCC, and GND. When done, press escape twice to return to the layout window.</p>
+	<p>
+		In this case we have VCC/GND/TX/RX to label:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-14.jpg" /></p>
+	<p align="center">
+		Make sure you add your labels to the &#39;tPlace&#39; layer!</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-15.jpg" /></p>
+	<p align="left">
+		To check which pin is connected to which net, hit the eye button and click on a pin.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-16.jpg" /></p>
+	<p align="left">
+		Checkout the text at the bottom of the Eagle window - pin 1 is VCC. Do this for all the pins and arrange the labels accordingly. You should also take the font size down to 0.05:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/Eagle-LayoutMenu2.jpg" /></p>
+	<p align="left">
+		To change the font size, click on the Wrench (&#39;Change&#39; button), select &#39;Size&#39;, then 0.05. Now click on each text that you want to change the size on.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-17.jpg" /></p>
+	<p align="center">
+		Labels in place and lined up</p>
+	<p align="left">
+		Try to get all the labels with the same vertical and horizontal alignment. This is a nit picky aesthetic thing, but it shows on the final board.</p>
+	<p align="left">
+		You will have many board revisions. It&#39;s always good to add a date code to the board so that you can match your files to the board version in hand. Add text to the bottom copper layer to an inconspicuous spot. The easiest way to do this is to add text to the top copper layer then hit the mirror button (you can also hit the scroll wheel on the mouse to move the component to a different layer). This will automatically mirror the text and drop it to the bottom layer.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-18.jpg" /></p>
+	<p align="left">
+		6-3-07 mirrored, on the bottom copper layer, and underneath the USB connector. There shouldn&#39;t be any signal traces in this part of the board so we&#39;re not wasting space. You could add text to the bottom silkscreen layer but some fab houses don&#39;t allow bottom silkscreen (it adds an extra printing step).</p>
+	<p align="left">
+		Also add some text to the top silkscreen layer indicating what the board is, what it does, who made it, etc.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-19.jpg" /></p>
+	<p align="left">
+		Above is the completed board ready for trace routing.</p>
+	<p align="left">
+		Many people swear up and down that an auto-router is a bad idea. It may be, but if we&#39;re not concerned about trace impedance or high speed signals, an auto-router is a great way to whip up protos. Spend your time innovating, not routing mundane traces.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/Eagle-LayoutMenu5.jpg" /></p>
+	<p align="left">
+		To auto-route the board, click on the &#39;Auto&#39; button. The defaults are all fine except for the 50mil grid:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-20.jpg" /></p>
+	<p align="left">
+		Change the Routing Grid to 8 (<a href="http://www.batchpcb.com/" target="_blank">our fab house</a> uses 8 mil traces and spaces).</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-21.jpg" /></p>
+	<p align="center">
+		Demo board auto-routed. Eagle <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/FT232-Breakout-v10.zip" target="_blank"> files</a> / <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/FT232-Breakout-v10.pdf" target="_blank"> PDF</a></p>
+	<p align="left">
+		It&#39;s not immaculate, but it will work just fine and the router took under 2 seconds to route. It would probably take me 5-10 minutes by hand. I will hand route sensitive parts of certain boards, but this is a very simple proto.</p>
+	<p align="left">
+		Things to check on every layout:</p>
+	<ul>
+		<li>
+			<p align="left">
+				Date code</p>
+		</li>
+		<li>
+			<p align="left">
+				Silkscreen title and pin labels</p>
+		</li>
+		<li>
+			<p align="left">
+				Standoff holes</p>
+		</li>
+		<li>
+			<p align="left">
+				All connections routed</p>
+		</li>
+		<li>
+			<p align="left">
+				TX and RX routed correctly</p>
+		</li>
+		<li>
+			<p align="left">
+				Print off 1:1 and check footprints</p>
+		</li>
+	</ul>
+	<p align="left">
+		Routing TX and RX correctly? What does this mean? I can&#39;t tell you how many times I&#39;ve heard newbies say &#39;well my PCB <i>would have</i> worked, but the manufacturer swapped the TX and RX pins&#39;. No, the manufacturer did not swap them, the newbie neglected to actually <i>read</i> the datasheet (RTFD!). Sometimes an RX pin is an input. Sometimes an RX pin is an output. If you get it wrong, you&#39;ll look like a dunce. Read the datasheet and verify that everything is kosher. In the case of our FT232RL breakout, the TX pin is an output and RX pin is an input (pretty standard). I&#39;m going to change the silkscreen indicators to read &#39;RX-I&#39; and &#39;TX-O&#39;. This should remove any doubt in my mind when I&#39;m using the board a year from now - and so I don&#39;t have to go digging up the datasheet.</p>
+	<p align="left">
+		The last thing to check - print off 1:1 means to print on paper and 1 to 1 scale of the board layout. Then place the components on top the paper to verify that everything fits their associated footprint.</p>
+	<p align="left">
+		Another quick note about printing layouts - this can be a great way to create an assembly sheet. While you&#39;ve got the PCB editor open, press Alt+F11. This will turn off all the layers that are not pertinent to assembly. Print this, I normally scale it up 3 times, and hand write in what parts go where. Quick and effective way to create a cheat sheet for PCB population. Pressing F11 will bring back the normal layers but you may want to activate/deactivate a few others.</p>
+	<p align="left">
+		Now that we&#39;ve got the board laid out, stand-off holes in place, date code in place, and accurate pin labels, it&#39;s time to mash up the layers and create some gerber files.</p>
+	<p align="left">
+		<b>What&#39;s a gerber?</b></p>
+	<p align="left">
+		There are lots of different layout packages out there (Protel, Orcad, Eagle, PCB, etc). One way or another all the PCB fab houses out there need a way to control their machines to work with your layout files. The universal format is something called <a href="http://en.wikipedia.org/wiki/Gerber_File" target="_blank">Gerber Files</a>. Basically these are txt files with coordinates that tell the PCB machines to go to location X,Y and do something (drill, expose, etch, print, etc). Because there are different layers to your PCB, you need to create different text files for the different layers. This is where the Eagle CAM program comes into play.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-24.jpg" /></p>
+	<p align="left">
+		Once you&#39;re good and happy with your PCB layout (there is no turning back after you submit the files!), click on the CAM button to bring up the processor. This window will allow you to do different things to different layers. Eagle comes with a couple default *.cam files. The most common ones are the gerb274x.cam and excellon.cam. I got tired of running two seperate processors. I am also a hold over from Protel and a different naming convention so I created my own single file CAM processor. You can snag it <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/9-EaglePCBs/sfe-gerb274x.cam" target="_blank">here</a>. The <a href="http://www.sparkfun.com/tutorial/BeginningEmbedded/9-EaglePCBs/sfe-gerb274x.cam" target="_blank">sfe-gerb274x.cam</a> is based on the default Eagle file with a few tweaks:</p>
+	<ul>
+		<li>
+			<p align="left">
+				Layers are renamed for easier reading - top copper, bottom silkscreen, etc.</p>
+		</li>
+		<li>
+			<p align="left">
+				All the mirroring is turned off - this will make gerber inspection much easier</p>
+		</li>
+		<li>
+			<p align="left">
+				A top paste layer was added in case you want to create a solder paste stencil</p>
+		</li>
+		<li>
+			<p align="left">
+				Excellon drill file is created along with the 6 magic layers</p>
+		</li>
+		<li>
+			<p align="left">
+				Drill file is 2:4 Leading (remember this!)</p>
+		</li>
+	</ul>
+	<p align="left">
+		What are these magical layers you ask of? Anytime you transmit a PCB layout to a fab house, you need to pass them 7 files, and 7 files only:</p>
+	<ul>
+		<li>
+			<p align="left">
+				Top Copper (GTL)</p>
+		</li>
+		<li>
+			<p align="left">
+				Top Soldermask (GTS)</p>
+		</li>
+		<li>
+			<p align="left">
+				Top Silkscreen (GTO)</p>
+		</li>
+		<li>
+			<p align="left">
+				Bottom Copper (GBL)</p>
+		</li>
+		<li>
+			<p align="left">
+				Bottom Soldermask (GBS)</p>
+		</li>
+		<li>
+			<p align="left">
+				Bottom Silkscreen (GBO)</p>
+		</li>
+		<li>
+			<p align="left">
+				Drill File (2:4 leading - remember this)</p>
+		</li>
+	</ul>
+	<p align="left">
+		What is this GTL, GTS? These are the file extensions that the CAM processor will produce. A silkscreen is also called an &#39;overlay&#39; (hence, GTO). And for your reference, a soldermask is also called a solder &#39;stop layer&#39; because the soldermask prevents solder from being where it is not wanted.</p>
+	<p align="left">
+		Some fab houses will charge extra for a bottom silkscreen layer. You can just ignore this layer if you need to. You will also see a GTP file extension. This is the Gerber Top Paste file. You can use this file to get a solder paste stencil cut it you want. One would think that a GTP file would be the same as the GTS (top soldermask file). But no!</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-26.jpg" /><img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-27.jpg" /></p>
+	<p align="left">
+		On the left, the soldermask layer. On the right, the top paste layer. The soldermask layer exposes the pads<i> and the vias</i>. You wouldn&#39;t want solder paste in vias! So the paste layer only has the SMD component pads exposed.</p>
+	<p align="left">
+		To create these layers, click on File-&gt;Open-&gt;Job</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-28.jpg" /></p>
+	<p align="left">
+		And select the sfe-gerb274x.cam file. Then click &#39;Process Job&#39;. Some status bars will blink by, and within a few seconds, you should have a handful of extra files in your project directory:</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-29.jpg" /></p>
+	<p align="center">
+		The magic 7 gerber files</p>
+	<p align="left">
+		Something I highly recommend is to review the gerber files before submitting them for fabrication. Viewing just what is going to the fab house can exposed potential problems that were shrouded before by all the extra layers and graphics in the Eagle layout window. There are some free viewers out there that will let you view the gerber layers together. Most of the free viewers require you to enter an email, require 15 seconds for them to advertise at you, limited to one layer, or other really annoying limitations. Luckily, <a href="http://www.viewplot.com/" target="_blank">Viewplot</a> still exists. This free program will let you open and look at your layers easily and you don&#39;t have to fill out any silly forms to get to the download link! Be sure to select the drill file type &#39;2:4 Leading&#39; to matchup the holes to the layers.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-30.jpg" /></p>
+	<p align="center">
+		Simple</p>
+	<p align="left">
+		But oh wait, what is that?</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-31.jpg" /></p>
+	<p align="center">
+		Silkscreen on top of a via</p>
+	<p align="left">
+		This silkscreen being broken up by the via is not a big deal. Mostly this is just to show how difficult it can be to detect problems from within the layout program. By viewing what you&#39;re actually submitting to the fab house, you can see exactly what they are going to deliver - be it good or bad. Review your gerber files before you submit! You&#39;ll save yourself time and monstrous amounts of money. If you want a $50 coaster, I&#39;ll sell you a truck full.</p>
+	<p align="left">
+		Zip these 7 files together and shoot them off to the fab house of your choice (Shameless Plug: we use <a href="http://www.batchpcb.com/" target="_blank">BatchPCB</a>). Depending on who you use and how deep your pockets are, you&#39;ll have to sit on your hands for 1 day up to 20 days. What do I do? I start other designs! While this board is being fabbed in 2 weeks, I create and submit a new design 7 days into it. That way I always have a new PCB proto coming in every few days. It&#39;s like Christmas every week! What am I getting this week? Is it going to work? I can&#39;t wait to test out my new cat tracker!</p>
+	<hr width="80%" />
+	<p align="left">
+		With the magic of television, I can jump 20 days into the future and show you...</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-33.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-33.jpg" /></p>
+	<p align="center">
+		In the flesh</p>
+	<p align="left">
+		It looks great! Time to whip out some parts and the soldering iron.</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-34.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-34.jpg" /></p>
+	<p align="center">
+		Assemble your new board!</p>
+	<p align="left">
+		Soldering was not too bad. Silkscreen looks good. Standoffs look good. Time for testing!</p>
+	<p align="left">
+		Always assume a proto will short out the first time you use it. Be very cautious and be ready to kill power immediately. Plugging this board onto the computer - guess what happens?</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-36.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-36.jpg" /></p>
+	<p align="center">
+		Uh-oh</p>
+	<p align="left">
+		What went wrong? Nothing is heating up. Nothing smoked or popped. The FT232 IC doesn&#39;t seem to be enumerating onto the USB bus. But why? Let&#39;s check the schematic one more time...</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-37.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-37.jpg" /></p>
+	<p align="center">
+		FT232 Breakout v1.0 Schematic</p>
+	<p align="left">
+		Son of a... This is why we prototype! Mistakes like this happens to the best of us. What is the problem you ask? Checkout the GND pin on the USB connector. It&#39;s not connected to anything. Without a ground connection to the board, no current can flow, the FT232RL will never enumerate. The board is shot! Or is it?</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-35.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-35.jpg" /></p>
+	<p align="center">
+		The green wire fix</p>
+	<p align="left">
+		(I know the wire is not green, but this is the nick-name for an oops! fix) This is my final thoughts on PCB layout - anyone can layout a PCB, but it takes a true magician to get a bad PCB working. Scratch, cut, splice, and otherwise modify your PCB until you get it working. This example was an easy fix. I&#39;ve seen some really impressive fixes over the years.</p>
+	<p align="center">
+		<img alt="" border="0" src="http://www.sparkfun.com/commerce/images/tutorials/Prototyping/General/P1030013.jpg" /></p>
+	<p align="center">
+		From the <a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=42&amp;page=1" target="_blank"> SFE PCB History Museum</a></p>
+	<p align="left">
+		Don&#39;t immediately throw up your hands and layout a new board. Instead, make sure you get every bit of the functionality of your board working, by any means necessary, and then make all the revisions. Otherwise, you&#39;ll constantly spin your wheels with PCB revisions.</p>
+	<p align="left">
+		Things to remember:</p>
+	<ul>
+		<li>
+			<p align="left">
+				Be sure to save your schematic as a new file name: *-v11</p>
+		</li>
+		<li>
+			<p align="left">
+				Be sure to update the date code on the board</p>
+		</li>
+		<li>
+			<p align="left">
+				Be sure to update the silkscreen on the board</p>
+		</li>
+	</ul>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-38.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-38.jpg" /></p>
+	<p align="center">
+		Updated v1.1 schematic with GND connection on the USB connector</p>
+	<p align="center">
+		<img alt="http://www.sparkfun.com/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-39.jpg" src="http://www.sparkfun.com/commerce/images/tutorials/BeginningEmbedded/9-EaglePCBs/EP-39.jpg" /></p>
+	<p align="center">
+		Updated v1.1 board layout with new GND connection, updated silkscreen and date code</p>
+	<p align="left">
+		We love feedback! Please report typos, comments, or recommendations to <a href="mailto:spark@sparkfun.com">spark@sparkfun.com</a>.</p>
+	<p align="left">
+		<a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=57">Lecture 1 - Background and Power Supply</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=93"><br />
+		<br />
+		Lecture 2 - How to Get Code Onto a Microcontroller</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=95"><br />
+		<br />
+		Lecture 3 - What is an oscillator?</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=104"><br />
+		<br />
+		Lecture 4 - UART and Serial Communication</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=105"><br />
+		<br />
+		Lecture 5 - AVR GCC Compiling</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=106"><br />
+		<br />
+		Lecture 6 - Soldering Basics</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=107"><br />
+		<br />
+		Lecture 7 - SMD Soldering</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=108"><br />
+		<br />
+		Lecture 8 - Eagle: Schematics</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=109"><br />
+		<br />
+		Lecture 9 - Eagle: PCB Layout</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=110"><br />
+		<br />
+		Lecture 10 - Eagle: Creating a new part</a><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=111"><br />
+		<br />
+		Common Mistakes, Tips and Tricks</a></p>
+</div></div>
+
+<div id="comments_container">
+  <h2 id="comments_header" class="collapsible grey big"><span class="arrow"></span>Comments <span class="count">36 comments</span></h2>
+<div id="comments" class="collapsible white">
+  <div style="padding: 20px">  <div style="text-align: center">
+    <b><a href="#" onclick="javascript: $('right').scrollTo(); $('user_login').select()">Login</a> to post comments.</b>
+  </div>
+</div>
+  <div class="comment" id="comment_30316"><span class="header"><a href="http://www.sparkfun.com/users/116428" class="bold">cwolf</a> <span class="wide">|</span> <b>February 21, 2011 at 12:52 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_30316">2</span></strong></span><br /></span><div class="body"><p>this page has a dead link "SFE PCB History Museum"</p>
+</div></div><div class="comment" id="comment_3954"><span class="header"><a href="http://www.sparkfun.com/users/32988" class="bold">Lee</a> <span class="wide">|</span> <b>June 21, 2009 at  7:41 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_3954">1</span></strong></span><br /></span><div class="body"><p>Another resource for viewing gerbers (and generating images for documentation or printing) is my site <a href="http:///www">http:///www.circuitpeople.com</a>.  No registration is required, no ads (not even Adwords) and really, really nicely rendered images of each layer.  And, if you find it sucks, I'm quite willing to make changes. :)</p>
+</div></div><div class="comment" id="comment_5126"><span class="header"><a href="http://www.sparkfun.com/users/80027" class="bold">Nashblackcat</a> <span class="wide">|</span> <b>September  8, 2009 at  7:51 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5126">1</span></strong></span><br /></span><div class="body"><p>This helped me make my very first board ! Thanks!</p>
+</div></div><div class="comment" id="comment_5210"><span class="header"><a href="http://www.sparkfun.com/users/50348" class="bold">unebonnevie</a> <span class="wide">|</span> <b>September 12, 2009 at 12:39 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_5210">1</span></strong></span><br /></span><div class="body"><p>As in all Sparkfun's tutorials, they are helpful but NOT details in instructions.  The tutorials tend to say "Don't forget to have so and so turn on or selected."  But does not show HOW to do it.  For this tutorial, for example, "Be sure to select the drill type '2:4 Leading' to matchup the holes to the layers."  HOW to do that?  Is that from Eagle or the viewer program?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_9562"><span class="header"><a href="http://www.sparkfun.com/users/109080" class="bold">Anyone</a> <span class="wide">|</span> <b>January 14, 2010 at  2:45 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9562">1</span></strong></span><br /></span><div class="body"><p>I agree, there are a couple places in this tutorial where you have to figure out what to do. 
+Example - on this last step of adding the forgotten ground, you add it to the schematic then save to V1.1; how do you add it to the layout without starting over?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_9595"><span class="header"><a href="http://www.sparkfun.com/users/109080" class="bold">Anyone</a> <span class="wide">|</span> <b>January 15, 2010 at 11:18 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9595">1</span></strong></span><br /></span><div class="body"><p>I figured out what happened - this is rather important and was not mentioned anywhere.
+I closed down eagle then when I found that the example was not finished I opened the schematic only, created v1.1 by performing a "save as" and started the edit. This caused the synchronizing of the schematic and layout to be lost. Once the layout has been created you must always open it with the schematic and be the same naming. then the schematic edits show up automatically in the layout.
+See topic "Forward &amp; Back Annotation" in Eagle help.</p>
+</div></div></div></div></div></div><div class="comment" id="comment_6678"><span class="header"><a href="http://www.sparkfun.com/users/19832" class="bold">lualua</a> <span class="wide">|</span> <b>November 11, 2009 at 12:40 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_6678">1</span></strong></span><br /></span><div class="body"><p>Is there any harm in changing the grid to a finer resolution to get the traces to land neatly on the pads of SMD's as long as I keep within the board house's 8 mil spacing?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_8151"><span class="header"><a href="http://www.sparkfun.com/users/88897" class="bold">sevenboarder</a> <span class="wide">|</span> <b>December 30, 2009 at  5:55 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_8151">1</span></strong></span><br /></span><div class="body"><p>do it to it!  Some houses let you go to 4mil spacing.</p>
+</div></div></div></div><div class="comment" id="comment_7327"><span class="header"><a href="http://www.sparkfun.com/users/86472" class="bold">csmajor</a> <span class="wide">|</span> <b>December  3, 2009 at  2:58 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_7327">1</span></strong></span><br /></span><div class="body"><p>I really like your tutorial and now have a schematic with 9 ICs (8 are optos).  Through hole -- old school 5V ttl.  Two questions:</p>
+
+<p>(1) I pulled a 74165 from the eagle library.  How do I tell the board tool about its power pins?  The block diagram has data and control lines only.  Any helpful URLs?</p>
+
+<p>(2) I auto-routed the board, then I added some resistors.  The "error checker" states the resistors are not part of the board.  Duh.  Can I transfer them over without re-laying out the whole board (it takes about 30 minutes, really, no biggie).</p>
+
+<p>thanks // brian</p>
+</div></div><div class="comment" id="comment_8242"><span class="header"><a href="http://www.sparkfun.com/users/100827" class="bold">samroesch</a> <span class="wide">|</span> <b>January  2, 2010 at 11:35 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_8242">1</span></strong></span><br /></span><div class="body"><p>I only just discovered these now- so useful! SFE rock.</p>
+</div></div><div class="comment" id="comment_9813"><span class="header"><a href="http://www.sparkfun.com/users/42062" class="bold">brokenlcd</a> <span class="wide">|</span> <b>January 21, 2010 at 12:09 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_9813">1</span></strong></span><br /></span><div class="body"><p>Oh man I'd been using EAGLE a bit but never realized how to change the color of the tDocu and tRef layers... that alone has saved me an incredible amount of headaches laying out designs!</p>
+</div></div><div class="comment" id="comment_11363"><span class="header"><a href="http://www.sparkfun.com/users/125127" class="bold">Addidis</a> <span class="wide">|</span> <b>March 15, 2010 at  3:20 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_11363">1</span></strong></span><br /></span><div class="body"><p>Giggles I caught that ground while playing with the eye button. 
+ I agree any one can lay out a pcb, the real magicx are making the first one work. 
+I tend to put a few threw holes/vias (vcc , gnd , 3.3v , 5v) in. It makes it easy to run threw the circuit with a meter / logic probe and verify sub circuits are working, and it gives you a spot to connect your green wires , if you need them. 
+Great tutorial, little outdated but served its purpose well. Thanks for the time to make it.</p>
+</div></div><div class="comment" id="comment_13239"><span class="header"><a href="http://www.sparkfun.com/users/52964" class="bold">LeadFree</a> <span class="wide">|</span> <b>May 12, 2010 at 12:00 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_13239">1</span></strong></span><br /></span><div class="body"><p>Where can one get the SMD caps and inductor used in the tutorial. I could find the SMD FT232RL and the USB connector on SFE. I have the board ready - wanted to test run. Thanks.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_13382"><img class="avatar" src="https://secure.gravatar.com/avatar/50e0e179c9466a614c80dfb29e200b6d?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/74612" class="bold">Pearce</a> <span class="wide">|</span> <b>May 14, 2010 at  4:11 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_13382">1</span></strong></span><br /></span><div class="body"><p>Unfortunately we do not sell the SMD caps or inductors.  I'd recommend checking digikey or mouser.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_15025"><span class="header"><a href="http://www.sparkfun.com/users/52964" class="bold">LeadFree</a> <span class="wide">|</span> <b>June 27, 2010 at 10:59 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_15025">1</span></strong></span><br /></span><div class="body"><p>What value does one use for the L1 (0603 INDUCTOR) in the schematics?</p>
+</div></div></div></div></div></div><div class="comment" id="comment_20535"><span class="header"><a href="http://www.sparkfun.com/users/91266" class="bold">Tom</a> <span class="wide">|</span> <b>November  7, 2010 at  9:04 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_20535">1</span></strong></span><br /></span><div class="body"><p>Awesome tutorial!  I'd been struggling with the wonky Eagle interface.  Excellent notes on the parts design tut as well.  I'd love to see a follow up, dealing with correcting DRC errors.  I used the Sparkfun library to set up a few boards.  I've been trying to manually route the board, but I keep getting Drill Distance, Drill Size, and Overlap errors.  It would be great to learn from the masters how to fix these and other tyro mistakes.  gerbv works great as a viewer for Linux user, BTW.
+Thanks again!</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_21990"><span class="header"><a href="http://www.sparkfun.com/users/158713" class="bold">Greg_</a> <span class="wide">|</span> <b>December  1, 2010 at 12:24 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_21990">1</span></strong></span><br /></span><div class="body"><p>Great tutorial.Just one question:Although the authour suggests 0.1 grid spacing the lines on all figures is 0.05...I know that there are no solid rules but what is the best practice?<br />
+Thanks<br />
+Greg</p>
+</div></div></div></div><div class="comment" id="comment_15373"><span class="header"><a href="http://www.sparkfun.com/users/74715" class="bold">ioBridge</a> <span class="wide">|</span> <b>July  4, 2010 at  2:14 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_15373">1</span></strong></span><br /></span><div class="body"><p>I added an Instructable with screenshots showing how to import graphics into EAGLE. Now you can easily add your own custom artwork or logo to a PCB layout.</p>
+
+<p><a href="http://www.instructables.com/id/Adding-Custom-Graphics-to-EAGLE-PCB-Layouts/">http://www.instructables.com/id/Adding-Custom-Graphics-to-EAGLE-PCB-Layouts/</a></p>
+
+<p>Thanks for the great tutorial. Even me, a web designer, learned how to use EAGLE!</p>
+</div></div><div class="comment" id="comment_16549"><span class="header"><a href="http://www.sparkfun.com/users/131294" class="bold">mrmark</a> <span class="wide">|</span> <b>August  1, 2010 at 10:42 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_16549">1</span></strong></span><br /></span><div class="body"><p>you spelled fab wrong, 
+"Anytime you transmit a PCB layout to a GAB house, you need to pass them 7 files, and 7 files only"</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_16953"><img class="avatar" src="https://secure.gravatar.com/avatar/cc799970820c51f39b1a41ae63c21896?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/93309" class="bold">RobertC.</a> <span class="wide">|</span> <b>August 10, 2010 at  2:26 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_16953">1</span></strong></span><br /></span><div class="body"><p>Thanks for that.  Fixed.</p>
+</div></div></div></div><div class="comment" id="comment_18623"><span class="header"><a href="http://www.sparkfun.com/users/28118" class="bold">whatsthis</a> <span class="wide">|</span> <b>September 24, 2010 at  7:51 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_18623">1</span></strong></span><br /></span><div class="body"><p>Thank you so much for this tutorial!</p>
+
+<p>Still having some problems with netlists (going from point A to B using a name rather than a wire), but I have submitted two boards and am having a blast.  Your CAM file is absolutely fantastic.  The CAM phase was a huge mystery, and you explained it to the point where I think even I get it now (or at least the board houses are happy).</p>
+</div></div><div class="comment" id="comment_20405"><span class="header"><a href="http://www.sparkfun.com/users/156690" class="bold">MichaelK</a> <span class="wide">|</span> <b>November  5, 2010 at  5:22 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_20405">1</span></strong></span><br /></span><div class="body"><p>Hi. Great tutorial, very useful!
+A couple of tips: I had trouble figuring out which labels go on which pins in the board layout. There are two options:
+1. Go to "options" then "set" then "misc" - check the "display pad names" check box. This will display the pin numbers/names.
+2. You can use the info tool to click on individual pins/wires to see what they are connected to.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_20406"><span class="header"><a href="http://www.sparkfun.com/users/156690" class="bold">MichaelK</a> <span class="wide">|</span> <b>November  5, 2010 at  5:33 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_20406">1</span></strong></span><br /></span><div class="body"><p>Or use the eye tool and click on a pin (should've read a couple sentences down.. oops :) . This highlights the entire net that the pin is connected to, which is useful in its own right, and shows the name of the net in the status bar.</p>
+</div></div></div></div><div class="comment" id="comment_22017"><img class="avatar" src="https://secure.gravatar.com/avatar/f118645f40970a33273c281701006bef?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><a href="http://www.sparkfun.com/users/153053" class="bold">Nakor</a> <span class="wide">|</span> <b>December  1, 2010 at  9:01 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_22017">1</span></strong></span><br /></span><div class="body"><p>Just tried to download Viewplot.  Downloads just fine but unfortunately it is not clean.  My virus scanners smacked it down hard.</p>
+</div></div><div class="comment" id="comment_23223"><span class="header"><a href="http://www.sparkfun.com/users/96485" class="bold">ibot</a> <span class="wide">|</span> <b>December 19, 2010 at  9:58 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_23223">1</span></strong></span><br /></span><div class="body"><p>Man with all these great tutorials it makes paying for college seem like a waste, excellent job.</p>
+</div></div><div class="comment" id="comment_24251"><span class="header"><a href="http://www.sparkfun.com/users/79262" class="bold">Pork Rhombus</a> <span class="wide">|</span> <b>January  4, 2011 at  2:10 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_24251">1</span></strong></span><br /></span><div class="body"><p>I used the SFE cam file but when I submitted my gerbers to the Advanced Circuits DFM bot it thought they were 274D format not 274X - any idea why this might be?</p>
+</div></div><div class="comment" id="comment_24280"><span class="header"><a href="http://www.sparkfun.com/users/184980" class="bold">Member184980</a> <span class="wide">|</span> <b>January  4, 2011 at  9:26 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_24280">1</span></strong></span><br /></span><div class="body"><p>How to undo autorouter and redo it again?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31075"><span class="header"><a href="http://www.sparkfun.com/users/93071" class="bold">zv470</a> <span class="wide">|</span> <b>March  3, 2011 at  5:53 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31075">1</span></strong></span><br /></span><div class="body"><p>You can type 'ripup' into the command line (or click the ripup icon,) then click the traces you want to re do.</p>
+</div></div></div></div><div class="comment" id="comment_26863"><span class="header"><a href="http://www.sparkfun.com/users/121455" class="bold">U2</a> <span class="wide">|</span> <b>January 15, 2011 at  9:54 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_26863">1</span></strong></span><br /></span><div class="body"><p>Very good tutorial. Thanks for the SFE library files. Helped a lot !</p>
+</div></div><div class="comment" id="comment_26938"><span class="header"><a href="http://www.sparkfun.com/users/156015" class="bold">soulhunter</a> <span class="wide">|</span> <b>January 15, 2011 at  8:02 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_26938">1</span></strong></span><br /></span><div class="body"><p>Hi!</p>
+
+<p>I have been thinking on one of those "existential" problems, trying to figure out "where does the PCB manufactures cut the PCB"... the dimension outline have a width, my best guess it that they cut the PCB "in the middle" of the line, but I'm unsure of it.  I'm using KiCAD and default PCB edge width is ~0.38mm.... not that it is huge, but PCB size would vary slightly if you were to cut inside, outside or in the middle of the line.</p>
+
+<p>Can anyone share your experience on this? (just curious),</p>
+</div></div><div class="comment" id="comment_27809"><span class="header"><a href="http://www.sparkfun.com/users/137984" class="bold">bram50</a> <span class="wide">|</span> <b>January 24, 2011 at  9:37 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_27809">1</span></strong></span><br /></span><div class="body"><p>Quick question, what layer do you put the outline of the board on? Thank you.</p>
+</div></div><div class="comment" id="comment_30441"><span class="header"><a href="http://www.sparkfun.com/users/201435" class="bold">FoxxCommand</a> <span class="wide">|</span> <b>February 23, 2011 at  2:09 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_30441">1</span></strong></span><br /></span><div class="body"><p>"The first thing to do is correct the board outline. I don't know why Eagle slightly offsets the default border." Doesn't happen in the latest editions.</p>
+</div></div><div class="comment" id="comment_30896"><span class="header"><a href="http://www.sparkfun.com/users/165131" class="bold">Coops213</a> <span class="wide">|</span> <b>March  1, 2011 at  5:09 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_30896">1</span></strong></span><br /></span><div class="body"><p>Is it just me or have all the pictures disappeared?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_30901"><img class="avatar" src="https://secure.gravatar.com/avatar/50e0e179c9466a614c80dfb29e200b6d?d=retro&s=30&r=pg" width=30 height=30 /><span class="header"><img class="employee" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/comment_is_internal.gif" title="SparkFun Employee" alt="SparkFun Employee" /> <a href="http://www.sparkfun.com/users/74612" class="bold">Pearce</a> <span class="wide">|</span> <b>March  1, 2011 at  8:19 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_30901">1</span></strong></span><br /></span><div class="body"><p>It's not just you, we'll get those back up shortly.</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div></div></div></div></div><div class="comment" id="comment_30960"><span class="header"><a href="http://www.sparkfun.com/users/73850" class="bold">doobie</a> <span class="wide">|</span> <b>March  1, 2011 at  9:30 PM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_30960">1</span></strong></span><br /></span><div class="body"><p>I've been playing around with a few board designs and I've submitted a few to batchpcb.com, but the prices they give seem to be ridiculous.  I went through this process with the eagle layout files from one of the SparkFun buttonpads and uploaded it and batchpcb wanted nearly $50 for it.  Am I doing something wrong or is this an issue of volume?</p>
+</div><div class="comments"><div class="comment-arrow"><img src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_commentarrow_top.gif"></div><div class="comment" id="comment_31601"><span class="header"><a href="http://www.sparkfun.com/users/138675" class="bold">ico</a> <span class="wide">|</span> <b>March  9, 2011 at  8:59 AM</b><img class="star" src="http://dlnmh9ip6v2uc.cloudfront.net/images/framework/icon_star_dark.gif" alt="Comment Rating" title="Comment Rating" /><strong><span id="comment_rating_31601">1</span></strong></span><br /></span><div class="body"><p>Most established PCB fabs charge the engineering fee of a new board with about US$50 for this size of 2 layer board, but the volume price of production board is another story.</p>
+
+<p>If you want cheap price of this kind of initial board setup engineering fee, a professional prototype PCB fab or some small unestablished companies have much lower price, as minimal as about US$20, but mostly of worse quality, and you need luck to find a good one with low price.</p>
+</div></div></div></div></div>
+<br />
+</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      SparkFun Electronics <a href="http://www.sparkfun.com/news/300">&reg;</a>      <span class="wide">|</span>
+      <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6175+Longbow+Dr,+Boulder,+CO+80301&sll=40.006234,-105.224915&sspn=0.012113,0.020192&ie=UTF8&hq=&hnear=6175+Longbow+Dr,+Boulder,+Colorado+80301&t=h&z=16" target="_blank">Boulder, Colorado</a>
+      <span class="wide">|</span>
+      <a href="http://www.sparkfun.com/static/customer_service">Customer Service</a>
+    </div>
+        <script type="text/javascript" src="/js/cookiejar.js?sparkrev=1299616818"></script>
+    <script type="text/javascript" src="/js/sparkfun.js?sparkrev=1299616818"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript">function autoFireLightbox(){setTimeout(function(){SFE.stab_eyes()},250)}Event.observe(window,"load",autoFireLightbox,false);</script>
+    <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3404365-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
