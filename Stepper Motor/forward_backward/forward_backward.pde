@@ -1,7 +1,7 @@
  
-int dirpin = 3;
+int dirpin = 2;
 int steppin = 12;
-const long low_vel_limit = 39; //Base microseconds between steps, max speed
+const long low_vel_limit = 900; //Base microseconds between steps, max speed
 const long high_vel_limit = 100000; //microseconds above low_vel_limit, min speed
 
 const float wheel_cm = 28.2743339;//mm around 90mm wheel
@@ -14,19 +14,8 @@ pinMode(steppin, OUTPUT);
 }
 void loop()
 {
-  static boolean run = false;
-  if(!run){
-    run = true;
-    int st = 350;
-    int i = 0;
-    for(; i < 500; i+=2){
-      step_motor(true, 200, st-i);
-    }
-    step_motor(true, 10000, st-i);
-    for(; i > 0; i-=2){
-      step_motor(true, 200, st-i);
-    }
-  }
+    move(true, 8, 10);
+    move(false, 8, 10);
 }
 
 //distance in cm

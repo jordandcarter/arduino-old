@@ -33,58 +33,29 @@ unsigned long  delta_t;         //delta time or how long it takes to execute dat
 
 
 void setup()
-
-
-
 {
-
+  delay (2000); //dealy just in case - to get things stabilized if need be....
   analogReference(EXTERNAL);     //using external analog ref of 3.3V for ADC scaling
   Serial.begin(115200);          //setup serial
-
-  delay (100); //dealy just in case - to get things stabilized if need be....
-
- 
-
   Serial.println("t[ms] \t gy \t gx \t gz \t az \t ay \t ax "); //print data header
-
-
-
  timer=millis(); 
-
 }
 
 
 
 void loop()
-
 {
-
-  delta_t = millis() - timer; // calculate time through loop i.e. acq. rate
-
-  timer=millis();          // reset timer
-
-  Serial.print(delta_t);
-
-  Serial.print ("\t"); 
-
-     
-
-  for (long i=0; i<6; i++) //read gyroscope and accelerometer sensor data
-
- { 
-
-  val = analogRead(i);    // read the input pin
-
-  Serial.print((String) val);      //print data
-
-  Serial.print ("\t");
-
- }  
-
-
-
+  Serial.print((String) analogRead(10));      //print data
+  Serial.print (",");
+  Serial.print((String) analogRead(11));      //print data
+  Serial.print (",");
+  Serial.print((String) analogRead(12));      //print data
+  Serial.print (",");
+  Serial.print((String) analogRead(13));      //print data
+  Serial.print (",");
+  Serial.print((String) analogRead(14));      //print data
+  Serial.print (",");
+  Serial.print((String) analogRead(15));      //print data
   Serial.println("");
-
   delay(16);             //loop delay; loop executed at ~ 50Hz or 20ms
-
 }
